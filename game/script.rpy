@@ -30,6 +30,8 @@ transform top_left_space:
 #     xpos -100
 
 default syntaxConfidence = 0
+default kaiAffection = 0
+default cyraAffection = 0
 default name = ""
 default female = False
 default male = False
@@ -55,11 +57,21 @@ init python:
     style.gold.color = "#fff346"
     style.gold.italic = True
 
-# Function to change syntaxConfidence
+# Function to change Flags
 init python:
     def change_confidence(amount):
         global syntaxConfidence
         syntaxConfidence = max(0, syntaxConfidence + amount)
+
+init python:
+    def change_kaiAffection(amount):
+        global kaiAffection
+        kaiAffection = max(0, kaiAffection + amount)
+
+init python:
+    def change_cyraAffection(amount):
+        global cyraAffection
+        cyraAffection = max(0, cyraAffection + amount)
 
 label start:
     call episode0
