@@ -121,7 +121,6 @@ label episode1:
             mc "Thanks… I think?"
             mspy "Do not underestimate simplicity, [name]. Even a whisper of logic can reshape reality."
 
-            # "{i}{color=#fdf57b}Syntax Confidence +2{/color}{/i}"
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
 
@@ -236,10 +235,10 @@ label episode1:
     show cyra surprised at center with move
     with hpunch
 
-    luna "Combust?! {w=1}I missed that again?! {w=1}By the way I’m Luna Hehe."
+    luna "{b}Combust?! {w=1}I missed that again?!{/b} {w=1}By the way I’m Luna Hehe."
 
     show cyra angry
-    cyra "{size=+10}Hey!{/size}"
+    cyra "{size=+10}{b}Hey!{/b}{/size}"
 
     show kai happy
     kai "Figures. Another bright-eyed beginner joining the chaos. {w}Kai by the way."
@@ -285,5 +284,176 @@ label episode1:
     "{color=#618ef0}Kai{/color} & {color=#a14ae9}Cyra{/color}" "…Please don’t."
 
     kai "Ignore Luna. Her projects usually end in smoke or spontaneous dancing LEDs."
+    luna "Excuse you! That was one time. And it was fabulous."
+    mira "You’re… kind of brave for surviving your first class, though. Ms. Py Thon can be scary."
+    mc "Yeah, she smiled once — the projector flickered."
 
+    show cyra happy
+    show kai happy
+    show luna happy
+    show mira happy
+    show astra happy
+    "(Everyone laughs.)"
+
+    "???" "[[Sound of Intercom Suddenly Rings]"
+
+    mspyIntercom "Attention, Team Debugger. Before you relax too much {w}— SURPRISE QUIZZZ!"
+    mspyIntercom "Let’s see if your new member can handle The Syntax Duel."
+    astra "*grins* Ooooh, our favorite hazing ritual."
+    kai "Not hazing. {i}Evaluation{/i}."
+    luna "I brought popcorn! {w}Wait… is that allowed?"
+    kai "You’ll probably spill it on the terminal again."
+    cyra "Lets get this started!"
+
+    scene classroom
+    with dissolve
+
+    mspyIntercom "Your first spell — fix this broken code: {w}{i}{size=+10}{color=#81f08aff}print(\"Hello World!){/color}{/size}{/i}"
+
+    menu:
+        "print(\"Hello World!\")":
+            call question1Right
+        "print('Hello World!')":
+            call question1Right
+        "print(Hello World!)":
+            show bug at center
+            $ red_effect()
+            kai "Told you. Rookie nerves."
+            cyra "Don’t panic! Try closing the quotes — fast!"
+            with vpunch
+            hide bug with dissolve
+            "([name] fixes it. Bug fizzles. Team cheers.)"
+            mspyIntercom "You can either use Double Quotation Marks “” or ‘’ Apostrophe to declare a string you want to print"
+            "{=red}Syntax Confidence –1{/red}"
+            $ change_confidence(-1)
+        
+    mspyIntercom "Assign 10 to variable x. In a Variable we can store data types we want for example let it be a number, a string and so on, first you have to name your variable it can be a string or a single letter."
+    
+    menu:
+        "x = 10":
+            kai "Simple. Efficient. You’d make a good teammate."
+            "+1 Kai Affection"
+            $ change_kaiAffection(+1)
+            luna "You’re on fire! But like... in a non-combustion way!"
+            astra "Careful, Kai. Compliments look good on you." #teasing
+            "{=gold}Syntax Confidence +2{/gold}"
+            $ change_confidence(+2)
+
+        "int x = 10":
+            call question2Wrong
+        "x : 10":
+            call question2Wrong
+    
+    mspyIntercom "Which of these can Python do?"
+
+    menu:
+        "Web applications":
+            call question3Right
+        "Control robots":
+            call question3Right
+        "Make coffee":
+            mspyIntercom "If Python brewed coffee, I’d be a billionaire."
+            "(Team laughs, [name] gets minor penalty.)"
+            cyra "Well go for coffee break later. For now focus."
+            "{=red}Syntax Confidence –1{/red}"
+            $ change_confidence(-1)
+
+    mspyIntercom "Which is true about Python syntax?"
+
+    menu:
+        "Uses indentation for scope":
+            kai "Your precision is admirable."
+            cyra "And that focus... kinda cool. You listen in class I see."
+            "([name] blushes)"
+            "{=gold}Syntax Confidence +2{/gold}"
+            $ change_confidence(+2)
+
+        "Uses curly braces":
+            call question4Wrong
+
+        "Needs semicolons":
+            call question4Wrong
+
+    luna "Okay, okay, my turn!"
+    luna "What’s the name of the function used to display text?"
+
+    menu:
+        "prnt ()":
+            call question5Wrong
+        "print()":
+            luna "YES! You pass the Luna test! You’re officially 90\% certified cool!"
+            "(+1 Luna Friendship)" #luna flag?
+            "{=gold}Syntax Confidence +2{/gold}"
+            $ change_confidence(+2)
+        "speak()":
+            call question5Wrong
+
+    mspyIntercom "You’ve all performed… adequately. Some of you even excelled."
+    mspyIntercom "Tomorrow, we explore the {b}Variables of Destiny.{/b}"
+    astra "(stretching) Destiny sounds boring. Can we just fight more Bugs?"
+    cyra "Perfect as always…"
+    kai "Discipline before battle, Astra."
+    mira "He says, as if he’s not secretly obsessed with perfect syntax."
+    cyra "You did great really great."
+    luna "Group selfie before the next apocalypse! Say {w}{size=+10}{color=#81f08aff}print(\"Cheese!\"){/color}{/size}!"
+
+    scene groupPhoto
+    with dissolve
+    "(They pose. Flash of neon light. Laughter.)"
+
+    "And just like that, I wasn’t alone anymore."
+    "A team of geniuses, chaos gremlins, and possible love interests."
+    "At Code Academy Nexus… even friendship is coded in Python."
+    return
+
+# Quizzes Other Branch
+label question1Right:
+    mspyIntercom "Well done. Your syntax is strong. Print is used to show the strings you want to say strings are the words."
+    astra "Nice reflexes, rookie. Fast and clean — just my type."
+
+    kai "Consistent. I like that."
+    "+1 Kai Affection"
+    $ change_kaiAffection(+1)
+
+    cyra "You did it! The Bug didn’t even hiss at you!"
+    "{=gold}Syntax Confidence +2{/gold}"
+    $ change_confidence(+2)
+    return
+
+label question2Wrong:
+    kai "Yawn. Even my grandma can assign variables."
+    mira "It’s okay, everyone starts somewhere!"
+    "(A mini Bug appears, shaped like a “?”; player zaps it.)"
+    show cyra happy
+    cyra "Dont mind him, when he was new he was even worse"
+
+    "{=red}Syntax Confidence –1{/red}"
+    $ change_confidence(-1)
+    return
+
+label question3Right:
+    luna "Imagine if it could make coffee, though."
+    astra "I’d marry Python."
+    "(Kai raises eyebrow.)"
+    astra "Relax, Kai— it’s just a language."
+
+    "{=gold}Syntax Confidence +2{/gold}"
+    $ change_confidence(+2)
+    return
+
+label question4Wrong:
+    kai "Pfft. Rookie mistake."
+    luna "Hey, {b}Kai{/b}, remember when you broke your code with 18 curly braces?"
+    kai "That was style."
+    cyra "Sure it was……."
+    astra "Nice try though [name]"
+    "{=red}Syntax Confidence –1{/red}"
+    $ change_confidence(-1)
+    "(Team laughs; Bug spawns and gets squashed.)"
+    return
+
+label question5Wrong:
+    luna "Awww, close! But hey, you tried! Here, have a sticker that says “Mostly Human.”"
+    "{=red}Syntax Confidence –1{/red}"
+    $ change_confidence(-1)
     return

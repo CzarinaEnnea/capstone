@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 68: name 'flag' is parameter and global
+File "game/episode 1.rpy", line 398: end of line expected.
+    luna "Group selfie before the next apocalypse! Say print("Cheese!")!"
+                                                              ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Sat Oct 25 21:30:00 2025
+Sun Oct 26 15:33:37 2025

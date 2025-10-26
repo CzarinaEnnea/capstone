@@ -21,6 +21,7 @@ define cyra = Character("Cyra", color="#a14ae9")
 define mc = Character("[name]", color="#db345d")
 define dr = Character("Dr. Byte", color="#61f0dd")
 define mspy = Character("Ms. Py Thon", color="#8ef061")
+define mspyIntercom = Character("Ms. Py Thon’s Voice Over Intercom", color="#8ef061")
 define luna = Character("Luna", color="#e2f061")
 define astra = Character("Astra", color="#f061c5")
 define kai = Character("Kai", color="#618ef0")
@@ -57,6 +58,15 @@ transform slightleft:
 transform slightright:
     xalign 0.75
     yalign 1.0
+
+# $ red_effect()
+init python:
+    def red_effect(trans1=pixellate, trans2=dissolve):
+        renpy.show("red")
+        renpy.with_statement(trans1)
+        renpy.hide("red")
+        renpy.with_statement(trans2)
+
 
 # Default Variables
 default syntaxConfidence = 0

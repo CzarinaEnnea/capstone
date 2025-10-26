@@ -1,34 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 105, in script call
+  File "game/script.rpy", line 119, in script call
     call episode1
-  File "game/episode 1.rpy", line 71, in script
-    with dissolve(1.0)
-TypeError: 'Dissolve' object is not callable
+  File "game/episode 1.rpy", line 384, in script
+    luna "YES! You pass the Luna test! You’re officially 90% certified cool!"
+TypeError: %c requires int or char
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 105, in script call
+  File "game/script.rpy", line 119, in script call
     call episode1
-  File "game/episode 1.rpy", line 71, in script
-    with dissolve(1.0)
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
-    return self.interact(trans_pause=True,
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\display\core.py", line 3976, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\display\core.py", line 3922, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-TypeError: 'Dissolve' object is not callable
+  File "game/episode 1.rpy", line 384, in script
+    luna "YES! You pass the Luna test! You’re officially 90% certified cool!"
+  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\exports.py", line 1463, in say
+    what = what % tag_quoting_dict
+TypeError: %c requires int or char
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Codebound 1.0
-Sun Oct 26 11:54:23 2025
+Sun Oct 26 15:34:41 2025
