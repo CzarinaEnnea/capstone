@@ -29,7 +29,15 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""Made by:
+define gui.about = _p("""{b}Made by:{/b}
+
+> Leonalee Paraiso
+
+> Catlin Ayessha C. Bonquin
+
+> Kyla Yumul
+
+{b}Credits:{/b}
 
 """)
 
@@ -49,7 +57,7 @@ define build.name = "Codebound"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,

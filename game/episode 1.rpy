@@ -2,9 +2,28 @@
 #       Change visual aids
 
 label episode1:
+# TEST
+
+    scene arena
+    show doctorbyte at right
+    with dissolve
+
+    dr "Hi! This is a test"
+
+    show doctorbyte sad at left with move
+
+    dr "Do you hate me?!"
+
+    show doctorbyte sad at slightleft with move
+
+    dr "HaH!"
+
+    show doctorbyte sad at slightright with move
+
+
 # SCENE 1
 
-    scene salon #futuristic skyline
+    scene futuristic skyline
     with dissolve
 
     "A sleek hovertrain glides through a neon sky. The colossal Code Academy Nexus floats above the city — a fortress of glowing circuits and holographic towers."
@@ -21,7 +40,7 @@ label episode1:
 
     "A girl with purple-streaked hair and a mischievous grin appears, holding a holo-tablet."
 
-    show cyra #smirking
+    show cyra neutral
     with dissolve
 
     cyra "Cyra Byte. Frontend Division. Top of the leaderboard, breaker of hearts, destroyer of broken CSS."
@@ -32,36 +51,56 @@ label episode1:
 
     "Suddenly, the air shimmers with light. A tall man in a glowing white coat appears, teleporting in with calm authority."
 
-    # show drbyte
-    # with dissolve
+    show doctorbyte neutral at left
+    with dissolve
 
     dr "Good morning, students. No teleportation mishaps this time, I hope."
+
+    show cyra happy at slightright with move
     cyra "No promises, Headmaster."
 
-    # show drbyte smile
+    show doctorbyte neutral
     dr "I see you’ve met our new recruit. [name], isn’t it?"
     mc "Yes, sir! Reporting for— uh— coding?"
-    # show drbyte laugh
+    show doctorbyte happy
     dr "Excellent enthusiasm. Welcome to Code Academy Nexus — where syntax becomes strength."
+    show doctorbyte neutral
     dr "Now, you’ll be joining Professor Py Thon’s class. Don’t let her brilliance intimidate you."
 
     "A ripple of neon light forms into a tall woman with emerald lines of code flowing through her hair. Her eyes glow softly with wisdom."
 
+    show mspython at slightleft
+    with Dissolve(1.0)
+
     mspy "Headmaster, I’ll take it from here."
+
+    show doctorbyte happy
+
     dr "The class is yours, Professor. Don’t melt too many brains on the first day."
 
-    # hide drbyte
-    "Dr. Byte fades out, leaving the classroom glowing with holographic light."
+    hide doctorbyte with dissolve
+    "Dr. Byte fades out, leaving the place glowing with holographic light."
 
 
 # SCENE 2: Syntax 101 – The First Spell
 
+    scene classroom
+    with dissolve
+
     "The students take their seats. Floating keyboards and holographic code scroll across the room."
 
+    show mspython neutral
+    with dissolve
+
     mspy "Welcome, young coders."
-    mspy "Today, we begin with the most sacred of all spells — the {b}print(){/b} command."
+    mspy "Today, we begin with the most sacred of all spells."
+
+    show mspython happy
+    mspy "The {b}print(){/b} command!"
 
     "She waves her hand and code appears in the air."
+
+    show mspython neutral at slightright with move
 
     show text1 at top_left_space #CHANGE THIS
     with dissolve
@@ -91,7 +130,7 @@ label episode1:
             "The class bursts into laughter. Ms. Py Thon crosses her arms, amused."
             mspy "Ah, creativity — but no. This is Python, not Michael Bay Studios."
             cyra "Boom! First mistake of the semester." #snickers
-            mspy "A safe answer would be wiser next time, [Ms] [name]."
+            mspy "A safe answer would be wiser next time, [Ms][name]."
 
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
@@ -129,7 +168,7 @@ label episode1:
 
     "The lights flicker. A faint growling noise is heard — a “bug” forming in the code."
 
-    #grinning
+    show cyra happy
     cyra "Oh, fun. Evil spaces. Love that."
 
     mspy "When you name a variable in Python, you can’t use spaces because Python would get confused — it would think you’re writing two separate things instead of one name."
@@ -152,9 +191,10 @@ label episode1:
     # hide text2
     with dissolve
 
-    # scene arena
+    scene arena #or fade to black
+    with dissolve
 
-    mspy "Prepare yourselves for your first challenge anytime soon… {b}The Syntax Bug Simulation{/b}. Fix the code, or the Bug will replicate."
+    mspy "Prepare yourselves for your first challenge anytime soon… {w}{b}The Syntax Bug Simulation{/b}. {w}Fix the code, or the Bug will replicate."
     mc "Bring it on."
     cyra "Just don’t explode the computer this time, rookie."
     mspy "Well then enjoy your break time" #smirks
@@ -163,7 +203,7 @@ label episode1:
     with dissolve
     pause 0.5
 
-    scene salon #cafe
+    scene cafe
     with fade
 
     "After Class"
@@ -178,8 +218,72 @@ label episode1:
     "A sign above their table reads:"
     "{size=+10}TEAM DEBUGGER – We Don’t Panic, We Patch.{/size}"
 
-    mc "Guess that’s my new squad."
+    mc "...{w}Guess that’s my new squad."
+
+    show cyra neutral with dissolve
+    show cyra happy at slightright with move
+
+    cyra "Oh! Everyone, meet our new recruit!!"
+
+    show astra neutral at slightleft with dissolve
+    astra "Oh, look. The new one survived Ms. Py Thon’s lecture that’s worth a celebration. {w}I’m Astra."
+
+    show kai neutral at left with dissolve
+    kai "Barely. I saw three students combust from syntax errors."
+
+    show luna neutral at right with dissolve
+    show luna happy at slightright with move
+    show cyra surprised at center with move
+    with hpunch
+
+    luna "Combust?! {w=1}I missed that again?! {w=1}By the way I’m Luna Hehe."
+
+    show cyra angry
+    cyra "{size=+10}Hey!{/size}"
+
+    show kai happy
+    kai "Figures. Another bright-eyed beginner joining the chaos. {w}Kai by the way."
+
+    show cyra neutral
+    show kai neutral
+    show mira neutral at right with dissolve
+    mira "{cps=20}H-Hi there…{/cps} {w}I’m Mira Bite. {w}{cps=20}I handle support and… {w=1}um… {w=1}tea refills.{/cps}"
 
 
+
+    menu:
+        "Nice to meet you all! I’m [name] and ready to code my destiny.":
+            show kai happy
+            show astra happy
+            "You saw Kai nods approvingly and Astra winks towards you"
+
+        "Wait—did she say students combusted?":
+            show luna surprised
+            "Luna giggles at you and pretends to explode."
+            show luna happy
+            luna "Kabooom!"
+
+        "Free tea? Best team ever.":
+            show mira neutral: #or shy or surprised
+                linear 0.7 xpos 0.9
+            "You saw Mira turning red and hides herself behind Luna."
+
+    show luna neutral
+    astra "So, rookie, which division you thinking of joining? Frontend glam? Backend chaos? Or full-stack madness?"
+
+    show cyra happy
+    cyra "Relax, [theyre] still new."
+
+    mc "Not sure yet. Still figuring out if I’m more “function” or “fashion.”"
+
+    show luna happy
+    luna "*gasp* {w}Be both! A stylish debugger! I can make you a glowing jacket that says {w}{i}{size=+10}{cps=20}{color=#81f08aff}while(True): Slay(){/color}{/cps}{/size}{/i}!"
+
+    show kai sad
+    show cyra sad
+
+    "{color=#618ef0}Kai{/color} & {color=#a14ae9}Cyra{/color}" "…Please don’t."
+
+    kai "Ignore Luna. Her projects usually end in smoke or spontaneous dancing LEDs."
 
     return

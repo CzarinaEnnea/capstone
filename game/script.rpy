@@ -1,10 +1,30 @@
-﻿# TODO: Change color of chara names
+﻿# TODO: Change color of chara names. Kai/Cyra also have color names in ep1 change it too
+
+# PLACEHOLDERS: Delete when art assets are finished
+image arena = Placeholder("bg")
+image futuristic skyline = Placeholder("bg")
+image cafe = Placeholder("bg")
+
+image doctorbyte = Placeholder("boy")
+image kai = Placeholder("boy")
+image cyra = Placeholder("girl")
+image mspython = Placeholder("girl")
+image luna = Placeholder("girl")
+image astra = Placeholder("girl")
+image mira = Placeholder("girl")
+
+
+
+
+# Characters
 define cyra = Character("Cyra", color="#a14ae9")
 define mc = Character("[name]", color="#db345d")
 define dr = Character("Dr. Byte", color="#61f0dd")
 define mspy = Character("Ms. Py Thon", color="#8ef061")
 define luna = Character("Luna", color="#e2f061")
 define astra = Character("Astra", color="#f061c5")
+define kai = Character("Kai", color="#618ef0")
+define mira = Character("Mira", color="#f8a3c7")
 
 define us = Character(
     None,
@@ -17,6 +37,7 @@ define us = Character(
     what_bold=True
 )
 
+# Customized Transformations
 transform top_left_space:
     xalign 0.0
     yalign 0.0
@@ -29,6 +50,15 @@ transform top_left_space:
 #     ypos 100       
 #     xpos -100
 
+transform slightleft:
+    xalign 0.25
+    yalign 1.0
+
+transform slightright:
+    xalign 0.75
+    yalign 1.0
+
+# Default Variables
 default syntaxConfidence = 0
 default kaiAffection = 0
 default cyraAffection = 0
@@ -57,7 +87,7 @@ init python:
     style.gold.color = "#fff346"
     style.gold.italic = True
 
-# Function to change Flags
+# Functions to change Flags
 init python:
     def change_confidence(amount):
         global syntaxConfidence
@@ -73,6 +103,7 @@ init python:
         global cyraAffection
         cyraAffection = max(0, cyraAffection + amount)
 
+# Start Game
 label start:
     call episode0
     call episode1
