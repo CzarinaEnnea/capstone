@@ -45,11 +45,11 @@ transform top_left_space:
     ypos 100  
     xpos 100
 
-# transform top_right_space:
-#     xalign 1.0      
-#     yalign 0.0      
-#     ypos 100       
-#     xpos -100
+transform top_right_space:
+    xalign 1.0      
+    yalign 0.0      
+    ypos 100       
+    xpos 1820
 
 transform slightleft:
     xalign 0.25
@@ -66,6 +66,18 @@ init python:
         renpy.with_statement(trans1)
         renpy.hide("red")
         renpy.with_statement(trans2)
+
+# Custom sprite animation
+image mspython vhappy:    
+    "mspython happy"
+    ypos 1.0
+    linear 0.21 ypos 1.05
+    linear 0.17 ypos 1.0 
+    pause 0.48
+    "mspython happy"
+    ypos 1.0 
+
+
 
 
 # Default Variables

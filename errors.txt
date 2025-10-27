@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 2.rpy", line 53: expected statement.
-    SCENE 2
-           ^
+File "game/episode 1.rpy", line 171: expected 'comma or end of line' not found.
+    with dissolve
+    ^
 
 Ren'Py Version: Ren'Py 8.1.3.23091805
-Mon Oct 27 21:23:11 2025
+Mon Oct 27 23:59:49 2025

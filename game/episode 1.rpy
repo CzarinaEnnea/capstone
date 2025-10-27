@@ -73,7 +73,7 @@ label episode1:
 
     "A ripple of neon light forms into a tall woman with emerald lines of code flowing through her hair. Her eyes glow softly with wisdom."
 
-    show mspython at slightleft
+    show mspython neutral at slightleft
     with Dissolve(1.0)
 
     mspy "Headmaster, I’ll take it from here."
@@ -99,21 +99,17 @@ label episode1:
     mspy "Welcome, young coders."
     mspy "Today, we begin with the most sacred of all spells."
 
-    show mspython happy
+    show mspython vhappy
     mspy "The {b}print(){/b} command!"
 
     "She waves her hand and code appears in the air."
 
     show mspython neutral at slightright with move
 
-    show text1 at top_left_space #CHANGE THIS
+    show ep1-scn2-txt1 at top_left_space
     with dissolve
 
     mspy "This, my students, is your first incantation the spell that lets you speak to the machine."
-
-    # show mspy smile
-    # with dissolve
-
     mspy "Now, [name] tell me, what happens when this line is executed?"
 
     menu:
@@ -121,10 +117,14 @@ label episode1:
 
         "It prints “Hello, World!”":
             mc "It prints “Hello, World!” like telling the computer to say hello."
+            show mspython vhappy
             mspy "Excellent! You’ve spoken your first line of Python with grace."
             mspy "A humble start… yet every coder’s journey begins with this very phrase."
-            cyra "Congrats, newbie! You made the computer talk — and it didn’t roast you." #mock applause
+
+            show cyra neutral at right with dissolve
+            cyra "Congrats, newbie! You made the computer talk {w}— and it didn’t roast you." #mock applause
             mc "Thanks… I think?"
+            show mspython neutral
             mspy "Do not underestimate simplicity, [name]. Even a whisper of logic can reshape reality."
 
             "{=gold}Syntax Confidence +2{/gold}"
@@ -132,9 +132,12 @@ label episode1:
 
         "It explodes the computer":
             mc "It explodes the computer?"
+            show mspython surprised
             "The class bursts into laughter. Ms. Py Thon crosses her arms, amused."
             mspy "Ah, creativity — but no. This is Python, not Michael Bay Studios."
-            cyra "Boom! First mistake of the semester." #snickers
+            show cyra happy at right with dissolve
+            cyra "Boom! First mistake of the semester."
+            show mspython neutral
             mspy "A safe answer would be wiser next time, [Ms][name]."
 
             "{=red}Syntax Confidence –1{/red}"
@@ -142,22 +145,33 @@ label episode1:
             
         "It creates a cat video":
             mc "It creates a cat video?"
+            show cyra neutral at right with dissolve
             cyra "Ha! I wish! If that worked, I’d have infinite playlists."
-            mspy "Perhaps one day when you master APIs… but for now, no cats — only code."
+            show mspython sad
+            mspy "Perhaps one day when you master APIs… but for now, no cats —only code."
 
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
 
-    # "Your Syntax Confidence: [syntaxConfidence]"
-
+    show mspython neutral
+    hide cyra with dissolve
     mspy "Python is one of the world’s most flexible programming languages. Created by Guido van Rossum and released in 1991, it’s used for:"
 
-    # Show image CHANGE THIS - Web development 🖥️
-    hide text1
-    show text2 at top_left_space 
+    hide ep1-scn2-txt1
+    show ep1-scn2-txt2 at top_left_space 
     with dissolve
 
+    show mspython happy
+    mspy "Web development, Software Creation, Mathematics and yes Automation and Scripting!"
+
+    show luna neutral at right with dissolve
     luna "Python: adaptive, readable, and statistically likely to dominate human education."
+
+    show astra neutral:
+        subpixel True xpos 0.84 
+        Null(411.0, 1080.0)
+        'astra neutral' with dissolve
+
     astra "Uh huh."
     mspy "Quite right, Luna. Python’s beauty lies in its simplicity."
     mspy "It reads almost like English — and runs instantly."
@@ -167,30 +181,43 @@ label episode1:
 
     "She gestures, and glowing indentation marks appear midair."
 
+    hide astra
+    hide luna
+    hide ep1-scn2-txt2
+    show ep1-scn2-txt2-1 at top_left_space
+    with dissolve
+
+    show mspython neutral
+    mspy "Don't worry about what this code means yet. Focus on the indention or space below the \"{size=+10}{color=#81f08aff}def greet():{/color}{/size}\"."
     mspy "Unlike many languages, Python doesn’t use semicolons or braces. It uses {b}indentation{/b} — spacing — to define code blocks."
     mc "So… even the spaces matter?"
     mspy "Yes. In Python, indentation isn’t optional. Disrespect it… and you’ll summon chaos."
 
+    hide ep1-scn2-txt2-1
+    show ep1-scn2-txt2-2 at top_left_space
+    $ red_effect()
+
     "The lights flicker. A faint growling noise is heard — a “bug” forming in the code."
 
-    show cyra happy
+    show cyra happy at right with dissolve
     cyra "Oh, fun. Evil spaces. Love that."
 
-    mspy "When you name a variable in Python, you can’t use spaces because Python would get confused — it would think you’re writing two separate things instead of one name."
-    mspy "The underscore (_) acts like a small space — it helps make your variable name easy to read without breaking Python’s rules. Watch"
-
-    hide text2
-    show text1 at top_left_space
+    hide ep1-scn2-txt2-2
+    show ep1-scn2-txt3 at top_left_space
     with dissolve
+
+    show cyra neutral
+    mspy "When you name a variable in Python, you can’t use spaces because Python would get confused — it would think you’re writing two separate things instead of one name."
+    mspy "The underscore (_) acts like a small space — it helps make your variable name easy to read without breaking Python’s rules. Watch."
 
     mspy "Instead, we do:"
 
-    # show text2 at top_right_space
-    # with dissolve
+    show ep1-scn2-txt4 at top_right_space
+    with dissolve
 
     mspy "Take note of this. Then you’ll enjoy your next challenge."
 
-    "She waves her hand. The classroom morphs into a holographic battle arena — walls of blue code hum with energy"
+    "She waves her hand. The classroom morphs into a holographic battle arena — walls of blue code hum with energy."
 
     hide text1
     # hide text2
@@ -202,7 +229,7 @@ label episode1:
     mspy "Prepare yourselves for your first challenge anytime soon… {w}{b}The Syntax Bug Simulation{/b}. {w}Fix the code, or the Bug will replicate."
     mc "Bring it on."
     cyra "Just don’t explode the computer this time, rookie."
-    mspy "Well then enjoy your break time" #smirks
+    mspy "Well then enjoy your break time."
 
     scene black
     with dissolve
@@ -213,7 +240,7 @@ label episode1:
 
     "After Class"
 
-    mc "I fell drained already. Well atleast I can finally eat!"
+    mc "I felt drained already. Well atleast I can finally eat!"
 
 
 # Scene 3: “Meeting the Crew – Syntax Duel and Team Debugger”
@@ -449,6 +476,15 @@ label episode1:
 
     show mspython happy
     mspy "Ha! Save your excuses for the compiler. Now open your command lines!"
+
+    # show ep1-scn4-txt1 at top_left_space
+    # with dissolve
+
+    mspy "As we learned before, Python syntax can be executed right in the command line, like so:"
+
+    # hide ep1-scn4-txt1
+    # show ep1-scn4-txt2 at top_left_space
+    mspy "Or, by running it in a .py file through the server. It’s like two paths to the same spell."
 
 
     return
