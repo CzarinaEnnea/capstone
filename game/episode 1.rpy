@@ -4,27 +4,31 @@
 label episode1:
 # TEST
 
-    scene arena
-    show doctorbyte at right
-    with dissolve
+    # scene arena
+    # show doctorbyte at right
+    # with dissolve
 
-    dr "Hi! This is a test"
+    # dr "Hi! This is a test"
 
-    show doctorbyte sad at left with move
+    # show doctorbyte sad at left with move
 
-    dr "Do you hate me?!"
+    # dr "Do you hate me?!"
 
-    show doctorbyte sad at slightleft with move
+    # show doctorbyte sad at slightleft with move
 
-    dr "HaH!"
+    # dr "HaH!"
 
-    show doctorbyte sad at slightright with move
+    # show doctorbyte sad at slightright with move
 
 
 # SCENE 1
 
     scene futuristic skyline
     with dissolve
+
+    show text "Episode 1: “Welcome to Code Nexus Academy”" at truecenter with dissolve
+    pause 2
+    hide text with fade
 
     "A sleek hovertrain glides through a neon sky. The colossal Code Academy Nexus floats above the city — a fortress of glowing circuits and holographic towers."
 
