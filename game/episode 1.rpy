@@ -113,6 +113,8 @@ label episode1:
     mspy "Now, [name] tell me, what happens when this line is executed?"
 
     menu:
+        extend ""
+
         "It prints “Hello, World!”":
             mc "It prints “Hello, World!” like telling the computer to say hello."
             mspy "Excellent! You’ve spoken your first line of Python with grace."
@@ -309,8 +311,10 @@ label episode1:
     with dissolve
 
     mspyIntercom "Your first spell — fix this broken code: {w}{i}{size=+10}{color=#81f08aff}print(\"Hello World!){/color}{/size}{/i}"
-
+    
     menu:
+        extend ""
+        
         "print(\"Hello World!\")":
             call question1Right
         "print('Hello World!')":
@@ -330,10 +334,12 @@ label episode1:
     mspyIntercom "Assign 10 to variable x. In a Variable we can store data types we want for example let it be a number, a string and so on, first you have to name your variable it can be a string or a single letter."
     
     menu:
+        extend ""
+
         "x = 10":
             kai "Simple. Efficient. You’d make a good teammate."
-            "+1 Kai Affection"
             $ change_kaiAffection(+1)
+            "{=gold}Kai’s Affection +1{/=gold}"
             luna "You’re on fire! But like... in a non-combustion way!"
             astra "Careful, Kai. Compliments look good on you." #teasing
             "{=gold}Syntax Confidence +2{/gold}"
@@ -347,6 +353,8 @@ label episode1:
     mspyIntercom "Which of these can Python do?"
 
     menu:
+        extend ""
+
         "Web applications":
             call question3Right
         "Control robots":
@@ -361,6 +369,8 @@ label episode1:
     mspyIntercom "Which is true about Python syntax?"
 
     menu:
+        extend ""
+
         "Uses indentation for scope":
             kai "Your precision is admirable."
             cyra "And that focus... kinda cool. You listen in class I see."
@@ -378,6 +388,8 @@ label episode1:
     luna "What’s the name of the function used to display text?"
 
     menu:
+        extend ""
+
         "prnt ()":
             call question5Wrong
         "print()":
@@ -412,8 +424,8 @@ label question1Right:
     astra "Nice reflexes, rookie. Fast and clean — just my type."
 
     kai "Consistent. I like that."
-    "+1 Kai Affection"
     $ change_kaiAffection(+1)
+    "{=gold}Kai’s Affection +1{/=gold}"
 
     cyra "You did it! The Bug didn’t even hiss at you!"
     "{=gold}Syntax Confidence +2{/gold}"

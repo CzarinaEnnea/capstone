@@ -117,7 +117,7 @@ init python:
 label start:
     call episode0
     call episode1
-    # call episode2
+    call episode2
     # call episode3
     # call episode4
     # call episode5
