@@ -13,7 +13,7 @@ label episode2:
     mc "New day, same universe. Yesterday was chaos. But today—"
     mc "Ms. Py Thon said we’ll go 'deeper.' I just hope she means spiritually and not into a debug pit again."
 
-    play sound "school_bell.ogg"
+    # play sound "school_bell.ogg"
 
     show cyra happy at left
     with dissolve
@@ -58,7 +58,7 @@ label episode2:
     scene lounge
     with fade
 
-    play music "lounge_theme.ogg" fadein 2.0
+    # play music "lounge_theme.ogg" fadein 2.0
 
     "Soft neon glows fill the Debuggers' Lounge, the hum of holographic screens buzzing in the background."
     "Steam rises from mugs of synthe-tea. Outside, the city flickers like a living circuit board under the digital sunset."
@@ -110,7 +110,7 @@ label episode2:
     # Ms. Py Thon Hologram Appears
     show mspy happy at center
     with dissolve
-    play sound "hologram_on.ogg"
+    # play sound "hologram_on.ogg"
     # put hologram sound here for Ms. Py Thon entrance
 
     mspy "Excellent work today, Debuggers. Your teamwork was… mostly functional."
@@ -163,7 +163,7 @@ label episode2:
 
     # --- Glitch Sequence ---
     "Suddenly, the lounge lights flicker."
-    play sound "glitch_static.ogg" 
+    # play sound "glitch_static.ogg" 
     #play glitch sound effect
     "The holo-screen flashes — a shadowed figure appears, typing rapidly on a terminal. The image distorts before vanishing."
     luna "(sits up) Uh… anyone else see that?"
