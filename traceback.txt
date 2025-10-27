@@ -1,45 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 120, in script call
-    call episode2
-  File "game/episode 2.rpy", line 19, in script
-    with dissolve
-OSError: Couldn't find file 'school_bell.ogg'.
+  File "game/script.rpy", line 119, in script call
+    call episode1
+  File "game/episode 1.rpy", line 432, in script
+    mspy "(Clapping her hands — and three glowing orbs float into the air.) {p}Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w=}— in Python!"
+ValueError: could not convert string to float: ''
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 120, in script call
-    call episode2
-  File "game/episode 2.rpy", line 19, in script
-    with dissolve
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\ast.py", line 1678, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\exports.py", line 1758, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\display\core.py", line 2978, in do_with
-    return self.interact(trans_pause=True,
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\display\core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\display\core.py", line 4379, in interact_core
-    renpy.audio.audio.periodic()
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1224, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1202, in periodic_thread_main
-    periodic_pass()
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 1144, in periodic_pass
-    c.periodic()
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 534, in periodic
-    topf = load(filename)
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'school_bell.ogg'.
+  File "game/script.rpy", line 119, in script call
+    call episode1
+  File "game/episode 1.rpy", line 432, in script
+    mspy "(Clapping her hands — and three glowing orbs float into the air.) {p}Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w=}— in Python!"
+  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\character.py", line 1347, in __call__
+    dtt = DialogueTextTags(what)
+  File "E:\monokums\004_Softwares\Renpy\renpy-8.1.3-sdk\renpy\character.py", line 83, in __init__
+    value = float(value)
+ValueError: could not convert string to float: ''
 
 Windows-10-10.0.22621 AMD64
 Ren'Py 8.1.3.23091805
 Codebound 1.0
-Mon Oct 27 21:43:07 2025
+Mon Oct 27 22:05:52 2025

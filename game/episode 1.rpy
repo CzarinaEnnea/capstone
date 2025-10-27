@@ -420,7 +420,40 @@ label episode1:
     "And just like that, I wasn’t alone anymore."
     "A team of geniuses, chaos gremlins, and possible love interests."
     "At Code Academy Nexus… even friendship is coded in Python."
+
+# SCENE 4
+
+    scene classroom
+    with dissolve
+
+    "Morning light streams through the digital windows of Code Nexus Academy."
+    "After a long night of debugging simulations, the class gathers once again in {b}Ms. Py Thon’s Command Lab{/b}. Ready to dive deeper into the logic that powers their world."
+
+    show mspython
+    with dissolve
+
+    mspy "(Clapping her hands — and three glowing orbs float into the air.) {p}Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w=0.5}— in Python!"
+
+    show cyra at right
+    with dissolve
+    cyra "Wake up Ms is here."
+    mc "(Grinning, still sleepy.) {p}Uh… can the heart be caffeinated first?"
+
+    show astra at slightright
+    with dissolve
+    astra "It's only the second day, and you're already sleeping LOL."
+
+    show kai at left
+    with dissolve
+    kai "(Snickers.) {p}Guess someone didn’t def their sleep last night."
+
+    show mspython happy
+    mspy "Ha! Save your excuses for the compiler. Now open your command lines!"
+
+
     return
+
+
 
 # Quizzes Other Branch
 label question1Right:
