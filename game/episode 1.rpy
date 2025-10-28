@@ -316,8 +316,9 @@ label episode1:
     "{color=#618ef0}Kai{/color} & {color=#a14ae9}Cyra{/color}" "…Please don’t."
 
     kai "Ignore Luna. Her projects usually end in smoke or spontaneous dancing LEDs."
-    luna "Excuse you! That was one time. And it was fabulous."
-    mira "You’re… kind of brave for surviving your first class, though. Ms. Py Thon can be scary."
+
+    luna "Excuse you! That was one time. And it was {i}fabulous.{/i}"
+    mira "You’re… {w}kind of brave for surviving your first class, though. Ms. Py Thon can be scary."
     mc "Yeah, she smiled once — the projector flickered."
 
     show cyra happy
@@ -330,16 +331,29 @@ label episode1:
     "???" "[[Sound of Intercom Suddenly Rings]"
 
     mspyIntercom "Attention, Team Debugger. Before you relax too much {w}— SURPRISE QUIZZZ!"
+
+    show cyra surprised
+    show kai surprised
+    show luna surprised
+    show mira surprised
+    show astra surprised
+
     mspyIntercom "Let’s see if your new member can handle The Syntax Duel."
+    show astra happy
+    show mira neutral
     astra "*grins* Ooooh, our favorite hazing ritual."
+    show kai neutral
     kai "Not hazing. {i}Evaluation{/i}."
+    show luna neutral
     luna "I brought popcorn! {w}Wait… is that allowed?"
     kai "You’ll probably spill it on the terminal again."
+    show cyra neutral
     cyra "Lets get this started!"
 
     scene classroom
     with dissolve
 
+    #   QUESTION 1
     mspyIntercom "Your first spell — fix this broken code: {w}{i}{size=+10}{color=#81f08aff}print(\"Hello World!){/color}{/size}{/i}"
     
     menu:
@@ -350,27 +364,36 @@ label episode1:
         "print('Hello World!')":
             call question1Right
         "print(Hello World!)":
-            show bug at center
+            show bug at top
             $ red_effect()
+
+            show kai neutral at left with dissolve
             kai "Told you. Rookie nerves."
+            show cyra surprised at slightright with dissolve
             cyra "Don’t panic! Try closing the quotes — fast!"
             with vpunch
             hide bug with dissolve
             "([name] fixes it. Bug fizzles. Team cheers.)"
-            mspyIntercom "You can either use Double Quotation Marks “” or ‘’ Apostrophe to declare a string you want to print"
+            show cyra neutral
+            mspyIntercom "You can either use Double Quotation Marks {=code}“”{/code} or {=code}‘’{/code} Apostrophe to declare a string you want to print"
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
-        
-    mspyIntercom "Assign 10 to variable x. In a Variable we can store data types we want for example let it be a number, a string and so on, first you have to name your variable it can be a string or a single letter."
+
+    #   QUESTION 2    
+    mspyIntercom "Assign 10 to variable x. In a Variable we can store data types we want for example let it be a number, a string and so on. First you have to name your variable it can be a string or a single letter."
+    mspyIntercom "I'll explain it more in a later class so don't worry if you got it wrong. {w}Now go Assign 10 to variable x"
     
     menu:
         extend ""
 
         "x = 10":
+            show kai happy
             kai "Simple. Efficient. You’d make a good teammate."
             $ change_kaiAffection(+1)
             "{=gold}Kai’s Affection +1{/=gold}"
+            show luna happy at center with dissolve
             luna "You’re on fire! But like... in a non-combustion way!"
+            show astra neutral at slightleft with dissolve
             astra "Careful, Kai. Compliments look good on you." #teasing
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
@@ -380,6 +403,7 @@ label episode1:
         "x : 10":
             call question2Wrong
     
+    #   QUESTION 3
     mspyIntercom "Which of these can Python do?"
 
     menu:
@@ -392,21 +416,26 @@ label episode1:
         "Make coffee":
             mspyIntercom "If Python brewed coffee, I’d be a billionaire."
             "(Team laughs, [name] gets minor penalty.)"
+            show cyra sad
             cyra "Well go for coffee break later. For now focus."
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
 
+    #   QUESTION 4
     mspyIntercom "Which is true about Python syntax?"
 
     menu:
         extend ""
 
         "Uses indentation for scope":
+            show kai happy
             kai "Your precision is admirable."
+            show cyra surprised 
             cyra "And that focus... kinda cool. You listen in class I see."
             "([name] blushes)"
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
+            show cyra neutral
 
         "Uses curly braces":
             call question4Wrong
@@ -414,7 +443,9 @@ label episode1:
         "Needs semicolons":
             call question4Wrong
 
+    show luna happy at center with dissolve
     luna "Okay, okay, my turn!"
+    show luna neutral
     luna "What’s the name of the function used to display text?"
 
     menu:
@@ -423,6 +454,19 @@ label episode1:
         "prnt ()":
             call question5Wrong
         "print()":
+            
+            show luna happy:
+                subpixel True 
+                parallel:
+                    Null(411.0, 1080.0)
+                    'luna happy'
+                parallel:
+                    ypos 1.0 
+                    linear 0.14 ypos 1.04 
+                    linear 0.17 ypos 1.0 
+            with Pause(0.60)
+            show luna happy:
+                ypos 1.0
             luna "YES! You pass the Luna test! You’re officially 90\% certified cool!"
             "(+1 Luna Friendship)" #luna flag?
             "{=gold}Syntax Confidence +2{/gold}"
@@ -432,11 +476,17 @@ label episode1:
 
     mspyIntercom "You’ve all performed… adequately. Some of you even excelled."
     mspyIntercom "Tomorrow, we explore the {b}Variables of Destiny.{/b}"
+    show astra neutral at slightleft with dissolve
     astra "(stretching) Destiny sounds boring. Can we just fight more Bugs?"
+    show cyra neutral
     cyra "Perfect as always…"
+    show kai neutral
     kai "Discipline before battle, Astra."
+    show mira neutral at right with dissolve
     mira "He says, as if he’s not secretly obsessed with perfect syntax."
+    show cyra happy
     cyra "You did great really great."
+    show luna happy at center with dissolve
     luna "Group selfie before the next apocalypse! Say {w}{size=+10}{color=#81f08aff}print(\"Cheese!\"){/color}{/size}!"
 
     scene groupPhoto
@@ -493,22 +543,28 @@ label episode1:
 # Quizzes Other Branch
 label question1Right:
     mspyIntercom "Well done. Your syntax is strong. Print is used to show the strings you want to say strings are the words."
+
+    show astra at slightleft with dissolve
     astra "Nice reflexes, rookie. Fast and clean — just my type."
 
+    show kai happy at left with dissolve
     kai "Consistent. I like that."
     $ change_kaiAffection(+1)
     "{=gold}Kai’s Affection +1{/=gold}"
 
+    show cyra happy at slightright with dissolve
     cyra "You did it! The Bug didn’t even hiss at you!"
     "{=gold}Syntax Confidence +2{/gold}"
     $ change_confidence(+2)
     return
 
 label question2Wrong:
+    show kai neutral
     kai "Yawn. Even my grandma can assign variables."
+    show mira neutral at right with dissolve
     mira "It’s okay, everyone starts somewhere!"
-    "(A mini Bug appears, shaped like a “?”; player zaps it.)"
-    show cyra happy
+    "(A mini Bug appears, shaped like a “?”; [name] zaps it.)"
+    show cyra neutral
     cyra "Dont mind him, when he was new he was even worse"
 
     "{=red}Syntax Confidence –1{/red}"
@@ -516,9 +572,12 @@ label question2Wrong:
     return
 
 label question3Right:
+    show luna neutral at center with dissolve
     luna "Imagine if it could make coffee, though."
+    show astra neutral at slightleft with dissolve
     astra "I’d marry Python."
     "(Kai raises eyebrow.)"
+    show astra happy
     astra "Relax, Kai— it’s just a language."
 
     "{=gold}Syntax Confidence +2{/gold}"
@@ -527,9 +586,13 @@ label question3Right:
 
 label question4Wrong:
     kai "Pfft. Rookie mistake."
+    show luna neutral at center with dissolve
     luna "Hey, {b}Kai{/b}, remember when you broke your code with 18 curly braces?"
+    show kai happy
     kai "That was style."
+    show cyra neutral
     cyra "Sure it was……."
+    show astra at slightleft with dissolve
     astra "Nice try though [name]"
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)
@@ -537,6 +600,7 @@ label question4Wrong:
     return
 
 label question5Wrong:
+    show luna sad
     luna "Awww, close! But hey, you tried! Here, have a sticker that says “Mostly Human.”"
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)

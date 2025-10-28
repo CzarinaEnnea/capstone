@@ -77,7 +77,14 @@ image mspython vhappy:
     "mspython happy"
     ypos 1.0 
 
-
+# image luna vhappy:    
+#     "luna happy"
+#     ypos 1.0
+#     linear 0.21 ypos 1.05
+#     linear 0.17 ypos 1.0 
+#     pause 0.48
+#     "luna happy"
+#     ypos 1.0
 
 
 # Default Variables
@@ -108,6 +115,12 @@ init python:
     style.gold = Style(style.say_dialogue)
     style.gold.color = "#fff346"
     style.gold.italic = True
+
+init python:
+    style.code = Style(style.say_dialogue)
+    style.code.color = "#81f08aff"
+    style.code.italic = True
+    style.code.size = 55 
 
 # Functions to change Flags
 init python:
