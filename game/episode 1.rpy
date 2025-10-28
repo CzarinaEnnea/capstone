@@ -161,7 +161,6 @@ label episode1:
     show ep1-scn2-txt2 at top_left_space 
     with dissolve
 
-    show mspython happy
     mspy "Web development, Software Creation, Mathematics and yes Automation and Scripting!"
 
     show luna neutral at right with dissolve
@@ -456,7 +455,7 @@ label episode1:
     "Morning light streams through the digital windows of Code Nexus Academy."
     "After a long night of debugging simulations, the class gathers once again in {b}Ms. Py Thon’s Command Lab{/b}. Ready to dive deeper into the logic that powers their world."
 
-    show mspython
+    show mspython neutral
     with dissolve
 
     mspy "(Clapping her hands — and three glowing orbs float into the air.) {p}Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w=0.5}— in Python!"
@@ -474,7 +473,7 @@ label episode1:
     with dissolve
     kai "(Snickers.) {p}Guess someone didn’t def their sleep last night."
 
-    show mspython happy
+    show mspython neutral
     mspy "Ha! Save your excuses for the compiler. Now open your command lines!"
 
     # show ep1-scn4-txt1 at top_left_space

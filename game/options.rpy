@@ -39,6 +39,7 @@ define gui.about = _p("""{b}Made by:{/b}
 
 {b}Credits:{/b}
 
+Skolaztika
 """)
 
 
