@@ -78,6 +78,11 @@ image mspython vhappy:
     "mspython happy"
     ypos 1.0 
 
+transform rise_up:
+    ypos 1.0        
+    xalign 0.5      
+    linear 0.5 ypos 0.0
+
 # Default Variables
 default syntaxConfidence = 0
 default kaiAffection = 0

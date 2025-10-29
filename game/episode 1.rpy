@@ -594,7 +594,246 @@ label episode1:
     with dissolve
 
     "After yesterday’s lesson on syntax and indentation, today’s session promises something new — something powerful"
-    
+    show mspython neutral at center 
+    with dissolve
+    mspy "Class, welcome to the second pillar of programming — {w}{b}Variables!{/b}"
+
+    show astra neutral at slightleft
+    with dissolve
+    astra "Another day to learn coding."
+
+    show luna neutral zorder 2 at slightright
+    with dissolve
+    luna "Yay. I get to show how awesome I am again, Hehe."
+
+    show cyra neutral zorder 1 at right
+    with dissolve
+    cyra "(Stretching.){p}Finally! Something we can actually {i}use.{/i}"
+
+    show kai neutral at left
+    with dissolve
+    kai "Yeah, because totally, printing {w}{cps=20}{i}‘Hello, World!’{/i} changed my life."
+
+    show mspython angry
+    mspy "It {b}should{/b} have, Mr. Sarcasm. Now, pay attention."
+
+    hide astra
+    hide luna
+    hide cyra
+    hide kai
+    with dissolve
+
+    "The board glows with code examples."
+
+    show ep1-scn4-txt3 at top_left_space
+    with dissolve
+
+    show mspython neutral at slightright with move
+
+    mspy "In Python, variables are containers for storing data values. Think of them as—"
+
+    show doctorbyte neutral at right with dissolve #Hologram
+
+    dr "—as magical sigils that store the essence of logic itself."
+
+    show mspython angry
+    mspy "Yes, thank you, Headmaster. I {i}was{/i} getting there."
+
+    show doctorbyte happy
+    dr "Continue. I’ll just observe. Don’t mind me."
+
+    hide doctorbyte with dissolve
+
+    show mspython neutral
+    mspy "Variables are created when you assign them a value. There’s no need for declarations — {w}Python trusts your logic."
+
+    hide ep1-scn4-txt3
+    show ep1-scn5-txt2 zorder 6 at top_left_space
+    with dissolve
+
+    mspy "And the result is simple — {b}10 Cyra{/b}. Beautiful, no?"
+
+    show cyra surprised at right
+    with dissolve
+    cyra "Wait, why am {i}I{/i} a variable now?"
+
+    show kai neutral zorder 1 at center
+    with dissolve
+    kai "Because you’re unpredictable."
+
+    "Everyone laughs."
+
+    show cyra angry
+    cyra "Keep talking, Kai, and I’ll assign {b}you{/b} to a trash variable."
+
+    mc "(Laughing quietly.){p}Guess that’s one way to ‘delete’ him."
+
+    show mspython angry zorder 5
+    mspy "Okay class be quiet."
+
+    hide kai
+    hide cyra
+    with dissolve
+
+    show mspython neutral
+    mspy "Now, let’s test your understanding! I’ll ask one question — answer wisely."
+
+    hide ep1-scn5-txt2
+    show ep1-scn5-txt3 zorder 6 at top_left_space
+    with dissolve
+    mspy "What will this code output?"
+
+    define scene5Wrong = False
+
+    menu:
+        extend ""
+
+        "PythonRocks!":
+            show mspython happy
+            mspy "Correct! {w}The {=code}+{/code} operator combines strings — just like teamwork combines talent!"
+            "The class claps. [name]’s confidence increases."
+            "{=gold}Syntax Confidence +2{/gold}"
+            $ change_confidence(+2)
+            hide ep1-scn5-txt3 with dissolve
+
+        "Python Rocks!":
+            $ scene5Wrong = True
+            show mspython sad
+            mspy "Incorrect. Remember the {=code}+{/code} operator joins strings directly. No space unless you add one." 
+            show mspython neutral
+            mspy "If you do want to add one just set the space as a string like so."
+
+            hide ep1-scn5-txt3
+            show ep1-scn5-txt4 zorder 6 at top_left_space
+            with dissolve
+
+            "Class giggles softly. [name] loses a bit of confidence."
+            "{=red}Syntax Confidence –1{/red}"
+            $ change_confidence(-1)
+
+            hide ep1-scn5-txt4 with dissolve
+
+        "Error":
+            $ scene5Wrong = True
+            mspy "Not quite! That would happen only if we tried to combine incompatible data types."
+            "You learn something from your mistake."
+            hide ep1-scn5-txt3 with dissolve
+
+    pause 2
+    show mspython neutral
+    mspy "Variables can hold numbers, words, even data from sensors and magic circuits. They are the foundation of digital alchemy."
+
+    show kai neutral at left with dissolve
+    kai "Digital… alchemy? Cool. So I’m basically a wizard?"
+    mspy "Only if your spells compile, dear."
+
+    scene classroom
+    with fade
+
+    "{b}After Class – Team Interaction{/b}"
+
+    if scene5Wrong == True:
+        show cyra neutral at center with dissolve
+        cyra "You did great back there, [name]. Even when you got it wrong, you didn’t panic."
+        cyra "That’s… kinda cool."
+        "{=gold}Cyra’s affection slightly increases.{/gold}"
+        $ change_cyraAffection(+1)
+
+        show kai neutral at left with dissolve
+        kai "Don’t let her get to your head, rookie. We’ve got bigger bugs to squash soon."
+        show kai happy
+        "{=gold}Kai smirks — affection slightly increases.{/gold}"
+        $ change_kaiAffection(+1)
+    else:
+        show cyra neutral at center with dissolve
+        cyra "You did great back there, [name]. You didn’t panic and got it right even if you're new."
+        show cyra happy
+        cyra "That’s really cool!"
+        "{=gold}Cyra’s affection increases.{/gold}"
+        $ change_cyraAffection(+2)
+
+        show kai neutral at left with dissolve
+        kai "Don’t let her get to your head, rookie. We’ve got bigger bugs to squash soon."
+        show kai happy
+        "{=gold}Kai smirks — affection increases.{/gold}"
+        $ change_kaiAffection(+2)
+
+    show luna happy at rise_up
+
+    show cyra neutral at slightright with move
+    luna "Speaking of bugs—don’t squash them! {w}They’re {b}adorable!{/b}"
+    show luna neutral
+    luna "I named one ‘Syntaxy.’ He’s missing a colon, but he’s trying his best!"
+    show cyra happy
+    show kai sad
+    "Everyone groans. Cyra laughs while Kai facepalms."
+
+    show cyra neutral
+    cyra "Luna, you seriously need a hobby that doesn’t involve feeding your code errors."
+    show luna sad
+    luna "They’re misunderstood! Like me, when I use too many print statements."
+    show kai neutral
+    show luna neutral
+
+    show astra neutral at right
+    with dissolve
+    astra "Well, well… look at you, [name]." 
+    astra "First day and already getting attention. Not bad for a newbie."
+    "She smirks, eyes glinting mysteriously."
+    kai "Don’t start, Astra. You just want to recruit [name] for your ‘secret AI project’ again."
+    astra "Maybe I do. A good coder recognizes potential… and [name]’s code doesn’t just run—it flows."
+
+    show cyra neutral #flusterred
+    "Cyra looks slightly flustered and looks away."
+
+    show mspython neutral at slightleft with dissolve
+    mspy "That’s enough, everyone. You’ve all done well today."
+    "Ms Py Thon claps her hand softly. Her calm but commanding tone fills the room."
+    show mspython happy
+    mspy "Remember — variables are the foundation of all programs."
+    mspy "They hold your data, your progress… even your mistakes."
+    mspy "Learn to manage them, and you control your code — and your destiny."
+
+    drIntercom "Indeed. Your first mission awaits tomorrow. Prepare yourselves… the next challenge won’t be so forgiving."
+    "Lights dim. The holographic classroom fades into lines of binary code swirling around the [name]."
+
+    show luna happy
+    luna "Oooh, a mission! Can we bring snacks? My debug chips are gluten-free!"
+    show cyra happy
+    cyra "Luna, you’re hopeless."
+    show kai happy
+    kai "Let’s see if [name] can survive it without breaking the compiler this time."
+
+    hide kai
+    hide cyra
+    hide luna
+    hide astra
+    with dissolve
+
+    show mspython happy at center
+    with dissolve
+    mspy "Tomorrow… they will learn the weight of logic."
+    "Her eyes gleam faintly, as if hiding a deeper plan."
+
+    scene black
+    with dissolve
+
+# SCENE 6
+    scene arena
+    with dissolve
+
+    "The class stands in a glowing dome. Holographic bugs crawl across the air — twisted lines of corrupted code."
+    show doctorbyte neutral at right with dissolve
+    dr "These are minor data Bugs. Harmless individually, but in numbers… they destroy systems."
+    show mspython neutral at left with dissolve
+    mspy "Your task — use what you’ve learned. Variables, syntax, and teamwork."
+    mspy "[name] your group will be with Kai, and Cyra. {w}Now GO!"
+
+    hide doctorbyte
+    hide mspython
+    with dissolve
+
+
     return
 
 

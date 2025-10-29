@@ -2,21 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 1.rpy", line 578: expected statement.
-    talkToKai
-             ^
-
-File "game/episode 1.rpy", line 580: expected statement.
-    talkToMsPython
-                  ^
-
-File "game/episode 1.rpy", line 582: expected statement.
-    talkToDrByte
-                ^
-
-File "game/episode 1.rpy", line 584: expected statement.
-    talkToAstra
-               ^
+File "game/episode 1.rpy", line 763: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    ypos 2.0 linear 0.30
+                         ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Wed Oct 29 16:14:32 2025
+Thu Oct 30 06:32:30 2025
