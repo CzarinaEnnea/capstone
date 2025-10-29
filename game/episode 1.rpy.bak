@@ -7,7 +7,7 @@ label episode1:
     scene futuristic skyline
     with dissolve
 
-    show text "Episode 1 - “Welcome to Code Nexus Academy”" at truecenter with dissolve
+    show text "Episode 1: “Welcome to Code Nexus Academy”" at truecenter with dissolve
     pause 2
     hide text with fade
 
@@ -345,9 +345,9 @@ label episode1:
         extend ""
         
         "print(\"Hello World!\")":
-            call question1Right from _call_question1Right
+            call question1Right
         "print('Hello World!')":
-            call question1Right from _call_question1Right_1
+            call question1Right
         "print(Hello World!)":
             show bug at top
             $ red_effect()
@@ -384,9 +384,9 @@ label episode1:
             $ change_confidence(+2)
 
         "int x = 10":
-            call question2Wrong from _call_question2Wrong
+            call question2Wrong
         "x : 10":
-            call question2Wrong from _call_question2Wrong_1
+            call question2Wrong
     
     #   QUESTION 3
     mspyIntercom "Which of these can Python do?"
@@ -395,9 +395,9 @@ label episode1:
         extend ""
 
         "Web applications":
-            call question3Right from _call_question3Right
+            call question3Right
         "Control robots":
-            call question3Right from _call_question3Right_1
+            call question3Right
         "Make coffee":
             mspyIntercom "If Python brewed coffee, I’d be a billionaire."
             "(Team laughs, [name] gets minor penalty.)"
@@ -423,10 +423,10 @@ label episode1:
             show cyra neutral
 
         "Uses curly braces":
-            call question4Wrong from _call_question4Wrong
+            call question4Wrong
 
         "Needs semicolons":
-            call question4Wrong from _call_question4Wrong_1
+            call question4Wrong
 
     show luna happy at center with dissolve
     luna "Okay, okay, my turn!"
@@ -437,7 +437,7 @@ label episode1:
         extend ""
 
         "prnt ()":
-            call question5Wrong from _call_question5Wrong
+            call question5Wrong
         "print()":
             
             show luna happy:
@@ -457,7 +457,7 @@ label episode1:
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
         "speak()":
-            call question5Wrong from _call_question5Wrong_1
+            call question5Wrong
 
     mspyIntercom "You’ve all performed… adequately. Some of you even excelled."
     mspyIntercom "Tomorrow, we explore the {b}Variables of Destiny.{/b}"
