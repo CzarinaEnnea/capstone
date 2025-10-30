@@ -119,6 +119,7 @@ init python:
     style.code.italic = True
     style.code.size = 55 
 
+# Screens
 screen info_box(text):
     frame:
         background "#222222aa"
@@ -127,6 +128,35 @@ screen info_box(text):
         xalign 0.05
         yalign 0.05
         text text size 40 color "#00ffcc"
+
+screen scoreboard():
+    frame:
+        background "#222222aa"
+        align (0.5, 0.2)
+        padding (20, 20)
+
+        vbox:
+            spacing 50
+            text "{b}Scoreboard{/b}" size 50 xalign 0.5 color "#00ffcc"
+
+            grid 3 4 spacing 40:
+                style_prefix "table"
+
+                text "{color=#00ffcc}{size=40}{b}Team{/b}{/size}{/color}"
+                text "{color=#00ffcc}{size=40}{b}Result{/b}{/size}{/color}"
+                text "{color=#00ffcc}{size=40}{b}Grade{/b}{/size}{/color}"
+
+                text "Astra, Luna, Mira"
+                text "All Bugs Eliminated"
+                text "{b}A+{/b}"
+
+                text "[name], Cyra, Kai"
+                text "Shield Up, 1 Mistake"
+                text "{b}A{/b}"
+
+                text "Others"
+                text "Mixed results"
+                text "{b}B to C{/b}"
 
 # Functions to change Flags
 init python:

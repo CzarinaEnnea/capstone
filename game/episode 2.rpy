@@ -10,6 +10,8 @@ label episode2:
     scene classroom_doorway
     with dissolve
 
+    play music "audio/opening.ogg"
+
     "The neon skyline of the Code Academy Nexus gleamed like a motherboard at sunrise."
     "Yesterday, I fought a monster made of syntax errors. Today, I’m back for more…"
 
@@ -18,9 +20,9 @@ label episode2:
 
     # play sound "school_bell.ogg"
 
-    show cyra happy at left
+    show cyra happy at right
     with dissolve
-    show kai neutral at right
+    show kai neutral at left
     with dissolve
     show luna neutral at center
     with dissolve
@@ -53,8 +55,9 @@ label episode2:
     hide mspy
     with fade
 
+    stop music fadeout 2.0
+
 #SCENE 2
-    #SCENE 2
 
     show text "2" at truecenter with dissolve
     pause 2

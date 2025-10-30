@@ -817,6 +817,7 @@ label episode1:
 
     scene black
     with dissolve
+    pause 2
 
 # SCENE 6
     scene arena
@@ -833,7 +834,125 @@ label episode1:
     hide mspython
     with dissolve
 
+    "The Bugs surge forward — glowing red code glitches fill the room."
+    show bug at top
+    $ red_effect()
 
+    show cyra neutral at right with dissolve
+    cyra "Time to test our skills!"
+    show kai neutral at left with dissolve
+    kai "[name], back me up!"
+
+    "{b}Choose your Attack!{/b}"
+    menu:
+        "Kai = 100":
+            "{b}Assign a value to Kai’s defense module.{/b}"
+            mc "{=code}Kai = 100!{/code}"
+            mspy "Excellent variable usage!"
+            show kai surprised # Add Shine
+            kai "Whoa— I feel 100x stronger!"
+            "{=gold}Team gains shield.{/gold}"
+
+        "Bug = 1":
+            "{b}if Bug > 0: print(‘Attack!’){/b}"
+            mc "{=code}if Bug > 0: print(‘Attack!’){/code}"
+            "Forget to indent your code."
+            "Error beeps loudly."
+            $ red_effect()
+
+            mspy "Indentation, [name]! {b}Indentation!{/b}"
+            show kai angry
+            show cyra surprised
+            with hpunch
+            "{i}A Bug hits Kai’s barrier.{/i}"
+            "{=red}Minor damage.{/red}"
+
+            show screen info_box("Correct Syntax:") with dissolve
+            "{=code}if Bug > 0:{p}{space=40}print(‘Attack!’){/code}"
+
+        "print(\"Target Locked!\")":
+            "{b}Print a debug message.{/b}"
+            mc "{=code}print(\"Target Locked!\"){/code}"
+            "The code glows; the Bug freezes."
+            with hpunch
+            show cyra happy
+            show kai hapy
+            hide bug with dissolve
+            "{=gold}Bug defeated.{/gold}"
+
+    show cyra happy at slightright with move
+    cyra "Nice one, [name]! You’re getting the hang of this!"
+    show kai happy
+    kai "Not bad… {w}for a newbie."
+
+    show doctorbyte neutral at slightleft with dissolve
+    dr "Lesson complete. You’ve survived your first encounter."
+    show mspython neutral at right with dissolve
+    mspy "But this is just the beginning."
+    mspy "The real Bugs — the ones corrupting our network — are out there, waiting."
+
+    scene arena
+    with fade
+    show bug at top with dissolve
+    
+    "Cut to Luna and Astra’s group"
+    show astra neutral at slightleft with dissolve
+    "Bright flashes illuminate their side of the dome. Astra flicks her fingers like she’s playing a piano of light."
+    astra "Variable set, loop engaged… {w}and {b}delete!{/b}"
+    hide bug with dissolve
+    with vpunch
+    show astra happy
+    "A bug explodes into binary dust."
+
+    show luna at slightright with dissolve
+    luna "{cps=20}Wheeeeeeee!"
+    show luna happy
+    luna "The bugs make sparkly confetti when they {size=+10}{b}die!{/b}{/size} {w}Can I keep one as a pet?"
+    show mira neutral at right with dissolve
+    mira "Please don’t. {w}That’s… {w}not sanitary." 
+    mira "Digitally speaking."
+    show astra neutral
+    astra "Oh, lighten up. It’s just corrupted code — not actual bacteria. {w}Probably."
+    "Their group clears their entire wave in seconds."
+
+    scene arena 
+    with fade
+
+    show screen scoreboard
+    show mspython happy at right
+    show doctorbyte happy at left 
+    with dissolve
+
+    mspy "Well done, everyone. Even those who stumbled… learned."
+    mspy "Remember — a single missing space can change everything."
+    show doctorbyte neutral
+    dr "Coding isn’t just about writing commands. It’s about thinking clearly under pressure."
+
+    hide doctorbyte
+    hide mspython
+    with dissolve
+
+    show cyra neutral at right with dissolve
+    cyra "Hey, [name]… {w}if we’re going to fight together, you’d better not slow me down."
+    show kai neutral at left with dissolve
+    kai "Yeah. And next time, try not to blow up my defense system."
+    mc "Guess I’ll have to keep practicing… {w}or maybe I just enjoy keeping you both on edge."
+    show cyra happy
+    "Cyra chuckles; Kai rolls his eyes but smiles faintly."
+
+    luna "Good job, [name]! You didn’t crash this time!"
+    "Luna giggles and waves from across the dome."
+    astra "Not bad… for a beginner. But let’s see how long you can keep up."
+    "For a fleeting moment, her eyes flicker — a sharp digital glow."
+
+    hide screen scoreboard
+    show mspython at center 
+    with dissolve
+
+    mspy "Good. Because next time… you’ll be writing more than code — {w}you’ll be writing your fate."
+    "And as the simulation fades, one thought burns bright in your mind."
+    "This academy isn’t just about learning code…"
+    "It’s about surviving in a world where logic is power."
     return
 
 

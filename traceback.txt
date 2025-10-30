@@ -1,37 +1,92 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 145, in script call
+  File "game/script.rpy", line 179, in script call
     call episode1 from _call_episode1
-  File "game/episode 1.rpy", line 735, in script
-    if scene5Wrong == True:
-  File "game/episode 1.rpy", line 735, in <module>
-    if scene5Wrong == True:
-       ^^^^^^^^^^^         
-NameError: name 'scene5Wrong' is not defined
+  File "game/episode 1.rpy", line 926, in script
+    mspy "Well done, everyone. Even those who stumbled… learned."
+  File "renpy/text/textsupport.pyx", line 195, in renpy.text.textsupport.tokenize
+Exception: Open text tag at end of string '{color='.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 145, in script call
+  File "game/script.rpy", line 179, in script call
     call episode1 from _call_episode1
-  File "game/episode 1.rpy", line 735, in script
-    if scene5Wrong == True:
-  File "renpy/ast.py", line 2079, in execute
-    if renpy.python.py_eval(condition):
-       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^ 
-  File "renpy/python.py", line 1292, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1285, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/episode 1.rpy", line 735, in <module>
-    if scene5Wrong == True:
-       ^^^^^^^^^^^         
-NameError: name 'scene5Wrong' is not defined
+  File "game/episode 1.rpy", line 926, in script
+    mspy "Well done, everyone. Even those who stumbled… learned."
+  File "renpy/ast.py", line 2915, in execute
+    Say.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "renpy/ast.py", line 991, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/exports/sayexports.py", line 129, in say
+    who(what, *args, **kwargs)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/character.py", line 1543, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/character.py", line 1198, in do_display
+    display_say(who, what, self.do_show, **display_args)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/character.py", line 888, in display_say
+    rv = renpy.ui.interact(mouse="say", type=type, roll_forward=roll_forward)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ui.py", line 304, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 2219, in interact
+    repeat, rv = self.interact_core(
+                 ~~~~~~~~~~~~~~~~~~^
+        preloads=preloads,
+        ^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )  # type: ignore
+    ^                
+  File "renpy/display/core.py", line 2757, in interact_core
+    root_widget.visit_all(lambda d: d.per_interact())
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/displayable.py", line 432, in visit_all
+    d.visit_all(callback, seen)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "renpy/display/displayable.py", line 432, in visit_all
+    d.visit_all(callback, seen)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "renpy/display/displayable.py", line 432, in visit_all
+    d.visit_all(callback, seen)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "renpy/display/screen.py", line 508, in visit_all
+    self.child.visit_all(callback, seen=None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/displayable.py", line 432, in visit_all
+    d.visit_all(callback, seen)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "renpy/display/displayable.py", line 432, in visit_all
+    d.visit_all(callback, seen)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "renpy/display/displayable.py", line 432, in visit_all
+    d.visit_all(callback, seen)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+[Previous line repeated 1 more time]
+  File "renpy/display/displayable.py", line 423, in visit_all
+    for d in self.visit():
+             ~~~~~~~~~~^^ 
+  File "renpy/text/text.py", line 2457, in visit
+    self.update()
+    ~~~~~~~~~~~^^
+  File "renpy/text/text.py", line 2428, in update
+    tokens = self.tokenize(text)
+             ~~~~~~~~~~~~~^^^^^^
+  File "renpy/text/text.py", line 2945, in tokenize
+    tokens.extend(textsupport.tokenize(i))
+                  ~~~~~~~~~~~~~~~~~~~~^^^ 
+  File "renpy/text/textsupport.pyx", line 195, in renpy.text.textsupport.tokenize
+Exception: Open text tag at end of string '{color='.
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Thu Oct 30 06:22:31 2025
+Thu Oct 30 07:58:23 2025

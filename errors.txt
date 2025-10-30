@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 1.rpy", line 763: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    ypos 2.0 linear 0.30
-                         ^
+File "game/episode 1.rpy", line 949: expected 'name' not found.
+    hide screen
+               ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Thu Oct 30 06:32:30 2025
+Thu Oct 30 08:11:46 2025
