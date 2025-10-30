@@ -27,6 +27,7 @@ define luna = Character("Luna", color="#e2f061")
 define astra = Character("Astra", color="#f061c5")
 define kai = Character("Kai", color="#618ef0")
 define mira = Character("Mira", color="#f8a3c7")
+define n = Character(None, kind=nvl)
 
 define us = Character(
     None,
@@ -179,7 +180,7 @@ label start:
     call episode0 from _call_episode0
     call episode1 from _call_episode1
     call episode2 from _call_episode2
-    # call episode3
+    call episode3
     # call episode4
     # call episode5
     # call episode6

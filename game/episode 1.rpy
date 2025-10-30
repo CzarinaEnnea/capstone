@@ -575,15 +575,15 @@ label episode1:
         extend ""
 
         "Talk to Cyra":
-            call talkToCyra
+            call talkToCyra from _call_talkToCyra
         "Talk to Kai":
-            call talkToKai
+            call talkToKai from _call_talkToKai
         "Talk to Ms. Py Thon":
-            call talkToMsPython
+            call talkToMsPython from _call_talkToMsPython
         "Talk to Dr. Byte (via HoloCall)":
-            call talkToDrByte
+            call talkToDrByte from _call_talkToDrByte
         "Talk to Astra":
-            call talkToAstra
+            call talkToAstra from _call_talkToAstra
 
     "As class ends, you feel a small spark — not just of code, but connection."
     "Maybe this academy isn’t just about fighting bugs…"
@@ -953,6 +953,7 @@ label episode1:
     "And as the simulation fades, one thought burns bright in your mind."
     "This academy isn’t just about learning code…"
     "It’s about surviving in a world where logic is power."
+    
     return
 
 
