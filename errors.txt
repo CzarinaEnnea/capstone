@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 3.rpy", line 141: expected 'label_name' not found.
-    call
+File "game/episode 3.rpy", line 213: menu statement expects a non-empty block.
+    menu:
         ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Fri Oct 31 15:25:46 2025
+Fri Oct 31 16:21:05 2025
