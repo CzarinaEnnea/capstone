@@ -2,25 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 3.rpy", line 157: expected statement.
-    nvl "LESSON SUMMARY"
-       ^
-
-File "game/episode 3.rpy", line 158: expected statement.
-    nvl "+ - * / % // ** → Arithmetic Operators"
-       ^
-
-File "game/episode 3.rpy", line 159: expected statement.
-    nvl "> < >= <= == != → Comparison Operators"
-       ^
-
-File "game/episode 3.rpy", line 160: expected statement.
-    nvl "and, or, not → Logical Operators"
-       ^
-
-File "game/episode 3.rpy", line 161: expected statement.
-    nvl "if, elif, else → Conditional Decisions"
-       ^
+File "game/episode 3.rpy", line 92: choice menuitem expects a non-empty block.
+    "2":
+        ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Thu Oct 30 16:19:28 2025
+Fri Oct 31 15:01:39 2025

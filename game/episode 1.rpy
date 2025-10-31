@@ -32,8 +32,11 @@ label episode1:
 
     cyra "Cyra Byte. Frontend Division. Top of the leaderboard, breaker of hearts, destroyer of broken CSS."
     mc "Uh… nice to meet you?"
+    show cyra happy
     cyra "Nice to meet you, too, mystery newbie. You’ve got that first-day panic look. Adorable."
     mc "It’s called confidence. You’ll see."
+
+    show cyra neutral2
     cyra "Mhm. We’ll see how long that lasts when you meet the Headmaster."
 
     "Suddenly, the air shimmers with light. A tall man in a glowing white coat appears, teleporting in with calm authority."
@@ -43,8 +46,9 @@ label episode1:
 
     dr "Good morning, students. No teleportation mishaps this time, I hope."
 
-    show cyra happy at slightright with move
+    show cyra neutral at slightright with move
     cyra "No promises, Headmaster."
+    show cyra neutral2
 
     show doctorbyte neutral
     dr "I see you’ve met our new recruit. [name], isn’t it?"
@@ -953,7 +957,7 @@ label episode1:
     "And as the simulation fades, one thought burns bright in your mind."
     "This academy isn’t just about learning code…"
     "It’s about surviving in a world where logic is power."
-    
+
     return
 
 

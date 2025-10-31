@@ -3,17 +3,17 @@
 While running game code:
   File "game/script.rpy", line 183, in script call
     call episode3
-  File "game/episode 3.rpy", line 163, in script
-    n "+ - * % ** {space=40}Arithmetic Operators"
-TypeError: * wants int
+  File "game/episode 3.rpy", line 91, in script
+    luna "Nooo! That bug escaped! {=code}%{/code} gives the remainder, silly!"
+ValueError: unsupported format character '{' (0x7b) at index 32
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
   File "game/script.rpy", line 183, in script call
     call episode3
-  File "game/episode 3.rpy", line 163, in script
-    n "+ - * % ** {space=40}Arithmetic Operators"
+  File "game/episode 3.rpy", line 91, in script
+    luna "Nooo! That bug escaped! {=code}%{/code} gives the remainder, silly!"
   File "renpy/ast.py", line 2915, in execute
     Say.execute(self)
     ~~~~~~~~~~~^^^^^^
@@ -23,9 +23,9 @@ Traceback (most recent call last):
   File "renpy/exports/sayexports.py", line 118, in say
     what = what % tag_quoting_dict
            ~~~~~^~~~~~~~~~~~~~~~~~
-TypeError: * wants int
+ValueError: unsupported format character '{' (0x7b) at index 32
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Thu Oct 30 16:28:13 2025
+Fri Oct 31 15:02:29 2025

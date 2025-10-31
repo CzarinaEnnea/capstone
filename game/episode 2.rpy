@@ -328,6 +328,314 @@ label episode2:
     scene black with fade
 
 #SCENE 3
+    show text "Scene 3" at truecenter with dissolve #placeholder remove later
+    pause 2
+    scene classroom #Dome Background
+    with fade
+
+    "The next day."
+    #play music "alarm.ogg"
+    show red at truecenter 
+
+    dr "Attention, Team Debugger. A Glitch Portal has opened inside the training grid.
+        This anomaly threatens to overwrite your classroom simulation.Prepare for deployment"
+    
+    stop music fadeout 3.0
+
+    #play music "glitch_theme.ogg" fadein 2.0 #replace with classic bmg
+    show mspy neutral at center
+    mspy "Excellent timing. You’ll be applying your knowledge today — in combat.
+        Remember, each Bug manifests from broken logic. Data types are your weapons."
+    mc "Wait, we're fighting... with code?"
+    hide mspy with dissolve
+
+    show cyra neutral at right with dissolve
+    cyra "Finally, a class that gets my blood pumping. Hope you can keep up, rookie."
+    show kai neutral at slightleft with dissolve
+    kai "Hmph. Let’s see if you can debug faster than you talk."
+    show luna happy at left
+    show mira neutral at slightright
+    show astra neutral at truecenter
+    with dissolve
+
+    luna "A real glitch portal? Sparkly destruction! Let’s gooo!"
+    mira "Just—just stay close, everyone. I’ll monitor system output from the console."
+    astra "Oh, relax. It’s just data gone wild. We tame it, we go home. Easy as {color=#00ffff}print(\"Victory\"){/color}."
+
+    stop music fadeout 3.0
+    scene black with fade
+
+    # change location to glitch zone
+    scene glitch_zone
+    with dissolve
+
+    mc "Whoa… it’s like stepping into a corrupted dream."
+    show cyra neutral at slightright with dissolve
+    cyra "Or my first web project after no sleep. Same energy"
+    
+    show luna happy at right with dissolve
+    luna "I love it! It’s creepy and shiny!"
+    mspy "Focus, Debuggers. Each Bug’s nature corresponds to a Python data type.
+        Identify it. Use the right logic to neutralize it. Let’s begin."
+
+    show screen info_box("Bug #1 – The String Leech") with dissolve
+    show bug at top_left_space #change location later
+    $ red_effect()
+
+    "A pulsating worm of text hovers midair, echoing 'ErrorErrorError...'"
+
+    show mspython neutral at center with dissolve
+    mspy "This one loops through text patterns. Use string operations to break the cycle."
+    mspy "Remember: in Python, multiplying a string repeats it."
+    hide mspython with dissolve
+
+    show cyra smile at right with dissolve
+    cyra "Like {color=#00ffff}print('LOL' * 3){/color} — my favorite debugging noise."
+
+    show kai smirk at slightright with dissolve
+    kai "You would weaponize sarcasm."
+
+    "Choose the correct syntax!!"
+    "How will you handle the String Leech?"
+        
+
+    menu:
+        extend ""
+
+        "print('Error' * 3)":
+            # put sound here for correct answer
+            with hpunch
+            "The Bug vibrates, then dissolves into glowing pixels."
+            mspy "Perfect. You matched its pattern."
+            cyra "Nice echo control, coder."
+            # hide red with fade
+            hide bug with dissolve
+            $ change_cyraAffection(+1)
+
+        "x = 3 + 'Error'":
+            # put sound here for wrong answer
+            with vpunch
+            $ red_effect()
+            "The Bug screams! The dome shakes — fragments of red text fly."
+            mspy "TypeError! You cannot add integers and strings. Data types must match."
+            kai "Rookie mistake. Don’t worry — happens to the best of us."
+            hide bug with dissolve
+
+        "del 'Error'":
+            # put sound here for wrong answer
+            $ red_effect()
+            "A syntax flashback explodes."
+            luna "You can’t just delete a word from reality!"
+            mspy "Indeed. Strings are immutable — once defined, you cannot delete literal values directly."
+            hide bug with dissolve
+
+    hide screen info_box with fade
+
+    pause .5
+
+
+    #bug 2
+    show screen info_box("Bug #2 – The Numeric Ogre") with dissolve
+    show bugOrge at top_left_space
+    $ red_effect()
+
+    "A massive creature stomps in, chanting: 'Divide by Zero! Divide by Zero!'"
+
+    mspy "Arithmetic operators — +, -, *, / — handle calculations."
+    mspy "But dividing by zero causes catastrophic failure. Proceed carefully."
+
+    luna "So… never trust a zero. Got it."
+    cyra "Or trust Kai with math."
+    kai "Funny. Let’s see if you still laugh after you lose the leaderboard."
+
+    "Choose the correct numeric operation!!"
+    "How do you calm the Numeric Ogre?"
+
+    menu:
+        extend ""
+
+        "x = 10 / 2":
+            #put sound here for correct answer
+            "A calm blue wave stabilizes the bug."
+            mspy "Excellent. Division complete without error."
+            kai "Clean logic. You’ve got quick hands, MC."
+            $ change_kaiAffection(+1)
+            hide bugOrge with dissolve
+            hide screen info_box with move
+
+
+        "x = 10 / 0":
+            #explosion sound
+            $ red_effect()
+            with vpunch
+            "Explosion of red light — alarms blare."
+            mspy "DivideByZeroError! Impossible operation — logic fails!"
+            mira "The bug’s feeding on it! I’m losing control of the data flow!"
+            astra "Back it up, newbie. Keep your variables alive next time."
+            hide bugOrge with move
+            hide screen info_box with move
+
+        "x = 'Ten' + 2":
+            #error sound
+            $ red_effect()
+            "The code distorts — random characters appear."
+            mspy "Invalid operation. You can’t combine strings and integers with +."
+            cyra "Oof, classic mistake. Mixing data types — every beginner’s heartbreak."
+            hide bugOrge with move
+            hide screen info_box with move      
+    
+    pause .5
+    show red at truecenter with fade
+
+    #bug 3
+    show screen info_box("Bug #3 – The List Hydra") with fade
+
+    show bugHydra at top_left_space with dissolve
+    $ red_effect()
+
+    "Three heads emerge, hissing binary streams."
+
+    mspy "Lists are mutable — you can modify them."
+    mspy "To contain the Hydra, use {color=#00ffff}.append(){/color} to add each head into your list."
+    cyra "So… we’re making a 'Hydra shopping list'? Nice."
+
+    hide screen info_box with move
+    hide bugHydra with move
+    mspy "Example:"
+    show ep2-scn3-txt1 at top_left_space with move
+    mspy "The append() method adds items to the end of a list."
+
+    hide ep2-scn3-txt1 with move    
+    show bugHydra at top_left_space with move
+    show screen info_box("Bug #3 – The List Hydra") with move
+
+    "How do you trap the Hydra?"
+    menu:
+        "heads = [[]\n heads.append('Hydra')":
+            # put sound here for correct answer
+            "The Hydra turns to harmless data bubbles."
+            luna "Hydra captured! Friendship and Python win again!"
+            astra "Nicely done. You’ve mastered list manipulation."
+            hide bugHydra with move
+            hide screen info_box with move
+            hide red with dissolve
+
+        "heads = ('Hydra')":
+            # put sound here for wrong answer
+            "The heads multiply!"
+            mspy "Incorrect — parentheses create a string, not a list. Lists use brackets [[]."
+            cyra "Guess we’re snake food now."
+            hide bugHydra with move
+            hide screen info_box with move
+
+        "heads = range('Hydra')":
+            # put sound here for wrong answer
+            "The system glitches violently."
+            mspy "TypeError. range() only accepts numbers, not strings. Be precise!"
+            mira "I’ll stabilize it— wait… it’s resisting my override..."
+            hide bugHydra with move
+            hide screen info_box with move
+    
+    #bug 4
+    show screen info_box("Bug #4 – The Boolean Phantom")
+
+    show bugPhantom at top_left_space with move
+
+    "A ghost flickers in and out, whispering 'True… False…'"
+
+    mspy "Booleans control logic flow. Use {color=#00ffff}if{/color} statements to make code decisions."
+    kai "So, we’re exorcising with logic? My kind of fight."
+
+    "What code do you use to reveal the truth?"
+    menu:
+
+            "if True: print('Visible')":
+                # put sound here for correct answer
+                "The ghost solidifies and vanishes in light."
+                mspy "Perfect control. True conditions execute the code block."
+                kai "You handle pressure well, MC."
+                $ change_kaiAffection(+1)
+                hide red with dissolve
+                hide bugPhantom with move
+                hide screen info_box with move
+
+            "if None: print('Visible')":
+                #put sound here for wrong answer
+                "The ghost duplicates!"
+                mspy "None is not a Boolean value — logic collapsed!"
+                luna "Aah! Now we have two ghosts! Double the haunted homework!"
+                hide bugPhantom with move
+                hide screen info_box with move
+
+            "if False: print('Visible')":
+            #put sound here for wrong answer
+                "The ghost turns invisible — then jumpscares the team."
+                cyra "WAAH! Remind me to never trust False again."
+                mspy "False conditions skip execution — your action didn’t trigger the code."
+                hide bugPhantom with move
+                hide screen info_box with move
+
+    # Final Boss
+    show screen info_box("Boss: The Void Entity")
+
+    show bugVoid at top_left_space with move
+    "The entire forest shakes. A massive shadow rises — pure black code swirling like smoke."
+
+    mspy "This one... is made of NoneType — the absence of data. Only creation — something from nothing — can undo it."
+    cyra "That’s… deep. We code meaning into nothingness?"
+    mc "Let’s give it something real."
+
+    "What do you assign to restore balance?"
+    menu:
+
+            "x = None":
+                #put sound here for wrong answer
+                "The void expands, draining color."
+                mspy "Wrong. Assigning None gives it power. None means emptiness."
+                astra "Careful — feed darkness and it grows."
+                hide bugVoid with move
+                hide screen info_box with move
+                hide red with dissolve
+
+            "x = 'Hope'":
+                # put sound here for correct answer
+                "The word 'Hope' appears in glowing light, shattering the Void."
+                mspy "Beautifully done. Creation defeats emptiness."
+                luna "YAY! We beat the void with positivity and variable assignment!"
+                hide bugVoid with move
+                hide screen info_box with move
+
+            "del x":
+                #put sound here for wrong answer
+                "The code destabilizes. Chaos follows."
+                mspy "Deleting variables erases value entirely!"
+                mira "It’s rewriting the environment— STOP!"
+                hide bugVoid with move
+                hide screen info_box with move
+
+    stop music fadeout 2.0 #fight music stop here
+    #play music "ending_theme.ogg" fadein 2.0  #start ending music here
+
+    scene classroom_day with fade
+    dr "Simulation success. Excellent teamwork, Debuggers."
+    show mspy happy at center
+    with move
+    mspy "You’ve done well. Every operation, every decision — builds the foundation of your code."
+
+    show cyra neutral at slightleft with move
+    show kai neutral at left with move
+    show luna happy at right with move
+    show mira neutral at slightright with move
+    show astra neutral at truecenter with move
+
+    cyra "Next time, I call dibs on the final blow."
+    kai "You? You barely handled one Boolean ghost."
+    cyra "Says the guy who screamed when the Hydra burped."
+    luna "Aww, you’re all such cute bugs yourselves!"
+    astra "The real fun starts when the logic turns against you. Remember that."
+    mira "(quietly) Logic… turning against us…? Nothing. I’m fine."
+
+    mspy "Team Debugger — class dismissed. Tomorrow, we learn about Operators and If/Else."
 
 #SCENE 4
     scene lounge

@@ -54,8 +54,51 @@ label episode3:
     mspy "If its complex you have to set the code for that as well, other ERROR!"
 
 # SCENE 2
+    scene classroom #training hub
+    with dissolve
 
+    show kai neutral at center with dissolve
+    kai "Hey, [name]. Let’s see if you’re really getting it."
 
+    # show kai neutral2 at slightright with move
+    show ep3-scn2-txt1 at top_left_space
+    with dissolve
+
+    menu:
+        "2":
+            show kai neutral
+            kai "Hmph… not bad. You know floor division."
+            show cyra neutral at right with dissolve
+            cyra "Looks like someone’s {cps=20}impressed~"
+            show kai angry
+            kai "I’m not!"
+            show kai neutral
+        "2.5":
+            kai "Nah, rookie. {=code}//{/code} gives whole numbers only. Better remember that before your next duel."
+        "0":
+            kai "Nah, rookie. {=code}//{/code} gives whole numbers only. Better remember that before your next duel."
+    
+    show luna neutral at slightright with dissolve
+    luna "Ooh, I wanna play too! Try mine!"
+
+    hide ep3-scn2-txt1
+    show ep3-scn2-txt2 at top_left_space
+    with dissolve
+
+    menu:
+        "0":
+            hide cyra
+            show astra neutral at right
+            with dissolve
+            astra "I guess you really are getting the hang of it, nice one [name]"
+        "3":
+            show luna sad
+            luna "Nooo! That bug escaped! {=code}%%{/code} gives the remainder, silly!"
+        "2":
+            show luna sad
+            luna "Nooo! That bug escaped! {=code}%%{/code} gives the remainder, silly!"
+
+# SCENE 3
 
 
 # SCENE 5
