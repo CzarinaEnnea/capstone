@@ -3,29 +3,38 @@
 While running game code:
   File "game/script.rpy", line 183, in script call
     call episode3
-  File "game/episode 3.rpy", line 91, in script
-    luna "Nooo! That bug escaped! {=code}%{/code} gives the remainder, silly!"
-ValueError: unsupported format character '{' (0x7b) at index 32
+  File "game/episode 3.rpy", line 118, in script
+    show mira neutral at slightrigth with dissolve
+  File "game/episode 3.rpy", line 118, in <module>
+    show mira neutral at slightrigth with dissolve
+                          ^^^^^^^^^^^             
+NameError: name 'slightrigth' is not defined. Did you mean: 'slightright'?
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
   File "game/script.rpy", line 183, in script call
     call episode3
-  File "game/episode 3.rpy", line 91, in script
-    luna "Nooo! That bug escaped! {=code}%{/code} gives the remainder, silly!"
-  File "renpy/ast.py", line 2915, in execute
-    Say.execute(self)
-    ~~~~~~~~~~~^^^^^^
-  File "renpy/ast.py", line 991, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/exports/sayexports.py", line 118, in say
-    what = what % tag_quoting_dict
-           ~~~~~^~~~~~~~~~~~~~~~~~
-ValueError: unsupported format character '{' (0x7b) at index 32
+  File "game/episode 3.rpy", line 118, in script
+    show mira neutral at slightrigth with dissolve
+  File "renpy/ast.py", line 1357, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 726, in show_imspec
+    at_list = [renpy.python.py_eval(i) for i in at_list]
+               ~~~~~~~~~~~~~~~~~~~~^^^                  
+  File "renpy/python.py", line 1292, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1285, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/episode 3.rpy", line 118, in <module>
+    show mira neutral at slightrigth with dissolve
+                          ^^^^^^^^^^^             
+NameError: name 'slightrigth' is not defined. Did you mean: 'slightright'?
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Fri Oct 31 15:02:29 2025
+Fri Oct 31 15:16:30 2025

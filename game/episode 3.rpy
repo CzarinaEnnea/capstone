@@ -99,7 +99,80 @@ label episode3:
             luna "Nooo! That bug escaped! {=code}%%{/code} gives the remainder, silly!"
 
 # SCENE 3
+    scene classroom # code chamber
+    with dissolve
 
+    show mspython neutral at center with dissolve
+    mspy "Let’s raise the stakes, class."
+    mspy "{b}Operators{/b} give power — but combine them with {b}conditions{/b}, and you gain control."
+
+    mspy "In Python, {i}conditional statements{/i} let us make decisions." 
+    mspy "The most common one is the {=code}if{/code} statement. {w}It checks whether something is true."
+
+    show cyra neutral at right with dissolve
+    cyra "(leans back in her chair, smirking) {w}{p}So it’s like… coding with attitude. If it’s true, do this. If not, do something else."
+
+    show kai neutral at left with dissolve
+    kai "Sounds like my kind of logic. All or nothing."
+
+    show mira neutral at slightright with dissolve
+    mira "Um… that’s like… {w}if something’s true, it does one thing, if not, another?"
+
+    show mspython happy
+    mspy "Exactly, Mira. Let’s try this together."
+
+    hide mira
+    hide kai
+    hide cyra
+    show ep3-scn3-txt1 at top_left_space
+    with dissolve
+
+    show mspython neutral
+    mspy "Here, the condition {=code}x > 5{/code} is evaluated. {w}If it’s {b}True{/b}, Python runs the first block — printing {i}‘Big number!’{/i}. {w}Otherwise, the {=code}else{/code} block runs."
+    mspy "So what do you think it will print?"
+
+    menu:
+        "Big number!":
+            show mira at right with dissolve
+            mira "It printed Big number! because ten is greater than five!"
+            show mspython happy
+            mspy "Well reasoned, Mira. You’re starting to think like a coder."
+            hide mira with dissolve
+        "Small number!":
+            call ep3Scn3QuestionWrong
+        "Error":
+            call ep3Scn3QuestionWrong
+
+    show luna at right with dissolve
+    luna "Conditional powers are like doors! Only one opens if your statement is true! The others stay locked!"
+
+    hide ep3-scn3-txt1
+    show ep3-scn3-txt2 at top_left_space
+    with dissolve
+
+    show mspython neutral
+    mspy "Precisely. You can even add more doors using {=code}elif{/code}, short for {b}else if{/b}."
+    mspy "This code checks multiple possibilities. Try to picture the logic flow — {w}one condition at a time."
+
+    show kai happy at slightright with dissolve
+    kai "So, it’s a test of judgment — like choosing the right move in battle."
+
+    hide luna
+    show cyra neutral at right 
+    with dissolve
+    cyra "Let’s hope you pick better than last time, {i}rookie coder{/i}."
+    mc "Just watch me."
+
+    scene black
+    with dissolve
+    pause 1.0
+
+# SCENE 4
+    scene arena
+    with dissolve
+
+    show red
+    luna "Uh-oh! A Logic Bug invaded the system again! It’s bouncing through code like a broken loop!"
 
 # SCENE 5
     scene arena
@@ -218,3 +291,10 @@ label ep3Scn1QuestionWrong:
     show mspython neutral
     mspy "Don’t worry, we’ll fix that logic."
     return
+
+label ep3Scn3QuestionWrong:
+    show astra neutral at right with dissolve
+    astra "Careless logic, rookie. x is 10 — greater than 5. Easy math."
+    show mspython sad
+    mspy "Logic errors can be fixed… but only if you observe your conditions clearly. Always think before you code."
+    hide astra with dissolve
