@@ -7,9 +7,14 @@ label episode1:
     scene futuristic skyline
     with dissolve
 
+    play sound "train.ogg" fadeout 1.0
+
     show text "Episode 1 - “Welcome to Code Nexus Academy”" at truecenter with dissolve
-    pause 2
+    pause 10
     hide text with fade
+
+    play sound "traindoor_opening.ogg" fadeout 1.0
+    $ renpy.pause(3.5)
 
     play music "audio/opening.ogg"
 
@@ -32,8 +37,11 @@ label episode1:
 
     cyra "Cyra Byte. Frontend Division. Top of the leaderboard, breaker of hearts, destroyer of broken CSS."
     mc "Uh… nice to meet you?"
+    show cyra happy
     cyra "Nice to meet you, too, mystery newbie. You’ve got that first-day panic look. Adorable."
     mc "It’s called confidence. You’ll see."
+
+    show cyra neutral2
     cyra "Mhm. We’ll see how long that lasts when you meet the Headmaster."
 
     "Suddenly, the air shimmers with light. A tall man in a glowing white coat appears, teleporting in with calm authority."
@@ -43,8 +51,9 @@ label episode1:
 
     dr "Good morning, students. No teleportation mishaps this time, I hope."
 
-    show cyra happy at slightright with move
+    show cyra neutral at slightright with move
     cyra "No promises, Headmaster."
+    show cyra neutral2
 
     show doctorbyte neutral
     dr "I see you’ve met our new recruit. [name], isn’t it?"
@@ -73,6 +82,7 @@ label episode1:
 
 # SCENE 2: Syntax 101 – The First Spell
 
+    play sound "door_opening_school_doorway.ogg"
     scene classroom
     with dissolve
 
@@ -530,6 +540,8 @@ label episode1:
     hide ep1-scn4-txt2-1
     show ep1-scn4-txt2 at top_left_space
 
+    call ep1_scn4_txt2
+
     mspy "If you skip the indentation, Python won’t forgive you."
     drIntercom "Neither will I."
     "Everyone" "(Laughs nervously.)"
@@ -575,15 +587,15 @@ label episode1:
         extend ""
 
         "Talk to Cyra":
-            call talkToCyra
+            call talkToCyra from _call_talkToCyra
         "Talk to Kai":
-            call talkToKai
+            call talkToKai from _call_talkToKai
         "Talk to Ms. Py Thon":
-            call talkToMsPython
+            call talkToMsPython from _call_talkToMsPython
         "Talk to Dr. Byte (via HoloCall)":
-            call talkToDrByte
+            call talkToDrByte from _call_talkToDrByte
         "Talk to Astra":
-            call talkToAstra
+            call talkToAstra from _call_talkToAstra
 
     "As class ends, you feel a small spark — not just of code, but connection."
     "Maybe this academy isn’t just about fighting bugs…"
@@ -953,6 +965,7 @@ label episode1:
     "And as the simulation fades, one thought burns bright in your mind."
     "This academy isn’t just about learning code…"
     "It’s about surviving in a world where logic is power."
+
     return
 
 

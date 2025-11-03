@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 3.rpy", line 213: menu statement expects a non-empty block.
-    menu:
-        ^
+File "game/episode 1.rpy", line 17: expected statement.
+    renpy.pause(3)
+                  ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Fri Oct 31 16:21:05 2025
+Mon Nov  3 21:06:40 2025

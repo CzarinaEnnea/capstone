@@ -7,9 +7,14 @@ label episode1:
     scene futuristic skyline
     with dissolve
 
+    play sound "train.ogg" fadeout 1.0
+
     show text "Episode 1 - “Welcome to Code Nexus Academy”" at truecenter with dissolve
-    pause 2
+    pause 10
     hide text with fade
+
+    play sound "traindoor_opening.ogg" fadeout 1.0
+    $ renpy.pause(3.5)
 
     play music "audio/opening.ogg"
 
@@ -77,6 +82,7 @@ label episode1:
 
 # SCENE 2: Syntax 101 – The First Spell
 
+    play sound "door_opening_school_doorway.ogg"
     scene classroom
     with dissolve
 
@@ -533,6 +539,8 @@ label episode1:
 
     hide ep1-scn4-txt2-1
     show ep1-scn4-txt2 at top_left_space
+
+    call ep1_scn4_txt2 from _call_ep1_scn4_txt2
 
     mspy "If you skip the indentation, Python won’t forgive you."
     drIntercom "Neither will I."

@@ -139,9 +139,9 @@ label episode3:
             mspy "Well reasoned, Mira. You’re starting to think like a coder."
             hide mira with dissolve
         "Small number!":
-            call ep3Scn3QuestionWrong
+            call ep3Scn3QuestionWrong from _call_ep3Scn3QuestionWrong
         "Error":
-            call ep3Scn3QuestionWrong
+            call ep3Scn3QuestionWrong from _call_ep3Scn3QuestionWrong_1
 
     show luna at right with dissolve
     luna "Conditional powers are like doors! Only one opens if your statement is true! The others stay locked!"
