@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 1.rpy", line 17: expected statement.
-    renpy.pause(3)
-                  ^
+File "game/episode 4.rpy", line 139: expected 'image_name_component' not found.
+    show
+         ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Mon Nov  3 21:06:40 2025
+Thu Nov  6 23:54:36 2025
