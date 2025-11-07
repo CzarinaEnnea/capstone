@@ -201,15 +201,203 @@ label episode4:
 
     menu:
         "Talk to Cyra":
-            pass
+            call Ep4Scn4Cyra
         "Talk to Kai":
-            pass
+            call Ep4Scn4Kai
         "Talk to Luna":
-            pass
+            call Ep4Scn4Luna
         "Talk to Mira":
-            pass
+            call Ep4Scn4Mira
 
+    scene black with fade
+    pause 1.5
+    scene garden #night
+    with dissolve
+
+    "Later that night the sky glows faintly with streaks of blue and violet. The others begin leaving for the dorms."
+    mc "Operators, logic, conditions… Ms. Py Thon says code reflects the mind."
+    mc "So what does it mean when I can’t stop thinking about the people behind it?"
+
+    # play sound
+    "A soft digital chime — footsteps approach."
+
+    show mspython surprised at center with dissolve
+    mspy "You’re still here, [name]?"
+    mc "Just… thinking. About how logic and emotion don’t always match."
+    show mspython neutral
+    mspy "That’s because they never truly oppose each other."
+    mspy "Logic is how we understand the world. Emotion is why we care to understand it."
+    mc "That’s… deeper than any syntax rule."
+    show mspython happy2
+    mspy "Perhaps. But remember — even the {i}cleanest code{/i} can hide bugs. {w}The same goes for {i}people{/i}."
+
+    show red with dissolve
+    hide red with dissolve
+    "Suddenly, the neon sky flickers — static bursts across the horizon."
+    mc "What was that?"
+    show mspython neutral
+    mspy "A data disturbance. {w}Someone—or something—is tampering with the Academy’s systems."
+
+    $ red_effect()
+    "A faint red shimmer appears in the air — like a glitch shaped almost like a person. Long hair, sharp gaze, but too brief to see clearly."
+
+    mc "Did you see that?!"
+    show mspython neutral2
+    mspy "Yes… and that shadow doesn’t belong to any student."
+    show mspython neutral
+    mspy "Be alert tomorrow, [name]. Not everything here runs on pure logic."
+    hide mspython with dissolve
+
+    "The glitch fades, leaving a faint whisper of corrupted code in the air."
+    show red with dissolve
+    hide red with dissolve
+    "A single red eye flickers open in the digital sky, then vanishes."
+
+    scene black
+    with dissolve
+    pause 1.5
+
+# SCENE 5
+    scene classroom
+    with dissolve
+
+    "The students file into the glowing Holo-Classroom. Floating screens flicker alive with Python symbols."
+    show mspython neutral at center with dissolve
+    mspy "Good morning, coders. Today’s lesson will push your logic a step further."
+    mspy "We’ll explore how Python {i}decides{/i} what to do — the art of conditional statements."
+
+    show cyra neutral at right with dissolve
+    cyra "So basically… we’re teaching computers how to think?"
+    mspy "Exactly. The {b}if{/b}, {b}elif{/b}, and {b}else{/b} statements form the brain of your code."
+    "She pauses, raising her hand — a holographic brain made of light appears"
+    mspy "They decide what happens next based on conditions."
+
+    show kai neutral at left with dissolve
+    kai "So… if I skip breakfast, then I get cranky. Else, I’m fine."
+    show luna neutral at slightright with dissolve
+    luna "If Luna sees pancakes: print(‘Yum!’). Else: print(‘Sad.’)"
+    show mira neutral at slightleft with dissolve
+    mira "That’s actually… a perfect example."
+    show mspython happy2
+    mspy "Correct, Mira. Let’s try a coding version."
+    
+    hide mira
+    hide kai
+    hide luna
+    hide cyra
+    with dissolve
+
+    "She gestures, and a glowing Python terminal materializes mid-air."
+
+    show ep4-scn5-txt1 at top_left_space
+    with dissolve
+
+    show mspython neutral at slightright 
+    with move
+
+    mspy "Here’s the structure:"
+    mc "So the code checks each line until one is true?"
+    mspy "Exactly. Python runs {b}top-down{/b}. {w}Once it finds a {b}true{/b} condition, it {b}stops checking the rest{/b}."
+
+    hide ep4-scn5-txt1
+    show ep4-scn5-txt2 at top_left_space
+    with dissolve
+
+    mspy "Your turn, [name]. Complete this program. It determines a user’s mood based on energy level."
+
+    menu:
+        "Hyper Mode!":
+            call ep4Scn5Q1Wrong
+        "Normal Mode":
+            show mspython happy
+            mspy "Excellent logic. You’ve evaluated your condition precisely."
+            cyra "You’re really getting the hang of this."
+            kai "Hmph. Beginner’s luck."
+        "Sleep Mode":
+            call ep4Scn5Q1Wrong
+
+    hide mspython
+    with dissolve
+
+    hide ep4-scn5-txt2
+    with dissolve
+
+    show doctorbyte neutral at slightright
+    with dissolve
+
+    dr "(Appears on a floating holo-screen){p}Time for some environmental testing." 
+    dr "You must control the Academy’s climate with logic!"
+
+    show ep4-scn5-txt3 at top_left_space
+    with dissolve
+
+    cyra "Temperature at 35... So?"
+    mc "35 is more than 25 but less than 40…"
+
+    menu:
+        "Warning: Overheating!":
+            call ep4Scn5Q2Wrong
+        "System Stable.":
+            show doctorbyte happy
+            dr "Good. You prevented a meltdown."
+            show mspython happy at right with dissolve
+            mspy "Excellent application of logical range."
+        "Cooling Activated.":
+            call ep4Scn5Q2Wrong
+
+    scene classroom
+    with dissolve
+    pause 1.0
+
+    show mspython neutral at center
+    with dissolve
+    mspy "Remember — {=code}if, elif, and else{/code} are your best friends for decision-making. {w}They help your program respond intelligently."
+
+    show kai neutral at left with dissolve
+    kai "(leaning on desk){p}So... it’s all about testing conditions."
+    kai "Like, {i}if Cyra smiles at MC: MC.blush(True). Else: MC.debug_emotions().{/i}"
+
+    show cyra neutral at right with dissolve
+    cyra "Nice try, Volt. Your syntax’s off."
+
+    show luna neutral at slightright with dissolve
+    luna "Aww, just admit it — you two are in the same ‘if’ block!"
+
+    show mira happy at slightleft with dissolve
+    mira "Or maybe the wrong loop entirely..."
+
+    hide kai
+    hide cyra
+    hide luna
+    hide mira
+    with dissolve
+
+    show doctorbyte at slightleft 
+    with dissolve
+    dr "Focus, class. Next simulation — real-time logic defense."
+    mspy "Prepare yourselves. What happens next… depends on your conditions."
+
+    scene black
+    with dissolve
+    pause 1.5
+
+# Scene 6
+    scene MsPythonLab
+    with dissolve
+    
+    "The students gather in Ms. Py Thon’s lab. The walls flicker with moving code lines — like veins of light."
+    show mspython neutral at center with dissolve
+    mspy "Something’s interfering with the Academy’s mainframe. I want you to test the defense code."
+    show cyra neutral at right with dissolve
+    cyra "Like a coding firewall?"
+    mspy "Yes. But this time… the system will fight back."
+
+    show kai happy at left with dissolve
+    kai "Finally, something fun."
     return
+
+
+
 
 # Scene 2 Quizzes Other Branch
 label ep4Scn2Q1Wrong:
@@ -217,4 +405,118 @@ label ep4Scn2Q1Wrong:
     mspy "Review your conditions. Logic rewards patience."
     show kai neutral at right with dissolve
     kai "Told you not to rush it."
+    return
+
+# Scene 4 Talk to Others
+label Ep4Scn4Cyra:
+    "[name] saw Cyra sitting by the pond, typing on a holographic pad."
+    show cyra neutral at center with dissolve
+    cyra "Hey, [name]. You handled those operator exercises really well earlier."
+    mc "Thanks. I’m still mixing up ‘==’ and ‘=’, though. I keep assigning when I should be comparing."
+    show cyra happy # with blush
+    cyra "Don’t worry. Everyone’s done that at least once."
+    cyra "The important part is that you noticed it. That’s what real coders do."
+    mc "Coming from you, that means a lot."
+    show cyra surprised-notab with dissolve
+    cyra "You’ve got a good rhythm."
+    show cyra neutral-notab
+    cyra "You read problems the way I read front-end code {w}— through instinct."
+    show cyra happy-notab
+    cyra "Keep that up, and you’ll catch up to me in no time."
+
+    mc "Oh, so it’s a challenge now?"
+    show cyra neutral-notab
+    cyra "Everything’s a challenge if you want to get better. Besides…"
+    show cyra happy2-notab
+    cyra "Coding’s more fun when there’s someone worth competing with."
+    "She says it so casually, but… somehow, it sticks."
+    return
+
+label Ep4Scn4Kai:
+    show kai neutral at center with dissolve
+    kai "You didn’t freeze back there. Impressive."
+    mc "Were you expecting me to?"
+    show kai happy
+    kai "Maybe. Most first-timers panic when Ms. Py Thon brings up logic puzzles."
+    mc "I guess I work better under pressure."
+    show kai neutral
+    kai "Good. Because this place doesn’t slow down for anyone."
+    show kai neutral2
+    pause 1.0
+    "He pauses, looking toward the horizon"
+    show kai neutral
+    kai "But… you’re learning fast."
+    kai "Keep that up, and maybe I’ll actually have a rival worth my time."
+    mc "So that’s your way of saying ‘good job’?"
+    show kai embarassed
+    kai "Don’t push it."
+    mc "His words sound cold, but… I can tell he means it."
+    return
+
+label Ep4Scn4Luna:
+    show luna neutral at center with dissolve
+    luna "[name]! Did you know True + True equals 2?"
+    show luna happy
+    luna "That’s friendship math!"
+    mc "That’s… actually clever, Luna."
+    show luna neutral
+    luna "Right?! But then False + True = 1, so maybe that’s like… {w}halfway friends?"
+    mc "Or someone you just met."
+    luna "Yeah! Like a {i}‘loading friendship’{/i}!"
+    show luna happy
+    "Luna spins around excitedly, accidentally bumping into a data bush that glitches for a second."
+    with hpunch
+    show luna surprised
+    luna "Ooops—{w} don’t worry, nature.exe is fine!"
+    mc "Every time you talk, it’s like listening to live code poetry."
+    show luna neutral
+    luna "Aw, thanks! I’ll add that to my variable list of compliments."
+    show luna happy
+    luna "(pretends to type in air) {p}Luna.Feeling = Happy."
+    mc "(laughs){p}You’re one of a kind."
+    return
+
+label Ep4Scn4Mira:
+    show mira surprised at center with dissolve
+    mira "Oh… h-hi, [name]."
+    show mira neutral
+    mira "(looks up from a holographic data notebook){p}Sorry, I was just reviewing the syntax notes from class."
+    mc "Studying already? You never stop learning, huh?"
+    show mira happy
+    mira "It helps me stay calm. I liked how you used nested conditions earlier {w}that was neat."
+    mc "I just tried to keep it simple."
+    show mira neutral
+    mira "That’s usually the best way." 
+    mira "Sometimes, we overthink things… {w}in code and in life."
+    mc "Yeah. If only we had an if-else for decision-making."
+    show mira happy
+    mira "If only."
+
+    show mira neutral
+    mira "{size=25}{i}If nervous == True: pretend_to_study().{/i}{/size}"
+    mc "(smiling){p}{i}And if shy == True: still adorable.{/i}"
+    show mira surprised
+    mira "W-What? I—uh—thank you."
+    show mira happy
+    "Mira looks down quickly, hiding her smile"
+    mc "She’s so genuine… it’s kind of hard not to smile back."
+    return
+
+# Scene 5 Q Wrong
+label ep4Scn5Q1Wrong:
+    show mspython sad
+    mspy "Think carefully — which range includes 65?"
+    luna "Awww, the program got sleepy instead!"
+    kai "You’d better recharge that logic chip."
+    return
+
+label ep4Scn5Q2Wrong:
+    hide ep4-scn5-txt3
+    hide doctorbyte
+    with dissolve
+
+    show luna surprised at slightright with dissolve
+    luna "Oh no! We just froze the cafeteria!"
+    show cyra sad-notab at right with dissolve
+    cyra "That’s one way to get ice cream faster."
     return
