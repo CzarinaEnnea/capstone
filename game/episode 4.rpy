@@ -386,14 +386,132 @@ label episode4:
     with dissolve
     
     "The students gather in Ms. Py Thon’s lab. The walls flicker with moving code lines — like veins of light."
-    show mspython neutral at center with dissolve
+    show mspython neutral zorder 4 at center with dissolve
     mspy "Something’s interfering with the Academy’s mainframe. I want you to test the defense code."
-    show cyra neutral at right with dissolve
+    show cyra surprised-notab at right with dissolve
     cyra "Like a coding firewall?"
     mspy "Yes. But this time… the system will fight back."
 
     show kai happy at left with dissolve
     kai "Finally, something fun."
+    show luna neutral at slightleft with dissolve
+    luna "Fun? More like terrifying!"
+    show mira at slightright with dissolve
+    mira "I think… {w}it’ll be fine. {w}We just have to think logically."
+    "Her eyes flicker faintly pink again — unnoticed"
+
+    hide cyra
+    hide kai
+    hide luna
+    hide mira
+    with dissolve
+
+    show ep4-scn6-txt1 at top_left_space
+    with dissolve
+
+    show mspython neutral at slightright with move
+    mspy "Input your logic here. The simulation will react to your conditions."
+
+    menu:
+        "Activate Shields!":
+            hide ep4-scn6-txt1
+            hide mspython
+            with dissolve
+            
+            show doctorbyte neutral at center with dissolve
+            dr "Shields up! Good thinking."
+            show cyra happy-notab at right with dissolve
+            cyra "Nice save, [name]. You really know when to act."
+            show kai happy2 at left with dissolve
+            kai "Not bad. Just don’t get cocky."
+        "Monitor Threat.":
+            call ep4Scn6Q1Wrong
+        "All Systems Normal.":
+            call ep4Scn6Q1Wrong
+
+    scene MsPythonLab
+    with dissolve
+
+    # play sound alarm
+    $ red_effect()
+
+    show mspython surprised at center with dissolve
+    mspy "Impossible… The code is rewriting itself!"
+
+    show doctorbyte surprised at slightleft with dissolve
+    dr "Someone’s accessing the system externally. But how?"
+
+    show cyra angry at right with dissolve #remove angry sign
+    cyra "I’m locking down the firewalls— wait, something’s inside the logic chain!"
+
+    show kai angry2 at left with dissolve #remove angry sign
+    kai "Can we trace it?"
+
+    show luna surprised at slightright with dissolve
+    luna "Uhh... guys? The sky just turned purple in the simulator!"
+
+    mc "It’s… it’s like the system’s {i}alive{/i}."
+
+    hide kai
+    hide cyra
+    hide doctorbyte
+    hide mspython
+    hide luna
+    with dissolve
+
+    $ red_effect()
+    "The holographic display flickers {w}— a figure made of static appears briefly. Long hair. Glowing violet eyes."
+
+    "??? (distorted voice)" "If condition: chaos == True… execute."
+
+    show astra neutral at center with dissolve
+    astra "(steps forward calmly){p}That voice… I’ve heard it before."
+    show mspython neutral at right with dissolve
+    mspy "Explain."
+    astra "Not sure. But it feels... {w}{i}familiar{/i}. {w}Like a program I once wrote."
+
+    show mira neutral at left with dissolve
+    mira "{cps=5}....."
+    mira "Creepy. {w}Let’s hope it doesn’t crash us next time."
+    "Her tone lingers a moment too long. The lights flicker in sync with her eyes — pink again — before returning to normal."
+
+    hide astra
+    hide mira
+    show doctorbyte neutral at left
+    with dissolve
+
+    dr "Students, that’s enough for tonight. The system will stabilize... hopefully."
+    mspy "Go rest. Tomorrow, we'll investigate who — or what — is inside the mainframe."
+
+    hide doctorbyte
+    hide mspython
+    with dissolve
+
+    show cyra sad-notab at right with dissolve
+    cyra "This is getting serious. Just… stay close, alright?"
+
+    show kai neutral at left with dissolve
+    kai "Don’t tell me you’re scared."
+
+    show kai neutral2
+    show cyra neutral-notab
+    cyra "Just cautious."
+
+    show cyra neutral2-notab
+    mc "Operators. Logic. Conditions. {w}But this... this is something deeper."
+    mc "Someone’s controlling the code."
+
+    hide kai
+    hide cyra
+    with dissolve
+
+    "The camera pans up to the Academy’s central core — faint pink code lines ripple across the walls."
+    "A soft whisper echoes from within the system:"
+    "???" "If truth == hidden: continue program."
+
+    scene black
+    with fade
+
     return
 
 
@@ -519,4 +637,15 @@ label ep4Scn5Q2Wrong:
     luna "Oh no! We just froze the cafeteria!"
     show cyra sad-notab at right with dissolve
     cyra "That’s one way to get ice cream faster."
+    return
+
+# Scene 6 Wrong
+label ep4Scn6Q1Wrong:
+    hide ep4-scn6-txt1
+    with dissolve
+
+    show luna surprised at right with dissolve
+    luna "Oh no, the system’s shaking!"
+    show mspython angry
+    mspy "Incorrect logic can trigger chaos — remember that."
     return
