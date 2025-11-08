@@ -95,7 +95,7 @@ label episode4:
         extend ""
 
         "Excellent":
-            call ep4Scn2Q1Wrong from _call_ep4Scn2Q1Wrong
+            call ep4Scn2Q1Wrong
 
         "Good":
             show mspython happy
@@ -109,7 +109,7 @@ label episode4:
             kai "As if."
 
         "Needs Improvement":
-            call ep4Scn2Q1Wrong from _call_ep4Scn2Q1Wrong_1
+            call ep4Scn2Q1Wrong
     
     scene black with fade
     pause 1.5
@@ -201,13 +201,13 @@ label episode4:
 
     menu:
         "Talk to Cyra":
-            call Ep4Scn4Cyra from _call_Ep4Scn4Cyra
+            call Ep4Scn4Cyra
         "Talk to Kai":
-            call Ep4Scn4Kai from _call_Ep4Scn4Kai
+            call Ep4Scn4Kai
         "Talk to Luna":
-            call Ep4Scn4Luna from _call_Ep4Scn4Luna
+            call Ep4Scn4Luna
         "Talk to Mira":
-            call Ep4Scn4Mira from _call_Ep4Scn4Mira
+            call Ep4Scn4Mira
 
     scene black with fade
     pause 1.5
@@ -307,14 +307,14 @@ label episode4:
 
     menu:
         "Hyper Mode!":
-            call ep4Scn5Q1Wrong from _call_ep4Scn5Q1Wrong
+            call ep4Scn5Q1Wrong
         "Normal Mode":
             show mspython happy
             mspy "Excellent logic. You’ve evaluated your condition precisely."
             cyra "You’re really getting the hang of this."
             kai "Hmph. Beginner’s luck."
         "Sleep Mode":
-            call ep4Scn5Q1Wrong from _call_ep4Scn5Q1Wrong_1
+            call ep4Scn5Q1Wrong
 
     hide mspython
     with dissolve
@@ -336,14 +336,14 @@ label episode4:
 
     menu:
         "Warning: Overheating!":
-            call ep4Scn5Q2Wrong from _call_ep4Scn5Q2Wrong
+            call ep4Scn5Q2Wrong
         "System Stable.":
             show doctorbyte happy
             dr "Good. You prevented a meltdown."
             show mspython happy at right with dissolve
             mspy "Excellent application of logical range."
         "Cooling Activated.":
-            call ep4Scn5Q2Wrong from _call_ep4Scn5Q2Wrong_1
+            call ep4Scn5Q2Wrong
 
     scene classroom
     with dissolve
@@ -425,9 +425,9 @@ label episode4:
             show kai happy2 at left with dissolve
             kai "Not bad. Just don’t get cocky."
         "Monitor Threat.":
-            call ep4Scn6Q1Wrong from _call_ep4Scn6Q1Wrong
+            call ep4Scn6Q1Wrong
         "All Systems Normal.":
-            call ep4Scn6Q1Wrong from _call_ep4Scn6Q1Wrong_1
+            call ep4Scn6Q1Wrong
 
     scene MsPythonLab
     with dissolve

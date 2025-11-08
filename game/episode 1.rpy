@@ -69,7 +69,7 @@ label episode1:
     with Dissolve(1.0)
 
     mspy "Headmaster, I’ll take it from here."
-
+    show mspython neutral2
     show doctorbyte happy
 
     dr "The class is yours, Professor. Don’t melt too many brains on the first day."
@@ -101,6 +101,7 @@ label episode1:
 
     show mspython neutral at slightright with move
 
+    show screen info_box("SYNTAX 101: print()") with dissolve
     show ep1-scn2-txt1 at top_left_space
     with dissolve
 
@@ -115,49 +116,60 @@ label episode1:
             show mspython vhappy
             mspy "Excellent! You’ve spoken your first line of Python with grace."
             mspy "A humble start… yet every coder’s journey begins with this very phrase."
+            show mspython happy2
 
-            show cyra neutral at right with dissolve
-            cyra "Congrats, newbie! You made the computer talk {w}— and it didn’t roast you." #mock applause
+            show cyra neutral-notab at right with dissolve
+            cyra "Congrats, newbie! You made the computer talk {w}— and it didn’t roast you."
+            show cyra neutral2-notab
             mc "Thanks… I think?"
             show mspython neutral
             mspy "Do not underestimate simplicity, [name]. Even a whisper of logic can reshape reality."
 
+            play sound "right_answer.ogg"
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
 
         "It explodes the computer":
             mc "It explodes the computer?"
-            show mspython surprised
+            show mspython surprised2
             "The class bursts into laughter. Ms. Py Thon crosses her arms, amused."
+            show mspython surprised
             mspy "Ah, creativity — but no. This is Python, not Michael Bay Studios."
-            show cyra happy at right with dissolve
+            show cyra happy-notab at right with dissolve
             cyra "Boom! First mistake of the semester."
+            show cyra happy2-notab
             show mspython neutral
             mspy "A safe answer would be wiser next time, [Ms][name]."
 
+            play sound "error_sound1.ogg"
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
             
         "It creates a cat video":
             mc "It creates a cat video?"
-            show cyra neutral at right with dissolve
+            show cyra neutral-notab at right with dissolve
             cyra "Ha! I wish! If that worked, I’d have infinite playlists."
             show mspython sad
             mspy "Perhaps one day when you master APIs… but for now, no cats —only code."
 
+            play sound "error_sound1.ogg"
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
 
     show mspython neutral
-    hide cyra with dissolve
-    mspy "Python is one of the world’s most flexible programming languages. Created by Guido van Rossum and released in 1991, it’s used for:"
-
+    hide screen info_box 
     hide ep1-scn2-txt1
+    hide cyra 
+    with dissolve
+    mspy "Python is one of the world’s most flexible programming languages." 
+    mspy "Created by Guido van Rossum and released in 1991, it’s used for:"
+
     show ep1-scn2-txt2 at top_left_space 
     with dissolve
 
     mspy "Web development, Software Creation, Mathematics and yes Automation and Scripting!"
 
+    show mspython neutral2
     show luna neutral at right with dissolve
     luna "Python: adaptive, readable, and statistically likely to dominate human education."
 
@@ -167,45 +179,67 @@ label episode1:
         'astra neutral' with dissolve
 
     astra "Uh huh."
+
+    show mspython neutral
     mspy "Quite right, Luna. Python’s beauty lies in its simplicity."
     mspy "It reads almost like English — and runs instantly."
     mspy "That means your experiments come alive as you type them."
+    show mspython neutral2
     mc "So… it’s easy to start with, but powerful enough for big stuff?"
-    mspy "Exactly. It supports procedural, object-oriented, and functional programming — three paths, one language."
+    show mspython neutral
+    mspy "Exactly. It supports procedural, object-oriented, and functional programming {w}— three paths, one language."
 
+    show mspython neutral2
     "She gestures, and glowing indentation marks appear midair."
+
+    play sound "hologram.ogg"
 
     hide astra
     hide luna
     hide ep1-scn2-txt2
+    show screen info_box("SYNTAX 101: Indentation") with dissolve
     show ep1-scn2-txt2-1 at top_left_space
     with dissolve
 
     show mspython neutral
-    mspy "Don't worry about what this code means yet. Focus on the indention or space below the \"{size=+10}{color=#81f08aff}def greet():{/color}{/size}\"."
+    mspy "Don't worry about what this code means yet. {w}Focus on the indention or space below the \"{size=+10}{color=#81f08aff}def greet():{/color}{/size}\"."
     mspy "Unlike many languages, Python doesn’t use semicolons or braces. It uses {b}indentation{/b} — spacing — to define code blocks."
+    show mspython neutral2
     mc "So… even the spaces matter?"
-    mspy "Yes. In Python, indentation isn’t optional. Disrespect it… and you’ll summon chaos."
+    show mspython neutral
+    mspy "Yes. In Python, indentation isn’t optional. Disrespect it… and {i}you’ll summon chaos{/i}."
 
     hide ep1-scn2-txt2-1
+    hide screen info_box
+    with dissolve
+
+    play sound "glitch_sound.ogg"
+
+    show mspython neutral2
     show ep1-scn2-txt2-2 at top_left_space
     $ red_effect()
 
     "The lights flicker. A faint growling noise is heard — a “bug” forming in the code."
 
-    show cyra happy at right with dissolve
+    show cyra happy-notab at right with dissolve
     cyra "Oh, fun. Evil spaces. Love that."
 
     hide ep1-scn2-txt2-2
+    with dissolve
+    
+    show screen info_box("SYNTAX 101: Variable Name") with dissolve
     show ep1-scn2-txt3 at top_left_space
     with dissolve
 
-    show cyra neutral
+    show cyra neutral2-notab
+    show mspython neutral
     mspy "When you name a variable in Python, you can’t use spaces because Python would get confused — it would think you’re writing two separate things instead of one name."
     mspy "The underscore (_) acts like a small space — it helps make your variable name easy to read without breaking Python’s rules. Watch."
 
     mspy "Instead, we do:"
 
+    hide mspython
+    hide cyra
     show ep1-scn2-txt4 at top_right_space
     with dissolve
 
@@ -213,8 +247,7 @@ label episode1:
 
     "She waves her hand. The classroom morphs into a holographic battle arena — walls of blue code hum with energy."
 
-    hide text1
-    # hide text2
+    hide screen info_box
     with dissolve
 
     scene arena #or fade to black

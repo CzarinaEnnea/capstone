@@ -126,8 +126,8 @@ screen info_box(text):
         background "#222222aa"
         xpadding 25
         ypadding 15
-        xalign 0.05
-        yalign 0.05
+        xalign 0.04
+        yalign 0.02
         text text size 40 color "#00ffcc"
 
 screen scoreboard():
