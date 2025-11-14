@@ -51,7 +51,7 @@ label episode1:
 
     dr "Good morning, students. No teleportation mishaps this time, I hope."
 
-    show cyra neutral at slightright with move
+    show cyra neutral at right with move
     cyra "No promises, Headmaster."
     show cyra neutral2
 
@@ -63,9 +63,10 @@ label episode1:
     show doctorbyte neutral
     dr "Now, you’ll be joining Professor Py Thon’s class. Don’t let her brilliance intimidate you."
 
+    show doctorbyte neutral2
     "A ripple of neon light forms into a tall woman with emerald lines of code flowing through her hair. Her eyes glow softly with wisdom."
 
-    show mspython neutral at slightleft
+    show mspython neutral at center
     with Dissolve(1.0)
 
     mspy "Headmaster, I’ll take it from here."
