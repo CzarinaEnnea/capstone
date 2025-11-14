@@ -267,6 +267,7 @@ label episode1:
 
     "After Class"
 
+    play music "chill_bg.ogg" fadein 1.0
     mc "I felt drained already. Well atleast I can finally eat!"
 
 
@@ -279,8 +280,8 @@ label episode1:
 
     mc "...{w}Guess that’s my new squad."
 
-    show cyra neutral with dissolve
-    show cyra happy at slightright with move
+    show cyra neutral2-notab with dissolve
+    show cyra happy-notab at slightright with move
 
     cyra "Oh! Everyone, meet our new recruit!!"
 
@@ -289,32 +290,34 @@ label episode1:
 
     show kai neutral at left with dissolve
     kai "Barely. I saw three students combust from syntax errors."
+    show kai neutral2
 
+    pause 0.5
     show luna neutral at right with dissolve
     show luna happy at slightright with move
-    show cyra surprised at center with move
+    show cyra surprised2-notab at center with move
     with hpunch
 
     luna "{b}Combust?! {w=1}I missed that again?!{/b} {w=1}By the way I’m Luna Hehe."
 
-    show cyra angry
+    show cyra surprised-notab
     cyra "{size=+10}{b}Hey!{/b}{/size}"
 
-    show kai happy
+    show kai neutral
     kai "Figures. Another bright-eyed beginner joining the chaos. {w}Kai by the way."
 
-    show cyra neutral
-    show kai neutral
+    show kai neutral2
     show mira neutral at right with dissolve
     mira "{cps=20}H-Hi there…{/cps} {w}I’m Mira Bite. {w}{cps=20}I handle support and… {w=1}um… {w=1}tea refills.{/cps}"
-
+    show cyra neutral2-notab
 
 
     menu:
         "Nice to meet you all! I’m [name] and ready to code my destiny.":
-            show kai happy
+            # show kai happy
             show astra happy
             "You saw Kai nods approvingly and Astra winks towards you"
+            # show kai neutral 
 
         "Wait—did she say students combusted?":
             show luna surprised
@@ -330,7 +333,7 @@ label episode1:
     show luna neutral
     astra "So, rookie, which division you thinking of joining? Frontend glam? Backend chaos? Or full-stack madness?"
 
-    show cyra happy
+    show cyra happy-notab
     cyra "Relax, [theyre] still new."
 
     mc "Not sure yet. Still figuring out if I’m more “function” or “fashion.”"
@@ -338,33 +341,41 @@ label episode1:
     show luna happy
     luna "*gasp* {w}Be both! A stylish debugger! I can make you a glowing jacket that says {w}{i}{size=+10}{cps=20}{color=#81f08aff}while(True): Slay(){/color}{/cps}{/size}{/i}!"
 
-    show kai sad
-    show cyra sad
+    show kai disgusted
+    show cyra disgusted-notab
 
     "{color=#618ef0}Kai{/color} & {color=#a14ae9}Cyra{/color}" "…Please don’t."
 
+    show kai sad
     kai "Ignore Luna. Her projects usually end in smoke or spontaneous dancing LEDs."
 
+    show kai sad2
+    show luna angry
     luna "Excuse you! That was one time. And it was {i}fabulous.{/i}"
-    mira "You’re… {w}kind of brave for surviving your first class, though. Ms. Py Thon can be scary."
+    show mira neutral at right with move
+    mira "You’re… {w}kind of brave for surviving your first class, though." 
+    mira "Ms. Py Thon can be scary."
+    show mira neutral2
     mc "Yeah, she smiled once — the projector flickered."
 
-    show cyra happy
+    show cyra happy-notab
     show kai happy
     show luna happy
     show mira happy
     show astra happy
-    "(Everyone laughs.)"
+    "({i}Everyone laughs.{/i})"
 
-    "???" "[[Sound of Intercom Suddenly Rings]"
+    "???" "[[{i}Sound of Intercom Suddenly Rings{/i}]"
 
     mspyIntercom "Attention, Team Debugger. Before you relax too much {w}— SURPRISE QUIZZZ!"
 
-    show cyra surprised
+    show cyra surprised-notab
     show kai surprised
     show luna surprised
     show mira surprised
     show astra surprised
+
+    stop music fadeout 0.5
 
     mspyIntercom "Let’s see if your new member can handle The Syntax Duel."
     show astra happy
@@ -375,10 +386,14 @@ label episode1:
     show luna neutral
     luna "I brought popcorn! {w}Wait… is that allowed?"
     kai "You’ll probably spill it on the terminal again."
-    show cyra neutral
+    show cyra neutral-notab
     cyra "Lets get this started!"
 
-    scene classroom
+    scene black
+    with dissolve
+    pause 0.5
+
+    scene arena
     with dissolve
 
     #   QUESTION 1
