@@ -1,22 +1,24 @@
 default WC = 0
-default passwordA = "PythonRocks!"
+default passwordB = "PythonRocks!"
 
 label ep1_scn5_txt3:
-    "What is the correct syntax?"
+    "What will be the Output?"
 
     $ code = renpy.input("Type here:")
     $ code = code.strip()
 
-    if code == passwordA:
+    if code == passwordB:
         jump explain
 
     else:
         $ WC += 1
+        if WC == 1:
+            "{color=#32CD32}{b}Hint: Observe the Question{/b}{/color}"
         if WC >= 3:
             "You have reached the maximum attempts."
 
             menu:
-                extend ""
+                "Multiple Choice Bonus."
 
                 "PythonRocks!":
                     jump explain
@@ -36,23 +38,30 @@ label ep1_scn5_txt3:
                     "{=red}Syntax Confidence –1{/red}"
                     $ change_confidence(-1)
 
+                    "{color=#32CD32}{b}Correct Answer: PythonRocks!{/b}{/color}"
+
                     hide ep1-scn5-txt4 with dissolve
 
                 "Error":
                     $ scene5Wrong = True
                     mspy "Not quite! That would happen only if we tried to combine incompatible data types."
                     "You learn something from your mistake."
+
+                    "{color=#32CD32}{b}Correct Answer: PythonRocks!{/b}{/color}"
+
                     hide ep1-scn5-txt3 with dissolve
 
         else:
-            "Wrong code!"
+            play music error_sound1 noloop
+            "{color=#ff4444}{b}Wrong code!{/b}{/color}"
             "Try again. You have [3 - WC] attempt(s) left."
             jump ep1_scn5_txt3
 
     return
 
     label explain:
-    "CORRECT!"
+    play music right_answer noloop
+    "{color=#32CD32}{b}CORRECT!{/b}{/color}"
     show mspython happy
     mspy "Nice work! You got it right."
     mspy "The {=code}+{/code} operator combines strings — just like teamwork combines talent!"
