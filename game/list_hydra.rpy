@@ -1,0 +1,65 @@
+label list_hydra:
+    $ WC_local = 0  # local attempt counter
+
+    while True:
+        $ answer = renpy.input('heads = [[] \n{color=#ff4444}{b}________{/b}{/color} \nprint(heads) \nOutput: [[\'Hydra\'] ').strip()
+
+
+        if answer == "heads.append('Hydra')":
+            show kai happy
+            show cyra happy
+            play music right_answer noloop
+            "Correct! \n{color=#32CD32}{b}Output: [[\'Hydra']{/b}{/color}"
+            show bugHydra Jail #make a sprite with the bug inside a Jail
+            show kai happy2
+            show cyra happy2
+            "The Hydra got sent to jail and will probably never come back...."
+            pause 1
+            "Unless proven innocent..0_0"
+            show cyra happy
+            show kai happy2
+            kai "Hydra captured! Python win again!"
+            show cyra neutral2
+            cyra "Nicely done. You’ve mastered list manipulation."
+            hide bugHydra
+            show kai neutral
+            return
+        else:
+            $ WC_local += 1
+            if WC_local == 1:
+                show kai angry2
+                kai "It's \"heads\" bro [name], not \"head\"!"
+                show cyra neutral
+                cyra "We also need to only use {color=#ff4444}{b}two single quotations{/b}{/color} not double quotations!"
+                show kai neutral
+                show cyra neutral2
+            if WC_local >= 3:
+                play music error_wrong noloop
+                "You have reached the maximum attempts."
+                "As the List Hydra was about to imprison you"
+                show red at truecenter
+                show cyra angry
+                show kai angry
+                show red
+                pause 1
+                kai "Ughh.. Let me do this"
+                kai "{color=#ff4444}{b}heads.append('Hydra'){/b}{/color}"
+                "Output: \n{color=#32CD32}{b}\['Hydra\']"
+                hide red
+                hide kai angry
+                hide cyra angry
+                show kai neutral at center
+                show cyra surprised at right
+                cyra "Wow Kai you did it!"
+                show cyra neutral2
+                show kai happy
+                kai "And thats how its done"
+                mc "Thanks Kai, and sorry guys...."
+                show kai angry2
+                kai "Dude you gotta be careful on what you type, it has consequences"
+                hide bugHydra with dissolve
+                return  # or jump somewhere else if you want
+            else:
+                play music error_sound1 noloop
+                "{color=#ff4444}{b}Incorrect.{/b}{/color}"
+                "Try again! You have [3 - WC_local] attempt(s) left."

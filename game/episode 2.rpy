@@ -45,7 +45,7 @@ label episode2:
 
     "The lights dim. Ms. Py Thon materializes from floating code glyphs."
 
-    show mspy neutral at center
+    show mspython neutral at center
     with dissolve
 
     mspy "Good morning, coders."
@@ -59,16 +59,12 @@ label episode2:
 
 #SCENE 2
 
-    show text "2" at truecenter with dissolve
-    pause 2
-    hide text with fade
-
     #play music "data_theme.ogg" fadein 2.0
 
     "Holographic lights swirl across the classroom. Data symbols — numbers, words, equations — orbit around {color=#00ffff}Ms. Py Thon{/color} like glowing satellites."
     "Each flicker of light hums softly, resonating like a heartbeat made of pure code."
 
-    show mspy neutral at slightright
+    show mspython neutral at slightright
     mspy "All things in Python — and in this universe — are made of {color=#00ff99}data types{/color}."
     mspy "Every spell, every system, every emotion — stored in a format your code understands."
     mspy "Let’s begin with the simplest…"
@@ -172,6 +168,7 @@ label episode2:
 # 3️⃣ SEQUENCE TYPES: list, tuple, range
 # --------------------------------------------------------------
 
+    show mspython neutral at right with move
     show screen info_box("3.Sequence Types: list, tuple, range") with dissolve
     mspy "Sequences hold multiple values in order — like an array of memories."
 
@@ -220,6 +217,8 @@ label episode2:
 # --------------------------------------------------------------
 # 4️⃣ MAPPING TYPE: dict
 # --------------------------------------------------------------
+    hide mspython
+    show mspython neutral at slightright with move
 
     show screen info_box("4. Mapping Type: dict") with dissolve
     
@@ -271,7 +270,6 @@ label episode2:
 # --------------------------------------------------------------
 # 5️⃣ BOOLEAN TYPE: bool
 # --------------------------------------------------------------
-
     show screen info_box("5. Boolean Type: bool") with dissolve
     
     #change this image
@@ -328,8 +326,6 @@ label episode2:
     scene black with fade
 
 #SCENE 3
-    show text "Scene 3" at truecenter with dissolve #placeholder remove later
-    pause 2
     scene classroom #Dome Background
     with fade
 
@@ -343,7 +339,7 @@ label episode2:
     stop music fadeout 3.0
 
     #play music "glitch_theme.ogg" fadein 2.0 #replace with classic bmg
-    show mspy neutral at center
+    show mspython neutral at center
     mspy "Excellent timing. You’ll be applying your knowledge today — in combat.
         Remember, each Bug manifests from broken logic. Data types are your weapons."
     mc "Wait, we're fighting... with code?"
@@ -375,253 +371,156 @@ label episode2:
     
     show luna happy at right with dissolve
     luna "I love it! It’s creepy and shiny!"
+    hide luna with move
+    show mspython neutral with move
     mspy "Focus, Debuggers. Each Bug’s nature corresponds to a Python data type.
         Identify it. Use the right logic to neutralize it. Let’s begin."
 
+    #String leech shows
+    $ red_effect()
     show screen info_box("Bug #1 – The String Leech") with dissolve
     show bug at top_left_space #change location later
-    $ red_effect()
+
 
     "A pulsating worm of text hovers midair, echoing 'ErrorErrorError...'"
 
     show mspython neutral at center with dissolve
     mspy "This one loops through text patterns. Use string operations to break the cycle."
-    mspy "Remember: in Python, multiplying a string repeats it."
+    mspy "Remember: in Python, multiplying a string repeats it or removes it."
     hide mspython with dissolve
 
-    show cyra smile at right with dissolve
+    show cyra neutral at right with dissolve
     cyra "Like {color=#00ffff}print('LOL' * 3){/color} — my favorite debugging noise."
 
-    show kai smirk at slightright with dissolve
+    show kai happy at truecenter with dissolve
     kai "You would weaponize sarcasm."
 
-    "Choose the correct syntax!!"
+    "Type the missing syntax!!"
     "How will you handle the String Leech?"
-        
 
-    menu:
-        extend ""
-
-        "print('Error' * 3)":
-            # put sound here for correct answer
-            with hpunch
-            "The Bug vibrates, then dissolves into glowing pixels."
-            mspy "Perfect. You matched its pattern."
-            cyra "Nice echo control, coder."
-            # hide red with fade
-            hide bug with dissolve
-            $ change_cyraAffection(+1)
-
-        "x = 3 + 'Error'":
-            # put sound here for wrong answer
-            with vpunch
-            $ red_effect()
-            "The Bug screams! The dome shakes — fragments of red text fly."
-            mspy "TypeError! You cannot add integers and strings. Data types must match."
-            kai "Rookie mistake. Don’t worry — happens to the best of us."
-            hide bug with dissolve
-
-        "del 'Error'":
-            # put sound here for wrong answer
-            $ red_effect()
-            "A syntax flashback explodes."
-            luna "You can’t just delete a word from reality!"
-            mspy "Indeed. Strings are immutable — once defined, you cannot delete literal values directly."
-            hide bug with dissolve
-
+    #1Bug String Leech code input----------------------------------------------------------------  
+    call string_leech
+    hide bug
     hide screen info_box with fade
 
-    pause .5
-
-
-    #bug 2
-    show screen info_box("Bug #2 – The Numeric Ogre") with dissolve
-    show bugOrge at top_left_space
+    #bug 2---------------
     $ red_effect()
-
+    show screen info_box("Bug #2 – The Numeric Ogre")
+    show bugOrge at top_left_space
+    show kai surprised2
+    show cyra neutral2
     "A massive creature stomps in, chanting: 'Divide by Zero! Divide by Zero!'"
-
+    show kai neutral2
     mspy "Arithmetic operators — +, -, *, / — handle calculations."
     mspy "But dividing by zero causes catastrophic failure. Proceed carefully."
 
-    luna "So… never trust a zero. Got it."
+    mc "So… never trust a zero. Got it."
+    show cyra neutral
     cyra "Or trust Kai with math."
+    show kai embarassed
     kai "Funny. Let’s see if you still laugh after you lose the leaderboard."
+    show cyra neutral2
+    hide kai embarassed 
+    show kai neutral2 
+    mspy "FOCUS! Students"
 
-    "Choose the correct numeric operation!!"
+    "Construct the right code to defeat the Numeric Orge!"
     "How do you calm the Numeric Ogre?"
 
-    menu:
-        extend ""
+    #--------------Numberic Org ----------------------
+    call numeric_org
+    hide bugOrge
+    hide screen info_box
 
-        "x = 10 / 2":
-            #put sound here for correct answer
-            "A calm blue wave stabilizes the bug."
-            mspy "Excellent. Division complete without error."
-            kai "Clean logic. You’ve got quick hands, MC."
-            $ change_kaiAffection(+1)
-            hide bugOrge with dissolve
-            hide screen info_box with move
-
-
-        "x = 10 / 0":
-            #explosion sound
-            $ red_effect()
-            with vpunch
-            "Explosion of red light — alarms blare."
-            mspy "DivideByZeroError! Impossible operation — logic fails!"
-            mira "The bug’s feeding on it! I’m losing control of the data flow!"
-            astra "Back it up, newbie. Keep your variables alive next time."
-            hide bugOrge with move
-            hide screen info_box with move
-
-        "x = 'Ten' + 2":
-            #error sound
-            $ red_effect()
-            "The code distorts — random characters appear."
-            mspy "Invalid operation. You can’t combine strings and integers with +."
-            cyra "Oof, classic mistake. Mixing data types — every beginner’s heartbreak."
-            hide bugOrge with move
-            hide screen info_box with move      
-    
-    pause .5
-    show red at truecenter with fade
-
-    #bug 3
-    show screen info_box("Bug #3 – The List Hydra") with fade
-
-    show bugHydra at top_left_space with dissolve
+    #bug 3---------------
     $ red_effect()
+    show screen info_box("Bug #3 – The List Hydra") with fade
+    show bugHydra at top_left_space with dissolve
+
 
     "Three heads emerge, hissing binary streams."
 
     mspy "Lists are mutable — you can modify them."
     mspy "To contain the Hydra, use {color=#00ffff}.append(){/color} to add each head into your list."
+    show cyra surprised
+    show kai neutral2
     cyra "So… we’re making a 'Hydra shopping list'? Nice."
+    show cyra neutral2
 
-    hide screen info_box with move
     hide bugHydra with move
+    hide screen info_box with fade
     mspy "Example:"
     show ep2-scn3-txt1 at top_left_space with move
     mspy "The append() method adds items to the end of a list."
 
-    hide ep2-scn3-txt1 with move    
-    show bugHydra at top_left_space with move
-    show screen info_box("Bug #3 – The List Hydra") with move
+    hide ep2-scn3-txt1
+    with fade    
+    show bugHydra at top_left_space
+    show screen info_box("Bug #3 – The List Hydra")
 
+    #List Hydra call here-----------------------------------------------------------------------------------------------------
     "How do you trap the Hydra?"
-    menu:
-        "heads = [[]\n heads.append('Hydra')":
-            # put sound here for correct answer
-            "The Hydra turns to harmless data bubbles."
-            luna "Hydra captured! Friendship and Python win again!"
-            astra "Nicely done. You’ve mastered list manipulation."
-            hide bugHydra with move
-            hide screen info_box with move
-            hide red with dissolve
-
-        "heads = ('Hydra')":
-            # put sound here for wrong answer
-            "The heads multiply!"
-            mspy "Incorrect — parentheses create a string, not a list. Lists use brackets [[]."
-            cyra "Guess we’re snake food now."
-            hide bugHydra with move
-            hide screen info_box with move
-
-        "heads = range('Hydra')":
-            # put sound here for wrong answer
-            "The system glitches violently."
-            mspy "TypeError. range() only accepts numbers, not strings. Be precise!"
-            mira "I’ll stabilize it— wait… it’s resisting my override..."
-            hide bugHydra with move
-            hide screen info_box with move
+    "Append the \"heads\" to seal away the \"Hydra\""
+    call list_hydra
+    hide bugHydra
+    hide screen info_box
     
-    #bug 4
+    #bug 4------------
+    $ red_effect()
     show screen info_box("Bug #4 – The Boolean Phantom")
 
-    show bugPhantom at top_left_space with move
-
+    show bugPhantom at top_left_space
+    show kai surprised
+    show cyra surprised
     "A ghost flickers in and out, whispering 'True… False…'"
-
+    show kai neutral2
+    show cyra neutral
     mspy "Booleans control logic flow. Use {color=#00ffff}if{/color} statements to make code decisions."
+    show kai neutral
     kai "So, we’re exorcising with logic? My kind of fight."
+    show kai neutral2
+    show cyra happy2
+    cyra "This will be easy!"
+    mc "Got it. Let's Go!"
+    show cyra neutral2
 
+    #Bug Phantom call here--------------------------------------
     "What code do you use to reveal the truth?"
-    menu:
+    call bug_phanthom
+    hide bugPhantom
+    hide screen info_box with fade
 
-            "if True: print('Visible')":
-                # put sound here for correct answer
-                "The ghost solidifies and vanishes in light."
-                mspy "Perfect control. True conditions execute the code block."
-                kai "You handle pressure well, MC."
-                $ change_kaiAffection(+1)
-                hide red with dissolve
-                hide bugPhantom with move
-                hide screen info_box with move
 
-            "if None: print('Visible')":
-                #put sound here for wrong answer
-                "The ghost duplicates!"
-                mspy "None is not a Boolean value — logic collapsed!"
-                luna "Aah! Now we have two ghosts! Double the haunted homework!"
-                hide bugPhantom with move
-                hide screen info_box with move
+    # Final Boss----------
+    $ red_effect()
+    show screen info_box("Bug #5 Final Boss: The Void Entity")
 
-            "if False: print('Visible')":
-            #put sound here for wrong answer
-                "The ghost turns invisible — then jumpscares the team."
-                cyra "WAAH! Remind me to never trust False again."
-                mspy "False conditions skip execution — your action didn’t trigger the code."
-                hide bugPhantom with move
-                hide screen info_box with move
-
-    # Final Boss
-    show screen info_box("Boss: The Void Entity")
-
-    show bugVoid at top_left_space with move
-    "The entire forest shakes. A massive shadow rises — pure black code swirling like smoke."
+    show bugVoid at top_left_space with dissolve
+    "The entire room shakes. A massive shadow rises — pure black code swirling like smoke."
 
     mspy "This one... is made of NoneType — the absence of data. Only creation — something from nothing — can undo it."
+    show cyra neutral
     cyra "That’s… deep. We code meaning into nothingness?"
+    show cyra neutral2
     mc "Let’s give it something real."
 
     "What do you assign to restore balance?"
-    menu:
+    #Bug Void call here---------------------------------------
+    call void_bug
+    hide bugVoid
+    hide screen info_box
 
-            "x = None":
-                #put sound here for wrong answer
-                "The void expands, draining color."
-                mspy "Wrong. Assigning None gives it power. None means emptiness."
-                astra "Careful — feed darkness and it grows."
-                hide bugVoid with move
-                hide screen info_box with move
-                hide red with dissolve
-
-            "x = 'Hope'":
-                # put sound here for correct answer
-                "The word 'Hope' appears in glowing light, shattering the Void."
-                mspy "Beautifully done. Creation defeats emptiness."
-                luna "YAY! We beat the void with positivity and variable assignment!"
-                hide bugVoid with move
-                hide screen info_box with move
-
-            "del x":
-                #put sound here for wrong answer
-                "The code destabilizes. Chaos follows."
-                mspy "Deleting variables erases value entirely!"
-                mira "It’s rewriting the environment— STOP!"
-                hide bugVoid with move
-                hide screen info_box with move
-
+    # End of battle simulation------------------------------
     stop music fadeout 2.0 #fight music stop here
     #play music "ending_theme.ogg" fadein 2.0  #start ending music here
 
     scene classroom_day with fade
     dr "Simulation success. Excellent teamwork, Debuggers."
-    show mspy happy at center
+    show mspython happy at center
     with move
     mspy "You’ve done well. Every operation, every decision — builds the foundation of your code."
 
+    hide mspython happy with move
     show cyra neutral at slightleft with move
     show kai neutral at left with move
     show luna happy at right with move
@@ -649,9 +548,9 @@ label episode2:
 
     show luna tired at left
     with dissolve
-    show cyra happy at slightleft
+    show cyra neutral-notab at slightleft
     with dissolve
-    show kai smirk at right
+    show kai neutral2 at right
     with dissolve
     show mira neutral at center
     with dissolve
@@ -691,7 +590,7 @@ label episode2:
     astra "(smirking slightly) Some things never change. Team chaos, through and through."
 
     # Ms. Py Thon Hologram Appears
-    show mspy happy at center
+    show mspython happy at center
     with dissolve
     # play sound "hologram_on.ogg"
     # put hologram sound here for Ms. Py Thon entrance
@@ -701,6 +600,7 @@ label episode2:
     mspy "(smiling faintly) Tomorrow’s module will be Operators and Conditional Statements. Prepare your minds."
     mspy "We will learn how the simplest symbols — +, -, *, /, and, or, not — can reshape digital reality itself."
 
+    hide mspython with move 
     cyra "Oh great. Math with consequences."
     kai "Oh joy. Logic puzzles. My favorite way to suffer."
     luna "Oh no… homework."
@@ -715,6 +615,11 @@ label episode2:
         "What will you do?"
         
         "Talk to Cyra":
+            hide kai 
+            hide astra 
+            hide mira 
+            hide luna
+            show cyra neutral at center with move
             mc "You really kept your cool out there. You always this confident?"
             cyra "(smiling, leaning closer) Confidence is just caffeine and chaos, rookie. But… maybe I just wanted to impress someone."
             "She laughs softly, brushing her hair aside."
@@ -725,6 +630,11 @@ label episode2:
             mc "(grinning) Mission accomplished."
 
         "Talk to Kai":
+            hide cyra
+            hide astra
+            hide luna
+            hide mira
+            show kai neutral at center with move
             mc "You were solid out there. Even when the Hydra bit your arm."
             kai "(chuckling) It’s fine. I’ve had worse bugs. But don’t think I’ll let you beat me again."
             kai "(grins) Next time, I’m going all in. No mercy coding."
@@ -735,6 +645,11 @@ label episode2:
             mc "You’re on, Kai."
 
         "Talk to Mira":
+            hide cyra
+            hide astra
+            hide luna
+            hide kai
+            show mira happy at center with move
             mc "You seemed worried during the mission. Everything okay?"
             mira "(looking distant) Just… residual static. Sometimes I see patterns where there shouldn’t be any. It’s probably nothing."
             "Her datapad flickers with corrupted code for a split second — {color=#ff4444}ACCESS DENIED{/color}."

@@ -13,7 +13,7 @@ label ep1_scn5_txt3:
     else:
         $ WC += 1
         if WC == 1:
-            "{color=#32CD32}{b}Hint: Observe the Question{/b}{/color}"
+            "{color=#32CD32}{b}Hint: Observe the parenthesis in 3rd line{/b}{/color}"
         if WC >= 3:
             "You have reached the maximum attempts."
 
