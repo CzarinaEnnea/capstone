@@ -27,6 +27,7 @@ label ep1_scn5_txt3:
                     $ scene5Wrong = True
                     show mspython sad
                     mspy "Incorrect. Remember the {=code}+{/code} operator joins strings directly. No space unless you add one." 
+                    "{color=#32CD32}{b}Correct Answer: PythonRocks!{/b}{/color}"
                     show mspython neutral
                     mspy "If you do want to add one just set the space as a string like so."
 
@@ -38,7 +39,6 @@ label ep1_scn5_txt3:
                     "{=red}Syntax Confidence –1{/red}"
                     $ change_confidence(-1)
 
-                    "{color=#32CD32}{b}Correct Answer: PythonRocks!{/b}{/color}"
 
                     hide ep1-scn5-txt4 with dissolve
 
