@@ -174,12 +174,11 @@ label episode1:
     show luna neutral at right with dissolve
     luna "Python: adaptive, readable, and statistically likely to dominate human education."
 
-    show astra neutral:
-        subpixel True xpos 0.84 
-        Null(411.0, 1080.0)
-        'astra neutral' with dissolve
+    # hide luna
+    # show astra neutral at right 
+    # with dissolve
 
-    astra "Uh huh."
+    # astra "Uh huh."
 
     show mspython neutral
     mspy "Quite right, Luna. Python’s beauty lies in its simplicity."
@@ -198,6 +197,8 @@ label episode1:
     hide astra
     hide luna
     hide ep1-scn2-txt2
+    with dissolve
+
     show screen info_box("SYNTAX 101: Indentation") with dissolve
     show ep1-scn2-txt2-1 at top_left_space
     with dissolve
@@ -286,12 +287,15 @@ label episode1:
 
     cyra "Oh! Everyone, meet our new recruit!!"
 
-    show astra neutral at slightleft with dissolve
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
+
     astra "Oh, look. The new one survived Ms. Py Thon’s lecture that’s worth a celebration. {w}I’m Astra."
 
     show kai neutral at left with dissolve
     kai "Barely. I saw three students combust from syntax errors."
     show kai neutral2
+    show astra neutral2
 
     pause 0.5
     show luna neutral at right with dissolve
@@ -315,10 +319,8 @@ label episode1:
 
     menu:
         "Nice to meet you all! I’m [name] and ready to code my destiny.":
-            # show kai happy
             show astra happy
             "You saw Kai nods approvingly and Astra winks towards you"
-            # show kai neutral 
 
         "Wait—did she say students combusted?":
             show luna surprised
@@ -331,10 +333,12 @@ label episode1:
                 linear 0.7 xpos 0.9
             "You saw Mira turning red and hides herself behind Luna."
 
+    show astra neutral
     show luna neutral
     astra "So, rookie, which division you thinking of joining? Frontend glam? Backend chaos? Or full-stack madness?"
 
     show cyra happy-notab
+    show astra neutral2
     cyra "Relax, [theyre] still new."
 
     mc "Not sure yet. Still figuring out if I’m more “function” or “fashion.”"
@@ -423,6 +427,9 @@ label episode1:
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
 
+            show cyra neutral2
+            show kai neutral2
+
     #   QUESTION 2    
     mspyIntercom "Assign 10 to variable x. In a Variable we can store data types we want for example let it be a number, a string and so on. First you have to name your variable it can be a string or a single letter."
     mspyIntercom "I'll explain it more in a later class so don't worry if you got it wrong. {w}Now go Assign 10 to variable x"
@@ -437,10 +444,14 @@ label episode1:
             "{=gold}Kai’s Affection +1{/=gold}"
             show luna happy at center with dissolve
             luna "You’re on fire! But like... in a non-combustion way!"
-            show astra neutral at slightleft with dissolve
+            show astra neutral at slightleft with dissolve:
+                xzoom -1.0
             astra "Careful, Kai. Compliments look good on you." #teasing
+            show kai neutral2
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
+
+            
 
         "int x = 10":
             call question2Wrong from _call_question2Wrong
@@ -989,7 +1000,8 @@ label episode1:
 label question1Right:
     mspyIntercom "Well done. Your syntax is strong. Print is used to show the strings you want to say strings are the words."
 
-    show astra at slightleft with dissolve
+    show astra happy at slightleft with dissolve:
+        xzoom -1.0
     astra "Nice reflexes, rookie. Fast and clean — just my type."
 
     show kai happy at left with dissolve
@@ -1001,6 +1013,10 @@ label question1Right:
     cyra "You did it! The Bug didn’t even hiss at you!"
     "{=gold}Syntax Confidence +2{/gold}"
     $ change_confidence(+2)
+
+    show astra happy2
+    show cyra happy2
+    show kai happy2
     return
 
 label question2Wrong:
@@ -1021,6 +1037,7 @@ label question3Right:
     luna "Imagine if it could make coffee, though."
     show astra neutral at slightleft with dissolve
     astra "I’d marry Python."
+    show kai neutral2
     "(Kai raises eyebrow.)"
     show astra happy
     astra "Relax, Kai— it’s just a language."
@@ -1030,6 +1047,7 @@ label question3Right:
     return
 
 label question4Wrong:
+    show kai neutral
     kai "Pfft. Rookie mistake."
     show luna neutral at center with dissolve
     luna "Hey, {b}Kai{/b}, remember when you broke your code with 18 curly braces?"
@@ -1037,8 +1055,8 @@ label question4Wrong:
     kai "That was style."
     show cyra neutral
     cyra "Sure it was……."
-    show astra at slightleft with dissolve
-    astra "Nice try though [name]"
+    show astra neutral at slightleft with dissolve
+    astra "Nice try though [name]."
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)
     "(Team laughs; Bug spawns and gets squashed.)"

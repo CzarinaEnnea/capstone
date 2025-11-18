@@ -84,6 +84,10 @@ transform rise_up:
     xalign 0.5      
     linear 0.5 ypos 0.0
 
+init:
+    transform flip:
+        xzoom -1.0
+
 # Default Variables
 default syntaxConfidence = 0
 default kaiAffection = 0

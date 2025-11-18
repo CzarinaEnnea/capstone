@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 4.rpy", line 337: menu statement expects a non-empty block.
-    menu:
-        ^
+File "game/episode 1.rpy", line 289: multiple at clauses are prohibited.
+    show astra neutral at flip at slightleft with dissolve
+                                 ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Fri Nov  7 23:02:01 2025
+Tue Nov 18 15:21:21 2025
