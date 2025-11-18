@@ -222,6 +222,12 @@ style choice_vbox:
     ypos 405
     yanchor 0.5
 
+# CHANGE MENU CHOICE LOCATION
+    # xalign 0.0
+    # ypos 700
+    # xpos 450
+    # yanchor 0.1
+
     spacing gui.choice_spacing
 
 style choice_button is default:

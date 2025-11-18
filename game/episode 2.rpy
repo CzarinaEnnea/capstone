@@ -351,7 +351,7 @@ label episode2:
     kai "Hmph. Let’s see if you can debug faster than you talk."
     show luna happy at left
     show mira neutral at slightright
-    show astra neutral at truecenter
+    show astra neutral at center
     with dissolve
 
     luna "A real glitch portal? Sparkly destruction! Let’s gooo!"
@@ -406,7 +406,7 @@ label episode2:
     #bug 2---------------
     $ red_effect()
     show screen info_box("Bug #2 – The Numeric Ogre")
-    show bugOrge at top_left_space
+    show bugOgre at top_left_space
     show kai surprised2
     show cyra neutral2
     "A massive creature stomps in, chanting: 'Divide by Zero! Divide by Zero!'"
@@ -429,7 +429,7 @@ label episode2:
 
     #--------------Numberic Org ----------------------
     call numeric_org
-    hide bugOrge
+    hide bugOgre
     hide screen info_box
 
     #bug 3---------------
@@ -525,7 +525,7 @@ label episode2:
     show kai neutral at left with move
     show luna happy at right with move
     show mira neutral at slightright with move
-    show astra neutral at truecenter with move
+    show astra neutral at center with move
 
     cyra "Next time, I call dibs on the final blow."
     kai "You? You barely handled one Boolean ghost."

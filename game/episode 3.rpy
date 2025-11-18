@@ -23,31 +23,38 @@ label episode3:
     mspy "Today’s lesson: {b}Operators{/b}. {w}They allow us to perform calculations and comparisons."
     mspy "In code, they define how data interacts."
 
+    show mspython neutral2
     mc "Sounds easy enough… but with Ms. Py Thon teaching, I’m sure there’s a twist."
 
-    show cyra neutral zorder 1 at right with dissolve    #teasing
-    cyra "Don’t worry, rookie. If you fail, I’ll tutor you. {w}If you treat me that is"
+    show cyra neutral zorder 1 at right with dissolve
+    cyra "Don’t worry, rookie. If you fail, I’ll tutor you." 
+    show cyra happy
+    cyra "If you treat me that is."
 
-    show kai neutral at left with dissolve      #snickering
+    show cyra happy2
+    show kai happy at left with dissolve
     kai "Or maybe I’ll do it first. Gotta keep my rival sharp."
 
-    mspy "Let’s start with arithmetic operators. Try this example:"
+    show mspython neutral
+    mspy "Let’s start with arithmetic operators." 
+    mspy "Try this example."
 
-    hide kai
-    show mspython at slightright with move
+    hide kai with dissolve
+    show mspython neutral2 at slightright with move
     show ep3-scn1-txt1 at top_left_space
     with dissolve
 
     menu:
         "15":
+            play sound right_answer
             show mspython happy
             mspy "Excellent! The {=code}*{/code} operator multiplies values."
             show cyra happy
             cyra "See? Total prodigy."
         "8":
-            jump ep3Scn1QuestionWrong
+            call ep3Scn1QuestionWrong
         "53":
-            jump ep3Scn1QuestionWrong
+            call ep3Scn1QuestionWrong
 
     show mspython neutral
     mspy "Remember you can also use other operators in here as well like {=code}+, /, - ,{/code} and more {w}as long as its basic calculation."
@@ -435,6 +442,7 @@ label episode3:
     return
 
 label ep3Scn1QuestionWrong:
+    play sound error_sound1
     show mspython sad
     mspy "Incorrect. Multiplication uses {=code}*{/code}, not concatenation."
     show mspython neutral
