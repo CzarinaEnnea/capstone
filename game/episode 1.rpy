@@ -560,83 +560,125 @@ label episode1:
     "Morning light streams through the digital windows of Code Nexus Academy."
     "After a long night of debugging simulations, the class gathers once again in {b}Ms. Py Thon’s Command Lab{/b}. Ready to dive deeper into the logic that powers their world."
 
-    show mspython neutral
+    show mspython neutral2 zorder 4 at center
     with dissolve
 
-    mspy "(Clapping her hands — and three glowing orbs float into the air.) {p}Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w=0.5}— in Python!"
+    "(Clapping her hands — and three glowing orbs float into the air.)"
+    show mspython neutral
+    mspy "Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w}— in Python!"
+    show mspython neutral2
 
-    show cyra at right
+    show cyra surprised-notab zorder 3 at right
     with dissolve
     cyra "Wake up Ms is here."
+    show cyra surprised2-notab
     mc "(Grinning, still sleepy.) {p}Uh… can the heart be caffeinated first?"
 
-    show astra at slightright
-    with dissolve
+    show astra neutral at left with dissolve:
+        xzoom -1.0
     astra "It's only the second day, and you're already sleeping LOL."
+    show astra neutral2
 
-    show kai at left
+    show kai happy zorder 2 at slightright:
+        xzoom -1.0
     with dissolve
-    kai "(Snickers.) {p}Guess someone didn’t def their sleep last night."
+    kai "Guess someone didn’t def their sleep last night."
 
-    show mspython neutral
+    show mspython angry
     mspy "Ha! Save your excuses for the compiler. Now open your command lines!"
+
+    show kai surprised
+    show astra surprised
+    show cyra surprised-notab
+
+    mc "!!!"
+
+    hide kai
+    hide cyra
+    hide astra
+    with dissolve
 
     show ep1-scn4-txt0 at top_left_space
     with dissolve
 
+    show mspython neutral at slightright with move
+    mspy "Now class."
     mspy "As we learned before, Python syntax can be executed right in the command line, like so:"
 
     hide ep1-scn4-txt0
     show ep1-scn4-txt1 at top_left_space
+    with dissolve
+
     mspy "Or, by running it in a .py file through the server. It’s like two paths to the same spell."
     cyra "So basically… It’s like summoning magic either from your hand or your spellbook?"
+    show mspython happy
     mspy "Exactly, my fiery apprentice! Python is both elegant and flexible."
 
     hide ep1-scn4-txt1
     show ep1-scn4-txt2-1 at top_left_space
+    with dissolve
 
     mspy "Now — behold the sacred rule: {i}Indentation matters!{/i}"
 
     hide ep1-scn4-txt2-1
     show ep1-scn4-txt2 at top_left_space
+    with dissolve
 
     mspy "If you skip the indentation, Python won’t forgive you."
     drIntercom "Neither will I."
     "Everyone" "(Laughs nervously.)"
 
+    show mspython neutral
     mspy "The number of spaces is your choice, but consistency is the key. {w}You must never mix your indentation styles… or the code will crumble!"
+    show mspython neutral2
     mc "So, it’s kind of like teamwork? Everyone needs to keep their spacing aligned?"
     kai "Deep. Didn’t think you had that in you."
     cyra "Guess our hero’s got some brain cells after all."
 
     hide ep1-scn4-txt2
     show ep1-scn4-txt3-1 at top_left_space
+    with dissolve
 
+    show mspython neutral
     mspy "In Python, variables are born the moment you assign them a value — no declarations needed!"
 
     hide ep1-scn4-txt3-1
     show ep1-scn4-txt3 at top_left_space
+    with dissolve
+
+    mspy "Like so."
 
     mspy "And comments begin with a {=code}#{/code}. It’s like whispering to your code — only you can hear it."
 
     hide ep1-scn4-txt3
     show ep1-scn4-txt4 at top_left_space
+    with dissolve
 
     kai "So… a comment’s like a secret message in a bottle?"
+    show mspython happy
     mspy "Exactly, Kai. For once, you’re insightful."
 
-    show cyra surprised
+    hide ep1-scn4-txt4
+    show mspython neutral2 at center with move
+    show cyra surprised at right
+    with dissolve
 
     cyra "Wait, so if I type {=code}# Cyra is awesome{/code}, it doesn’t actually do anything?"
+    show cyra surprised2
+    show astra neutral at left with dissolve:
+        xzoom -1.0
     astra "You’re the only one who can see it, Cyra."
+    show astra neutral2
+    show mspython happy
     mspy "Only boosts your ego, dear."
 
-    hide ep1-scn4-txt4
-    hide mspython
-    hide kai
-    hide cyra
     hide astra
+    hide mspython
+    hide cyra
     with dissolve
+
+    scene classroom
+    with fade
 
     "{b}After Class – Free Interaction Scene{/b}"
     "The class ends, and the students scatter. You can choose who to talk to before leaving."
@@ -1071,11 +1113,13 @@ label question5Wrong:
 
 # Scene 4: Free Interaction Choices
 label talkToCyra:
-    show cyra neutral at center
+    show cyra neutral2 at center
     with dissolve
 
     mc "That was a cool metaphor earlier — the magic spell thing."
+    show cyra neutral
     cyra "You think so? Coding’s kinda like fire… {w}control it right, and you create something amazing."
+    show cyra disgusted
     cyra "Lose control, and you burn your whole system."
 
     menu:
@@ -1086,82 +1130,121 @@ label talkToCyra:
             $ change_cyraAffection(+1)
 
         "That’s too dramatic for me.":
+            show cyra neutral
             cyra "Then you’ll never survive Ms. Py Thon’s next exam."
             "{i}No affection change.{/i}"
+
+    hide cyra
+    with dissolve
+
     return
 
 label talkToKai:
-    show kai neutral at center
+    show kai neutral2 at center
     with dissolve
 
-    kai "(Leaning back in his chair, smirking.) {p}So… how’s the new hero of Code Nexus liking syntax so far?"
+    "You saw Kai leaning back in his chair."
+
+    show kai neutral
+    kai "So… how’s the new hero of Code Nexus liking syntax so far?"
     menu:
         "It’s kinda fun actually.":
-            show kai happy
-            kai "Heh, didn’t expect you to say that. Maybe you’re not as hopeless as I thought."
+            show kai surprised
+            kai "Heh, didn’t expect you to say that." 
+            show kai happy2
+            kai "Maybe you’re not as hopeless as I thought."
             "{=gold}Kai’s affection slightly increases.{/gold}"
             $ change_kaiAffection(+1)
         "Boring. I want action.":
-            kai "Pfft. Patience, rookie. You can’t fight ‘Bugs’ without knowing how to debug."
+            show kai happy2
+            kai "Pfft. Patience, rookie." 
+            show kai happy
+            kai "You can’t fight ‘Bugs’ without knowing how to debug."
             "Kai teases you. {i}No affection change.{/i}"
+
+    hide kai
+    with dissolve
+
     return
 
 label talkToMsPython:
-    show mspython neutral at center
+    show mspython neutral2 at center
     with dissolve
 
     mc "Ms. Py Thon, you make syntax sound way cooler than it should be."
-    show mspython happy
+    show mspython surprised
     mspy "Of course! Syntax is the melody that runs the digital universe."
+    show mspython neutral
     mspy "Master it, and you can {i}sing your will into the code.{/i}"
 
     menu:
         "That’s poetic.":
-            show mspython neutral
+            show mspython happy
             mspy "Coding is poetry, if you write it with care."
+            show mspython happy2
             "You gain respect from Ms. Py Thon."
         "That’s… kind of creepy.":
             show mspython sad
             mspy "Then you’ve never seen true beauty in logic."
             "Slight awkwardness."
+
+    hide mspython
+    with dissolve
+
     return
 
 label talkToDrByte:
-    show doctorbyte neutral at center
+    show doctorbyte happy at center
     with dissolve
 
     dr "You’re improving. Ms. Py Thon reports progress."
     mc "Really? That’s… good, I think?"
+    show doctorbyte neutral
     dr "But remember — the Bugs grow stronger every time someone forgets a semicolon."
     mc "Uh, Python doesn’t use semicolons."
+    show doctorbyte surprised
+    dr"!!!"
+    show doctorbyte sad
     dr "...."
-    dr "…{w}I was testing you."
+    show doctorbyte happy2
+    dr "....."
+    show doctorbyte happy-flower
+    dr "…I was testing you."
 
     hide doctorbyte with dissolve
     "He cuts the call..."
     "Everyone nearby bursts out laughing."
+    
     return
 
 label talkToAstra:
-    show astra neutral at center
+    show astra neutral2 at center
     with dissolve
 
-    astra "(Leaning against the window, arms crossed, a confident grin on her face.){p}So, newbie, surviving your first code storm?"
+    "You saw Astra leaning against the window, arms crossed with a confident grin on her face."
+    show astra neutral
+    astra "So, newbie, surviving your first code storm?"
+    show astra neutral2
     mc "Somehow, yeah. Though I think the real storm was Ms. Py Thon’s syntax lecture."
-    show astra happy
+    show astra neutral
     astra "Ha! You’ll get used to it. Syntax is the easy part {w}— it’s the logic battles that’ll fry your circuits later."
 
     menu:
         "Logic battles?":
             show astra neutral
             astra "Oh, you’ll see. Ever heard of a recursive loop that eats your project alive? Yeah, fun times"
+            show astra neutral2
             "{i}You laugh nervously.{/i}"
             show astra happy
-            astra "Don’t worry. If you ever crash, I’ll show you how to reboot — in life and in code."
+            astra "Don’t worry. If you ever crash, I’ll show you how to reboot{w} — in life and in code."
         "You sound like you’ve seen some chaos.":
             show astra sad
             astra "Let’s just say… I’ve debugged my share of nightmares."
-            show astra neutral
             "Her tone softens for a second before she smirks again."
+            show astra neutral
             astra "Stick close, rookie. You might learn more than you expect."
+
+    hide astra
+    with dissolve
+
     return
