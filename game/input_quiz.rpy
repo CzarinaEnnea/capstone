@@ -36,6 +36,7 @@ label ep1_scn5_txt3:
                     with dissolve
 
                     "Class giggles softly. [name] loses a bit of confidence."
+                    play sound "error_sound1.ogg"
                     "{=red}Syntax Confidence –1{/red}"
                     $ change_confidence(-1)
 
@@ -44,6 +45,7 @@ label ep1_scn5_txt3:
 
                 "Error":
                     $ scene5Wrong = True
+                    show mspython sad
                     mspy "Not quite! That would happen only if we tried to combine incompatible data types."
                     "You learn something from your mistake."
 
@@ -65,6 +67,7 @@ label ep1_scn5_txt3:
     show mspython happy
     mspy "Nice work! You got it right."
     mspy "The {=code}+{/code} operator combines strings — just like teamwork combines talent!"
+    show mspython happy2
     "The class claps. [name]’s confidence increases."
     "{=gold}Syntax Confidence +2{/gold}"
     $ change_confidence(+2)

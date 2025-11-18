@@ -1,25 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 182, in script call
-    call episode2 from _call_episode2
-  File "game/episode 2.rpy", line 402, in script call
-    call string_leech
-  File "game/string_leech.rpy", line 32, in script
-    play music error-wrong noloop
-  File "game/string_leech.rpy", line 32, in <module>
-    play music error-wrong noloop
-NameError: name 'error' is not defined
+  File "game/script.rpy", line 186, in script call
+    call episode1 from _call_episode1
+  File "game/episode 1.rpy", line 944, in script
+    play sound hologram.ogg
+  File "game/episode 1.rpy", line 944, in <module>
+    play sound hologram.ogg
+               ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'ogg'
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 182, in script call
-    call episode2 from _call_episode2
-  File "game/episode 2.rpy", line 402, in script call
-    call string_leech
-  File "game/string_leech.rpy", line 32, in script
-    play music error-wrong noloop
+  File "game/script.rpy", line 186, in script call
+    call episode1 from _call_episode1
+  File "game/episode 1.rpy", line 944, in script
+    play sound hologram.ogg
   File "renpy/ast.py", line 2231, in execute
     self.call("execute")
     ~~~~~~~~~^^^^^^^^^^^
@@ -29,7 +26,7 @@ Traceback (most recent call last):
   File "renpy/statements.py", line 379, in call
     return method(parsed, *args, **kwargs)
            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/common/000statements.rpy", line 131, in execute_play_music
+  File "renpy/common/000statements.rpy", line 318, in execute_play_sound
     _audio_eval(p["file"]),
     ~~~~~~~~~~~^^^^^^^^^^^ 
   File "renpy/common/000statements.rpy", line 39, in _audio_eval
@@ -41,11 +38,12 @@ Traceback (most recent call last):
   File "renpy/python.py", line 1285, in py_eval_bytecode
     return eval(bytecode, globals, locals)
            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/string_leech.rpy", line 32, in <module>
-    play music error-wrong noloop
-NameError: name 'error' is not defined
+  File "game/episode 1.rpy", line 944, in <module>
+    play sound hologram.ogg
+               ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'ogg'
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Tue Nov 18 01:17:27 2025
+Tue Nov 18 21:05:18 2025

@@ -710,9 +710,14 @@ label episode1:
     with dissolve
     mspy "Class, welcome to the second pillar of programming — {w}{b}Variables!{/b}"
 
-    show astra neutral at slightleft
+    show mspython neutral2
+    
+    show astra neutral at slightleft:
+        xzoom -1.0
     with dissolve
     astra "Another day to learn coding."
+
+    show astra neutral2
 
     show luna neutral zorder 2 at slightright
     with dissolve
@@ -722,11 +727,14 @@ label episode1:
     with dissolve
     cyra "(Stretching.){p}Finally! Something we can actually {i}use.{/i}"
 
+    show cyra neutral2
+
     show kai neutral at left
     with dissolve
     kai "Yeah, because totally, printing {w}{cps=20}{i}‘Hello, World!’{/i} changed my life."
 
-    show mspython angry
+    show kai surprised2
+    show mspython angry zorder 3 with dissolve
     mspy "It {b}should{/b} have, Mr. Sarcasm. Now, pay attention."
 
     hide astra
@@ -744,15 +752,21 @@ label episode1:
 
     mspy "In Python, variables are containers for storing data values. Think of them as—"
 
-    show doctorbyte neutral at right with dissolve #Hologram
+    play sound hologram    
+    show doctorbyte neutral with dissolve:
+        xzoom -1.0
+        xalign 1.1
+        subpixel True alpha 0.74 additive 0.14 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.14)*HueMatrix(459.0) 
 
-    dr "—as magical sigils that store the essence of logic itself."
+
+
+    drHologram "—as magical sigils that store the essence of logic itself."
 
     show mspython angry
     mspy "Yes, thank you, Headmaster. I {i}was{/i} getting there."
 
     show doctorbyte happy
-    dr "Continue. I’ll just observe. Don’t mind me."
+    drHologram "Continue. I’ll just observe. Don’t mind me."
 
     hide doctorbyte with dissolve
 
@@ -773,6 +787,7 @@ label episode1:
     with dissolve
     kai "Because you’re unpredictable."
 
+    show kai neutral2
     "Everyone laughs."
 
     show cyra angry
@@ -799,12 +814,15 @@ label episode1:
 
     define scene5Wrong = False
 
-    pause 2
-    show mspython neutral
+    pause 1
+    show mspython neutral with dissolve
     mspy "Variables can hold numbers, words, even data from sensors and magic circuits. They are the foundation of digital alchemy."
 
     show kai neutral at left with dissolve
+    show mspython neutral2
     kai "Digital… alchemy? Cool. So I’m basically a wizard?"
+    show kai neutral2
+    show mspython neutral
     mspy "Only if your spells compile, dear."
 
     scene classroom
@@ -813,76 +831,63 @@ label episode1:
     "{b}After Class – Team Interaction{/b}"
 
     if scene5Wrong == True:
-        show cyra neutral at center with dissolve
+        show cyra neutral-notab at center with dissolve
         cyra "You did great back there, [name]. Even when you got it wrong, you didn’t panic."
+        show cyra happy-notab
         cyra "That’s… kinda cool."
+        show cyra happy2-notab
         "{=gold}Cyra’s affection slightly increases.{/gold}"
         $ change_cyraAffection(+1)
 
-        show kai neutral at left with dissolve
+        show kai happy2 at left with dissolve
         kai "Don’t let her get to your head, rookie. We’ve got bigger bugs to squash soon."
-        show kai happy
         "{=gold}Kai smirks — affection slightly increases.{/gold}"
         $ change_kaiAffection(+1)
     else:
-        show cyra neutral at center with dissolve
+        show cyra neutral-notab at center with dissolve
         cyra "You did great back there, [name]. You didn’t panic and got it right even if you're new."
-        show cyra happy
+        show cyra happy-notab
         cyra "That’s really cool!"
+        show cyra happy2-notab
         "{=gold}Cyra’s affection increases.{/gold}"
         $ change_cyraAffection(+2)
 
-        show kai neutral at left with dissolve
+        show kai happy at left with dissolve
         kai "Don’t let her get to your head, rookie. We’ve got bigger bugs to squash soon."
-        show kai happy
         "{=gold}Kai smirks — affection increases.{/gold}"
         $ change_kaiAffection(+2)
 
     show luna happy at rise_up
 
-    show cyra neutral at slightright with move
+    show cyra neutral2-notab at slightright with move
     luna "Speaking of bugs—don’t squash them! {w}They’re {b}adorable!{/b}"
     show luna neutral
     luna "I named one ‘Syntaxy.’ He’s missing a colon, but he’s trying his best!"
-    show cyra happy
+    show cyra happy-notab
     show kai sad
     "Everyone groans. Cyra laughs while Kai facepalms."
 
-    show cyra neutral
+    show cyra neutral-notab
     cyra "Luna, you seriously need a hobby that doesn’t involve feeding your code errors."
     show luna sad
     luna "They’re misunderstood! Like me, when I use too many print statements."
-    show kai neutral
-    show luna neutral
+    show kai neutral2
+    show luna neutral2
+    show cyra neutral2-notab
 
     show astra neutral at right
     with dissolve
     astra "Well, well… look at you, [name]." 
     astra "First day and already getting attention. Not bad for a newbie."
     "She smirks, eyes glinting mysteriously."
-    kai "Don’t start, Astra. You just want to recruit [name] for your ‘secret AI project’ again."
-    astra "Maybe I do. A good coder recognizes potential… and [name]’s code doesn’t just run—it flows."
+    show kai neutral
+    kai "Don’t start, Astra. You just want to recruit [name] for your ‘{i}secret AI project{/i}’ again."
+    show kai neutral2
+    show astra happy
+    astra "Maybe I do. A good coder recognizes potential… {w}and [name]’s code doesn’t just run—it flows."
 
-    show cyra neutral #flusterred
+    show cyra embarrased-notab
     "Cyra looks slightly flustered and looks away."
-
-    show mspython neutral at slightleft with dissolve
-    mspy "That’s enough, everyone. You’ve all done well today."
-    "Ms Py Thon claps her hand softly. Her calm but commanding tone fills the room."
-    show mspython happy
-    mspy "Remember — variables are the foundation of all programs."
-    mspy "They hold your data, your progress… even your mistakes."
-    mspy "Learn to manage them, and you control your code — and your destiny."
-
-    drIntercom "Indeed. Your first mission awaits tomorrow. Prepare yourselves… the next challenge won’t be so forgiving."
-    "Lights dim. The holographic classroom fades into lines of binary code swirling around the [name]."
-
-    show luna happy
-    luna "Oooh, a mission! Can we bring snacks? My debug chips are gluten-free!"
-    show cyra happy
-    cyra "Luna, you’re hopeless."
-    show kai happy
-    kai "Let’s see if [name] can survive it without breaking the compiler this time."
 
     hide kai
     hide cyra
@@ -890,9 +895,42 @@ label episode1:
     hide astra
     with dissolve
 
-    show mspython happy at center
+    show mspython neutral at center with dissolve
+    mspy "That’s enough, everyone. You’ve all done well today."
+    show mspython neutral2
+    "Ms Py Thon claps her hand softly. Her calm but commanding tone fills the room."
+    show mspython neutral
+    mspy "Remember — variables are the foundation of all programs."
+    mspy "They hold your data, your progress… {w}even your mistakes."
+    mspy "Learn to manage them, and you control your code — and your destiny."
+    show mspython neutral2
+
+    drIntercom "Indeed. Your first mission awaits tomorrow. Prepare yourselves…"
+    drIntercom "The next challenge won’t be so forgiving."
+    "Lights dim. The holographic classroom fades into lines of binary code swirling around [name]."
+
+    hide mspython with dissolve
+
+    show luna happy at slightright with dissolve
+    luna "Oooh, a mission! Can we bring snacks? My debug chips are gluten-free!"
+    show cyra happy-notab at right with dissolve
+    cyra "Luna, you’re hopeless."
+    show kai happy at left with dissolve
+    kai "Let’s see if [name] can survive it without breaking the compiler this time."
+
+    hide kai
+    hide luna
+    hide cyra
     with dissolve
-    mspy "Tomorrow… they will learn the weight of logic."
+
+    scene classroom
+
+    pause 1.0
+
+    show mspython neutral at center
+    with dissolve
+    mspy "Tomorrow… {w}they will learn the weight of logic."
+    show mspython neutral2
     "Her eyes gleam faintly, as if hiding a deeper plan."
 
     scene black
@@ -903,6 +941,7 @@ label episode1:
     scene arena
     with dissolve
 
+    play sound hologram
     "The class stands in a glowing dome. Holographic bugs crawl across the air — twisted lines of corrupted code."
     show doctorbyte neutral at right with dissolve
     dr "These are minor data Bugs. Harmless individually, but in numbers… they destroy systems."
