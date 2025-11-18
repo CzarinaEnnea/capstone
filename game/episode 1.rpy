@@ -907,6 +907,7 @@ label episode1:
 
     drIntercom "Indeed. Your first mission awaits tomorrow. Prepare yourselves…"
     drIntercom "The next challenge won’t be so forgiving."
+    play sound hologram
     "Lights dim. The holographic classroom fades into lines of binary code swirling around [name]."
 
     hide mspython with dissolve
@@ -941,7 +942,7 @@ label episode1:
     scene arena
     with dissolve
 
-    play sound hologram
+    play sound glitch_sound
     "The class stands in a glowing dome. Holographic bugs crawl across the air — twisted lines of corrupted code."
     show doctorbyte neutral at right with dissolve
     dr "These are minor data Bugs. Harmless individually, but in numbers… they destroy systems."
