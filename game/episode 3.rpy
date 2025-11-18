@@ -67,24 +67,30 @@ label episode3:
     show kai neutral at center with dissolve
     kai "Hey, [name]. Let’s see if you’re really getting it."
 
-    # show kai neutral2 at slightright with move
+    show kai neutral2
     show ep3-scn2-txt1 at top_left_space
     with dissolve
 
     menu:
         "2":
-            show kai neutral
+            play sound right_answer
+            show kai happy
             kai "Hmph… not bad. You know floor division."
-            show cyra neutral at right with dissolve
+            show cyra happy at right with dissolve
             cyra "Looks like someone’s {cps=20}impressed~"
-            show kai angry
+            show kai embarassed
             kai "I’m not!"
-            show kai neutral
+            show cyra happy2
         "2.5":
+            play sound error_sound1
+            show kai neutral
             kai "Nah, rookie. {=code}//{/code} gives whole numbers only. Better remember that before your next duel."
         "0":
+            play sound error_sound1
+            show kai neutral
             kai "Nah, rookie. {=code}//{/code} gives whole numbers only. Better remember that before your next duel."
     
+    show kai neutral2
     show luna neutral at slightright with dissolve
     luna "Ooh, I wanna play too! Try mine!"
 
@@ -94,14 +100,17 @@ label episode3:
 
     menu:
         "0":
+            play sound right_answer
             hide cyra
             show astra neutral at right
             with dissolve
-            astra "I guess you really are getting the hang of it, nice one [name]"
+            astra "I guess you really are getting the hang of it, nice one [name]."
         "3":
+            play sound error_sound1
             show luna sad
             luna "Nooo! That bug escaped! {=code}%%{/code} gives the remainder, silly!"
         "2":
+            play sound error_sound1
             show luna sad
             luna "Nooo! That bug escaped! {=code}%%{/code} gives the remainder, silly!"
 

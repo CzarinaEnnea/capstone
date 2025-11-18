@@ -886,7 +886,7 @@ label episode1:
     show astra happy
     astra "Maybe I do. A good coder recognizes potential… {w}and [name]’s code doesn’t just run—it flows."
 
-    show cyra embarrased-notab
+    show cyra embarrassed-notab
     "Cyra looks slightly flustered and looks away."
 
     hide kai
