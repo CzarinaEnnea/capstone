@@ -14,6 +14,8 @@ label episode4:
     pause 2
     hide text with fade
 
+    play music "main-menu.ogg"
+
     show cyra neutral-notab at right with dissolve
     cyra "(leaning on the table, teasing) {w}{p}Morning, rookie. You’ve got syrup on your data chip again."
     show cyra neutral2-notab
@@ -57,6 +59,8 @@ label episode4:
 
     hide astra with dissolve
     "Everyone groans, gathering their things as holographic trays vanish."
+
+    stop music fadeout 2.0
 
 # SCENE 2
     scene classroom
@@ -107,11 +111,12 @@ label episode4:
             show mspython happy
             mspy "Well done. {=code}elif{/code} adds flexibility."
             mspy "Remember, code reads from top to bottom."
-            show cyra happy at right with dissolve
+            show mspython happy2
+            show cyra happy-notab at right with dissolve
             cyra "You’re getting good at this, [name]. You might even beat Kai someday."
             hide mspython
-            show kai neutral at slightright 
-            with dissolve
+            show kai neutral at slightright with dissolve:
+                xzoom -1.0
             kai "As if."
 
         "Needs Improvement":
@@ -527,7 +532,8 @@ label episode4:
 label ep4Scn2Q1Wrong:
     show mspython sad
     mspy "Review your conditions. Logic rewards patience."
-    show kai neutral at right with dissolve
+    show kai neutral at right with dissolve:
+        xzoom -1.0
     kai "Told you not to rush it."
     return
 
