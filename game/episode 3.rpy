@@ -437,14 +437,17 @@ label episode3:
     "The cafeteria is dimly lit. Holographic menus flicker above the tables. A few students linger, typing quietly."
     "[name] enters, still buzzing from the intense coding session earlier."
 
-    show cyra happy at slightright
+    show cyra happy2-notab at slightright
     with dissolve
 
     "You saw Cyra grinning and waving at you at a table."
-    cyra "Hey, [name]! Over here!" 
+    show cyra happy-notab
+    cyra "Hey, [name]! Over here!"
     cyra "I saved you a seat… and maybe some fries. {w}Maybe."
     mc "Maybe? You mean you already ate half of it."
+    show cyra neutral-notab
     cyra "Correction: {cps=20}seventy-five percent."
+    show cyra surprised-notab
     cyra "But in my defense, debugging burns calories!"
 
     "Kai slides his tray onto the table with a smirk."
@@ -452,58 +455,68 @@ label episode3:
     with dissolve
     kai "More like you burned the code. I saw your logic statement loop five times before you fixed it."
 
-    show cyra angry
+    show cyra angry-notab
     cyra "Hey, at least my loops {i}looped!{/i} Yours froze the whole simulation!"
+    show cyra angry2-notab
     mc "(chuckles) {p}Should I step in before this turns into a logic war?"
 
+    show cyra surprised2-notab at right with move
+    show kai surprised2 at left with move
     show luna happy at rise_up
     with dissolve
     luna "Too late! Logic war initiated! {w}Beeep- Boop- Bap!"
     luna "If (Kai > Cyra): {p}{space=30}declare_winner(Kai) {p}else: {p}{space=30}declare_winner(Cyra)"
 
+    show kai neutral
     kai "Luna, that’s not even how comparisons work."
     show luna neutral
     luna "Tell that to my soda, it’s glowing blue for {i}false!{/i}"
 
-    show kai happy
+    show kai happy2
     show luna happy
-    show cyra happy
+    show cyra happy2-notab
     "They all laugh. Ms. Py Thon enters quietly, holding a tablet. She seems serene, but observant."
-    show mspython happy at right with dissolve
+    show mspython happy at slightright with dissolve
     mspy "Still awake, I see. Perhaps I should add a {i}‘Sleep()’{/i} function to your schedules."
     mc "(smiling) {p}We were… reviewing operators. In our own way."
     mspy "Ah, the best learning happens when you forget you’re learning."
     "She glances at the group, fondly"
     mspy "Remember — logic and emotion don’t have to conflict. The strongest code is balanced, just like the strongest hearts."
-    
-    if cyraAffection > 5:
-        show cyra neutral
+    show mspython happy2
+
+    if cyraAffection >= 3:
+        show cyra blush-notab
         "Cyra looks at MC with a soft smile, brushing a strand of hair behind her ear."
     
-    show cyra happy
+    show cyra happy-notab
     cyra "Guess that means even bugs can teach us something, huh?"
     show kai happy
     kai "Yeah — like how not to {i}write{/i} your code."
+    show cyra angry2-notab
     mc "(laughs) {p}I think we all learned that one the hard way."
     "Ms. Py Thon turns toward the window, the night sky reflected on her tablet screen. Her voice turns thoughtful."
     show mspython neutral
     mspy "There are… darker codes out there. Ones written with no balance." 
     mspy "Promise me you’ll all keep learning — not just for power, but for purpose."
     hide mspython with dissolve
+    show kai neutral2
+    show cyra neutral2-notab
+    show luna neutral2
     "The group quiets for a moment. The wind hums through the vents."
-    show kai neutral
-    show cyra neutral
-    show luna neutral
+    show kai sad2
+    show cyra sad2-notab
+    show luna sad2
     "On their faces reads — curiosity, camaraderie, and just a hint of unease."
 
     luna "Sooo… {w}who’s up for another mini-game before bed?"
     luna "Maybe a ‘Guess the Operator’ challenge?"
     show kai happy
     kai "Count me in. I’ll prove I can out-code Cyra any day."
-    show cyra happy
+    show cyra happy-notab
     cyra "Bring it, Voltage Boy."
     mc "Let’s see who short-circuits first."
     "They all laugh again, the tension fading — but as the camera pans to the window, a faint flicker of code appears reflected in the glass." 
+    play sound "glitch_sound.ogg"
     "A pair of glowing digital eyes blink once, then vanish into static..."
 
     n "{b}{size=+10}LESSON SUMMARY{/size}{/b}"
