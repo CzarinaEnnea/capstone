@@ -175,6 +175,7 @@ label episode3:
     show ep3-scn3-txt2 at top_left_space
     with dissolve
 
+    show luna neutral2
     show mspython neutral
     mspy "Precisely. You can even add more doors using {=code}elif{/code}, short for {b}else if{/b}."
     mspy "This code checks multiple possibilities. Try to picture the logic flow — {w}one condition at a time."
@@ -201,39 +202,47 @@ label episode3:
 
 # SCENE 4
     scene arena
+    play sound "glitch_sound.ogg"
     $ red_effect()
     show red
     with dissolve
     
-    show luna at center with dissolve
+    show luna surprised at center with dissolve
     luna "Uh-oh! A Logic Bug invaded the system again! It’s bouncing through code like a broken loop!"
 
-    show cyra neutral at right with dissolve
+    show cyra neutral-notab at right with dissolve
     cyra "Looks like class just turned into a boss battle."
 
+    show cyra neutral2-notab
     show kai neutral at left with dissolve
     kai "Good. I was getting bored of theory."
 
-    show luna at slightright with move
-    show mspython at center with dissolve
-    mspy "Class, this is your next lesson — and your first true test."
-    mspy "The Logic Bug thrives on flawed operators and weak conditions. You must counter it using if-else logic."
-
-    show doctorbyte at slightleft with dissolve
-    dr "Let’s see if your logic holds under pressure. Remember — one wrong operator, and it strikes back."
-
-    hide red
-    show bug at top
-    $ red_effect()
-
-    "The Logic Bug materializes — a dark swirling mass of red binary code, screeching in distortion."
-
-    hide mspython
-    hide doctorbyte
     hide kai
     hide cyra
     hide luna
     with dissolve
+
+    show mspython neutral at right with dissolve
+    mspy "Class, this is your next lesson — and your first true test."
+    mspy "The Logic Bug thrives on flawed operators and weak conditions." 
+    mspy "You must counter it using if-else logic."
+
+    show mspython neutral2
+    show doctorbyte neutral at left with dissolve
+    dr "Let’s see if your logic holds under pressure." 
+    dr "Remember — one wrong operator, and it strikes back."
+
+    hide mspython
+    hide doctorbyte
+    with dissolve
+
+    hide red
+    show bug at top_right_space
+    play sound "glitch_sound.ogg"
+    $ red_effect()
+
+    "The Logic Bug materializes — a dark swirling mass of red binary code, screeching in distortion."
+
 
     mspy "Remember, operators are the tools that let us manipulate data. Let’s test your aim with arithmetic and comparison operators."
 

@@ -1,49 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 186, in script call
-    call episode1 from _call_episode1
-  File "game/episode 1.rpy", line 944, in script
-    play sound hologram.ogg
-  File "game/episode 1.rpy", line 944, in <module>
-    play sound hologram.ogg
-               ^^^^^^^^^^^^
-AttributeError: 'str' object has no attribute 'ogg'
+  File "game/script.rpy", line 188, in script call
+    call episode3 from _call_episode3
+  File "game/episode 3.rpy", line 240, in script
+    show bug at top_right
+  File "game/episode 3.rpy", line 240, in <module>
+    show bug at top_right
+                ^^^^^^^^^
+NameError: name 'top_right' is not defined. Did you mean: 'topright'?
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 186, in script call
-    call episode1 from _call_episode1
-  File "game/episode 1.rpy", line 944, in script
-    play sound hologram.ogg
-  File "renpy/ast.py", line 2231, in execute
-    self.call("execute")
-    ~~~~~~~~~^^^^^^^^^^^
-  File "renpy/ast.py", line 2195, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/statements.py", line 379, in call
-    return method(parsed, *args, **kwargs)
-           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/common/000statements.rpy", line 318, in execute_play_sound
-    _audio_eval(p["file"]),
-    ~~~~~~~~~~~^^^^^^^^^^^ 
-  File "renpy/common/000statements.rpy", line 39, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/script.rpy", line 188, in script call
+    call episode3 from _call_episode3
+  File "game/episode 3.rpy", line 240, in script
+    show bug at top_right
+  File "renpy/ast.py", line 1357, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 726, in show_imspec
+    at_list = [renpy.python.py_eval(i) for i in at_list]
+               ~~~~~~~~~~~~~~~~~~~~^^^                  
   File "renpy/python.py", line 1292, in py_eval
     return py_eval_bytecode(code, globals, locals)
            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
   File "renpy/python.py", line 1285, in py_eval_bytecode
     return eval(bytecode, globals, locals)
            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/episode 1.rpy", line 944, in <module>
-    play sound hologram.ogg
-               ^^^^^^^^^^^^
-AttributeError: 'str' object has no attribute 'ogg'
+  File "game/episode 3.rpy", line 240, in <module>
+    show bug at top_right
+                ^^^^^^^^^
+NameError: name 'top_right' is not defined. Did you mean: 'topright'?
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Tue Nov 18 21:05:18 2025
+Wed Nov 19 20:51:00 2025
