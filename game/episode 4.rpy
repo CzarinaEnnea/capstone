@@ -138,11 +138,13 @@ label episode4:
     with dissolve
 
     show bug at top_right_space
+    play sound "glitch_sound.ogg"
     $ red_effect()
 
     "Error Goblins spawn, glitchy and loud."
 
-    show mira surprised at left with dissolve
+    show mira surprised at left with dissolve:
+        xzoom -1.0
     mira "T-they look angry!"
 
     show luna neutral at slightleft with dissolve
@@ -160,19 +162,22 @@ label episode4:
     menu:
         extend ""
         "Enemy Still Alive!":
+            play sound "punch_sound1.ogg"
             with hpunch
             hide bug
             hide ep4-scn3-txt1
             with dissolve
 
-            show doctorbyte neutral at center with dissolve
+            show doctorbyte happy at left with dissolve
             dr "Nicely done. Subtraction operator and conditional logic—flawless."
-            show luna happy at left with dissolve
+            show doctorbyte happy2
+            show luna happy at center with dissolve
             luna "Boom! Goblin de-spawned!"
             show cyra neutral at right with dissolve
             cyra "You’ve got the instincts."
 
         "Enemy Defeated!":
+            play sound "glitch_sound.ogg"
             $ red_effect()
             luna "You made it stronger! Abort mission!"
             mspy "Let this be a reminder: Always test before you assume."
@@ -185,8 +190,9 @@ label episode4:
     with dissolve
     show screen info_box("Mini-Lesson") with dissolve
 
-    show mspython neutral at slightright with dissolve
+    show mspython neutral at center with dissolve
     mspy "Conditional statements {=code}(if, elif, else){/code} let your code decide."
+    show mspython neutral2 at right with move
 
     show ep4-scn3-txt2 at top_left_space with dissolve
     kai "So... kind of like relationships. If Cyra’s mad: disaster. Else: peace."
