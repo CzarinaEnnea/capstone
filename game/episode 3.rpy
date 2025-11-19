@@ -243,7 +243,6 @@ label episode3:
 
     "The Logic Bug materializes — a dark swirling mass of red binary code, screeching in distortion."
 
-
     mspy "Remember, operators are the tools that let us manipulate data. Let’s test your aim with arithmetic and comparison operators."
 
     show ep3-scn4-txt1 at top_left_space
@@ -255,7 +254,9 @@ label episode3:
         extend ""
 
         "Strike Successful!":
+            play sound "right_answer.ogg"
             mc "It’s greater than 20 — so, Strike Successful!"
+            play sound "punch_sound2.ogg"
             with hpunch
             mspy "Excellent. That’s True logic in motion."
             cyra "I love watching you in action, [name]. {w}You make math look… {w}charming."
@@ -263,14 +264,16 @@ label episode3:
             luna "Boom! The bug just lost 50 HP! Logic laser activated!"
             mira "Wow… you’re really good at this…"
         "Attack Failed!":
+            play sound "glitch_sound.ogg"            
             $ red_effect()
             "Virus" "Hissss! I feed on mistakes!"
-            mspy "Focus. {w}The condition {b}a * b equals 21 — that’s greater than 20{/b}. You must always test your expressions carefully."
+            mspy "Focus. {w}The condition {b}a * b equals 21 — that’s greater than 20{/b}." 
+            mspy "You must always test your expressions carefully."
             kai "You call that logic? You’re better than this."
             cyra "Don’t sweat it. Even pros debug."
             luna "Let’s fix the bug {i}before{/i} it eats the system!"
 
-    mspy "The {=code}if{/code} statement checks if a condition is True. If not, the {=code}else{/code} part activates." 
+    mspy "The {=code}if{/code} statement checks if a condition is True. {w}If not, the {=code}else{/code} part activates." 
     mspy "Think of it as a decision tree — your code chooses based on truth or falsehood."
     dr "And so, does life. Every choice branches your future."
 
@@ -283,23 +286,30 @@ label episode3:
     show ep3-scn4-txt2 at top_left_space
     with dissolve
 
-    mspy "[name], analyze this. The character is alive, but has no energy. What’s the output?"
+    mspy "[name], analyze this. The character is alive, but has no energy. {w}What’s the output?"
 
     menu:
         extend ""
 
         "Ready!":
+            play sound "error_wrong.ogg"
             $ red_effect()
             hide bug with dissolve
             hide ep3-scn4-txt2 with dissolve
             show luna surprised at slightright with dissolve
             luna "Uh-oh! You fainted! I’ll respawn you!"
-            show mspython neutral at center with dissolve
-            mspy "Incorrect logic means lost rounds, [name]. Study how and evaluates conditions."
-            show doctorbyte neutral  at slightleft with dissolve
+            show luna surprised2
+            show mspython angry at center with dissolve
+            mspy "Incorrect logic means lost rounds, [name]." 
+            mspy "Study how and evaluates conditions."
+            show mspython angry2
+            show doctorbyte sad at slightleft with dissolve
             dr "The smallest error in logic can topple the mightiest code."
-            show cyra surprised at right with dissolve
+            show doctorbyte sad2
+
+            show cyra surprised-notab at right with dissolve
             cyra "Hey, deep breath. We’ll debug together next round."
+            show cyra surprised2-notab
             show kai neutral at left with dissolve
             kai "Try thinking before typing next time."
 
@@ -311,21 +321,31 @@ label episode3:
             with dissolve
             pause 1.0
 
-            show mira neutral at center
+            show mira happy at center
             with dissolve
-            mira "It’s okay… everyone makes mistakes… {w}but mistakes have consequences."
+            mira "It’s okay… everyone makes mistakes…"
+            show mira neutral
+            mira "But mistakes have consequences."
+            show mira happy2
+            "..."
+            pause 1.0
             
         "Low Resources!":
+            play sound "right_answer.ogg"
             mc "{=code}hp > 0{/code} is True, but {=code}energy > 0{/code} is False — since both need to be True{w}, it’s Low Resources!"
             with hpunch
+            play sound "punch_sound1.ogg"
             hide bug with dissolve
             hide ep3-scn4-txt2 with dissolve
             show mspython happy at center with dissolve
             mspy "Excellent deduction! Logical precision, that’s the coder’s blade."
+            show mspython happy2
             show luna happy at slightright with dissolve
             luna "Ha! The bug’s running in circles!"
-            show cyra happy at right with dissolve
+            show luna happy2
+            show cyra happy-notab at right with dissolve
             cyra "Nice one. You’re sharper than I expected."
+            show cyra happy2-notab
             show kai happy at left with dissolve
             kai "Hmph. Good catch, rookie."
             show doctorbyte neutral  at slightleft with dissolve
@@ -339,14 +359,22 @@ label episode3:
             with dissolve
             pause 1.0
             
-            show mira neutral at center
+            show mira sad at center
             with dissolve
             mira "{size=25}You’re all so proud of your logic… {w}{cps=20}but even logic can be rewritten.{/size}"
+            show mira sad2
             "Her tone is low — almost unheard beneath the static."
+            pause 1.0
+
+    scene black
+    with fade
+
+    pause 1.0
 
     scene arena
     with dissolve
 
+    show screen info_box("Reminder: Operators") with dissolve
     show mspython neutral at center with dissolve
     mspy "Operators are the foundation of all calculations:"
 
@@ -357,20 +385,26 @@ label episode3:
     mspy "Combine them with {=code}if{/code} and {=code}else{/code} to make choices in your code."
     mspy "In Python — just like in life — one wrong condition can change everything."
 
-    # show doctorbyte neutral at right with dissolve flipped
-    show doctorbyte neutral at right:
+    show mspython neutral2
+    show doctorbyte neutral at right with dissolve:
         xzoom -1.0 
-    with dissolve
 
     dr "Remember those words, students. You’ll need them for what’s coming next."
+    hide screen info_box
 
 # SCENE 5
+    scene black
+    with fade
+
+    pause 1.0
+
     scene arena
     with dissolve
 
     show mira happy at right with dissolve
     mira "You were amazing out there, [name]… {w}I mean, {w}logically speaking!"
 
+    show mira happy2
     show luna happy at slightright with dissolve
     luna "Buggy McByteFace is now tamed!"
 
