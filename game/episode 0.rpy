@@ -1,7 +1,8 @@
 # User Input: Gender, Name & Pronouns
 
 label episode0:
-
+    stop music
+    
     "Choose your gender" 
 
     menu:

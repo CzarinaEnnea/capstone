@@ -269,7 +269,8 @@ label episode1:
 
     "After Class"
 
-    play music "chill_bg.ogg" fadein 1.0
+    # play music "chill_bg.ogg" fadein 1.0
+    play music "main-menu.ogg"  #Try but might delete
     mc "I felt drained already. Well atleast I can finally eat!"
 
 
@@ -544,6 +545,8 @@ label episode1:
     show luna happy at center with dissolve
     luna "Group selfie before the next apocalypse! Say {w}{size=+10}{color=#81f08aff}print(\"Cheese!\"){/color}{/size}!"
 
+    play music "main-menu.ogg" #Try but might delete
+
     scene groupPhoto
     with dissolve
     "(They pose. Flash of neon light. Laughter.)"
@@ -551,6 +554,8 @@ label episode1:
     "And just like that, I wasn’t alone anymore."
     "A team of geniuses, chaos gremlins, and possible love interests."
     "At Code Academy Nexus… even friendship is coded in Python."
+
+    stop music fadeout 0.5
 
 # SCENE 4
 
