@@ -401,22 +401,29 @@ label episode3:
     scene arena
     with dissolve
 
-    show mira happy at right with dissolve
+    show mira happy at center with dissolve
     mira "You were amazing out there, [name]… {w}I mean, {w}logically speaking!"
 
     show mira happy2
     show luna happy at slightright with dissolve
     luna "Buggy McByteFace is now tamed!"
 
-    show cyra happy at center with dissolve
+    show luna happy2
+    show cyra happy-notab at right with dissolve
     cyra "Told you you’d look good in combat mode."
 
-    show kai happy at slightleft with dissolve
+    show cyra happy2-notab
+    show kai happy at left with dissolve
     kai "Hmph. Don’t let that praise get to your head."
 
-    show astra at left with dissolve
-    astra "You did fine. But logic isn’t everything… trust can fail too."
+    show kai happy2
+    show astra sad at slightleft with dissolve:
+        xzoom -1.0
+    astra "(Walking Past){p}You did fine. But logic isn’t everything…" 
+    show astra sad
+    astra "Trust can fail too."
 
+    show astra sad2
     mc "Operators, logic, teamwork… {w}maybe this academy’s teaching me more than just code."
 
     scene black
