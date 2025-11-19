@@ -125,41 +125,50 @@ label episode3:
     mspy "In Python, {i}conditional statements{/i} let us make decisions." 
     mspy "The most common one is the {=code}if{/code} statement. {w}It checks whether something is true."
 
+    show mspython neutral2
     show cyra neutral at right with dissolve
     cyra "(leans back in her chair, smirking) {w}{p}So it’s like… coding with attitude. If it’s true, do this. If not, do something else."
 
+    show cyra neutral2
     show kai neutral at left with dissolve
     kai "Sounds like my kind of logic. All or nothing."
 
+    show kai neutral2
     show mira neutral at slightright with dissolve
     mira "Um… that’s like… {w}if something’s true, it does one thing, if not, another?"
 
+    show mira neutral2
     show mspython happy
     mspy "Exactly, Mira. Let’s try this together."
 
     hide mira
     hide kai
     hide cyra
+    with dissolve
+
     show ep3-scn3-txt1 at top_left_space
     with dissolve
 
-    show mspython neutral
+    show mspython neutral at slightright with move
     mspy "Here, the condition {=code}x > 5{/code} is evaluated. {w}If it’s {b}True{/b}, Python runs the first block — printing {i}‘Big number!’{/i}. {w}Otherwise, the {=code}else{/code} block runs."
     mspy "So what do you think it will print?"
 
     menu:
         "Big number!":
-            show mira at right with dissolve
+            play sound "right_answer.ogg"
+            show mira happy at right with dissolve
             mira "It printed Big number! because ten is greater than five!"
+            show mira happy2
             show mspython happy
             mspy "Well reasoned, Mira. You’re starting to think like a coder."
             hide mira with dissolve
+            show mspython happy2 
         "Small number!":
             call ep3Scn3QuestionWrong from _call_ep3Scn3QuestionWrong
         "Error":
             call ep3Scn3QuestionWrong from _call_ep3Scn3QuestionWrong_1
 
-    show luna at right with dissolve
+    show luna neutral at right with dissolve
     luna "Conditional powers are like doors! Only one opens if your statement is true! The others stay locked!"
 
     hide ep3-scn3-txt1
@@ -169,14 +178,21 @@ label episode3:
     show mspython neutral
     mspy "Precisely. You can even add more doors using {=code}elif{/code}, short for {b}else if{/b}."
     mspy "This code checks multiple possibilities. Try to picture the logic flow — {w}one condition at a time."
+    show mspython neutral2
 
-    show kai happy at slightright with dissolve
+    hide mspython
+    hide luna 
+    show kai happy at right:
+        xzoom -1.0
+    with dissolve
+
     kai "So, it’s a test of judgment — like choosing the right move in battle."
 
-    hide luna
-    show cyra neutral at right 
+    show cyra neutral-notab at center:
+        xzoom -1.0
     with dissolve
     cyra "Let’s hope you pick better than last time, {i}rookie coder{/i}."
+    show cyra neutral2-notab
     mc "Just watch me."
 
     scene black
@@ -459,8 +475,13 @@ label ep3Scn1QuestionWrong:
     return
 
 label ep3Scn3QuestionWrong:
+    play sound "error_sound1.ogg"
     show astra neutral at right with dissolve
-    astra "Careless logic, rookie. x is 10 — greater than 5. Easy math."
+    astra "Careless logic, rookie."
+    astra  "x is 10 — greater than 5. Easy math."
+    show astra neutral2
     show mspython sad
     mspy "Logic errors can be fixed… but only if you observe your conditions clearly. Always think before you code."
+    show mspython sad2
     hide astra with dissolve
+    return
