@@ -20,19 +20,24 @@ label episode4:
     mc "Wait—what? That’s not syrup—{w}it’s code ink!"
     mc "Great, now my bytes are sticky."
 
-    show kai neutral at left with dissolve
+    show kai happy at left with dissolve
     kai "Sticky bytes. Wow. You’re a real mess of a coder."
-    show kai neutral2
+    show kai happy2
     mc "At least I don’t short-circuit when someone mentions teamwork."
 
     show luna neutral at center with dissolve
     luna "Ooooh! Emotional operator triggered! {w}{b}MC > Kai == Burned!{/b}"
-    show mira neutral at slightleft with dissolve
+    show luna neutral2
+    show mira happy at slightright with dissolve
     mira "Technically, that’s not valid syntax, Luna."
+    show mira happy2
+    show luna surprised
     luna "Syntax? I call it sass-tax!"
 
-    show astra neutral at slightright with dissolve
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
     astra "(rolling eyes, sipping holographic tea){p}“You’re all hopeless. I’d delete you if I could… but you’d just respawn."
+    show astra neutral2
     show cyra neutral-notab
     cyra "Astra, even your compliments sound like malware."
     show cyra neutral2-notab
@@ -44,7 +49,8 @@ label episode4:
     kai "She makes it sound like we’re going to war."
     show kai neutral2
     show cyra happy-notab
-    cyra "Maybe we are. Against your code, probably."
+    cyra "Maybe we are. {w}Against your code, probably."
+    show cyra happy2-notab
 
     show astra neutral
     astra "Then let’s not delay. I’d hate to be late for logic."
