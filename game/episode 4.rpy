@@ -207,6 +207,8 @@ label episode4:
     scene garden
     with dissolve
 
+    play music "chill_bg.ogg"
+
     "The Digital Garden — a serene simulation where holographic flowers bloom and neon fireflies drift through the air like floating pixels." 
     "Here the students unwind after an intense day of operator and logic lessons."
 
@@ -240,34 +242,44 @@ label episode4:
 
     show mspython surprised at center with dissolve
     mspy "You’re still here, [name]?"
+    show mspython surprised2
     mc "Just… thinking. About how logic and emotion don’t always match."
     show mspython neutral
     mspy "That’s because they never truly oppose each other."
     mspy "Logic is how we understand the world. Emotion is why we care to understand it."
+    show mspython neutral2
     mc "That’s… deeper than any syntax rule."
-    show mspython happy2
+    show mspython happy
     mspy "Perhaps. But remember — even the {i}cleanest code{/i} can hide bugs. {w}The same goes for {i}people{/i}."
+
+    stop music fadeout 1.0
 
     show red with dissolve
     hide red with dissolve
+    play sound "glitch_sound.ogg"
+    show mspython neutral2
     "Suddenly, the neon sky flickers — static bursts across the horizon."
+    
     mc "What was that?"
     show mspython neutral
     mspy "A data disturbance. {w}Someone—or something—is tampering with the Academy’s systems."
+    show mspython neutral2
 
+    play sound "glitch_sound.ogg"
     $ red_effect()
     "A faint red shimmer appears in the air — like a glitch shaped almost like a person. Long hair, sharp gaze, but too brief to see clearly."
 
     mc "Did you see that?!"
-    show mspython neutral2
-    mspy "Yes… and that shadow doesn’t belong to any student."
     show mspython neutral
+    mspy "Yes… and that shadow doesn’t belong to any student."
     mspy "Be alert tomorrow, [name]. Not everything here runs on pure logic."
     hide mspython with dissolve
 
     "The glitch fades, leaving a faint whisper of corrupted code in the air."
+    play sound "glitch_sound.ogg"
     show red with dissolve
     hide red with dissolve
+    play sound "hologram.ogg"
     "A single red eye flickers open in the digital sky, then vanishes."
 
     scene black
@@ -548,22 +560,26 @@ label Ep4Scn4Cyra:
     "[name] saw Cyra sitting by the pond, typing on a holographic pad."
     show cyra neutral at center with dissolve
     cyra "Hey, [name]. You handled those operator exercises really well earlier."
+    show cyra neutral2
     mc "Thanks. I’m still mixing up ‘==’ and ‘=’, though. I keep assigning when I should be comparing."
-    show cyra happy # with blush
+    show cyra happy
     cyra "Don’t worry. Everyone’s done that at least once."
     cyra "The important part is that you noticed it. That’s what real coders do."
+    show cyra happy2
     mc "Coming from you, that means a lot."
+    "She puts down her holopad and looks up at you."
     show cyra surprised-notab with dissolve
     cyra "You’ve got a good rhythm."
     show cyra neutral-notab
     cyra "You read problems the way I read front-end code {w}— through instinct."
     show cyra happy-notab
     cyra "Keep that up, and you’ll catch up to me in no time."
+    show cyra happy2-notab
 
     mc "Oh, so it’s a challenge now?"
     show cyra neutral-notab
     cyra "Everything’s a challenge if you want to get better. Besides…"
-    show cyra happy2-notab
+    show cyra blush2-notab
     cyra "Coding’s more fun when there’s someone worth competing with."
     "She says it so casually, but… somehow, it sticks."
     return
@@ -571,6 +587,7 @@ label Ep4Scn4Cyra:
 label Ep4Scn4Kai:
     show kai neutral at center with dissolve
     kai "You didn’t freeze back there. Impressive."
+    show kai neutral2
     mc "Were you expecting me to?"
     show kai happy
     kai "Maybe. Most first-timers panic when Ms. Py Thon brings up logic puzzles."
@@ -579,10 +596,11 @@ label Ep4Scn4Kai:
     kai "Good. Because this place doesn’t slow down for anyone."
     show kai neutral2
     pause 1.0
-    "He pauses, looking toward the horizon"
+    "He pauses, looking towards the horizon"
     show kai neutral
     kai "But… you’re learning fast."
     kai "Keep that up, and maybe I’ll actually have a rival worth my time."
+    show kai neutral2
     mc "So that’s your way of saying ‘good job’?"
     show kai embarassed
     kai "Don’t push it."
@@ -613,27 +631,32 @@ label Ep4Scn4Luna:
     return
 
 label Ep4Scn4Mira:
-    show mira surprised at center with dissolve
+    show mira neutral at center with dissolve
     mira "Oh… h-hi, [name]."
-    show mira neutral
-    mira "(looks up from a holographic data notebook){p}Sorry, I was just reviewing the syntax notes from class."
+    show mira surprised
+    mira "(Looks up from a holographic data notebook.){p}Sorry, I was just reviewing the syntax notes from class."
+    show mira surprised2
     mc "Studying already? You never stop learning, huh?"
     show mira happy
     mira "It helps me stay calm. I liked how you used nested conditions earlier {w}that was neat."
+    show mira happy2
     mc "I just tried to keep it simple."
     show mira neutral
-    mira "That’s usually the best way." 
+    mira "That’s usually the best way."
+    show mira sad
     mira "Sometimes, we overthink things… {w}in code and in life."
+    show mira sad2
     mc "Yeah. If only we had an if-else for decision-making."
     show mira happy
     mira "If only."
 
     show mira neutral
     mira "{size=25}{i}If nervous == True: pretend_to_study().{/i}{/size}"
+    show mira neutral2
     mc "(smiling){p}{i}And if shy == True: still adorable.{/i}"
-    show mira surprised
+    show mira surprised-blush
     mira "W-What? I—uh—thank you."
-    show mira happy
+    show mira happy2
     "Mira looks down quickly, hiding her smile"
     mc "She’s so genuine… it’s kind of hard not to smile back."
     return
