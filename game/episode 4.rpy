@@ -7,12 +7,12 @@ label episode4:
     pause 2
     hide text with fade
 
-    scene cafeteria
-    with dissolve
-
     show text "\"In logic we trust... but in emotion, we believe.\"" at truecenter with dissolve
     pause 2
     hide text with fade
+
+    scene cafeteria
+    with dissolve
 
     play music "main-menu.ogg"
 

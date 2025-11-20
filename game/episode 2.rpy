@@ -18,7 +18,7 @@ label episode2:
     mc "New day, same universe. Yesterday was chaos. But today—"
     mc "Ms. Py Thon said we’ll go 'deeper.' I just hope she means spiritually and not into a debug pit again."
 
-    # play sound "school_bell.ogg"
+    play sound "school-bell.ogg"
 
     show cyra happy at right
     with dissolve

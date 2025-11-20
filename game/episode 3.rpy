@@ -91,7 +91,7 @@ label episode3:
             kai "Nah, rookie. {=code}//{/code} gives whole numbers only. Better remember that before your next duel."
     
     show kai neutral2
-    show luna neutral at slightright with dissolve
+    show luna happy at slightright with dissolve
     luna "Ooh, I wanna play too! Try mine!"
 
     hide ep3-scn2-txt1
@@ -298,7 +298,6 @@ label episode3:
             hide ep3-scn4-txt2 with dissolve
             show luna surprised at slightright with dissolve
             luna "Uh-oh! You fainted! I’ll respawn you!"
-            show luna surprised2
             show mspython angry at center with dissolve
             mspy "Incorrect logic means lost rounds, [name]." 
             mspy "Study how and evaluates conditions."
@@ -340,9 +339,8 @@ label episode3:
             show mspython happy at center with dissolve
             mspy "Excellent deduction! Logical precision, that’s the coder’s blade."
             show mspython happy2
-            show luna happy at slightright with dissolve
+            show luna happy-nostar at slightright with dissolve
             luna "Ha! The bug’s running in circles!"
-            show luna happy2
             show cyra happy-notab at right with dissolve
             cyra "Nice one. You’re sharper than I expected."
             show cyra happy2-notab
@@ -405,10 +403,9 @@ label episode3:
     mira "You were amazing out there, [name]… {w}I mean, {w}logically speaking!"
 
     show mira happy2
-    show luna happy at slightright with dissolve
+    show luna happy-nostar at slightright with dissolve
     luna "Buggy McByteFace is now tamed!"
 
-    show luna happy2
     show cyra happy-notab at right with dissolve
     cyra "Told you you’d look good in combat mode."
 
@@ -433,6 +430,8 @@ label episode3:
 # SCENE 6
     scene cafeteria
     with dissolve
+
+    play music "main-menu.ogg"
 
     "The cafeteria is dimly lit. Holographic menus flicker above the tables. A few students linger, typing quietly."
     "[name] enters, still buzzing from the intense coding session earlier."
@@ -473,7 +472,7 @@ label episode3:
     luna "Tell that to my soda, it’s glowing blue for {i}false!{/i}"
 
     show kai happy2
-    show luna happy
+    show luna happy-nostar
     show cyra happy2-notab
     "They all laugh. Ms. Py Thon enters quietly, holding a tablet. She seems serene, but observant."
     show mspython happy at slightright with dissolve
@@ -495,20 +494,27 @@ label episode3:
     show cyra angry2-notab
     mc "(laughs) {p}I think we all learned that one the hard way."
     "Ms. Py Thon turns toward the window, the night sky reflected on her tablet screen. Her voice turns thoughtful."
+    
+    stop music fadeout 1.0
+    
     show mspython neutral
     mspy "There are… darker codes out there. Ones written with no balance." 
     mspy "Promise me you’ll all keep learning — not just for power, but for purpose."
     hide mspython with dissolve
+
     show kai neutral2
     show cyra neutral2-notab
     show luna neutral2
     "The group quiets for a moment. The wind hums through the vents."
-    show kai sad2
     show cyra sad2-notab
     show luna sad2
     "On their faces reads — curiosity, camaraderie, and just a hint of unease."
 
+    show luna neutral
     luna "Sooo… {w}who’s up for another mini-game before bed?"
+
+    play music "main-menu.ogg"
+    show luna bleh
     luna "Maybe a ‘Guess the Operator’ challenge?"
     show kai happy
     kai "Count me in. I’ll prove I can out-code Cyra any day."
@@ -519,11 +525,14 @@ label episode3:
     play sound "glitch_sound.ogg"
     "A pair of glowing digital eyes blink once, then vanish into static..."
 
+
     n "{b}{size=+10}LESSON SUMMARY{/size}{/b}"
     n "{=code}+ - * / %% // **{/code} {space=40}Arithmetic Operators"
     n "{=code}> < >= <= == !={/code} {space=40}Comparison Operators"
     n "{=code}and, or, not{/code} {space=40}Logical Operators"
     n "{=code}if, elif, else{/code} {space=40}Conditional Decisions"
+
+    stop music fadeout 1.0
 
     scene black
     with dissolve
