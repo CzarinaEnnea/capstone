@@ -445,12 +445,14 @@ label episode4:
     show cyra surprised-notab at right with dissolve
     cyra "Like a coding firewall?"
     mspy "Yes. But this time… the system will fight back."
+    show mspython neutral2
 
     show kai happy at left with dissolve
     kai "Finally, something fun."
-    show luna neutral at slightleft with dissolve
+    show luna surprised at slightright with dissolve
     luna "Fun? More like terrifying!"
-    show mira at slightright with dissolve
+    show mira neutral at slightleft with dissolve:
+        xzoom -1.0
     mira "I think… {w}it’ll be fine. {w}We just have to think logically."
     "Her eyes flicker faintly pink again — unnoticed"
 
@@ -468,15 +470,16 @@ label episode4:
 
     menu:
         "Activate Shields!":
+            play sound hologram
             hide ep4-scn6-txt1
             hide mspython
             with dissolve
             
-            show doctorbyte neutral at center with dissolve
+            show doctorbyte neutral at left with dissolve
             dr "Shields up! Good thinking."
             show cyra happy-notab at right with dissolve
             cyra "Nice save, [name]. You really know when to act."
-            show kai happy2 at left with dissolve
+            show kai happy2 at center with dissolve
             kai "Not bad. Just don’t get cocky."
         "Monitor Threat.":
             call ep4Scn6Q1Wrong from _call_ep4Scn6Q1Wrong
@@ -486,7 +489,7 @@ label episode4:
     scene MsPythonLab
     with dissolve
 
-    # play sound alarm
+    play sound emergency_alarm
     $ red_effect()
 
     show mspython surprised at center with dissolve
@@ -496,7 +499,7 @@ label episode4:
     dr "Someone’s accessing the system externally. But how?"
 
     show cyra angry at right with dissolve #remove angry sign
-    cyra "I’m locking down the firewalls— wait, something’s inside the logic chain!"
+    cyra "I’m locking down the firewalls{w}— wait, something’s inside the logic chain!"
 
     show kai angry2 at left with dissolve #remove angry sign
     kai "Can we trace it?"
@@ -513,20 +516,28 @@ label episode4:
     hide luna
     with dissolve
 
+    play sound glitch_sound
     $ red_effect()
     "The holographic display flickers {w}— a figure made of static appears briefly. Long hair. Glowing violet eyes."
 
     "??? (distorted voice)" "If condition: chaos == True… execute."
 
-    show astra neutral at center with dissolve
-    astra "(steps forward calmly){p}That voice… I’ve heard it before."
+    show astra surprised at center with dissolve
+    astra "(Steps forward calmly){p}That voice… I’ve heard it before."
+    show astra surprised2
     show mspython neutral at right with dissolve
     mspy "Explain."
+    show mspython neutral2
+    show astra sad
     astra "Not sure. But it feels... {w}{i}familiar{/i}. {w}Like a program I once wrote."
+    show astra sad2
 
-    show mira neutral at left with dissolve
+    show mira neutral2 at left with dissolve:
+        xzoom -1.0
     mira "{cps=5}....."
+    show mira sad
     mira "Creepy. {w}Let’s hope it doesn’t crash us next time."
+    show mira sad2
     "Her tone lingers a moment too long. The lights flicker in sync with her eyes — pink again — before returning to normal."
 
     hide astra
@@ -559,8 +570,10 @@ label episode4:
     hide cyra
     with dissolve
 
+    play sound glitch_sound
     "The camera pans up to the Academy’s central core — faint pink code lines ripple across the walls."
     "A soft whisper echoes from within the system:"
+    play sound hologram
     "???" "If truth == hidden: continue program."
 
     scene black
@@ -712,6 +725,9 @@ label ep4Scn6Q1Wrong:
     hide ep4-scn6-txt1
     with dissolve
 
+    with hpunch
+    play sound error_sound2
+    $ renpy.pause(1.0)
     show luna surprised at right with dissolve
     luna "Oh no, the system’s shaking!"
     show mspython angry
