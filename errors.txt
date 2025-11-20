@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 1.rpy", line 289: multiple at clauses are prohibited.
-    show astra neutral at flip at slightleft with dissolve
-                                 ^
+File "game/episode 1.rpy", line 416: '{' was never closed
+    mspyIntercom "Your first spell — fix this broken code: {w}{i}{size=+10}{color=#81f08aff}print(\"Hello World!){/color}{/size}{/i}"
+                                                                         ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Tue Nov 18 15:21:21 2025
+Thu Nov 20 22:14:02 2025

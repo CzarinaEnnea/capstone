@@ -176,6 +176,7 @@ label episode1:
     show mspython neutral2
     show luna neutral at right with dissolve
     luna "Python: adaptive, readable, and statistically likely to dominate human education."
+    show luna neutral2
 
     # hide luna
     # show astra neutral at right 
@@ -327,18 +328,19 @@ label episode1:
             "You saw Kai nods approvingly and Astra winks towards you"
 
         "Wait—did she say students combusted?":
-            show luna surprised
+            show luna happy2
             "Luna giggles at you and pretends to explode."
-            show luna happy
+            show luna bleh
             luna "Kabooom!"
 
         "Free tea? Best team ever.":
-            show mira neutral: #or shy or surprised
+            show mira surprised2-blush:
                 linear 0.7 xpos 0.9
+            show luna happy2
             "You saw Mira turning red and hides herself behind Luna."
 
     show astra neutral
-    show luna neutral
+    # show luna neutral2
     astra "So, rookie, which division you thinking of joining? Frontend glam? Backend chaos? Or full-stack madness?"
 
     show cyra happy-notab
@@ -347,8 +349,10 @@ label episode1:
 
     mc "Not sure yet. Still figuring out if I’m more “function” or “fashion.”"
 
+    show luna surprised3
+    luna "*gasp*"
     show luna happy
-    luna "*gasp* {w}Be both! A stylish debugger! I can make you a glowing jacket that says {w}{i}{size=+10}{cps=20}{color=#81f08aff}while(True): Slay(){/color}{/cps}{/size}{/i}!"
+    luna "Be both! A stylish debugger! I can make you a glowing jacket that says {w}{i}{size=+10}{cps=20}{color=#81f08aff}while(True): Slay(){/color}{/cps}{/size}{/i}!"
 
     show kai disgusted
     show cyra disgusted-notab
@@ -361,6 +365,7 @@ label episode1:
     show kai sad2
     show luna angry
     luna "Excuse you! That was one time. And it was {i}fabulous.{/i}"
+    show luna angry2
     show mira neutral at right with move
     mira "You’re… {w}kind of brave for surviving your first class, though." 
     mira "Ms. Py Thon can be scary."
@@ -369,7 +374,7 @@ label episode1:
 
     show cyra happy-notab
     show kai happy
-    show luna happy
+    show luna happy-nostar
     show mira happy
     show astra happy
     "({i}Everyone laughs.{/i})"
@@ -388,13 +393,19 @@ label episode1:
 
     mspyIntercom "Let’s see if your new member can handle The Syntax Duel."
     show astra happy
-    show mira neutral
+    show mira neutral2
     astra "*grins* Ooooh, our favorite hazing ritual."
+    show astra happy2
     show kai neutral
     kai "Not hazing. {i}Evaluation{/i}."
-    show luna neutral
-    luna "I brought popcorn! {w}Wait… is that allowed?"
+    show kai neutral2
+    show luna cookie
+    luna "I brougfhtt coofkiesss!"
+    show luna cookie2
+    luna "{w}Waift… is dat allofwed?"
+    show kai neutral
     kai "You’ll probably spill it on the terminal again."
+    show kai neutral2
     show cyra neutral-notab
     cyra "Lets get this started!"
 
@@ -416,6 +427,7 @@ label episode1:
         "print('Hello World!')":
             call question1Right from _call_question1Right_1
         "print(Hello World!)":
+            play sound glitch_sound
             show bug at top
             $ red_effect()
 
@@ -423,11 +435,13 @@ label episode1:
             kai "Told you. Rookie nerves."
             show cyra surprised at slightright with dissolve
             cyra "Don’t panic! Try closing the quotes — fast!"
+            play sound hologram
             with vpunch
             hide bug with dissolve
             "([name] fixes it. Bug fizzles. Team cheers.)"
             show cyra neutral
             mspyIntercom "You can either use Double Quotation Marks {=code}“”{/code} or {=code}‘’{/code} Apostrophe to declare a string you want to print"
+            play sound error_sound1
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
 
@@ -444,21 +458,26 @@ label episode1:
         "x = 10":
             show kai happy
             kai "Simple. Efficient. You’d make a good teammate."
+
+            play sound right_answer
             $ change_kaiAffection(+1)
             "{=gold}Kai’s Affection +1{/=gold}"
+
             show luna happy at center with dissolve
             luna "You’re on fire! But like... in a non-combustion way!"
             show astra neutral at slightleft with dissolve:
                 xzoom -1.0
             astra "Careful, Kai. Compliments look good on you." #teasing
             show kai neutral2
+            show astra neutral2
+
+            play sound right_answer
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
 
-            
-
         "int x = 10":
             call question2Wrong from _call_question2Wrong
+
         "x : 10":
             call question2Wrong from _call_question2Wrong_1
     
@@ -476,7 +495,9 @@ label episode1:
             mspyIntercom "If Python brewed coffee, I’d be a billionaire."
             "(Team laughs, [name] gets minor penalty.)"
             show cyra sad
-            cyra "Well go for coffee break later. For now focus."
+            cyra "We'll go for coffee break later. For now focus."
+
+            play sound error_sound1
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
 
@@ -492,9 +513,11 @@ label episode1:
             show cyra surprised 
             cyra "And that focus... kinda cool. You listen in class I see."
             "([name] blushes)"
+
+            play sound right_answer
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
-            show cyra neutral
+            show cyra neutral2
 
         "Uses curly braces":
             call question4Wrong from _call_question4Wrong
@@ -512,8 +535,8 @@ label episode1:
 
         "prnt ()":
             call question5Wrong from _call_question5Wrong
+
         "print()":
-            
             show luna happy:
                 subpixel True 
                 parallel:
@@ -528,8 +551,11 @@ label episode1:
                 ypos 1.0
             luna "YES! You pass the Luna test! You’re officially 90\% certified cool!"
             "(+1 Luna Friendship)" #luna flag?
+
+            play sound right_answer
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
+
         "speak()":
             call question5Wrong from _call_question5Wrong_1
 
@@ -537,12 +563,16 @@ label episode1:
     mspyIntercom "Tomorrow, we explore the {b}Variables of Destiny.{/b}"
     show astra neutral at slightleft with dissolve
     astra "(stretching) Destiny sounds boring. Can we just fight more Bugs?"
+    show astra neutral2
     show cyra neutral
     cyra "Perfect as always…"
+    show cyra neutral
     show kai neutral
     kai "Discipline before battle, Astra."
+    show kai neutral2
     show mira neutral at right with dissolve
     mira "He says, as if he’s not secretly obsessed with perfect syntax."
+    show mira neutral2
     show cyra happy
     cyra "You did great really great."
     show luna happy at center with dissolve
@@ -1149,11 +1179,14 @@ label question1Right:
 
     show kai happy at left with dissolve
     kai "Consistent. I like that."
+
+    play sound right_answer
     $ change_kaiAffection(+1)
     "{=gold}Kai’s Affection +1{/=gold}"
 
     show cyra happy at slightright with dissolve
     cyra "You did it! The Bug didn’t even hiss at you!"
+    play sound right_answer
     "{=gold}Syntax Confidence +2{/gold}"
     $ change_confidence(+2)
 
@@ -1165,26 +1198,36 @@ label question1Right:
 label question2Wrong:
     show kai neutral
     kai "Yawn. Even my grandma can assign variables."
+    show kai neutral2
     show mira neutral at right with dissolve
-    mira "It’s okay, everyone starts somewhere!"
+    mira "It’s okay, everyone starts somewhere."
+    show mira neutral2
+    play sound hologram
     "(A mini Bug appears, shaped like a “?”; [name] zaps it.)"
     show cyra neutral
     cyra "Dont mind him, when he was new he was even worse"
+    show cyra neutral2
 
+    play sound error_sound1
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)
+
     return
 
 label question3Right:
     show luna neutral at center with dissolve
     luna "Imagine if it could make coffee, though."
-    show astra neutral at slightleft with dissolve
+    show luna neutral2
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
     astra "I’d marry Python."
     show kai neutral2
     "(Kai raises eyebrow.)"
     show astra happy
     astra "Relax, Kai— it’s just a language."
+    show astra happy2
 
+    play sound right_answer
     "{=gold}Syntax Confidence +2{/gold}"
     $ change_confidence(+2)
     return
@@ -1192,22 +1235,33 @@ label question3Right:
 label question4Wrong:
     show kai neutral
     kai "Pfft. Rookie mistake."
+    show kai neutral2
     show luna neutral at center with dissolve
     luna "Hey, {b}Kai{/b}, remember when you broke your code with 18 curly braces?"
+    show luna neutral2
     show kai happy
     kai "That was style."
     show cyra neutral
     cyra "Sure it was……."
-    show astra neutral at slightleft with dissolve
+    show cyra neutral2
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
     astra "Nice try though [name]."
+    show astra neutral2
+
+    play sound error_sound1
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)
+
     "(Team laughs; Bug spawns and gets squashed.)"
     return
 
 label question5Wrong:
     show luna sad
     luna "Awww, close! But hey, you tried! Here, have a sticker that says “Mostly Human.”"
+    show luna sad2
+
+    play sound error_sound1
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)
     return
