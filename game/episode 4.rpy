@@ -7,7 +7,7 @@ label episode4:
     pause 2
     hide text with fade
 
-    scene cafe
+    scene cafeteria
     with dissolve
 
     show text "\"In logic we trust... but in emotion, we believe.\"" at truecenter with dissolve
@@ -294,20 +294,30 @@ label episode4:
     show mspython neutral at center with dissolve
     mspy "Good morning, coders. Today’s lesson will push your logic a step further."
     mspy "We’ll explore how Python {i}decides{/i} what to do — the art of conditional statements."
+    show mspython neutral2
 
-    show cyra neutral at right with dissolve
+    show cyra neutral-notab at right with dissolve
     cyra "So basically… we’re teaching computers how to think?"
+    show cyra neutral2-notab
+    show mspython neutral
     mspy "Exactly. The {b}if{/b}, {b}elif{/b}, and {b}else{/b} statements form the brain of your code."
+    show mspython neutral2
     "She pauses, raising her hand — a holographic brain made of light appears"
+    show mspython neutral
     mspy "They decide what happens next based on conditions."
+    show mspython neutral2
 
     show kai neutral at left with dissolve
     kai "So… if I skip breakfast, then I get cranky. Else, I’m fine."
+    show kai neutral2
     show luna neutral at slightright with dissolve
     luna "If Luna sees pancakes: print(‘Yum!’). Else: print(‘Sad.’)"
-    show mira neutral at slightleft with dissolve
+    show luna neutral2
+    show mira neutral at slightleft with dissolve:
+        xzoom -1.0
     mira "That’s actually… a perfect example."
-    show mspython happy2
+    show mira neutral2
+    show mspython happy
     mspy "Correct, Mira. Let’s try a coding version."
     
     hide mira
@@ -325,19 +335,23 @@ label episode4:
     with move
 
     mspy "Here’s the structure:"
+    show mspython neutral2
     mc "So the code checks each line until one is true?"
+    show mspython neutral
     mspy "Exactly. Python runs {b}top-down{/b}. {w}Once it finds a {b}true{/b} condition, it {b}stops checking the rest{/b}."
 
     hide ep4-scn5-txt1
     show ep4-scn5-txt2 at top_left_space
     with dissolve
 
-    mspy "Your turn, [name]. Complete this program. It determines a user’s mood based on energy level."
+    mspy "Your turn, [name]. Complete this program." 
+    mspy "It determines a user’s mood based on energy level."
 
     menu:
         "Hyper Mode!":
             call ep4Scn5Q1Wrong from _call_ep4Scn5Q1Wrong
         "Normal Mode":
+            play sound "right_answer.ogg"
             show mspython happy
             mspy "Excellent logic. You’ve evaluated your condition precisely."
             cyra "You’re really getting the hang of this."
@@ -351,11 +365,14 @@ label episode4:
     hide ep4-scn5-txt2
     with dissolve
 
-    show doctorbyte neutral at slightright
-    with dissolve
+    play sound hologram    
+    show doctorbyte neutral at slightright with dissolve:
+        xzoom -1.0
+        subpixel True alpha 0.74 additive 0.14 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.14)*HueMatrix(459.0)
 
-    dr "(Appears on a floating holo-screen){p}Time for some environmental testing." 
+    dr "(Appears on a floating holo-screen){p}Time for some environmental testing."
     dr "You must control the Academy’s climate with logic!"
+    show doctorbyte neutral2
 
     show ep4-scn5-txt3 at top_left_space
     with dissolve
@@ -367,6 +384,7 @@ label episode4:
         "Warning: Overheating!":
             call ep4Scn5Q2Wrong from _call_ep4Scn5Q2Wrong
         "System Stable.":
+            play sound "right_answer.ogg"
             show doctorbyte happy
             dr "Good. You prevented a meltdown."
             show mspython happy at right with dissolve
@@ -381,18 +399,22 @@ label episode4:
     show mspython neutral at center
     with dissolve
     mspy "Remember — {=code}if, elif, and else{/code} are your best friends for decision-making. {w}They help your program respond intelligently."
+    show mspython neutral2
 
     show kai neutral at left with dissolve
     kai "(leaning on desk){p}So... it’s all about testing conditions."
-    kai "Like, {i}if Cyra smiles at MC: MC.blush(True). Else: MC.debug_emotions().{/i}"
+    show kai happy
+    kai "Like, {i}if Cyra smiles at [name]: [name].blush(True). Else: [name].debug_emotions().{/i}"
 
     show cyra neutral at right with dissolve
     cyra "Nice try, Volt. Your syntax’s off."
+    show cyra neutral2
 
-    show luna neutral at slightright with dissolve
+    show luna happy2 at slightright with dissolve
     luna "Aww, just admit it — you two are in the same ‘if’ block!"
 
-    show mira happy at slightleft with dissolve
+    show mira happy at slightleft with dissolve:
+        xzoom -1.0
     mira "Or maybe the wrong loop entirely..."
 
     hide kai
@@ -401,9 +423,12 @@ label episode4:
     hide mira
     with dissolve
 
-    show doctorbyte at slightleft 
-    with dissolve
+    play sound hologram
+    show doctorbyte neutral at left with dissolve:
+        subpixel True alpha 0.74 additive 0.14 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.14)*HueMatrix(459.0)
+
     dr "Focus, class. Next simulation — real-time logic defense."
+    show mspython neutral
     mspy "Prepare yourselves. What happens next… depends on your conditions."
 
     scene black
@@ -663,6 +688,7 @@ label Ep4Scn4Mira:
 
 # Scene 5 Q Wrong
 label ep4Scn5Q1Wrong:
+    play sound "error_sound1.ogg"
     show mspython sad
     mspy "Think carefully — which range includes 65?"
     luna "Awww, the program got sleepy instead!"
@@ -670,6 +696,7 @@ label ep4Scn5Q1Wrong:
     return
 
 label ep4Scn5Q2Wrong:
+    play sound "error_sound1.ogg"
     hide ep4-scn5-txt3
     hide doctorbyte
     with dissolve

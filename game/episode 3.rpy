@@ -431,7 +431,7 @@ label episode3:
     pause 1.0
 
 # SCENE 6
-    scene cafe
+    scene cafeteria
     with dissolve
 
     "The cafeteria is dimly lit. Holographic menus flicker above the tables. A few students linger, typing quietly."

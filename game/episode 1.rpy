@@ -4,7 +4,7 @@
 label episode1:
 # SCENE 1
 
-    scene futuristic skyline
+    scene black
     with dissolve
 
     play sound "train.ogg" fadeout 1.0
@@ -17,6 +17,9 @@ label episode1:
     $ renpy.pause(3.5)
 
     play music "audio/opening.ogg"
+
+    scene skyline
+    with dissolve
 
     "A sleek hovertrain glides through a neon sky. The colossal Code Academy Nexus floats above the city — a fortress of glowing circuits and holographic towers."
 
@@ -264,7 +267,7 @@ label episode1:
     with dissolve
     pause 0.5
 
-    scene cafe
+    scene cafeteria
     with fade
 
     "After Class"
@@ -299,7 +302,7 @@ label episode1:
     show astra neutral2
 
     pause 0.5
-    show luna neutral at right with dissolve
+    show luna neutral zorder 2 at right with dissolve
     show luna happy at slightright with move
     show cyra surprised2-notab at center with move
     with hpunch
@@ -313,7 +316,7 @@ label episode1:
     kai "Figures. Another bright-eyed beginner joining the chaos. {w}Kai by the way."
 
     show kai neutral2
-    show mira neutral at right with dissolve
+    show mira neutral zorder 1 at right with dissolve
     mira "{cps=20}H-Hi there…{/cps} {w}I’m Mira Bite. {w}{cps=20}I handle support and… {w=1}um… {w=1}tea refills.{/cps}"
     show cyra neutral2-notab
 
@@ -350,7 +353,7 @@ label episode1:
     show kai disgusted
     show cyra disgusted-notab
 
-    "{color=#618ef0}Kai{/color} & {color=#a14ae9}Cyra{/color}" "…Please don’t."
+    "{color=#db345d}Kai{/color} & {color=#a14ae9}Cyra{/color}" "…Please don’t."
 
     show kai sad
     kai "Ignore Luna. Her projects usually end in smoke or spontaneous dancing LEDs."
@@ -707,7 +710,7 @@ label episode1:
     "Maybe it’s about the people who debug your heart."
 
 # SCENE 5
-    scene training chamber
+    scene arena #training chamber
     with dissolve
 
     "After yesterday’s lesson on syntax and indentation, today’s session promises something new — something powerful"

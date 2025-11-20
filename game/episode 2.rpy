@@ -7,7 +7,7 @@ label episode2:
     pause 2
     hide text with fade
 
-    scene classroom_doorway
+    scene hallway
     with dissolve
 
     play music "audio/opening.ogg"

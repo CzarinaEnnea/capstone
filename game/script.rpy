@@ -2,8 +2,9 @@
 
 # PLACEHOLDERS: Delete when art assets are finished
 image arena = Placeholder("bg")
-image futuristic skyline = Placeholder("bg")
-image cafe = Placeholder("bg")
+image groupPhoto = Placeholder("bg")
+image garden = Placeholder("bg")
+image MsPythonLab = Placeholder("bg")
 
 image doctorbyte = Placeholder("boy")
 image kai = Placeholder("boy")
@@ -18,15 +19,15 @@ image mira = Placeholder("girl")
 
 # Characters
 define cyra = Character("Cyra", color="#a14ae9")
-define mc = Character("[name]", color="#db345d")
+define mc = Character("[name]", color="#f061c5")
 define dr = Character("Dr. Byte", color="#61f0dd")
 define drIntercom = Character("Dr. Byte (Through Intercom)", color="#61f0dd")
 define drHologram = Character("Dr. Byte (Hologram)", color="#61f0dd")
 define mspy = Character("Ms. Py Thon", color="#8ef061")
 define mspyIntercom = Character("Ms. Py Thon’s Voice Over Intercom", color="#8ef061")
-define luna = Character("Luna", color="#e2f061")
-define astra = Character("Astra", color="#f061c5")
-define kai = Character("Kai", color="#618ef0")
+define luna = Character("Luna", color="#618ef0")
+define astra = Character("Astra", color="#e2f061")
+define kai = Character("Kai", color="#db345d")
 define mira = Character("Mira", color="#f8a3c7")
 define n = Character(None, kind=nvl)
 
