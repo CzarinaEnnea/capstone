@@ -27,14 +27,14 @@ label episode4:
     show kai happy2
     mc "At least I don’t short-circuit when someone mentions teamwork."
 
-    show luna neutral at center with dissolve
+    show luna surprised3 at center with dissolve
     luna "Ooooh! Emotional operator triggered! {w}{b}MC > Kai == Burned!{/b}"
-    show luna neutral2
     show mira happy at slightright with dissolve
     mira "Technically, that’s not valid syntax, Luna."
     show mira happy2
-    show luna surprised
+    show luna neutral
     luna "Syntax? I call it sass-tax!"
+    show luna neutral2
 
     show astra neutral at slightleft with dissolve:
         xzoom -1.0
@@ -147,7 +147,8 @@ label episode4:
         xzoom -1.0
     mira "T-they look angry!"
 
-    show luna neutral at slightleft with dissolve
+    show luna surprised3 at slightleft with dissolve:
+        xzoom -1.0
     luna "They smell like unclosed parentheses!"
 
     hide mira
@@ -237,7 +238,7 @@ label episode4:
     mc "Operators, logic, conditions… Ms. Py Thon says code reflects the mind."
     mc "So what does it mean when I can’t stop thinking about the people behind it?"
 
-    # play sound
+    play sound hologram
     "A soft digital chime — footsteps approach."
 
     show mspython surprised at center with dissolve
@@ -652,13 +653,16 @@ label Ep4Scn4Luna:
     luna "That’s friendship math!"
     mc "That’s… actually clever, Luna."
     show luna neutral
-    luna "Right?! But then False + True = 1, so maybe that’s like… {w}halfway friends?"
+    luna "Right?! But then False + True = 1, so maybe that’s like…" 
+    show luna sad
+    luna "Halfway friends?"
     mc "Or someone you just met."
+    show luna happy-nostar
     luna "Yeah! Like a {i}‘loading friendship’{/i}!"
-    show luna happy
+    show luna happy2
     "Luna spins around excitedly, accidentally bumping into a data bush that glitches for a second."
     with hpunch
-    show luna surprised
+    show luna surprised3
     luna "Ooops—{w} don’t worry, nature.exe is fine!"
     mc "Every time you talk, it’s like listening to live code poetry."
     show luna neutral

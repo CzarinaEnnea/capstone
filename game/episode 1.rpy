@@ -280,10 +280,12 @@ label episode1:
 
 # Scene 3: “Meeting the Crew – Syntax Duel and Team Debugger”
 
+    play sound "cafeteria-people.ogg"
     "After Ms. Py Thon’s class, my brain feels like scrambled code. The Student Lounge hums with energy — half café, half neon battlefield."
     "At the center table, five students argue over a glowing cube of light."
     "A sign above their table reads:"
     "{size=+10}TEAM DEBUGGER – We Don’t Panic, We Patch.{/size}"
+    stop sound fadeout 1.0
 
     mc "...{w}Guess that’s my new squad."
 
