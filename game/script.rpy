@@ -84,7 +84,7 @@ image mspython vhappy:
 transform rise_up:
     ypos 1.0        
     xalign 0.5      
-    linear 0.5 ypos 0.0
+    linear 0.5 ypos 0.21
 
 init:
     transform flip:

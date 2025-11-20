@@ -757,9 +757,9 @@ label episode1:
 
     show astra neutral2
 
-    show luna neutral zorder 2 at slightright
-    with dissolve
+    show luna neutral zorder 2 at slightright with dissolve
     luna "Yay. I get to show how awesome I am again, Hehe."
+    show luna neutral2
 
     show cyra neutral zorder 1 at right
     with dissolve
@@ -848,9 +848,9 @@ label episode1:
     with dissolve
     mspy "What will this code output?"
 
-    call ep1_scn5_txt3
-
     define scene5Wrong = False
+
+    call ep1_scn5_txt3
 
     pause 1
     show mspython neutral with dissolve
@@ -887,11 +887,15 @@ label episode1:
         show cyra happy-notab
         cyra "That’s really cool!"
         show cyra happy2-notab
+
+        play sound right_answer
         "{=gold}Cyra’s affection increases.{/gold}"
         $ change_cyraAffection(+2)
 
         show kai happy at left with dissolve
         kai "Don’t let her get to your head, rookie. We’ve got bigger bugs to squash soon."
+
+        play sound right_answer
         "{=gold}Kai smirks — affection increases.{/gold}"
         $ change_kaiAffection(+2)
 
@@ -901,6 +905,7 @@ label episode1:
     luna "Speaking of bugs—don’t squash them! {w}They’re {b}adorable!{/b}"
     show luna neutral
     luna "I named one ‘Syntaxy.’ He’s missing a colon, but he’s trying his best!"
+    show luna neutral2
     show cyra happy-notab
     show kai sad
     "Everyone groans. Cyra laughs while Kai facepalms."
@@ -950,7 +955,7 @@ label episode1:
 
     hide mspython with dissolve
 
-    show luna happy at slightright with dissolve
+    show luna cookie at slightright with dissolve
     luna "Oooh, a mission! Can we bring snacks? My debug chips are gluten-free!"
     show cyra happy-notab at right with dissolve
     cyra "Luna, you’re hopeless."
@@ -1093,14 +1098,16 @@ label episode1:
     show astra happy
     "A bug explodes into binary dust."
 
-    show luna at slightright with dissolve
+    show luna happy at slightright with dissolve
     luna "{cps=20}Wheeeeeeee!"
-    show luna happy
+    show luna happy2
     show astra happy2
     luna "The bugs make sparkly confetti when they {size=+10}{b}die!{/b}{/size} {w}Can I keep one as a pet?"
     show mira neutral at right with dissolve
-    mira "Please don’t. {w}That’s… {w}not sanitary." 
+    mira "Please don’t. {w}That’s… {w}not sanitary."
+    show mira sad
     mira "Digitally speaking."
+    show mira sad2
     show astra neutral
     astra "Oh, lighten up. It’s just corrupted code — not actual bacteria."
     show astra sad
@@ -1140,7 +1147,7 @@ label episode1:
     hide cyra
     with dissolve
 
-    show luna happy at right with dissolve
+    show luna happy-nostar at right with dissolve
     luna "Good job, [name]! You didn’t crash this time!"
     "Luna giggles and waves from across the dome."
     show astra neutral at left with dissolve:
