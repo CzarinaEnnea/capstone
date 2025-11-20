@@ -52,9 +52,9 @@ label episode3:
             show cyra happy
             cyra "See? Total prodigy."
         "8":
-            call ep3Scn1QuestionWrong
+            call ep3Scn1QuestionWrong from _call_ep3Scn1QuestionWrong
         "53":
-            call ep3Scn1QuestionWrong
+            call ep3Scn1QuestionWrong from _call_ep3Scn1QuestionWrong_1
 
     show mspython neutral
     mspy "Remember you can also use other operators in here as well like {=code}+, /, - ,{/code} and more {w}as long as its basic calculation."

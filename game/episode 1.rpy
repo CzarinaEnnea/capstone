@@ -852,7 +852,7 @@ label episode1:
 
     define scene5Wrong = False
 
-    call ep1_scn5_txt3
+    call ep1_scn5_txt3 from _call_ep1_scn5_txt3
 
     pause 1
     show mspython neutral with dissolve

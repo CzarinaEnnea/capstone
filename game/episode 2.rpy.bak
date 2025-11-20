@@ -16,57 +16,48 @@ label episode2:
     "Yesterday, I fought a monster made of syntax errors. Today, I’m back for more…"
 
     mc "New day, same universe. Yesterday was chaos. But today—"
-    mc "Ms. Py Thon said we’ll go '{i}deeper{/i}'. {w}I just hope she means spiritually and not into a debug pit again."
+    mc "Ms. Py Thon said we’ll go 'deeper.' I just hope she means spiritually and not into a debug pit again."
 
     play sound "school-bell.ogg"
 
     show cyra happy at right
     with dissolve
-    cyra "Morning, rookie. Ready for another brain workout?"
-
     show kai neutral at left
     with dissolve
-    kai "We’ve got ‘{i}Data Types and Operations{/i}’ on the schedule." 
-    kai "Sounds like she’s teaching us how to store our souls in variables."
-    show kai neutral2
-
-    show luna happy at center
+    show luna neutral at center
     with dissolve
+    show mira neutral at slightleft
+    with dissolve
+    show astra neutral at slightright
+    with dissolve
+
+    cyra "Morning, rookie. Ready for another brain workout?"
+    kai "We’ve got ‘Data Types and Operations’ on the schedule. Sounds like she’s teaching us how to store our souls in variables."
     luna "Oooh! Can we store glitter too?"
-
-    show mira happy at slightleft with dissolve:
-        xzoom -1.0
     mira "If it’s binary glitter… maybe?"
-    show mira happy2
-
     mc "Haha! I’ll take binary glitter over binary panic any day."
 
     hide cyra
     hide kai
     hide luna
     hide mira
-    with dissolve
+    hide astra
 
     "The lights dim. Ms. Py Thon materializes from floating code glyphs."
 
-    play sound hologram
     show mspython neutral at center
     with dissolve
 
     mspy "Good morning, coders."
     mspy "You survived variables — now it’s time to understand what they hold."
-    mspy "Today’s topic: {b}Python’s Built-in Data Types{/b}."
+    mspy "Today’s topic: Python’s Built-in Data Types."
 
-    hide mspython
-    with dissolve
+    hide mspy
+    with fade
 
     stop music fadeout 2.0
 
 #SCENE 2
-
-    play sound "door_opening_school_doorway.ogg"
-    scene classroom
-    with dissolve
 
     #play music "data_theme.ogg" fadein 2.0
 
@@ -408,7 +399,7 @@ label episode2:
     "How will you handle the String Leech?"
 
     #1Bug String Leech code input----------------------------------------------------------------  
-    call string_leech from _call_string_leech
+    call string_leech
     hide bug
     hide screen info_box with fade
 
@@ -437,7 +428,7 @@ label episode2:
     "How do you calm the Numeric Ogre?"
 
     #--------------Numberic Org ----------------------
-    call numeric_org from _call_numeric_org
+    call numeric_org
     hide bugOgre
     hide screen info_box
 
@@ -470,7 +461,7 @@ label episode2:
     #List Hydra call here-----------------------------------------------------------------------------------------------------
     "How do you trap the Hydra?"
     "Append the \"heads\" to seal away the \"Hydra\""
-    call list_hydra from _call_list_hydra
+    call list_hydra
     hide bugHydra
     hide screen info_box
     
@@ -495,7 +486,7 @@ label episode2:
 
     #Bug Phantom call here--------------------------------------
     "What code do you use to reveal the truth?"
-    call bug_phanthom from _call_bug_phanthom
+    call bug_phanthom
     hide bugPhantom
     hide screen info_box with fade
 
@@ -515,7 +506,7 @@ label episode2:
 
     "What do you assign to restore balance?"
     #Bug Void call here---------------------------------------
-    call void_bug from _call_void_bug
+    call void_bug
     hide bugVoid
     hide screen info_box
 

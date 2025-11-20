@@ -4,7 +4,7 @@
 label episode1:
 # SCENE 1
 
-    scene futuristic skyline
+    scene black
     with dissolve
 
     play sound "train.ogg" fadeout 1.0
@@ -17,6 +17,9 @@ label episode1:
     $ renpy.pause(3.5)
 
     play music "audio/opening.ogg"
+
+    scene skyline
+    with dissolve
 
     "A sleek hovertrain glides through a neon sky. The colossal Code Academy Nexus floats above the city — a fortress of glowing circuits and holographic towers."
 
@@ -51,7 +54,7 @@ label episode1:
 
     dr "Good morning, students. No teleportation mishaps this time, I hope."
 
-    show cyra neutral at slightright with move
+    show cyra neutral at right with move
     cyra "No promises, Headmaster."
     show cyra neutral2
 
@@ -63,13 +66,14 @@ label episode1:
     show doctorbyte neutral
     dr "Now, you’ll be joining Professor Py Thon’s class. Don’t let her brilliance intimidate you."
 
+    show doctorbyte neutral2
     "A ripple of neon light forms into a tall woman with emerald lines of code flowing through her hair. Her eyes glow softly with wisdom."
 
-    show mspython neutral at slightleft
+    show mspython neutral at center
     with Dissolve(1.0)
 
     mspy "Headmaster, I’ll take it from here."
-
+    show mspython neutral2
     show doctorbyte happy
 
     dr "The class is yours, Professor. Don’t melt too many brains on the first day."
@@ -101,6 +105,7 @@ label episode1:
 
     show mspython neutral at slightright with move
 
+    show screen info_box("SYNTAX 101: print()") with dissolve
     show ep1-scn2-txt1 at top_left_space
     with dissolve
 
@@ -115,97 +120,132 @@ label episode1:
             show mspython vhappy
             mspy "Excellent! You’ve spoken your first line of Python with grace."
             mspy "A humble start… yet every coder’s journey begins with this very phrase."
+            show mspython happy2
 
-            show cyra neutral at right with dissolve
-            cyra "Congrats, newbie! You made the computer talk {w}— and it didn’t roast you." #mock applause
+            show cyra neutral-notab at right with dissolve
+            cyra "Congrats, newbie! You made the computer talk {w}— and it didn’t roast you."
+            show cyra neutral2-notab
             mc "Thanks… I think?"
             show mspython neutral
             mspy "Do not underestimate simplicity, [name]. Even a whisper of logic can reshape reality."
 
+            play sound "right_answer.ogg"
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
 
         "It explodes the computer":
             mc "It explodes the computer?"
-            show mspython surprised
+            show mspython surprised2
             "The class bursts into laughter. Ms. Py Thon crosses her arms, amused."
+            show mspython surprised
             mspy "Ah, creativity — but no. This is Python, not Michael Bay Studios."
-            show cyra happy at right with dissolve
+            show cyra happy-notab at right with dissolve
             cyra "Boom! First mistake of the semester."
+            show cyra happy2-notab
             show mspython neutral
             mspy "A safe answer would be wiser next time, [Ms][name]."
 
+            play sound "error_sound1.ogg"
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
             
         "It creates a cat video":
             mc "It creates a cat video?"
-            show cyra neutral at right with dissolve
+            show cyra neutral-notab at right with dissolve
             cyra "Ha! I wish! If that worked, I’d have infinite playlists."
             show mspython sad
             mspy "Perhaps one day when you master APIs… but for now, no cats —only code."
 
+            play sound "error_sound1.ogg"
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
 
     show mspython neutral
-    hide cyra with dissolve
-    mspy "Python is one of the world’s most flexible programming languages. Created by Guido van Rossum and released in 1991, it’s used for:"
-
+    hide screen info_box 
     hide ep1-scn2-txt1
+    hide cyra 
+    with dissolve
+    mspy "Python is one of the world’s most flexible programming languages." 
+    mspy "Created by Guido van Rossum and released in 1991, it’s used for:"
+
     show ep1-scn2-txt2 at top_left_space 
     with dissolve
 
     mspy "Web development, Software Creation, Mathematics and yes Automation and Scripting!"
 
+    show mspython neutral2
     show luna neutral at right with dissolve
     luna "Python: adaptive, readable, and statistically likely to dominate human education."
+    show luna neutral2
 
-    show astra neutral:
-        subpixel True xpos 0.84 
-        Null(411.0, 1080.0)
-        'astra neutral' with dissolve
+    # hide luna
+    # show astra neutral at right 
+    # with dissolve
 
-    astra "Uh huh."
+    # astra "Uh huh."
+
+    show mspython neutral
     mspy "Quite right, Luna. Python’s beauty lies in its simplicity."
     mspy "It reads almost like English — and runs instantly."
     mspy "That means your experiments come alive as you type them."
+    show mspython neutral2
     mc "So… it’s easy to start with, but powerful enough for big stuff?"
-    mspy "Exactly. It supports procedural, object-oriented, and functional programming — three paths, one language."
+    show mspython neutral
+    mspy "Exactly. It supports procedural, object-oriented, and functional programming {w}— three paths, one language."
 
+    show mspython neutral2
     "She gestures, and glowing indentation marks appear midair."
+
+    play sound "hologram.ogg"
 
     hide astra
     hide luna
     hide ep1-scn2-txt2
+    with dissolve
+
+    show screen info_box("SYNTAX 101: Indentation") with dissolve
     show ep1-scn2-txt2-1 at top_left_space
     with dissolve
 
     show mspython neutral
-    mspy "Don't worry about what this code means yet. Focus on the indention or space below the \"{size=+10}{color=#81f08aff}def greet():{/color}{/size}\"."
+    mspy "Don't worry about what this code means yet. {w}Focus on the indention or space below the \"{size=+10}{color=#81f08aff}def greet():{/color}{/size}\"."
     mspy "Unlike many languages, Python doesn’t use semicolons or braces. It uses {b}indentation{/b} — spacing — to define code blocks."
+    show mspython neutral2
     mc "So… even the spaces matter?"
-    mspy "Yes. In Python, indentation isn’t optional. Disrespect it… and you’ll summon chaos."
+    show mspython neutral
+    mspy "Yes. In Python, indentation isn’t optional. Disrespect it… and {i}you’ll summon chaos{/i}."
 
     hide ep1-scn2-txt2-1
+    hide screen info_box
+    with dissolve
+
+    play sound "glitch_sound.ogg"
+
+    show mspython neutral2
     show ep1-scn2-txt2-2 at top_left_space
     $ red_effect()
 
     "The lights flicker. A faint growling noise is heard — a “bug” forming in the code."
 
-    show cyra happy at right with dissolve
+    show cyra happy-notab at right with dissolve
     cyra "Oh, fun. Evil spaces. Love that."
 
     hide ep1-scn2-txt2-2
+    with dissolve
+    
+    show screen info_box("SYNTAX 101: Variable Name") with dissolve
     show ep1-scn2-txt3 at top_left_space
     with dissolve
 
-    show cyra neutral
+    show cyra neutral2-notab
+    show mspython neutral
     mspy "When you name a variable in Python, you can’t use spaces because Python would get confused — it would think you’re writing two separate things instead of one name."
     mspy "The underscore (_) acts like a small space — it helps make your variable name easy to read without breaking Python’s rules. Watch."
 
     mspy "Instead, we do:"
 
+    hide mspython
+    hide cyra
     show ep1-scn2-txt4 at top_right_space
     with dissolve
 
@@ -213,8 +253,7 @@ label episode1:
 
     "She waves her hand. The classroom morphs into a holographic battle arena — walls of blue code hum with energy."
 
-    hide text1
-    # hide text2
+    hide screen info_box
     with dissolve
 
     scene arena #or fade to black
@@ -229,123 +268,154 @@ label episode1:
     with dissolve
     pause 0.5
 
-    scene cafe
+    scene cafeteria
     with fade
 
     "After Class"
 
+    # play music "chill_bg.ogg" fadein 1.0
+    play music "main-menu.ogg"  #Try but might delete
     mc "I felt drained already. Well atleast I can finally eat!"
 
 
 # Scene 3: “Meeting the Crew – Syntax Duel and Team Debugger”
 
+    play sound "cafeteria-people.ogg"
     "After Ms. Py Thon’s class, my brain feels like scrambled code. The Student Lounge hums with energy — half café, half neon battlefield."
     "At the center table, five students argue over a glowing cube of light."
     "A sign above their table reads:"
     "{size=+10}TEAM DEBUGGER – We Don’t Panic, We Patch.{/size}"
+    stop sound fadeout 1.0
 
     mc "...{w}Guess that’s my new squad."
 
-    show cyra neutral with dissolve
-    show cyra happy at slightright with move
+    show cyra neutral2-notab with dissolve
+    show cyra happy-notab at slightright with move
 
     cyra "Oh! Everyone, meet our new recruit!!"
 
-    show astra neutral at slightleft with dissolve
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
+
     astra "Oh, look. The new one survived Ms. Py Thon’s lecture that’s worth a celebration. {w}I’m Astra."
 
     show kai neutral at left with dissolve
     kai "Barely. I saw three students combust from syntax errors."
+    show kai neutral2
+    show astra neutral2
 
-    show luna neutral at right with dissolve
+    pause 0.5
+    show luna neutral zorder 2 at right with dissolve
     show luna happy at slightright with move
-    show cyra surprised at center with move
+    show cyra surprised2-notab at center with move
     with hpunch
 
     luna "{b}Combust?! {w=1}I missed that again?!{/b} {w=1}By the way I’m Luna Hehe."
 
-    show cyra angry
+    show cyra surprised-notab
     cyra "{size=+10}{b}Hey!{/b}{/size}"
 
-    show kai happy
+    show kai neutral
     kai "Figures. Another bright-eyed beginner joining the chaos. {w}Kai by the way."
 
-    show cyra neutral
-    show kai neutral
-    show mira neutral at right with dissolve
+    show kai neutral2
+    show mira neutral zorder 1 at right with dissolve
     mira "{cps=20}H-Hi there…{/cps} {w}I’m Mira Bite. {w}{cps=20}I handle support and… {w=1}um… {w=1}tea refills.{/cps}"
-
+    show cyra neutral2-notab
 
 
     menu:
         "Nice to meet you all! I’m [name] and ready to code my destiny.":
-            show kai happy
             show astra happy
             "You saw Kai nods approvingly and Astra winks towards you"
 
         "Wait—did she say students combusted?":
-            show luna surprised
+            show luna happy2
             "Luna giggles at you and pretends to explode."
-            show luna happy
+            show luna bleh
             luna "Kabooom!"
 
         "Free tea? Best team ever.":
-            show mira neutral: #or shy or surprised
+            show mira surprised2-blush:
                 linear 0.7 xpos 0.9
+            show luna happy2
             "You saw Mira turning red and hides herself behind Luna."
 
-    show luna neutral
+    show astra neutral
+    # show luna neutral2
     astra "So, rookie, which division you thinking of joining? Frontend glam? Backend chaos? Or full-stack madness?"
 
-    show cyra happy
+    show cyra happy-notab
+    show astra neutral2
     cyra "Relax, [theyre] still new."
 
     mc "Not sure yet. Still figuring out if I’m more “function” or “fashion.”"
 
+    show luna surprised3
+    luna "*gasp*"
     show luna happy
-    luna "*gasp* {w}Be both! A stylish debugger! I can make you a glowing jacket that says {w}{i}{size=+10}{cps=20}{color=#81f08aff}while(True): Slay(){/color}{/cps}{/size}{/i}!"
+    luna "Be both! A stylish debugger! I can make you a glowing jacket that says {w}{i}{size=+10}{cps=20}{color=#81f08aff}while(True): Slay(){/color}{/cps}{/size}{/i}!"
+
+    show kai disgusted
+    show cyra disgusted-notab
+
+    "{color=#db345d}Kai{/color} & {color=#a14ae9}Cyra{/color}" "…Please don’t."
 
     show kai sad
-    show cyra sad
-
-    "{color=#618ef0}Kai{/color} & {color=#a14ae9}Cyra{/color}" "…Please don’t."
-
     kai "Ignore Luna. Her projects usually end in smoke or spontaneous dancing LEDs."
 
+    show kai sad2
+    show luna angry
     luna "Excuse you! That was one time. And it was {i}fabulous.{/i}"
-    mira "You’re… {w}kind of brave for surviving your first class, though. Ms. Py Thon can be scary."
+    show luna angry2
+    show mira neutral at right with move
+    mira "You’re… {w}kind of brave for surviving your first class, though." 
+    mira "Ms. Py Thon can be scary."
+    show mira neutral2
     mc "Yeah, she smiled once — the projector flickered."
 
-    show cyra happy
+    show cyra happy-notab
     show kai happy
-    show luna happy
+    show luna happy-nostar
     show mira happy
     show astra happy
-    "(Everyone laughs.)"
+    "({i}Everyone laughs.{/i})"
 
-    "???" "[[Sound of Intercom Suddenly Rings]"
+    "???" "[[{i}Sound of Intercom Suddenly Rings{/i}]"
 
     mspyIntercom "Attention, Team Debugger. Before you relax too much {w}— SURPRISE QUIZZZ!"
 
-    show cyra surprised
+    show cyra surprised-notab
     show kai surprised
     show luna surprised
     show mira surprised
     show astra surprised
 
+    stop music fadeout 0.5
+
     mspyIntercom "Let’s see if your new member can handle The Syntax Duel."
     show astra happy
-    show mira neutral
+    show mira neutral2
     astra "*grins* Ooooh, our favorite hazing ritual."
+    show astra happy2
     show kai neutral
     kai "Not hazing. {i}Evaluation{/i}."
-    show luna neutral
-    luna "I brought popcorn! {w}Wait… is that allowed?"
+    show kai neutral2
+    show luna cookie
+    luna "I brougfhtt coofkiesss!"
+    show luna cookie2
+    luna "{w}Waift… is dat allofwed?"
+    show kai neutral
     kai "You’ll probably spill it on the terminal again."
-    show cyra neutral
+    show kai neutral2
+    show cyra neutral-notab
     cyra "Lets get this started!"
 
-    scene classroom
+    scene black
+    with dissolve
+    pause 0.5
+
+    scene arena
     with dissolve
 
     #   QUESTION 1
@@ -359,6 +429,7 @@ label episode1:
         "print('Hello World!')":
             call question1Right from _call_question1Right_1
         "print(Hello World!)":
+            play sound glitch_sound
             show bug at top
             $ red_effect()
 
@@ -366,13 +437,18 @@ label episode1:
             kai "Told you. Rookie nerves."
             show cyra surprised at slightright with dissolve
             cyra "Don’t panic! Try closing the quotes — fast!"
+            play sound hologram
             with vpunch
             hide bug with dissolve
             "([name] fixes it. Bug fizzles. Team cheers.)"
             show cyra neutral
             mspyIntercom "You can either use Double Quotation Marks {=code}“”{/code} or {=code}‘’{/code} Apostrophe to declare a string you want to print"
+            play sound error_sound1
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
+
+            show cyra neutral2
+            show kai neutral2
 
     #   QUESTION 2    
     mspyIntercom "Assign 10 to variable x. In a Variable we can store data types we want for example let it be a number, a string and so on. First you have to name your variable it can be a string or a single letter."
@@ -384,17 +460,26 @@ label episode1:
         "x = 10":
             show kai happy
             kai "Simple. Efficient. You’d make a good teammate."
+
+            play sound right_answer
             $ change_kaiAffection(+1)
             "{=gold}Kai’s Affection +1{/=gold}"
+
             show luna happy at center with dissolve
             luna "You’re on fire! But like... in a non-combustion way!"
-            show astra neutral at slightleft with dissolve
+            show astra neutral at slightleft with dissolve:
+                xzoom -1.0
             astra "Careful, Kai. Compliments look good on you." #teasing
+            show kai neutral2
+            show astra neutral2
+
+            play sound right_answer
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
 
         "int x = 10":
             call question2Wrong from _call_question2Wrong
+
         "x : 10":
             call question2Wrong from _call_question2Wrong_1
     
@@ -412,7 +497,9 @@ label episode1:
             mspyIntercom "If Python brewed coffee, I’d be a billionaire."
             "(Team laughs, [name] gets minor penalty.)"
             show cyra sad
-            cyra "Well go for coffee break later. For now focus."
+            cyra "We'll go for coffee break later. For now focus."
+
+            play sound error_sound1
             "{=red}Syntax Confidence –1{/red}"
             $ change_confidence(-1)
 
@@ -428,9 +515,11 @@ label episode1:
             show cyra surprised 
             cyra "And that focus... kinda cool. You listen in class I see."
             "([name] blushes)"
+
+            play sound right_answer
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
-            show cyra neutral
+            show cyra neutral2
 
         "Uses curly braces":
             call question4Wrong from _call_question4Wrong
@@ -448,8 +537,8 @@ label episode1:
 
         "prnt ()":
             call question5Wrong from _call_question5Wrong
+
         "print()":
-            
             show luna happy:
                 subpixel True 
                 parallel:
@@ -464,8 +553,11 @@ label episode1:
                 ypos 1.0
             luna "YES! You pass the Luna test! You’re officially 90\% certified cool!"
             "(+1 Luna Friendship)" #luna flag?
+
+            play sound right_answer
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
+
         "speak()":
             call question5Wrong from _call_question5Wrong_1
 
@@ -473,16 +565,22 @@ label episode1:
     mspyIntercom "Tomorrow, we explore the {b}Variables of Destiny.{/b}"
     show astra neutral at slightleft with dissolve
     astra "(stretching) Destiny sounds boring. Can we just fight more Bugs?"
+    show astra neutral2
     show cyra neutral
     cyra "Perfect as always…"
+    show cyra neutral
     show kai neutral
     kai "Discipline before battle, Astra."
+    show kai neutral2
     show mira neutral at right with dissolve
     mira "He says, as if he’s not secretly obsessed with perfect syntax."
+    show mira neutral2
     show cyra happy
     cyra "You did great really great."
     show luna happy at center with dissolve
     luna "Group selfie before the next apocalypse! Say {w}{size=+10}{color=#81f08aff}print(\"Cheese!\"){/color}{/size}!"
+
+    play music "main-menu.ogg" #Try but might delete
 
     scene groupPhoto
     with dissolve
@@ -492,6 +590,8 @@ label episode1:
     "A team of geniuses, chaos gremlins, and possible love interests."
     "At Code Academy Nexus… even friendship is coded in Python."
 
+    stop music fadeout 0.5
+
 # SCENE 4
 
     scene classroom
@@ -500,85 +600,125 @@ label episode1:
     "Morning light streams through the digital windows of Code Nexus Academy."
     "After a long night of debugging simulations, the class gathers once again in {b}Ms. Py Thon’s Command Lab{/b}. Ready to dive deeper into the logic that powers their world."
 
-    show mspython neutral
+    show mspython neutral2 zorder 4 at center
     with dissolve
 
-    mspy "(Clapping her hands — and three glowing orbs float into the air.) {p}Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w=0.5}— in Python!"
+    "(Clapping her hands — and three glowing orbs float into the air.)"
+    show mspython neutral
+    mspy "Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w}— in Python!"
+    show mspython neutral2
 
-    show cyra at right
+    show cyra surprised-notab zorder 3 at right
     with dissolve
     cyra "Wake up Ms is here."
+    show cyra surprised2-notab
     mc "(Grinning, still sleepy.) {p}Uh… can the heart be caffeinated first?"
 
-    show astra at slightright
-    with dissolve
+    show astra neutral at left with dissolve:
+        xzoom -1.0
     astra "It's only the second day, and you're already sleeping LOL."
+    show astra neutral2
 
-    show kai at left
+    show kai happy zorder 2 at slightright:
+        xzoom -1.0
     with dissolve
-    kai "(Snickers.) {p}Guess someone didn’t def their sleep last night."
+    kai "Guess someone didn’t def their sleep last night."
 
-    show mspython neutral
+    show mspython angry
     mspy "Ha! Save your excuses for the compiler. Now open your command lines!"
+
+    show kai surprised
+    show astra surprised
+    show cyra surprised-notab
+
+    mc "!!!"
+
+    hide kai
+    hide cyra
+    hide astra
+    with dissolve
 
     show ep1-scn4-txt0 at top_left_space
     with dissolve
 
+    show mspython neutral at slightright with move
+    mspy "Now class."
     mspy "As we learned before, Python syntax can be executed right in the command line, like so:"
 
     hide ep1-scn4-txt0
     show ep1-scn4-txt1 at top_left_space
+    with dissolve
+
     mspy "Or, by running it in a .py file through the server. It’s like two paths to the same spell."
     cyra "So basically… It’s like summoning magic either from your hand or your spellbook?"
+    show mspython happy
     mspy "Exactly, my fiery apprentice! Python is both elegant and flexible."
 
     hide ep1-scn4-txt1
     show ep1-scn4-txt2-1 at top_left_space
+    with dissolve
 
     mspy "Now — behold the sacred rule: {i}Indentation matters!{/i}"
 
     hide ep1-scn4-txt2-1
     show ep1-scn4-txt2 at top_left_space
-
-    call ep1_scn4_txt2
+    with dissolve
 
     mspy "If you skip the indentation, Python won’t forgive you."
     drIntercom "Neither will I."
     "Everyone" "(Laughs nervously.)"
 
+    show mspython neutral
     mspy "The number of spaces is your choice, but consistency is the key. {w}You must never mix your indentation styles… or the code will crumble!"
+    show mspython neutral2
     mc "So, it’s kind of like teamwork? Everyone needs to keep their spacing aligned?"
     kai "Deep. Didn’t think you had that in you."
     cyra "Guess our hero’s got some brain cells after all."
 
     hide ep1-scn4-txt2
     show ep1-scn4-txt3-1 at top_left_space
+    with dissolve
 
+    show mspython neutral
     mspy "In Python, variables are born the moment you assign them a value — no declarations needed!"
 
     hide ep1-scn4-txt3-1
     show ep1-scn4-txt3 at top_left_space
+    with dissolve
+
+    mspy "Like so."
 
     mspy "And comments begin with a {=code}#{/code}. It’s like whispering to your code — only you can hear it."
 
     hide ep1-scn4-txt3
     show ep1-scn4-txt4 at top_left_space
+    with dissolve
 
     kai "So… a comment’s like a secret message in a bottle?"
+    show mspython happy
     mspy "Exactly, Kai. For once, you’re insightful."
 
-    show cyra surprised
+    hide ep1-scn4-txt4
+    show mspython neutral2 at center with move
+    show cyra surprised at right
+    with dissolve
 
     cyra "Wait, so if I type {=code}# Cyra is awesome{/code}, it doesn’t actually do anything?"
+    show cyra surprised2
+    show astra neutral at left with dissolve:
+        xzoom -1.0
     astra "You’re the only one who can see it, Cyra."
+    show astra neutral2
+    show mspython happy
     mspy "Only boosts your ego, dear."
 
-    hide ep1-scn4-txt4
-    hide mspython
-    hide kai
-    hide cyra
     hide astra
+    hide mspython
+    hide cyra
     with dissolve
+
+    scene classroom
+    with fade
 
     "{b}After Class – Free Interaction Scene{/b}"
     "The class ends, and the students scatter. You can choose who to talk to before leaving."
@@ -602,7 +742,7 @@ label episode1:
     "Maybe it’s about the people who debug your heart."
 
 # SCENE 5
-    scene training chamber
+    scene arena #training chamber
     with dissolve
 
     "After yesterday’s lesson on syntax and indentation, today’s session promises something new — something powerful"
@@ -610,23 +750,31 @@ label episode1:
     with dissolve
     mspy "Class, welcome to the second pillar of programming — {w}{b}Variables!{/b}"
 
-    show astra neutral at slightleft
+    show mspython neutral2
+    
+    show astra neutral at slightleft:
+        xzoom -1.0
     with dissolve
     astra "Another day to learn coding."
 
-    show luna neutral zorder 2 at slightright
-    with dissolve
+    show astra neutral2
+
+    show luna neutral zorder 2 at slightright with dissolve
     luna "Yay. I get to show how awesome I am again, Hehe."
+    show luna neutral2
 
     show cyra neutral zorder 1 at right
     with dissolve
     cyra "(Stretching.){p}Finally! Something we can actually {i}use.{/i}"
 
+    show cyra neutral2
+
     show kai neutral at left
     with dissolve
     kai "Yeah, because totally, printing {w}{cps=20}{i}‘Hello, World!’{/i} changed my life."
 
-    show mspython angry
+    show kai surprised2
+    show mspython angry zorder 3 with dissolve
     mspy "It {b}should{/b} have, Mr. Sarcasm. Now, pay attention."
 
     hide astra
@@ -644,15 +792,21 @@ label episode1:
 
     mspy "In Python, variables are containers for storing data values. Think of them as—"
 
-    show doctorbyte neutral at right with dissolve #Hologram
+    play sound hologram    
+    show doctorbyte neutral with dissolve:
+        xzoom -1.0
+        xalign 1.1
+        subpixel True alpha 0.74 additive 0.14 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.14)*HueMatrix(459.0) 
 
-    dr "—as magical sigils that store the essence of logic itself."
+
+
+    drHologram "—as magical sigils that store the essence of logic itself."
 
     show mspython angry
     mspy "Yes, thank you, Headmaster. I {i}was{/i} getting there."
 
     show doctorbyte happy
-    dr "Continue. I’ll just observe. Don’t mind me."
+    drHologram "Continue. I’ll just observe. Don’t mind me."
 
     hide doctorbyte with dissolve
 
@@ -673,6 +827,7 @@ label episode1:
     with dissolve
     kai "Because you’re unpredictable."
 
+    show kai neutral2
     "Everyone laughs."
 
     show cyra angry
@@ -697,46 +852,17 @@ label episode1:
 
     define scene5Wrong = False
 
-    menu:
-        extend ""
+    call ep1_scn5_txt3
 
-        "PythonRocks!":
-            show mspython happy
-            mspy "Correct! {w}The {=code}+{/code} operator combines strings — just like teamwork combines talent!"
-            "The class claps. [name]’s confidence increases."
-            "{=gold}Syntax Confidence +2{/gold}"
-            $ change_confidence(+2)
-            hide ep1-scn5-txt3 with dissolve
-
-        "Python Rocks!":
-            $ scene5Wrong = True
-            show mspython sad
-            mspy "Incorrect. Remember the {=code}+{/code} operator joins strings directly. No space unless you add one." 
-            show mspython neutral
-            mspy "If you do want to add one just set the space as a string like so."
-
-            hide ep1-scn5-txt3
-            show ep1-scn5-txt4 zorder 6 at top_left_space
-            with dissolve
-
-            "Class giggles softly. [name] loses a bit of confidence."
-            "{=red}Syntax Confidence –1{/red}"
-            $ change_confidence(-1)
-
-            hide ep1-scn5-txt4 with dissolve
-
-        "Error":
-            $ scene5Wrong = True
-            mspy "Not quite! That would happen only if we tried to combine incompatible data types."
-            "You learn something from your mistake."
-            hide ep1-scn5-txt3 with dissolve
-
-    pause 2
-    show mspython neutral
+    pause 1
+    show mspython neutral with dissolve
     mspy "Variables can hold numbers, words, even data from sensors and magic circuits. They are the foundation of digital alchemy."
 
     show kai neutral at left with dissolve
+    show mspython neutral2
     kai "Digital… alchemy? Cool. So I’m basically a wizard?"
+    show kai neutral2
+    show mspython neutral
     mspy "Only if your spells compile, dear."
 
     scene classroom
@@ -745,76 +871,68 @@ label episode1:
     "{b}After Class – Team Interaction{/b}"
 
     if scene5Wrong == True:
-        show cyra neutral at center with dissolve
+        show cyra neutral-notab at center with dissolve
         cyra "You did great back there, [name]. Even when you got it wrong, you didn’t panic."
+        show cyra happy-notab
         cyra "That’s… kinda cool."
+        show cyra happy2-notab
         "{=gold}Cyra’s affection slightly increases.{/gold}"
         $ change_cyraAffection(+1)
 
-        show kai neutral at left with dissolve
+        show kai happy2 at left with dissolve
         kai "Don’t let her get to your head, rookie. We’ve got bigger bugs to squash soon."
-        show kai happy
         "{=gold}Kai smirks — affection slightly increases.{/gold}"
         $ change_kaiAffection(+1)
     else:
-        show cyra neutral at center with dissolve
+        show cyra neutral-notab at center with dissolve
         cyra "You did great back there, [name]. You didn’t panic and got it right even if you're new."
-        show cyra happy
+        show cyra happy-notab
         cyra "That’s really cool!"
+        show cyra happy2-notab
+
+        play sound right_answer
         "{=gold}Cyra’s affection increases.{/gold}"
         $ change_cyraAffection(+2)
 
-        show kai neutral at left with dissolve
+        show kai happy at left with dissolve
         kai "Don’t let her get to your head, rookie. We’ve got bigger bugs to squash soon."
-        show kai happy
+
+        play sound right_answer
         "{=gold}Kai smirks — affection increases.{/gold}"
         $ change_kaiAffection(+2)
 
     show luna happy at rise_up
 
-    show cyra neutral at slightright with move
+    show cyra neutral2-notab at slightright with move
     luna "Speaking of bugs—don’t squash them! {w}They’re {b}adorable!{/b}"
     show luna neutral
     luna "I named one ‘Syntaxy.’ He’s missing a colon, but he’s trying his best!"
-    show cyra happy
+    show luna neutral2
+    show cyra happy-notab
     show kai sad
     "Everyone groans. Cyra laughs while Kai facepalms."
 
-    show cyra neutral
+    show cyra neutral-notab
     cyra "Luna, you seriously need a hobby that doesn’t involve feeding your code errors."
     show luna sad
     luna "They’re misunderstood! Like me, when I use too many print statements."
-    show kai neutral
-    show luna neutral
+    show kai neutral2
+    show luna neutral2
+    show cyra neutral2-notab
 
     show astra neutral at right
     with dissolve
     astra "Well, well… look at you, [name]." 
     astra "First day and already getting attention. Not bad for a newbie."
     "She smirks, eyes glinting mysteriously."
-    kai "Don’t start, Astra. You just want to recruit [name] for your ‘secret AI project’ again."
-    astra "Maybe I do. A good coder recognizes potential… and [name]’s code doesn’t just run—it flows."
+    show kai neutral
+    kai "Don’t start, Astra. You just want to recruit [name] for your ‘{i}secret AI project{/i}’ again."
+    show kai neutral2
+    show astra happy
+    astra "Maybe I do. A good coder recognizes potential… {w}and [name]’s code doesn’t just run—it flows."
 
-    show cyra neutral #flusterred
+    show cyra embarrassed-notab
     "Cyra looks slightly flustered and looks away."
-
-    show mspython neutral at slightleft with dissolve
-    mspy "That’s enough, everyone. You’ve all done well today."
-    "Ms Py Thon claps her hand softly. Her calm but commanding tone fills the room."
-    show mspython happy
-    mspy "Remember — variables are the foundation of all programs."
-    mspy "They hold your data, your progress… even your mistakes."
-    mspy "Learn to manage them, and you control your code — and your destiny."
-
-    drIntercom "Indeed. Your first mission awaits tomorrow. Prepare yourselves… the next challenge won’t be so forgiving."
-    "Lights dim. The holographic classroom fades into lines of binary code swirling around the [name]."
-
-    show luna happy
-    luna "Oooh, a mission! Can we bring snacks? My debug chips are gluten-free!"
-    show cyra happy
-    cyra "Luna, you’re hopeless."
-    show kai happy
-    kai "Let’s see if [name] can survive it without breaking the compiler this time."
 
     hide kai
     hide cyra
@@ -822,9 +940,43 @@ label episode1:
     hide astra
     with dissolve
 
-    show mspython happy at center
+    show mspython neutral at center with dissolve
+    mspy "That’s enough, everyone. You’ve all done well today."
+    show mspython neutral2
+    "Ms Py Thon claps her hand softly. Her calm but commanding tone fills the room."
+    show mspython neutral
+    mspy "Remember — variables are the foundation of all programs."
+    mspy "They hold your data, your progress… {w}even your mistakes."
+    mspy "Learn to manage them, and you control your code — and your destiny."
+    show mspython neutral2
+
+    drIntercom "Indeed. Your first mission awaits tomorrow. Prepare yourselves…"
+    drIntercom "The next challenge won’t be so forgiving."
+    play sound hologram
+    "Lights dim. The holographic classroom fades into lines of binary code swirling around [name]."
+
+    hide mspython with dissolve
+
+    show luna cookie at slightright with dissolve
+    luna "Oooh, a mission! Can we bring snacks? My debug chips are gluten-free!"
+    show cyra happy-notab at right with dissolve
+    cyra "Luna, you’re hopeless."
+    show kai happy at left with dissolve
+    kai "Let’s see if [name] can survive it without breaking the compiler this time."
+
+    hide kai
+    hide luna
+    hide cyra
     with dissolve
-    mspy "Tomorrow… they will learn the weight of logic."
+
+    scene classroom
+
+    pause 1.0
+
+    show mspython neutral at center
+    with dissolve
+    mspy "Tomorrow… {w}they will learn the weight of logic."
+    show mspython neutral2
     "Her eyes gleam faintly, as if hiding a deeper plan."
 
     scene black
@@ -835,10 +987,12 @@ label episode1:
     scene arena
     with dissolve
 
+    play sound glitch_sound
     "The class stands in a glowing dome. Holographic bugs crawl across the air — twisted lines of corrupted code."
-    show doctorbyte neutral at right with dissolve
+    show doctorbyte neutral at left with dissolve
     dr "These are minor data Bugs. Harmless individually, but in numbers… they destroy systems."
-    show mspython neutral at left with dissolve
+    show mspython neutral at right with dissolve
+    show doctorbyte neutral2
     mspy "Your task — use what you’ve learned. Variables, syntax, and teamwork."
     mspy "[name] your group will be with Kai, and Cyra. {w}Now GO!"
 
@@ -852,24 +1006,35 @@ label episode1:
 
     show cyra neutral at right with dissolve
     cyra "Time to test our skills!"
+    show cyra neutral2
     show kai neutral at left with dissolve
     kai "[name], back me up!"
+    show kai neutral2
+
+    $ ep1Scn6Right = False
 
     "{b}Choose your Attack!{/b}"
     menu:
         "Kai = 100":
+            $ ep1Scn6Right = True
+
             "{b}Assign a value to Kai’s defense module.{/b}"
             mc "{=code}Kai = 100!{/code}"
             mspy "Excellent variable usage!"
             show kai surprised # Add Shine
             kai "Whoa— I feel 100x stronger!"
+            play sound right_answer
             "{=gold}Team gains shield.{/gold}"
+
+            hide bug 
+            with dissolve
 
         "Bug = 1":
             "{b}if Bug > 0: print(‘Attack!’){/b}"
             mc "{=code}if Bug > 0: print(‘Attack!’){/code}"
             "Forget to indent your code."
             "Error beeps loudly."
+            play sound error_wrong
             $ red_effect()
 
             mspy "Indentation, [name]! {b}Indentation!{/b}"
@@ -877,25 +1042,42 @@ label episode1:
             show cyra surprised
             with hpunch
             "{i}A Bug hits Kai’s barrier.{/i}"
+            play sound punch_sound2
             "{=red}Minor damage.{/red}"
 
             show screen info_box("Correct Syntax:") with dissolve
             "{=code}if Bug > 0:{p}{space=40}print(‘Attack!’){/code}"
 
+            hide screen info_box
+            hide bug
+            hide kai
+            hide cyra 
+            with dissolve
+
         "print(\"Target Locked!\")":
+            $ ep1Scn6Right = True
+
             "{b}Print a debug message.{/b}"
             mc "{=code}print(\"Target Locked!\"){/code}"
             "The code glows; the Bug freezes."
             with hpunch
+            play sound punch_sound1
             show cyra happy
-            show kai hapy
+            show kai happy
             hide bug with dissolve
+
             "{=gold}Bug defeated.{/gold}"
 
-    show cyra happy at slightright with move
-    cyra "Nice one, [name]! You’re getting the hang of this!"
-    show kai happy
-    kai "Not bad… {w}for a newbie."
+    if ep1Scn6Right == True:
+        show cyra happy at slightright with move
+        cyra "Nice one, [name]! You’re getting the hang of this!"
+        show cyra happy2
+        show kai happy
+        kai "Not bad… {w}for a newbie."
+        show kai happy2
+    else:
+        show doctorbyte sad at slightleft with dissolve
+        dr "Well you did your best."
 
     show doctorbyte neutral at slightleft with dissolve
     dr "Lesson complete. You’ve survived your first encounter."
@@ -908,23 +1090,30 @@ label episode1:
     show bug at top with dissolve
     
     "Cut to Luna and Astra’s group"
-    show astra neutral at slightleft with dissolve
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
     "Bright flashes illuminate their side of the dome. Astra flicks her fingers like she’s playing a piano of light."
     astra "Variable set, loop engaged… {w}and {b}delete!{/b}"
     hide bug with dissolve
     with vpunch
+    play sound punch_sound1
     show astra happy
     "A bug explodes into binary dust."
 
-    show luna at slightright with dissolve
+    show luna happy at slightright with dissolve
     luna "{cps=20}Wheeeeeeee!"
-    show luna happy
+    show luna happy2
+    show astra happy2
     luna "The bugs make sparkly confetti when they {size=+10}{b}die!{/b}{/size} {w}Can I keep one as a pet?"
     show mira neutral at right with dissolve
-    mira "Please don’t. {w}That’s… {w}not sanitary." 
+    mira "Please don’t. {w}That’s… {w}not sanitary."
+    show mira sad
     mira "Digitally speaking."
+    show mira sad2
     show astra neutral
-    astra "Oh, lighten up. It’s just corrupted code — not actual bacteria. {w}Probably."
+    astra "Oh, lighten up. It’s just corrupted code — not actual bacteria."
+    show astra sad
+    astra "Probably."
     "Their group clears their entire wave in seconds."
 
     scene arena 
@@ -935,7 +1124,7 @@ label episode1:
     show doctorbyte happy at left 
     with dissolve
 
-    mspy "Well done, everyone. Even those who stumbled… learned."
+    mspy "Well done, everyone. Even those who stumbled… {w}learned."
     mspy "Remember — a single missing space can change everything."
     show doctorbyte neutral
     dr "Coding isn’t just about writing commands. It’s about thinking clearly under pressure."
@@ -944,24 +1133,43 @@ label episode1:
     hide mspython
     with dissolve
 
-    show cyra neutral at right with dissolve
+    show cyra neutral-notab at right with dissolve
     cyra "Hey, [name]… {w}if we’re going to fight together, you’d better not slow me down."
+    show cyra neutral2-notab
     show kai neutral at left with dissolve
     kai "Yeah. And next time, try not to blow up my defense system."
+    show kai neutral2
     mc "Guess I’ll have to keep practicing… {w}or maybe I just enjoy keeping you both on edge."
-    show cyra happy
+    show cyra happy-notab
+    show kai happy2
     "Cyra chuckles; Kai rolls his eyes but smiles faintly."
 
+    hide screen scoreboard
+    hide kai
+    hide cyra
+    with dissolve
+
+    show luna happy-nostar at right with dissolve
     luna "Good job, [name]! You didn’t crash this time!"
     "Luna giggles and waves from across the dome."
+    show astra neutral at left with dissolve:
+        xzoom -1.0
     astra "Not bad… for a beginner. But let’s see how long you can keep up."
     "For a fleeting moment, her eyes flicker — a sharp digital glow."
 
-    hide screen scoreboard
-    show mspython at center 
+    hide astra
+    hide luna
     with dissolve
 
-    mspy "Good. Because next time… you’ll be writing more than code — {w}you’ll be writing your fate."
+    pause 0.5
+
+    show mspython neutral at center
+    with dissolve
+    
+    mspy "Good. Because next time… you’ll be writing more than code."
+    show mspython happy
+    mspy "You’ll be writing your fate."
+    show mspython happy2
     "And as the simulation fades, one thought burns bright in your mind."
     "This academy isn’t just about learning code…"
     "It’s about surviving in a world where logic is power."
@@ -974,75 +1182,108 @@ label episode1:
 label question1Right:
     mspyIntercom "Well done. Your syntax is strong. Print is used to show the strings you want to say strings are the words."
 
-    show astra at slightleft with dissolve
+    show astra happy at slightleft with dissolve:
+        xzoom -1.0
     astra "Nice reflexes, rookie. Fast and clean — just my type."
 
     show kai happy at left with dissolve
     kai "Consistent. I like that."
+
+    play sound right_answer
     $ change_kaiAffection(+1)
     "{=gold}Kai’s Affection +1{/=gold}"
 
     show cyra happy at slightright with dissolve
     cyra "You did it! The Bug didn’t even hiss at you!"
+    play sound right_answer
     "{=gold}Syntax Confidence +2{/gold}"
     $ change_confidence(+2)
+
+    show astra happy2
+    show cyra happy2
+    show kai happy2
     return
 
 label question2Wrong:
     show kai neutral
     kai "Yawn. Even my grandma can assign variables."
+    show kai neutral2
     show mira neutral at right with dissolve
-    mira "It’s okay, everyone starts somewhere!"
+    mira "It’s okay, everyone starts somewhere."
+    show mira neutral2
+    play sound hologram
     "(A mini Bug appears, shaped like a “?”; [name] zaps it.)"
     show cyra neutral
     cyra "Dont mind him, when he was new he was even worse"
+    show cyra neutral2
 
+    play sound error_sound1
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)
+
     return
 
 label question3Right:
     show luna neutral at center with dissolve
     luna "Imagine if it could make coffee, though."
-    show astra neutral at slightleft with dissolve
+    show luna neutral2
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
     astra "I’d marry Python."
+    show kai neutral2
     "(Kai raises eyebrow.)"
     show astra happy
     astra "Relax, Kai— it’s just a language."
+    show astra happy2
 
+    play sound right_answer
     "{=gold}Syntax Confidence +2{/gold}"
     $ change_confidence(+2)
     return
 
 label question4Wrong:
+    show kai neutral
     kai "Pfft. Rookie mistake."
+    show kai neutral2
     show luna neutral at center with dissolve
     luna "Hey, {b}Kai{/b}, remember when you broke your code with 18 curly braces?"
+    show luna neutral2
     show kai happy
     kai "That was style."
     show cyra neutral
     cyra "Sure it was……."
-    show astra at slightleft with dissolve
-    astra "Nice try though [name]"
+    show cyra neutral2
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
+    astra "Nice try though [name]."
+    show astra neutral2
+
+    play sound error_sound1
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)
+
     "(Team laughs; Bug spawns and gets squashed.)"
     return
 
 label question5Wrong:
     show luna sad
     luna "Awww, close! But hey, you tried! Here, have a sticker that says “Mostly Human.”"
+    show luna sad2
+
+    play sound error_sound1
     "{=red}Syntax Confidence –1{/red}"
     $ change_confidence(-1)
     return
 
 # Scene 4: Free Interaction Choices
 label talkToCyra:
-    show cyra neutral at center
+    show cyra neutral2 at center
     with dissolve
 
     mc "That was a cool metaphor earlier — the magic spell thing."
+    show cyra neutral
     cyra "You think so? Coding’s kinda like fire… {w}control it right, and you create something amazing."
+    show cyra disgusted
     cyra "Lose control, and you burn your whole system."
 
     menu:
@@ -1053,82 +1294,121 @@ label talkToCyra:
             $ change_cyraAffection(+1)
 
         "That’s too dramatic for me.":
+            show cyra neutral
             cyra "Then you’ll never survive Ms. Py Thon’s next exam."
             "{i}No affection change.{/i}"
+
+    hide cyra
+    with dissolve
+
     return
 
 label talkToKai:
-    show kai neutral at center
+    show kai neutral2 at center
     with dissolve
 
-    kai "(Leaning back in his chair, smirking.) {p}So… how’s the new hero of Code Nexus liking syntax so far?"
+    "You saw Kai leaning back in his chair."
+
+    show kai neutral
+    kai "So… how’s the new hero of Code Nexus liking syntax so far?"
     menu:
         "It’s kinda fun actually.":
-            show kai happy
-            kai "Heh, didn’t expect you to say that. Maybe you’re not as hopeless as I thought."
+            show kai surprised
+            kai "Heh, didn’t expect you to say that." 
+            show kai happy2
+            kai "Maybe you’re not as hopeless as I thought."
             "{=gold}Kai’s affection slightly increases.{/gold}"
             $ change_kaiAffection(+1)
         "Boring. I want action.":
-            kai "Pfft. Patience, rookie. You can’t fight ‘Bugs’ without knowing how to debug."
+            show kai happy2
+            kai "Pfft. Patience, rookie." 
+            show kai happy
+            kai "You can’t fight ‘Bugs’ without knowing how to debug."
             "Kai teases you. {i}No affection change.{/i}"
+
+    hide kai
+    with dissolve
+
     return
 
 label talkToMsPython:
-    show mspython neutral at center
+    show mspython neutral2 at center
     with dissolve
 
     mc "Ms. Py Thon, you make syntax sound way cooler than it should be."
-    show mspython happy
+    show mspython surprised
     mspy "Of course! Syntax is the melody that runs the digital universe."
+    show mspython neutral
     mspy "Master it, and you can {i}sing your will into the code.{/i}"
 
     menu:
         "That’s poetic.":
-            show mspython neutral
+            show mspython happy
             mspy "Coding is poetry, if you write it with care."
+            show mspython happy2
             "You gain respect from Ms. Py Thon."
         "That’s… kind of creepy.":
             show mspython sad
             mspy "Then you’ve never seen true beauty in logic."
             "Slight awkwardness."
+
+    hide mspython
+    with dissolve
+
     return
 
 label talkToDrByte:
-    show doctorbyte neutral at center
+    show doctorbyte happy at center
     with dissolve
 
     dr "You’re improving. Ms. Py Thon reports progress."
     mc "Really? That’s… good, I think?"
+    show doctorbyte neutral
     dr "But remember — the Bugs grow stronger every time someone forgets a semicolon."
     mc "Uh, Python doesn’t use semicolons."
+    show doctorbyte surprised
+    dr"!!!"
+    show doctorbyte sad
     dr "...."
-    dr "…{w}I was testing you."
+    show doctorbyte happy2
+    dr "....."
+    show doctorbyte happy-flower
+    dr "…I was testing you."
 
     hide doctorbyte with dissolve
     "He cuts the call..."
     "Everyone nearby bursts out laughing."
+    
     return
 
 label talkToAstra:
-    show astra neutral at center
+    show astra neutral2 at center
     with dissolve
 
-    astra "(Leaning against the window, arms crossed, a confident grin on her face.){p}So, newbie, surviving your first code storm?"
+    "You saw Astra leaning against the window, arms crossed with a confident grin on her face."
+    show astra neutral
+    astra "So, newbie, surviving your first code storm?"
+    show astra neutral2
     mc "Somehow, yeah. Though I think the real storm was Ms. Py Thon’s syntax lecture."
-    show astra happy
+    show astra neutral
     astra "Ha! You’ll get used to it. Syntax is the easy part {w}— it’s the logic battles that’ll fry your circuits later."
 
     menu:
         "Logic battles?":
             show astra neutral
             astra "Oh, you’ll see. Ever heard of a recursive loop that eats your project alive? Yeah, fun times"
+            show astra neutral2
             "{i}You laugh nervously.{/i}"
             show astra happy
-            astra "Don’t worry. If you ever crash, I’ll show you how to reboot — in life and in code."
+            astra "Don’t worry. If you ever crash, I’ll show you how to reboot{w} — in life and in code."
         "You sound like you’ve seen some chaos.":
             show astra sad
             astra "Let’s just say… I’ve debugged my share of nightmares."
-            show astra neutral
             "Her tone softens for a second before she smirks again."
+            show astra neutral
             astra "Stick close, rookie. You might learn more than you expect."
+
+    hide astra
+    with dissolve
+
     return
