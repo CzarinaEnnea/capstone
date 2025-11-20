@@ -73,7 +73,7 @@ label episode2:
     "Holographic lights swirl across the classroom. Data symbols — numbers, words, equations — orbit around {color=#00ffff}Ms. Py Thon{/color} like glowing satellites."
     "Each flicker of light hums softly, resonating like a heartbeat made of pure code."
 
-    show mspython neutral at slightright
+    show mspython neutral at slightright with dissolve
     mspy "All things in Python — and in this universe — are made of {color=#00ff99}data types{/color}."
     mspy "Every spell, every system, every emotion — stored in a format your code understands."
     mspy "Let’s begin with the simplest…"
@@ -83,6 +83,7 @@ label episode2:
 
     mspy "First, the {color=#00ffff}string type{/color}. ‘str’ — holds words, sentences, or any series of characters."
     mspy "For example:"
+    show mspython neutral2
 
     #-------------------------------------------------Ep 2 code1 - string 
     #    name = "Code Nexus"
@@ -96,12 +97,13 @@ label episode2:
     with dissolve
 
     cyra "So, “Cyra the Great” is a string too?"
-    kai "(deadpan) More like a variable with an ego."
+    kai "(deadpan) {p}More like a variable with an ego."
     cyra "Watch it, Volt-boy. I’ll concatenate your attitude."
 
     #change this image
     hide ep2-scn2-txt1
-    hide screen info_box 
+    hide screen info_box
+    with dissolve 
     
     #-------------------------------------------------Ep 2 code2 - string concatenation
     #   first = "Cyra"
@@ -116,13 +118,17 @@ label episode2:
     show ep2-scn2-txt2 at top_left_space
     with dissolve
 
+    show mspython happy
     mspy "Excellent example, Ms. Byte. 'Concatenation' means joining strings using the + operator."
-    luna "(typing) Luna + 'Shine' = 'LunaShine' — It’s me, but sparkly!"
-    mspy "Yes Luna dear. But if you want to add a space in your string you just add two double quotations and a space string like so:"
+    show mspython happy2
+    luna "(typing) {p}Luna + 'Shine' = 'LunaShine'{w} — It’s me, but sparkly!"
+    show mspython neutral
+    mspy "Yes Luna dear. {w}But if you want to add a space in your string you just add two double quotations and a space string like so:"
     
     #change this image
     hide ep2-scn2-txt2
-    hide screen info_box 
+    hide screen info_box
+    with dissolve
 
     #-------------------------------------------------Ep 2 code3 - string concatenation
     #    first = "Luna"
@@ -137,17 +143,21 @@ label episode2:
     show ep2-scn2-txt3 at top_left_space
     with dissolve
 
-    "Ohhhh… so that’s how you do it!"
-    mspy "(smirking) Do take note of this — it might come in handy later."
+    luna "Ohhhh… so that’s how you do it!"
+    show mspython happy
+    mspy "Do take note of this — it might come in handy later."
 
     #change this image
     hide ep2-scn2-txt3
     hide screen info_box 
+    with dissolve
 # --------------------------------------------------------------
 # 2️⃣ NUMERIC TYPES: int, float, complex
 # --------------------------------------------------------------
 
+    show mspython neutral
     mspy "Next — {color=#00ffff}numbers{/color}. Integers, floats, and complex types."
+    show mspython neutral2
     show screen info_box("2. Numeric Types: int, float, complex") with dissolve
     
 
@@ -164,22 +174,23 @@ label episode2:
     show ep2-scn2-txt4 at top_left_space
     with dissolve
 
-    kai "Complex numbers? I already have one of those — it’s called my love life."
+    kai "Complex numbers? I already have one of those {w}— it’s called my love life."
+    mc "..."
     "The room falls silent. A single cricket chirps."
-    cyra "Correction — it’s called nonexistent."
-    luna "(giggling) So 2 + 3j means… it’s literally imaginary?"
-    mspy "Indeed. But even imaginary logic can create real outcomes — just ask quantum computers… or poets."
+    cyra "Correction {w}— it’s called nonexistent."
+    luna "(giggling) {p}So 2 + 3j means… {w}it’s literally imaginary?"
+    show mspython neutral
+    mspy "Indeed. But even imaginary logic can create real outcomes — just ask quantum computers… {w}or poets."
 
     #change this image
     hide ep2-scn2-txt4
     hide screen info_box 
+    with dissolve
 # --------------------------------------------------------------
 # 3️⃣ SEQUENCE TYPES: list, tuple, range
 # --------------------------------------------------------------
 
-    show mspython neutral at right with move
     show screen info_box("3.Sequence Types: list, tuple, range") with dissolve
-    mspy "Sequences hold multiple values in order — like an array of memories."
 
     #-------------------------------------------------Ep 2 code5 - numbers list, tuple, range
     #    fruits = ["apple", "banana", "cherry"]   # list
@@ -194,18 +205,30 @@ label episode2:
     show ep2-scn2-txt5 at top_left_space
     with dissolve
 
+    show mspython neutral at right with move
+    mspy "Sequences hold multiple values in order — like an array of memories."
 
+    show mspython neutral2
     mira "So a list can change… but a tuple can’t, right?"
-    mspy "Exactly. Lists are {color=#ffaa00}mutable{/color} — like you, young Mira.To print a list after setting the print syntax inside the parenthesis you have also to call “list” then the variable, because if you dont it will just print what you set the x variable."
-    mspy  "Tuples are {color=#ffaa00}immutable{/color} — like Kai’s personality.  A tuple is a collection which is ordered and unchangeable. Unlike the others Tuples are written with round brackets."
+    show mspython happy
+    mspy "Exactly. Lists are {color=#ffaa00}mutable{/color} — like you, young Mira."
+    mspy "To print a list after setting the print syntax inside the parenthesis you have also to call “{b}list{/b}” then the {b}variable{/b},{w} because if you dont it will just print what you set the x variable."
+    show mspython neutral
+    mspy "Tuples are {color=#ffaa00}immutable{/color} {w}— like Kai’s personality." 
+    mspy "A tuple is a collection which is ordered and unchangeable. Unlike the others Tuples are written with round brackets."
+    show mspython neutral2
     kai "Harsh, but fair."
 
 
     luna "What about {color=#00ffff}range{/color}?"
-    mspy "Think of it as a spell that creates a sequence of numbers dynamically. Range function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number."
+    show mspython neutral
+    mspy "Think of it as a spell that creates a sequence of numbers dynamically." 
+    mspy "Range function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number."
     mspy "For example:"
+    show mspython neutral2
 
     hide ep2-scn2-txt5
+    with dissolve
 
     #-------------------------------------------------Ep 2 code6 - numbers range
     #    for x in range(3):
@@ -217,24 +240,28 @@ label episode2:
     with dissolve
 
     cyra "Nice. A loop with style."
-    mc "(smirks) I might use that when I get lazy counting."
-    mspy "(sighs) These students of mine…"
+    mc "(smirks) {p}I might use that when I get lazy counting."
+    show mspython sad
+    mspy "(sighs) {p}These students of mine…"
     
     #change this image
     hide ep2-scn2-txt6
     hide screen info_box 
+    with dissolve
 # --------------------------------------------------------------
 # 4️⃣ MAPPING TYPE: dict
 # --------------------------------------------------------------
-    hide mspython
-    show mspython neutral at slightright with move
+    show mspython neutral2 at slightright with move
 
     show screen info_box("4. Mapping Type: dict") with dissolve
     
     #change this image
     show ep2-scn2-txt7 at top_left_space
     with dissolve
-    mspy "Now, the {color=#00ffff}dictionary{/color}. It stores key-value pairs — a mapping of logic.If you want to print all you’ve set:"
+
+    show mspython neutral
+    mspy "Now, the {color=#00ffff}dictionary{/color}. It stores key-value pairs — a mapping of logic." 
+    mspy "Here we see If you want to print all you’ve set."
 
 
     #-------------------------------------------------Ep 2 code7 - numbers list, tuple, range
@@ -246,13 +273,11 @@ label episode2:
     #   print(student)
     #   OUTPUT: 
     #   {'name': 'Alex', 'team': 'Debugger', 'rank': 5}
-    
+
+    mspy "But if you only want to show one variable-"
+
     #change this image
     hide ep2-scn2-txt7
-
-    mspy "But if you only want to show one variable:"
-
-    #change this image
     show ep2-scn2-txt8 at top_left_space
     with dissolve
 
@@ -265,8 +290,11 @@ label episode2:
     # OUTPUT:
     #   Alex
 
+    mspy "We do it like so."
     mc "So it’s like… storing traits for a character?"
+    show mspython happy
     mspy "Exactly. You, for example, are a dictionary of courage and confusion."
+    show mspython happy2
     cyra "And sarcasm."
     kai "Don’t forget questionable decision-making."
     
@@ -284,7 +312,10 @@ label episode2:
     #change this image
     show ep2-scn2-txt11 at top_left_space
     with dissolve
+
+    show mspython neutral
     mspy "Booleans — True or False. The pillars of all logic."
+    show mspython neutral2
 
     #-------------------------------------------------Ep 2 code8 - numbers list, tuple, range
     #    a = 60
@@ -297,9 +328,13 @@ label episode2:
     #        print(c + "Passed")
 
     cyra "So... Boolean’s basically the Academy’s grading system?"
-    mspy "If you code correctly — True. If not — False… and maybe detention."
+    show mspython neutral
+    mspy "If you code correctly — True. If not — False…" 
+    show mspython happy
+    mspy "{w}And maybe detention."
 
     hide screen info_box
+    with dissolve
     
     #change this image
     hide ep2-scn2-txt11
@@ -308,7 +343,8 @@ label episode2:
 # 6️⃣ NONE TYPE: NoneType
 # --------------------------------------------------------------
 
-    mspy "And finally… {color=#ff66ff}None{/color} — the void. Used when there’s no data, no value, no purpose."
+    show mspython neutral with dissolve
+    mspy "And finally… {color=#ff66ff}None{/color} — the void. {w}Used when there’s no data, no value, no purpose."
     show screen info_box("6. None Type: NoneType") with dissolve
     
     #change this image
@@ -318,20 +354,23 @@ label episode2:
     #    x = None
     #    print(x)
 
-    mspy "(solemnly) Some coders fear the void. Others learn to use it."
+    show mspython sad
+    mspy "Some coders fear the void. Others learn to use it."
     cyra "That’s… kinda dramatic. I like it."
 
-    hide screen info_box
+    hide screen info_box with dissolve
     
     #change this image
     hide ep2-scn2-txt12
     with dissolve
 
-    mspy "Excellent work today, Debuggers. Tomorrow, we’ll test how these data types interact — through operations and logic."
+    show mspython happy at center with move
+    mspy "Excellent work today, Debuggers." 
+    mspy "Tomorrow, we’ll test how these data types interact {w}— through operations and logic."
+    show mspython happy2
 
-    mc "(smiles) Guess that means more chaos… and more code."
+    mc "(smiles) {p}Guess that means more chaos… and more code."
 
-    stop music fadeout 3.0
     scene black with fade
 
 #SCENE 3
@@ -339,11 +378,11 @@ label episode2:
     with fade
 
     "The next day."
-    #play music "alarm.ogg"
-    show red at truecenter 
+    play music "emergency_alarm.ogg"
+    show red at truecenter with dissolve 
 
-    dr "Attention, Team Debugger. A Glitch Portal has opened inside the training grid.
-        This anomaly threatens to overwrite your classroom simulation.Prepare for deployment"
+    drIntercom "Attention, Team Debugger. A Glitch Portal has opened inside the training grid."
+    drIntercom "This anomaly threatens to overwrite your classroom simulation. Prepare for deployment"
     
     stop music fadeout 3.0
 
