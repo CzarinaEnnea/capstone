@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 1.rpy", line 416: '{' was never closed
-    mspyIntercom "Your first spell — fix this broken code: {w}{i}{size=+10}{color=#81f08aff}print(\"Hello World!){/color}{/size}{/i}"
-                                                                         ^
+File "game/episode 2.rpy", line 686: expected 'image_name_component' not found.
+    show
+        ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Thu Nov 20 22:14:02 2025
+Fri Nov 21 02:55:59 2025

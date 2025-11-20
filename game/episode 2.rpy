@@ -546,78 +546,147 @@ label episode2:
     mspy "Team Debugger — class dismissed. Tomorrow, we learn about Operators and If/Else."
 
 #SCENE 4
-    scene lounge
-    with fade
+    scene cafeteria #lounge
+    with dissolve
 
     # play music "lounge_theme.ogg" fadein 2.0
+    play music "opening.ogg"
 
     "Soft neon glows fill the Debuggers' Lounge, the hum of holographic screens buzzing in the background."
     "Steam rises from mugs of synthe-tea. Outside, the city flickers like a living circuit board under the digital sunset."
     "After surviving the Glitch Zone, the team finally breathes."
 
-    show luna tired at left
-    with dissolve
-    show cyra neutral-notab at slightleft
-    with dissolve
-    show kai neutral2 at right
-    with dissolve
-    show mira neutral at center
-    with dissolve
-    show astra neutral at slightright
-    with dissolve
-
+    show luna sad at center with dissolve
     luna "Uggggh… my brain feels like it’s been formatted twice and recompiled with extra exhaustion."
-    cyra "You did great, Luna. Especially when you tried to high-five the Boolean ghost. Very brave. Very stupid, but brave."
+    show cyra neutral-notab at right with dissolve
+    cyra "You did great, Luna. Especially when you tried to high-five the Boolean ghost."
+    show cyra happy-notab
+    cyra "Very brave. Very stupid, but brave."
+    show cyra happy2-notab
+    show luna surprised3
     luna "Hey! It looked friendly until it tried to eat my code history!"
+    show luna neutral2
+    show kai neutral at left with dissolve
     kai "That’s what happens when you try to debug with pure optimism."
-    mc "Worked better than your 'punch the Hydra until it obeys' plan."
-    kai "It was experimental logic. Sometimes violence *is* the answer… in pseudocode."
+    show kai neutral2
+
+    mc "Worked better than your '{i}Punch the Hydra until it obeys{/i}' plan."
+    show kai happy
+    kai "It was experimental logic. Sometimes violence *is* the answer{w} ..in pseudocode."
+    show cyra neutral-notab
     cyra "Yeah, sure, Mr. 'divide by zero.' Real smooth operator there."
+    show kai angry2
     kai "Tch. Low blow, Byte."
+    show cyra happy-notab
+    show luna happy-nostar
     "Laughter fills the lounge, echoing off the neon-lit walls."
 
-    mira "I… I’m just glad everyone’s okay. The system was on the verge of collapse. If we’d delayed even a second longer, the Glitch could’ve—"
+    show kai neutral2
+    show mira neutral at slightright with dissolve
+    mira "I… I’m just glad everyone’s okay. The system was on the verge of collapse." 
+    show mira sad
+    mira "If we’d delayed even a second longer, the Glitch could’ve—"
+    show mira sad2
     "She pauses, catching herself before overanalyzing again."
     mc "You held the whole simulation together, Mira. You saved us."
+    show mira surprised
     mira "O-oh… I just followed the algorithm. Anyone could’ve done it."
-    astra "Not anyone. I saw your override code. That wasn’t textbook. You rewrote the logic mid-run."
-    mira "It—It was just a… reflex. A patch job. Nothing special."
-    "Her voice wavers slightly — her eyes flicker faintly with a red glitch, almost imperceptible."
-    luna "Whoa, Mira! Your eyes just did the glow thing! So cool!"
-    mira "Just—just reflection from the holo screen. I’m fine."
-    cyra "You should’ve seen your face during the fight, MC. That ‘String Leech’ almost had you — until you went full coder mode. Not bad for a rookie."
-    mc "Guess I’m starting to get the hang of this Python thing."
-    mc "(pauses, looking around) And maybe… getting to know this team too."
 
-    kai "Don’t get comfortable yet. Next round, I’m taking the top score back. No hard feelings."
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
+    astra "Not anyone. I saw your override code."
+    astra "That wasn’t textbook. You rewrote the logic mid-run."
+    show astra neutral2
+    show mira surprised-blush
+    mira "It—It was just a… reflex. A patch job. Nothing special."
+    show mira surprised2-blush
+    "Her voice wavers slightly — her eyes flicker faintly with a red glitch, almost imperceptible."
+    show luna surprised2
+    luna "Whoa, Mira! Your eyes just did the glow thing! So cool!"
+    show mira sad
+    mira "Just—just reflection from the holo screen. I’m fine."
+    show mira sad2
+
+    pause 1.0
+
+    show cyra neutral-notab
+    cyra "You should’ve seen your face during the fight, [name]." 
+    cyra "That ‘String Leech’ almost had you — until you went full coder mode."
+    show cyra happy-notab
+    cyra "Not bad for a rookie."
+    show cyra happy2-notab
+    show luna neutral2
+    mc "Guess I’m starting to get the hang of this Python thing."
+    mc "(pauses, looking around) {p}And maybe… getting to know this team too."
+
+    show kai neutral
+    kai "Don’t get comfortable yet. Next round, I’m taking the top score back."
+    kai "No hard feelings."
+    show cyra neutral-notab
     cyra "You mean when I take it first."
+    show kai happy
     kai "Dream on."
-    luna "(throws a chip bag) Ship yourselves already!"
+    show luna neutral
+    luna "(Throws a chip bag) {p}Ship yourselves already!"
+    show luna neutral2
+
+    show cyra surprised-notab
     cyra "Wha—?!"
+    show kai surprised
     kai "What are you talking about?!"
+    show mira happy2
+    show luna happy-nostar
+    show astra happy2
     "Everyone bursts into laughter — except Mira, who gives a faint, strained smile."
-    astra "(smirking slightly) Some things never change. Team chaos, through and through."
+    show astra happy
+    astra "Some things never change. Team chaos, through and through."
+
+    hide kai
+    hide cyra
+    hide luna
+    hide mira
+    hide astra
+    with dissolve
 
     # Ms. Py Thon Hologram Appears
-    show mspython happy at center
-    with dissolve
-    # play sound "hologram_on.ogg"
-    # put hologram sound here for Ms. Py Thon entrance
+    play sound "hologram.ogg"
+    show mspython happy at center with dissolve:
+        subpixel True alpha 0.79 additive 0.22 blur 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(0.08)*HueMatrix(576.0) 
 
     mspy "Excellent work today, Debuggers. Your teamwork was… mostly functional."
+    show mspython happy2
+    show luna happy2 at slightright with dissolve
     luna "(salutes dramatically) Mission accomplished, Ms. Python! No existential crises left behind!"
-    mspy "(smiling faintly) Tomorrow’s module will be Operators and Conditional Statements. Prepare your minds."
-    mspy "We will learn how the simplest symbols — +, -, *, /, and, or, not — can reshape digital reality itself."
+    show mspython happy
+    mspy "Tomorrow’s module will be Operators and Conditional Statements. Prepare your minds."
+    mspy "We will learn how the simplest symbols {w}{=code}— +, -, *, /, and, or, not{/code}{w} — can reshape digital reality itself."
 
-    hide mspython with move 
+    hide mspython with dissolve
+
+    show cyra sad-notab at right with dissolve
     cyra "Oh great. Math with consequences."
+    show kai sad at left with dissolve
     kai "Oh joy. Logic puzzles. My favorite way to suffer."
+    show luna sad
     luna "Oh no… homework."
-    mira "(quietly) Logic defines fate. Every choice… changes the outcome."
-    astra "(watching her carefully) Hmm. Spoken like someone who’s seen both sides of the code."
-    mira "(startled) I—I didn’t mean—never mind."
+    show mira neutral at center with dissolve
+    mira "{size=-5}Logic defines fate. Every choice… changes the outcome.{/size}"
+    show astra neutral2 at slightleft with dissolve:
+        xzoom -1.0
+    "Astra watches Mira carefully."
+    show astra neutral with dissolve
+    astra "Hmm. Spoken like someone who’s seen both sides of the code."
+    show mira surprised
+    mira "I—I didn’t mean—"
+    show mira neutral
+    mira "Never mind."
+    show mira neutral2
 
-    "The atmosphere shifts — subtle tension beneath the glow. MC looks between them, uneasy."
+    show astra neutral2
+    show kai sad2
+    show cyra sad2-notab
+    show luna sad2
+    "The atmosphere shifts — subtle tension beneath the glow. [name] looks between them, uneasy."
 
     # --- Optional Interactions ---
     menu:
@@ -628,27 +697,37 @@ label episode2:
             hide astra 
             hide mira 
             hide luna
-            show cyra neutral at center with move
+            show cyra neutral2-notab at center with move
             mc "You really kept your cool out there. You always this confident?"
-            cyra "(smiling, leaning closer) Confidence is just caffeine and chaos, rookie. But… maybe I just wanted to impress someone."
+            show cyra happy-notab
+            cyra "(leaning closer) {p}Confidence is just caffeine and chaos, rookie. {w}But… maybe I just wanted to impress someone."
+            show cyra blush-notab
             "She laughs softly, brushing her hair aside."
+
+            play sound "right_answer.ogg"
             $ change_confidence(+1)
             "{=gold}Syntax Confidence +1{/=gold}"
+            play sound "right_answer.ogg"
             $ change_cyraAffection(+1)
             "{=gold}Cyra’s Affection +1{/=gold}"
-            mc "(grinning) Mission accomplished."
+            mc "(grinning) {p}Mission accomplished."
 
         "Talk to Kai":
             hide cyra
             hide astra
             hide luna
             hide mira
-            show kai neutral at center with move
-            mc "You were solid out there. Even when the Hydra bit your arm."
-            kai "(chuckling) It’s fine. I’ve had worse bugs. But don’t think I’ll let you beat me again."
-            kai "(grins) Next time, I’m going all in. No mercy coding."
+            show kai neutral2 at center with move
+            mc "You were solid out there. {w}Even when the Hydra bit your arm."
+            show kai happy
+            kai "It’s fine. I’ve had worse bugs. But don’t think I’ll let you beat me again."
+            show kai happy2
+            kai "Next time, I’m going all in. No mercy coding."
+
+            play sound "right_answer.ogg"
             $ change_confidence(+1)
             "{=gold}Syntax Confidence +1{/=gold}"
+            play sound "right_answer.ogg"
             $ change_kaiAffection(+1)
             "{=gold}Kai’s Affection +1{/=gold}"
             mc "You’re on, Kai."
@@ -658,31 +737,59 @@ label episode2:
             hide astra
             hide luna
             hide kai
-            show mira happy at center with move
+            show mira neutral2 at center 
+            with dissolve
             mc "You seemed worried during the mission. Everything okay?"
-            mira "(looking distant) Just… residual static. Sometimes I see patterns where there shouldn’t be any. It’s probably nothing."
+            show mira sad
+            mira "(looking distant) {p}Just… residual static. Sometimes I see patterns where there shouldn’t be any. {w}It’s probably nothing."
             "Her datapad flickers with corrupted code for a split second — {color=#ff4444}ACCESS DENIED{/color}."
             mc "(concerned) Mira…?"
+            show mira happy
             mira "(forcing a smile) I’m fine, really. Just tired."
+
+            play sound "error_sound2.ogg"
             $ change_confidence(-1)
             "{=red}Syntax Confidence -1{/=red}"
             "You feel a strange unease — like something in the code just shifted."
 
     # --- Glitch Sequence ---
-    "Suddenly, the lounge lights flicker."
-    # play sound "glitch_static.ogg" 
-    #play glitch sound effect
-    "The holo-screen flashes — a shadowed figure appears, typing rapidly on a terminal. The image distorts before vanishing."
-    luna "(sits up) Uh… anyone else see that?"
-    cyra "(frowning) Probably just lag from the system reboot."
-    astra "(low voice, almost to herself) No… that was intentional. Someone’s inside the code."
-    mira "(gripping her datapad) ...We should go. It’s late."
-    kai "Agreed. Tomorrow’s going to be a long one."
-    mspy "Rest well, Debuggers. Tomorrow — we calculate destiny."
-    hide mspy with dissolve
 
-    mc "(to self) Calculate destiny, huh?"
-    mc "(smiles faintly) Bring it on."
+    scene cafeteria
+    with dissolve
+
+    
+    show cafeteria with dissolve:
+        subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.54)*HueMatrix(0.0)
+
+    scene cafeteria
+    with dissolve
+
+    "Suddenly, the lounge lights flicker."
+    play sound "glitch_sound.ogg"
+    "The holo-screen flashes — a shadowed figure appears, typing rapidly on a terminal. The image distorts before vanishing."
+
+    show luna surprised2 at center with dissolve
+    luna "(sits up) {p}Uh… anyone else see that?"
+    show cyra sad-notab at right with dissolve
+    cyra "Probably just lag from the system reboot."
+    show astra sad at slightleft with dissolve:
+        xzoom -1.0
+    astra "(low voice, almost to herself) {p}No… that was intentional. {w}Someone’s inside the code."
+    show mira sad at slightright with dissolve
+    mira "(gripping her datapad) {p}...We should go. It’s late."
+    show kai neutral at left with dissolve
+    kai "Agreed. Tomorrow’s going to be a long one."
+    mspyIntercom "Rest well, Debuggers. Tomorrow — we calculate destiny."
+
+    hide kai
+    hide luna
+    hide astra
+    hide mira
+    hide cyra
+    with dissolve
+
+    mc "Calculate destiny, huh?"
+    mc "(smiles faintly) {p}Bring it on."
 
     stop music fadeout 3.0
     scene black with fade
