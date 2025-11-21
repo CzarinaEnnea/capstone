@@ -386,61 +386,81 @@ label episode2:
     
     stop music fadeout 3.0
 
-    #play music "glitch_theme.ogg" fadein 2.0 #replace with classic bmg
+    play sound "glitch_sound.ogg"
     show mspython neutral at center
-    mspy "Excellent timing. You’ll be applying your knowledge today — in combat.
-        Remember, each Bug manifests from broken logic. Data types are your weapons."
+    mspy "Excellent timing. You’ll be applying your knowledge today — in combat."
+    mspy "Remember, each Bug manifests from broken logic. Data types are your weapons."
+    show mspython neutral2
     mc "Wait, we're fighting... with code?"
-    hide mspy with dissolve
+    hide mspython with dissolve
 
     show cyra neutral at right with dissolve
     cyra "Finally, a class that gets my blood pumping. Hope you can keep up, rookie."
-    show kai neutral at slightleft with dissolve
+    show cyra neutral2
+    show kai neutral at left with dissolve
     kai "Hmph. Let’s see if you can debug faster than you talk."
-    show luna happy at left
-    show mira neutral at slightright
-    show astra neutral at center
-    with dissolve
+    show kai neutral2
 
-    luna "A real glitch portal? Sparkly destruction! Let’s gooo!"
-    mira "Just—just stay close, everyone. I’ll monitor system output from the console."
-    astra "Oh, relax. It’s just data gone wild. We tame it, we go home. Easy as {color=#00ffff}print(\"Victory\"){/color}."
+    show luna surprised3 at center with dissolve
+    luna "A real glitch portal?!"
+    show luna happy
+    luna "Sparkly destruction! Let’s gooo!"
+    show mira neutral at slightright with dissolve
+    mira "Just—{w}just stay close, everyone. {w}I’ll monitor system output from the console."
+    show mira neutral2
 
-    stop music fadeout 3.0
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
+    astra "Oh, relax. It’s just data gone wild. We tame it, we go home."
+    show astra happy
+    astra "Easy as {color=#00ffff}print(\"Victory\"){/color}."
+
     scene black with fade
+    pause 1.0
 
     # change location to glitch zone
-    scene glitch_zone
+    scene classroom
     with dissolve
 
+    pause 0.5
+  
+    play sound "glitch_sound.ogg"
+    show classroom with dissolve:
+        subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.12)*SaturationMatrix(0.99)*BrightnessMatrix(-0.09)*HueMatrix(630.0) 
+
     mc "Whoa… it’s like stepping into a corrupted dream."
-    show cyra neutral at slightright with dissolve
+    show cyra neutral at right with dissolve
     cyra "Or my first web project after no sleep. Same energy"
+    show cyra neutral2
     
-    show luna happy at right with dissolve
+    show luna happy-nostar at slightright with dissolve
     luna "I love it! It’s creepy and shiny!"
-    hide luna with move
-    show mspython neutral with move
-    mspy "Focus, Debuggers. Each Bug’s nature corresponds to a Python data type.
-        Identify it. Use the right logic to neutralize it. Let’s begin."
+    show mspython neutral at center with dissolve
+    mspy "Focus, Debuggers. Each Bug’s nature corresponds to a Python data type."
+    mspy "Identify it. Use the right logic to neutralize it. {w}Let’s begin."
+
+    hide mspython 
+    hide luna
+    hide cyra
+    with dissolve
 
     #String leech shows
     $ red_effect()
     show screen info_box("Bug #1 – The String Leech") with dissolve
-    show bug at top_left_space #change location later
-
+    play sound "glitch_sound.ogg"
+    show bug at top_left_space with dissolve #change location later
 
     "A pulsating worm of text hovers midair, echoing 'ErrorErrorError...'"
 
-    show mspython neutral at center with dissolve
     mspy "This one loops through text patterns. Use string operations to break the cycle."
     mspy "Remember: in Python, multiplying a string repeats it or removes it."
-    hide mspython with dissolve
 
     show cyra neutral at right with dissolve
     cyra "Like {color=#00ffff}print('LOL' * 3){/color} — my favorite debugging noise."
+    show cyra neutral2
 
-    show kai happy at truecenter with dissolve
+    show kai happy at center with dissolve:
+        xzoom -1.0
     kai "You would weaponize sarcasm."
 
     "Type the missing syntax!!"
@@ -448,17 +468,20 @@ label episode2:
 
     #1Bug String Leech code input----------------------------------------------------------------  
     call string_leech from _call_string_leech
-    hide bug
-    hide screen info_box with fade
+    hide screen info_box with dissolve
+    hide bug with dissolve
 
     #bug 2---------------
     $ red_effect()
-    show screen info_box("Bug #2 – The Numeric Ogre")
-    show bugOgre at top_left_space
+    show screen info_box("Bug #2 – The Numeric Ogre") with dissolve
+    play sound "glitch_sound.ogg"
+    show bugOgre at top_left_space with dissolve
+
     show kai surprised2
     show cyra neutral2
     "A massive creature stomps in, chanting: 'Divide by Zero! Divide by Zero!'"
     show kai neutral2
+
     mspy "Arithmetic operators — +, -, *, / — handle calculations."
     mspy "But dividing by zero causes catastrophic failure. Proceed carefully."
 
@@ -468,23 +491,23 @@ label episode2:
     show kai embarassed
     kai "Funny. Let’s see if you still laugh after you lose the leaderboard."
     show cyra neutral2
-    hide kai embarassed 
-    show kai neutral2 
-    mspy "FOCUS! Students"
+    show kai neutral2
+    mspy "FOCUS! Students."
 
     "Construct the right code to defeat the Numeric Orge!"
     "How do you calm the Numeric Ogre?"
 
     #--------------Numberic Org ----------------------
     call numeric_org from _call_numeric_org
-    hide bugOgre
     hide screen info_box
+    hide bugOgre
+    with dissolve
 
     #bug 3---------------
     $ red_effect()
-    show screen info_box("Bug #3 – The List Hydra") with fade
+    show screen info_box("Bug #3 – The List Hydra") with dissolve
+    play sound "glitch_sound.ogg"
     show bugHydra at top_left_space with dissolve
-
 
     "Three heads emerge, hissing binary streams."
 
@@ -495,39 +518,45 @@ label episode2:
     cyra "So… we’re making a 'Hydra shopping list'? Nice."
     show cyra neutral2
 
-    hide bugHydra with move
-    hide screen info_box with fade
+    hide bugHydra
+    hide screen info_box
+    with dissolve
+
     mspy "Example:"
-    show ep2-scn3-txt1 at top_left_space with move
+    show ep2-scn3-txt1 at top_left_space with dissolve
     mspy "The append() method adds items to the end of a list."
 
-    hide ep2-scn3-txt1
-    with fade    
-    show bugHydra at top_left_space
-    show screen info_box("Bug #3 – The List Hydra")
+    hide ep2-scn3-txt1 with dissolve
+
+    $ red_effect()
+    show screen info_box("Bug #3 – The List Hydra") with dissolve
+    play sound "glitch_sound.ogg"
+    show bugHydra at top_left_space with dissolve
 
     #List Hydra call here-----------------------------------------------------------------------------------------------------
     "How do you trap the Hydra?"
     "Append the \"heads\" to seal away the \"Hydra\""
+
     call list_hydra from _call_list_hydra
-    hide bugHydra
-    hide screen info_box
+    hide screen info_box with dissolve
+    hide bugHydra with dissolve
     
     #bug 4------------
     $ red_effect()
-    show screen info_box("Bug #4 – The Boolean Phantom")
+    show screen info_box("Bug #4 – The Boolean Phantom") with dissolve
+    play sound "glitch_sound.ogg"
+    show bugPhantom at top_left_space with dissolve
 
-    show bugPhantom at top_left_space
     show kai surprised
     show cyra surprised
     "A ghost flickers in and out, whispering 'True… False…'"
     show kai neutral2
-    show cyra neutral
+    show cyra neutral2
     mspy "Booleans control logic flow. Use {color=#00ffff}if{/color} statements to make code decisions."
     show kai neutral
     kai "So, we’re exorcising with logic? My kind of fight."
     show kai neutral2
-    show cyra happy2
+    show cyra happy
     cyra "This will be easy!"
     mc "Got it. Let's Go!"
     show cyra neutral2
@@ -535,15 +564,18 @@ label episode2:
     #Bug Phantom call here--------------------------------------
     "What code do you use to reveal the truth?"
     call bug_phanthom from _call_bug_phanthom
-    hide bugPhantom
-    hide screen info_box with fade
+    hide bugPhantom with dissolve
+    hide screen info_box with dissolve
 
 
     # Final Boss----------
+    show cyra neutral2
+    show kai neutral2
     $ red_effect()
-    show screen info_box("Bug #5 Final Boss: The Void Entity")
-
+    show screen info_box("Bug #5 Final Boss: The Void Entity") with dissolve
+    play sound "glitch_sound.ogg"
     show bugVoid at top_left_space with dissolve
+
     "The entire room shakes. A massive shadow rises — pure black code swirling like smoke."
 
     mspy "This one... is made of NoneType — the absence of data. Only creation — something from nothing — can undo it."
@@ -555,34 +587,49 @@ label episode2:
     "What do you assign to restore balance?"
     #Bug Void call here---------------------------------------
     call void_bug from _call_void_bug
-    hide bugVoid
-    hide screen info_box
+    hide bugVoid with dissolve
+    hide screen info_box with dissolve
 
     # End of battle simulation------------------------------
     stop music fadeout 2.0 #fight music stop here
     #play music "ending_theme.ogg" fadein 2.0  #start ending music here
 
-    scene classroom_day with fade
-    dr "Simulation success. Excellent teamwork, Debuggers."
+    scene black with fade
+
+    scene classroom with dissolve
+    drIntercom "Simulation success. Excellent teamwork, Debuggers."
     show mspython happy at center
-    with move
+    with dissolve
     mspy "You’ve done well. Every operation, every decision — builds the foundation of your code."
 
-    hide mspython happy with move
-    show cyra neutral at slightleft with move
-    show kai neutral at left with move
-    show luna happy at right with move
-    show mira neutral at slightright with move
-    show astra neutral at center with move
+    hide mspython with dissolve
 
+    show cyra happy-notab at right with dissolve
     cyra "Next time, I call dibs on the final blow."
+    show kai neutral at left with dissolve
     kai "You? You barely handled one Boolean ghost."
+    show kai neutral2
+    show cyra neutral-notab
     cyra "Says the guy who screamed when the Hydra burped."
+    show cyra neutral2-notab
+    show luna happy2 at center with dissolve
     luna "Aww, you’re all such cute bugs yourselves!"
+    show astra neutral at slightleft with dissolve:
+        xzoom -1.0
     astra "The real fun starts when the logic turns against you. Remember that."
-    mira "(quietly) Logic… turning against us…? Nothing. I’m fine."
+    show astra neutral2
+    show mira sad at slightright with dissolve
+    mira "{size=-5}Logic… turning against us…?{/size}"
+    mc "You said something Mira?"
+    show mira neutral
+    mira "Nothing. {w}I’m fine."
+    show mira neutral2
 
-    mspy "Team Debugger — class dismissed. Tomorrow, we learn about Operators and If/Else."
+    mspyIntercom "Team Debugger — class dismissed. Tomorrow, we learn about Operators and If/Else."
+
+    scene black
+    with fade
+    pause 1.0
 
 #SCENE 4
     scene cafeteria #lounge
@@ -726,10 +773,10 @@ label episode2:
     show cyra sad2-notab
     show luna sad2
     "The atmosphere shifts — subtle tension beneath the glow. [name] looks between them, uneasy."
+    "What will you do?"
 
     # --- Optional Interactions ---
     menu:
-        "What will you do?"
         
         "Talk to Cyra":
             hide kai 

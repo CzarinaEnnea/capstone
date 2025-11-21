@@ -102,7 +102,7 @@ label episode4:
     mspy "[name], what will Python print?"
 
     menu:
-        extend ""
+        # extend ""
 
         "Excellent":
             call ep4Scn2Q1Wrong from _call_ep4Scn2Q1Wrong
@@ -126,7 +126,7 @@ label episode4:
     pause 1.5
 
 # SCENE 3
-    scene arena
+    scene arena2
     with dissolve
 
     show doctorbyte neutral at center with dissolve
@@ -161,7 +161,7 @@ label episode4:
     "Choose what Python will print to defeat the bug."
 
     menu:
-        extend ""
+        # extend ""
         "Enemy Still Alive!":
             play sound "punch_sound1.ogg"
             with hpunch
@@ -231,8 +231,11 @@ label episode4:
 
     scene black with fade
     pause 1.5
-    scene garden #night
-    with dissolve
+    # scene garden #night
+    # with dissolve
+    
+    show garden with dissolve:
+        subpixel True additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(0.66)*BrightnessMatrix(-0.39)*HueMatrix(0.0) blend None 
 
     "Later that night the sky glows faintly with streaks of blue and violet. The others begin leaving for the dorms."
     mc "Operators, logic, conditions… Ms. Py Thon says code reflects the mind."

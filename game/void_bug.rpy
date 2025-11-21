@@ -6,40 +6,42 @@ label void_bug:
 
 
         if answer == "None":
-            play music right_answer noloop
+            play sound "right_answer.ogg"
             "Correct! \n{color=#32CD32}{b}Output: None{/b}{/color}"
-            show cyra happy2
+            hide screen info_box with dissolve
+            play sound "hologram.ogg"
+            hide bugVoid with dissolve
+
+            show cyra happy
             cyra "Yay we did it!!"
             show kai happy2
             kai "Nice one [name]."
-            hide bugVoid
             return
         else:
             $ WC_local += 1
             if WC_local == 1:
                 show kai angry
                 kai "Bro it has to be None."
-                show cyra disgusted-notab
-                cyra "Take it easy Kai, think carefully [name]."
-                show kai neutral
                 show cyra disgusted
-                show cyra neutral2
-                show kai neutral2
+                cyra "Take it easy Kai, think carefully [name]."
             if WC_local >= 3:
-                play music error_wrong noloop
+                play sound "error_wrong.ogg"
                 "{color=#ff4444}{b}Wrong!!{/b}{/color}"
                 "The Bug Void Entity turns the sky dark and attacks."
-                play music punch_sound1 noloop
+
+                show classroom with dissolve:
+                    subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.12)*SaturationMatrix(0.99)*BrightnessMatrix(-0.4)*HueMatrix(630.0) 
+
+                with vpunch
+                play sound "punch_sound1.ogg"
                 show red
-                show kai angry
+                show kai angry2
                 show cyra angry
-                kai "ahh..not again."
+                kai "Ahh..not again."
                 cyra "Seriously..uhh."
                 mc "uhhhh..."
-                hide bugVoid with dissolve
-                hide red
                 return  # or jump somewhere else if you want
             else:
-                play music error_sound1 noloop
+                play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"
                 "Try again! You have [3 - WC_local] attempt(s) left."

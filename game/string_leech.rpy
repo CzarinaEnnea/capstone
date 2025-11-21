@@ -5,17 +5,18 @@ label string_leech:
         $ answer = renpy.input('#Overwhelm the bug with more bug \nMultiply the BUG string into 0').strip()
 
         if answer == 'print("BUG" * 0)':
-            play music right_answer noloop
+            play sound "right_answer.ogg"
             "Correct! \n{color=#32CD32}{b}print(\"BUG\" * 0){/b}{/color}"
-            "The Bug vanishes into thin air"
-            hide screen info_box
+            "The Bug vanishes into thin air."
+            hide screen info_box with dissolve
+            play sound "hologram.ogg"
             hide bug with dissolve
             "Bug Defeated! \nNice job! That is the right code."
             show cyra happy
             cyra "Multiplied by zero will always be ZERO. Well done [name]!!!"
-            hide cyra happy
-            show cyra neutral at right
-            kai "hmp...."
+            show cyra happy2
+            show kai neutral2
+            kai "Hmp...."
             show kai neutral
             kai "That was nothing."
             return
@@ -26,11 +27,11 @@ label string_leech:
                 show cyra sad
                 show kai sad
                 cyra "Remember [name], the BUG is a string....use double quotation!"
-                hide cyra sad
-                show cyra neutral at right
             if WC_local >= 3:
-                play music error_wrong noloop
+                play sound "error_wrong,ogg" 
                 "You have reached the maximum attempts."
+                with hpunch
+                play sound "punch_sound2.ogg"
                 "The Bug Leech Attack"
                 "{color=#ff4444}{b}TEAM [name] -1{b}{color=#ff4444}"
                 show cyra angry
@@ -39,19 +40,16 @@ label string_leech:
                 pause 1
                 $ change_confidence(-1)
                 cyra "AHhh!"
-                kai "uhhh"
+                kai "Uhhh"
                 mc "Sorrryyyy"
                 kai "FOCUS [name]!"
                 show kai angry2
                 kai "We lose a point for that."
                 hide red
-                hide bug
-                hide cyra angry
-                hide kai angry
-                show cyra neutral at right
-                show kai neutral
+                show cyra neutral2
+                show kai neutral2
                 return  # or jump somewhere else if you want
             else:
-                play music error_sound1 noloop
+                play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"
                 "Try again! You have [3 - WC_local] attempt(s) left."

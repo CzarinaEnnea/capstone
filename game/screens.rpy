@@ -218,15 +218,15 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
-    ypos 405
-    yanchor 0.5
+    # xalign 0.5
+    # ypos 405
+    # yanchor 0.5
 
 # CHANGE MENU CHOICE LOCATION
-    # xalign 0.0
-    # ypos 700
-    # xpos 450
-    # yanchor 0.1
+    xalign 0.5
+    ypos 0.76
+    xpos 0.5
+    yanchor 0.5
 
     spacing gui.choice_spacing
 

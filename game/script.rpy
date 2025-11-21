@@ -1,9 +1,8 @@
 ﻿# TODO: Change color of chara names. Kai/Cyra also have color names in ep1 change it too
 
 # PLACEHOLDERS: Delete when art assets are finished
-image arena = Placeholder("bg")
 image groupPhoto = Placeholder("bg")
-image garden = Placeholder("bg")
+image groupPhoto = Placeholder("bg")
 image MsPythonLab = Placeholder("bg")
 
 image doctorbyte = Placeholder("boy")
@@ -14,8 +13,10 @@ image luna = Placeholder("girl")
 image astra = Placeholder("girl")
 image mira = Placeholder("girl")
 
-
-
+image bugOgre = Placeholder("boy")
+image bugHydra = Placeholder("girl")
+image bugPhantom = Placeholder("boy")
+image bugVoid = Placeholder("girl")
 
 # Characters
 define cyra = Character("Cyra", color="#a14ae9")

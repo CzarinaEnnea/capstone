@@ -13,9 +13,6 @@ label episode1:
     pause 10
     hide text with fade
 
-    play sound "traindoor_opening.ogg" fadeout 1.0
-    $ renpy.pause(3.5)
-
     play music "audio/opening.ogg"
 
     scene skyline
@@ -28,6 +25,13 @@ label episode1:
     mc "And today… it’s my first day."
 
     "The hovertrain doors slide open. [name] steps out, adjusting [their] backpack and looking around in awe."
+
+    play sound "traindoor_opening.ogg" fadeout 1.0
+    $ renpy.pause(1.0)
+    # $ renpy.pause(3.5)
+
+    scene school
+    with dissolve
 
     mc "Whoa… this place looks like a computer and a cathedral had a baby."
     
@@ -113,7 +117,7 @@ label episode1:
     mspy "Now, [name] tell me, what happens when this line is executed?"
 
     menu:
-        extend ""
+        # extend ""
 
         "It prints “Hello, World!”":
             mc "It prints “Hello, World!” like telling the computer to say hello."
@@ -256,7 +260,7 @@ label episode1:
     hide screen info_box
     with dissolve
 
-    scene arena #or fade to black
+    scene arena2 #or fade to black
     with dissolve
 
     mspy "Prepare yourselves for your first challenge anytime soon… {w}{b}The Syntax Bug Simulation{/b}. {w}Fix the code, or the Bug will replicate."
@@ -415,14 +419,14 @@ label episode1:
     with dissolve
     pause 0.5
 
-    scene arena
+    scene arena2
     with dissolve
 
     #   QUESTION 1
     mspyIntercom "Your first spell — fix this broken code: {w}{i}{size=+10}{color=#81f08aff}print(\"Hello World!){/color}{/size}{/i}"
     
     menu:
-        extend ""
+        # extend ""
         
         "print(\"Hello World!\")":
             call question1Right from _call_question1Right
@@ -455,7 +459,7 @@ label episode1:
     mspyIntercom "I'll explain it more in a later class so don't worry if you got it wrong. {w}Now go Assign 10 to variable x"
     
     menu:
-        extend ""
+        # extend ""
 
         "x = 10":
             show kai happy
@@ -487,7 +491,7 @@ label episode1:
     mspyIntercom "Which of these can Python do?"
 
     menu:
-        extend ""
+        # extend ""
 
         "Web applications":
             call question3Right from _call_question3Right
@@ -507,7 +511,7 @@ label episode1:
     mspyIntercom "Which is true about Python syntax?"
 
     menu:
-        extend ""
+        # extend ""
 
         "Uses indentation for scope":
             show kai happy
@@ -533,7 +537,7 @@ label episode1:
     luna "What’s the name of the function used to display text?"
 
     menu:
-        extend ""
+        # extend ""
 
         "prnt ()":
             call question5Wrong from _call_question5Wrong
@@ -724,7 +728,7 @@ label episode1:
     "The class ends, and the students scatter. You can choose who to talk to before leaving."
     "Who do you want to talk to?"
     menu:
-        extend ""
+        # extend ""
 
         "Talk to Cyra":
             call talkToCyra from _call_talkToCyra
@@ -742,7 +746,7 @@ label episode1:
     "Maybe it’s about the people who debug your heart."
 
 # SCENE 5
-    scene arena #training chamber
+    scene arena2 #training chamber
     with dissolve
 
     "After yesterday’s lesson on syntax and indentation, today’s session promises something new — something powerful"

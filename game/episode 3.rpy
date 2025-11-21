@@ -251,7 +251,7 @@ label episode3:
     mspy "Observe: {=code}a * b{/code} means multiplication. The {=code}>={/code} checks if the product is {b}greater than or equal to 20{/b}. {w}{p}Now, [name] what’s the correct output?"
 
     menu:
-        extend ""
+        # extend ""
 
         "Strike Successful!":
             play sound "right_answer.ogg"
@@ -289,7 +289,7 @@ label episode3:
     mspy "[name], analyze this. The character is alive, but has no energy. {w}What’s the output?"
 
     menu:
-        extend ""
+        # extend ""
 
         "Ready!":
             play sound "error_wrong.ogg"

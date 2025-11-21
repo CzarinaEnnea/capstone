@@ -16,9 +16,9 @@ label ep1_scn5_txt3:
             "{color=#32CD32}{b}Hint: Observe the parenthesis in 3rd line{/b}{/color}"
         if WC >= 3:
             "You have reached the maximum attempts."
+            "Multiple Choice Bonus."
 
             menu:
-                "Multiple Choice Bonus."
 
                 "PythonRocks!":
                     jump explain

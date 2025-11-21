@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 2.rpy", line 686: expected 'image_name_component' not found.
-    show
-        ^
+File "game/script.rpy", line 17: invalid syntax
+    = Placeholder("girl")
+    ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Fri Nov 21 02:55:59 2025
+Sat Nov 22 03:51:38 2025
