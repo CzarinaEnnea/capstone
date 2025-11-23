@@ -75,6 +75,7 @@ style codex_label is gui_label:
     size 50
 style codex_label_text is gui_label_text
 style codex_text is gui_text:
+    size 36
     justify True
 style codex_label_text:
     size gui.label_text_size

@@ -297,8 +297,14 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        if main_menu:
+            xpos 0.09
+            yalign 0.75
+        else:
+            xoffset 60
+            yalign 0.5
+
+
 
         spacing gui.navigation_spacing
 
@@ -314,7 +320,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Pref") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -349,6 +355,7 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    font "RagueDemo-Regular.ttf"
 
 
 ## Main Menu screen ############################################################

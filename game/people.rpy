@@ -30,7 +30,7 @@ screen people_nav():
             textbutton "Variables" action NullAction()
             # textbutton "Biró Erik" action NullAction()
 
-    textbutton "Return to categories" action ShowMenu("category_welcome") yoffset 950 xoffset 25
+    textbutton "Back to sections" action ShowMenu("category_welcome") yoffset 950 xoffset 25
     textbutton "Return" action Return() yoffset 1000 xoffset 25
 
 ##-----------------------------------------------
