@@ -7,7 +7,7 @@ label episode1:
     scene black
     with dissolve
 
-    play sound "train.ogg" fadeout 1.0
+    play sound "train.ogg" fadeout 1.0 volume 0.5
 
     show text "Episode 1 - “Welcome to Code Nexus Academy”" at truecenter with dissolve
     pause 10
@@ -26,7 +26,7 @@ label episode1:
 
     "The hovertrain doors slide open. [name] steps out, adjusting [their] backpack and looking around in awe."
 
-    play sound "traindoor_opening.ogg" fadeout 1.0
+    play sound "traindoor_opening.ogg" fadeout 1.0 volume 0.5
     $ renpy.pause(1.0)
     # $ renpy.pause(3.5)
 

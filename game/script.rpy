@@ -2,8 +2,6 @@
 
 # PLACEHOLDERS: Delete when art assets are finished
 image groupPhoto = Placeholder("bg")
-image groupPhoto = Placeholder("bg")
-image MsPythonLab = Placeholder("bg")
 
 image doctorbyte = Placeholder("boy")
 image kai = Placeholder("boy")

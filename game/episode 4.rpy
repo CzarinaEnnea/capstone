@@ -208,7 +208,7 @@ label episode4:
     scene garden
     with dissolve
 
-    play music "chill_bg.ogg"
+    play music "chill_bg.ogg" volume 0.5
 
     "The Digital Garden — a serene simulation where holographic flowers bloom and neon fireflies drift through the air like floating pixels." 
     "Here the students unwind after an intense day of operator and logic lessons."
@@ -440,7 +440,7 @@ label episode4:
     pause 1.5
 
 # Scene 6
-    scene MsPythonLab
+    scene mspythonlab
     with dissolve
     
     "The students gather in Ms. Py Thon’s lab. The walls flicker with moving code lines — like veins of light."
@@ -490,7 +490,7 @@ label episode4:
         "All Systems Normal.":
             call ep4Scn6Q1Wrong from _call_ep4Scn6Q1Wrong_1
 
-    scene MsPythonLab
+    scene mspythonlab
     with dissolve
 
     play sound emergency_alarm
