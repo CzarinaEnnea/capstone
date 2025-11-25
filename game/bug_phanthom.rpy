@@ -2,7 +2,7 @@ label bug_phanthom:
     $ WC_local = 0  # local attempt counter
 
     while True:
-        $ answer = renpy.input('Bug = 0 \nWe = 99 \n_________ \n       print("We are stonger!")').strip()
+        $ answer = renpy.input('Bug = 0 \nWe = 99 \n_________ \n       print("We are stronger!")').strip()
 
         if answer == "if We > Bug:":
             show cyra happy

@@ -580,8 +580,11 @@ label episode4:
     play sound hologram
     "???" "If truth == hidden: continue program."
 
-    scene black
-    with fade
+    scene black with fade
+    show text "To be continued..." at truecenter with dissolve
+    pause 2
+    hide text with dissolve
+
 
     return
 
