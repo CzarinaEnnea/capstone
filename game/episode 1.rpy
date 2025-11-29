@@ -9,7 +9,7 @@ label episode1:
 
     play sound "train.ogg" fadeout 1.0 volume 0.5
 
-    show text "Episode 1 - “Welcome to Code Nexus Academy”" at truecenter with dissolve
+    show text "{=title}Episode 1 - “Welcome to Code Nexus Academy”{/title}" at truecenter with dissolve
     pause 10
     hide text with fade
 

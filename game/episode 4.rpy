@@ -3,11 +3,11 @@ label episode4:
     scene black
     with dissolve
 
-    show text "Episode 4 - Conditional Hearts and Logical Storms" at truecenter with dissolve
+    show text "{=title}Episode 4 - Conditional Hearts and Logical Storms{/title}" at truecenter with dissolve
     pause 2
     hide text with fade
 
-    show text "\"In logic we trust... but in emotion, we believe.\"" at truecenter with dissolve
+    show text "{=title}\"In logic we trust... but in emotion, we believe.\"{/title}" at truecenter with dissolve
     pause 2
     hide text with fade
 
@@ -581,7 +581,7 @@ label episode4:
     "???" "If truth == hidden: continue program."
 
     scene black with fade
-    show text "To be continued..." at truecenter with dissolve
+    show text "{=title}To be continued...{/title}" at truecenter with dissolve
     pause 2
     hide text with dissolve
 

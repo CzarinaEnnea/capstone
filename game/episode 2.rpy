@@ -3,7 +3,7 @@ label episode2:
     scene black
     with dissolve
 
-    show text "Episode 2 - Data Types and the Glitch Zone" at truecenter with dissolve
+    show text "{=title}Episode 2 - Data Types and the Glitch Zone{/title}" at truecenter with dissolve
     pause 2
     hide text with fade
 
@@ -878,6 +878,9 @@ label episode2:
     mc "(smiles faintly) {p}Bring it on."
 
     stop music fadeout 3.0
+
     scene black with fade
-    "To be continued..."
+    show text "{=title}To be continued...{/title}" at truecenter with dissolve
+    pause 2
+    hide text with dissolve
     return

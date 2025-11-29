@@ -1,4 +1,6 @@
-﻿# TODO: Change color of chara names. Kai/Cyra also have color names in ep1 change it too
+﻿# TODO: Battle Scene
+    # Input Color
+    # Title Font and Size
 
 # PLACEHOLDERS: Delete when art assets are finished
 image groupPhoto = Placeholder("bg")
@@ -123,7 +125,13 @@ init python:
     style.code = Style(style.say_dialogue)
     style.code.color = "#81f08aff"
     style.code.italic = True
-    style.code.size = 55 
+    style.code.size = 55
+
+init python:
+    style.title = Style(style.say_dialogue)
+    style.title.font = "RagueDemo-Regular.ttf"
+    style.title.size = 50
+    # style.title.bold = True
 
 # Screens
 screen info_box(text):

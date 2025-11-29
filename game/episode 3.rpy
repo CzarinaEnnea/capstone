@@ -3,7 +3,7 @@ label episode3:
     scene black
     with dissolve
 
-    show text "Episode 3 - Operators of Destiny: The Logic War Begins" at truecenter with dissolve
+    show text "{=title}Episode 3 - Operators of Destiny: The Logic War Begins{/title}" at truecenter with dissolve
     pause 2
     hide text with fade
     
