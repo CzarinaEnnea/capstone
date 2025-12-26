@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 194: expected 'simple_expression' not found.
-    color
-          ^
+File "game/episode 5.rpy", line 72: expected simple expression
+    stop music fadeout
+                      ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Nov 30 03:02:59 2025
+Sat Dec 27 03:24:44 2025
