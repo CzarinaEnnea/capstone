@@ -87,30 +87,65 @@ label episode5:
     with dissolve
 
     pause 1.5
-    mspy "A for loop is used when you know how many times you want to repeat something. {w}It is controlled, predictable, and elegant."
+    show mspython neutral at center with dissolve
+    mspy "A for loop is used when you know how many times you want to repeat something." 
+    mspy "It is controlled, predictable, and elegant."
 
+    show mspython neutral2
     "A glowing table forms in the air."
+
+    hide mspython with dissolve
+    play sound "hologram.ogg"
+
+    show screen loopTable with dissolve
 
     cyra "Kai’s brain could use that. Maybe he’d finally follow instructions."
     kai "I’d rather loop myself into a wall."
     astra "That would explain your logic errors."
 
-    mspy "[name], predict the output."
+    hide screen loopTable with dissolve
+    # pause 1.0
+    show mspython neutral at center with dissolve
+    mspy "Now [name], predict the output."
+    show mspython neutral2 at slightright with move
+    show ep5-scn2-txt1 at top_left_space with dissolve
 
     menu:
         "Hi Hi":
+            play sound "error_sound1.ogg"
+            show mspython neutral
             mspy "Three iterations produce three outputs."
-            "(A tiny ‘Hi’ bug bonks MC.)"
+            show mspython neutral2
+            play sound "punch_sound2.ogg"
+            "(A tiny ‘{i}Hi{/i}’ bug bonks [name].)"
             luna "You’ve been greeted… violently."
+
         "Hi Hi hi":
+            play sound "error_sound1.ogg"
+            show mspython neutral
             mspy "Three iterations produce three outputs."
-            "(A tiny ‘Hi’ bug bonks MC.)"
+            show mspython neutral2
+            play sound "punch_sound2.ogg"
+            "(A tiny ‘{i}Hi{/i}’ bug bonks [name].)"
             luna "You’ve been greeted… violently."
+
         "Hi Hi Hi":
+            play sound "right_answer.ogg"
+            show mspython happy2
             luna "TRIPLE HI! MAXIMUM FRIENDSHIP!"
             cyra "Nice. You didn’t overthink it."
             kai "Huh. You’re learning."
     
+    show mspython neutral with dissolve
     mspy "Now type a loop that prints numbers 1 to 3."
+    show mspython neutral2
+    call ep5_scn2_txt1
 
+# SCENE 3
+    scene training-chamber
+    with dissolve
+
+    show doctorbyte neutral at left with dissolve
+    dr "Loops shape reality here."
+    dr "Control the loop — control the outcome."
     return

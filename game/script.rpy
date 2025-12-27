@@ -171,6 +171,35 @@ screen scoreboard():
                 text "Others"
                 text "Mixed results"
                 text "{b}B to C{/b}"
+            
+screen loopTable():
+    frame:
+        background "#222222aa"
+        align (0.5, 0.2)
+        padding (20, 20)
+
+        vbox:
+            spacing 50
+            text "{b}Basic For Loop Syntax{/b}" size 50 xalign 0.5 color "#00ffcc"
+
+            grid 3 4 spacing 40:
+                style_prefix "table"
+
+                text "{color=#00ffcc}{size=40}{b}Concept{/b}{/size}{/color}"
+                text "{color=#00ffcc}{size=40}{b}Code{/b}{/size}{/color}"
+                text "{color=#00ffcc}{size=40}{b}Explanation{/b}{/size}{/color}"
+
+                text "{b}Basic Loop{/b}"
+                text "{color=#81f08aff}{b}for i in range(5): {p}{space=138}print(i){/b}{/color}"
+                text "{b}Repeats from 0 to 4{/b}"
+
+                text "{b}Custom Start{/b}"
+                text "{color=#81f08aff}{b}for x in range(2, 6): {p}{space=138}print(x){/b}{/color}"
+                text "{b}Starts at 2, ends at 5{/b}"
+
+                text "{b}Step{/b}"
+                text "{color=#81f08aff}{b}for y in range(0, 10, 2): {p}{space=138}print(y){/b}{/color}"
+                text "{b}Counts by 2{/b}"
 
 # Functions to change Flags
 init python:

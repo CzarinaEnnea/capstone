@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 5.rpy", line 72: expected simple expression
-    stop music fadeout
-                      ^
+File "game/episode 5.rpy", line 148: end of line expected.
+    show doctorbyte neutral with dissolve at left
+                                          ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sat Dec 27 03:24:44 2025
+Sun Dec 28 00:49:29 2025
