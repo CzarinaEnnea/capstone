@@ -141,11 +141,292 @@ label episode5:
     show mspython neutral2
     call ep5_scn2_txt1
 
+    scene black
+    with fade
+    pause 1.5
+
 # SCENE 3
     scene training-chamber
     with dissolve
 
-    show doctorbyte neutral at left with dissolve
+    show doctorbyte neutral at right with dissolve:
+        xzoom -1.0
     dr "Loops shape reality here."
     dr "Control the loop — control the outcome."
+    show doctorbyte neutral2
+
+    # QUIZ 1
+    show ep5-scn3-txt1 at top_left_space with dissolve
+    call ep5_scn3_txt1
+    hide ep5-scn3-txt1 with dissolve
+
+    # QUIZ 2
+    show doctorbyte neutral2
+    show ep5-scn3-txt2 at top_left_space 
+    with dissolve
+    call ep5_scn3_txt2
+    hide ep5-scn3-txt2 with dissolve
+
+    # QUIZ 3 ADD HERE
+    show doctorbyte neutral with dissolve
+    dr "Write a loop that prints ‘Debug’ five times."
+
+    scene black
+    with fade
+    pause 1.5
+
+# SCENE 4
+    scene garden
+    with dissolve
+    play music "chill_bg.ogg" volume 0.5
+
+    "Neon flowers pulse gently, opening and closing like animated brackets. Floating lanterns display scrolling lines of harmless code." 
+    "The day’s tension finally begins to unwind."
+
+    mc "After hours of loops and logic, the garden feels… calm."
+    mc "Like a breakpoint in the middle of chaos."
+    mc "Maybe this is where you process things — code, emotions, people."
+
+    # play sound "chime.ogg"
+    "A soft chime appears in the air."
+
+    "Who do you spend time with?"
+    menu:
+        "Talk to Cyra":
+            call Ep5Scn4Cyra
+        "Talk to Kai":
+            call Ep5Scn4Kai
+        "Talk to Luna":
+            call Ep5Scn4Luna
+        "Talk to Mira":
+            call Ep5Scn4Mira
+
+    scene black with dissolve
+    pause 0.5
+    scene garden with dissolve
+    "The garden lights dim slightly as students start moving."
+
+    mc "Break time never lasts long here."
+    cyra "(quietly, as they walk) {p}Hey… don’t overthink it. You’re doing fine."
+
+    play sound "school-bell.ogg"
+    "System Chime."
+    mspyIntercom "Students, return to the Holo-Classroom."
+
+    "The group heads inside."
+    mc "Back to class."
+    mc "Back to code."
+
+    stop music fadeout 1.0
+    scene black
+    with fade
+    pause 1.5
+
+# SCENCE 5 (TO BE CONTINUED)
+    play sound "door_opening_school_doorway.ogg"
+    scene classroom with dissolve
+
+    "Ms. Py Thon adjusts her glasses dramatically, Detective-Conan style. A magnifying-glass icon flashes."
+
+    mspy "Class, focus."
+    mspy "A {color=#81f08aff}while loop{/color} runs as long as its condition remains {b}true{/b}."
+    "{i}She snaps her fingers. A glowing table floats into the air.{/i}"
+
+
+# SCENCE 6
+    scene classroom with dissolve
+
+    show mspython neutral at right with dissolve
+    mspy "Loops are powerful—but responsibility matters more than speed."
+    show mspython neutral2
+    show doctorbyte neutral at left with dissolve
+    dr "Infinite loops don’t break systems."
+    dr "Ignoring them does."
+    hide mspython
+    hide doctorbyte
+    with dissolve
+
+    show cyra neutral at right with dissolve
+    cyra "Don’t beat yourself up. You learned."
+    show cyra neutral2
+    show kai neutral at left with dissolve
+    kai "Yeah. Everyone locks a loop at least once."
+    show kai neutral2
+    show mira neutral at center with dissolve
+    mira "You… {w}didn’t give up."
+    show mira happy
+    mira "That counts."
+
+    hide cyra
+    hide kai
+    hide mira
+    with dissolve
+
+    pause 1.0
+
+    mc "Mistakes repeat."
+    mc "But understanding breaks the loop."
+
+    scene black with fade
+    show text "{=title}To be continued...{/title}" at truecenter with dissolve
+    pause 2
+    hide text with dissolve
+    
+    return
+
+
+label Ep5Scn4Cyra:
+    show cyra sad2-notab at center with dissolve
+    "Cyra stands by the railing, watching the digital sun dip below the skyline."
+    "Her expression is thoughtful — less teasing than usual."
+
+    show cyra sad-notab
+    cyra "You know… most first-years panic when loops get complicated."
+    mc "I panicked internally. I just didn’t let it crash."
+    show cyra happy2-notab
+    cyra "That’s still control. A lot of people fake confidence."
+    show cyra happy-notab
+    cyra "You actually {i}learn{/i}."
+
+    play sound "hologram.ogg"
+    "She taps the railing; glowing code ripples outward."
+
+    show cyra sad-notab
+    cyra "Frontend looks flashy, but it’s all structure underneath."
+    cyra "Same with people."
+    show cyra sad2-notab
+
+    mc "You talking about code… {w}or yourself?"
+    "{i}Cyra pauses, then shrugs.{i}"
+    cyra "..."
+    show cyra happy-notab
+    cyra "Both, I guess."
+    "{i}A comfortable silence.{i}"
+
+    show cyra sad-notab
+    cyra "Just— {w}don’t burn yourself out trying to keep up with everyone else."
+    cyra "You don’t need to prove anything yet."
+
+    hide cyra with dissolve
+
+    "She feels different. No flirting. No jokes."
+    "Just… {w}genuine advice."
+
+    play sound right_answer
+    "{=gold}Cyra Trust +1{/gold}"
+    $ change_cyraAffection(+1)
+    $ change_confidence(+1)
+
+    return
+
+label Ep5Scn4Kai:
+    show kai angry2 at center with dissolve
+    "Kai sits on a bench, twirling a holo-wrench between his fingers."
+    "He looks annoyed — at himself, not you."
+
+    show kai angry
+    kai "You know what’s worse than infinite loops?"
+    mc "Let me guess. Losing?"
+
+    show kai angry2
+    kai "Getting stuck repeating the same mistakes."
+    "{i}He looks up at you.{/i}"
+    show kai neutral
+    kai "You didn’t freeze today. Even when the nested loop went wild."
+    show kai neutral2
+    mc "Coming from you, that sounds like praise."
+    show kai embarassed2
+    kai "…Don’t get used to it."
+
+    "A beat."
+
+    show kai sad
+    kai "When I was new, I tried to brute-force everything."
+    kai "Thought speed mattered more than logic."
+    show kai sad2
+    mc "And?"
+    show kai sad
+    kai "And I crashed a training server so hard Dr. Byte still brings it up."
+    "{i}You laugh. Kai almost smiles.{/i}"
+    show kai embarassed
+    kai "Point is— {w}don’t rush. {w}Control beats power."
+
+    play sound right_answer
+    "{=gold}Kai Respect +1{/gold}"
+    $ change_kaiAffection(+1)
+    $ change_confidence(+1)
+
+    return
+
+label Ep5Scn4Luna:
+    show luna cookie2 at center with dissolve
+    "Luna is lying on the grass, arms spread, staring at floating Boolean symbols drifting above."
+    show luna cookie
+
+    show luna happy with dissolve
+    luna "[name]! Come look! That cloud looks like a {color=#81f08aff}True{/color} statement!"
+    mc "…You’ve been staring at code too long."
+
+    show luna surprised3
+    luna "{b}Impossible. Code is life.{/b}"
+    "{i}She suddenly sits up.{/i}"
+
+    show luna neutral
+    luna "Did you know loops are just time travel with rules?"
+    show luna neutral2
+    mc "I feel like that explanation should worry me."
+    show luna neutral
+    luna "While {color=#81f08aff}loops{/color} are dangerous, but {color=#81f08aff}for loops{/color} are cozy."
+    show luna happy-nostar
+    luna "They’re like: ‘{i}I know exactly how many times I’ll mess up.{/i}’"
+    mc "That’s… weirdly comforting."
+
+    show luna happy
+    luna "Right?! If emotions had syntax, I’d just write—"
+    luna "{color=#32CD32}while sad: {p}{space=138}hug_friends(){/color}"
+    mc "That loop would never end."
+    show luna bleh
+    luna "Exactly!"
+
+    play sound right_answer
+    "{=gold}Luna Friendship +1{/gold}"
+    $ change_confidence(+1)
+
+    return
+
+label Ep5Scn4Mira:
+    show mira sad2 at center with dissolve
+    "Mira kneels near a glowing flower, adjusting its flickering code. Her hands shake slightly."
+
+    show mira surprised-blush
+    mira "O-Oh! Sorry, I didn’t see you there."
+    mc "You’re fine. Fixing bugs?"
+    show mira sad
+    mira "Small ones. I like fixing things before they… spiral."
+    show mira sad2
+    "{i}She hesitates.{/i}"
+
+    show mira neutral
+    mira "You were really calm in the loop lab."
+    show mira neutral2
+    mc "I didn’t feel calm."
+    show mira sad
+    mira "That’s okay. Control doesn’t mean fear disappears…"
+    show mira neutral
+    mira "It just means you don’t let it decide for you."
+    show mira neutral2
+    "{i}She looks up. For a split second, her neural nodes pulse faint pink.{/i}"
+    play sound "hologram.ogg"
+    "..."
+    show mira happy
+    mira "Loops repeat… {w}but people don’t have to."
+
+    hide mira with dissolve
+    "{i}She smiles quickly, almost too quickly, and looks away.{/i}"
+    mc "That felt… deeper than it should have."
+
+    # play sound right_answer
+    "{=gold}Mira Bond +1{/gold}"
+    # $ change_confidence(+1)
+
     return
