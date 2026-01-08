@@ -4,7 +4,7 @@ label ep5_scn2_txt1:
     while True:
         $ answer = renpy.input('Type a loop that prints numbers 1 to 3:').strip()
 
-        if answer == "for i in range(1, 4): print(i)":
+        if answer == "for i in range(1, 4):":
             play sound "right_answer.ogg"
             "{color=#32CD32}{b}CORRECT!{/b}{/color}"
             show mspython happy
@@ -22,7 +22,8 @@ label ep5_scn2_txt1:
                 show mspython sad2
                 "You have reached the maximum attempts."
                 mira "You forgot the range end… it stops before the last number."
-                "{b}Correct Answer: {p}{color=#32CD32}for i in range(1, 4): {p}{space=138}print(i){/color}{/b}"
+                "{b}Correct Answer: {p}{color=#32CD32}for i in range(1, 4):"
+                # "{b}Correct Answer: {p}{color=#32CD32}for i in range(1, 4): {p}{space=138}print(i){/color}{/b}"
                 return
             else:
                 play sound "error_sound1.ogg"
