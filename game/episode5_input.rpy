@@ -100,3 +100,45 @@ label ep5_scn3_txt2:
                 "Try again! You have [3 - WC_local] attempt(s) left."
 
     return
+
+label ep5_scn3_txt3:
+    $ WC_local = 0
+
+    while True:
+        $ answer = renpy.input('Fill in the blank:').strip()
+
+        if answer == "in range(5):":
+            play sound "right_answer.ogg"
+            show doctorbyte happy2-flower
+            "{color=#32CD32}{b}CORRECT!{/b}{/color}"
+            luna "DEBUG! DEBUG! DEBUG! I LOVE IT!"
+            cyra "Clean loop. No extra noise."
+            show doctorbyte happy-flower
+            dr "“Excellent. Clear structure. Proper indentation. {w}Well executed!"
+            "A small Debug-bot gives [name] a thumbs-up."
+            # "{=gold}Syntax Confidence +2{/gold}"
+            # $ change_confidence(+2)
+            return
+        else:
+            $ WC_local += 1
+            if WC_local >= 3:
+                play sound "error_wrong.ogg"
+                "{color=#ff4444}{b}Final attempt used.{/b}{/color}"
+                show doctorbyte sad2
+                play sound "glitch_sound.ogg"
+                "{b}Correct Answer: {p}{color=#32CD32}in range(5):"
+                return
+            if WC_local == 1:
+                "{color=#ff4444}{b}Output does not match the requirement.{/b}{/color}"
+                mspy "Hint: Use a {b}for loop{/b} and the {color=#32CD32}range(){/color} function."
+            if WC_local == 2:
+                "{color=#ff4444}{b}The loop structure is incomplete or incorrect.{/b}{/color}"
+                show doctorbyte sad
+                dr "Hint: Check your {b}indentation{/b} and ensure the loop repeats exactly {b}five times{/b}."
+                luna "Five times. Not four. Not forever. Just five."
+            else:
+                play sound "error_sound1.ogg"
+                "{color=#ff4444}{b}Incorrect.{/b}{/color}"
+                "Try again! You have [3 - WC_local] attempt(s) left."
+
+    return

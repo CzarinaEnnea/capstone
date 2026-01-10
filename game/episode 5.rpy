@@ -167,13 +167,17 @@ label episode5:
     call ep5_scn3_txt2
     hide ep5-scn3-txt2 with dissolve
 
-    # QUIZ 3 ADD HERE
+    # QUIZ 3
     show doctorbyte neutral with dissolve
-    dr "Write a loop that prints ‘Debug’ five times."
+    dr "Now Write a loop that prints ‘Debug’ five times."
+    show doctorbyte neutral2
+    show ep5-scn3-txt3 at top_left_space with dissolve
+    call ep5_scn3_txt3
+    hide ep5-scn3-txt3 with dissolve
 
     scene black
     with fade
-    pause 1.5
+    pause 2.0
 
 # SCENE 4
     scene garden
