@@ -1,17 +1,7 @@
 ﻿# TODO: Battle Scene
-    # Input Color
-    # Title Font and Size
 
 # PLACEHOLDERS: Delete when art assets are finished
 image groupPhoto = Placeholder("bg")
-
-image doctorbyte = Placeholder("boy")
-image kai = Placeholder("boy")
-image cyra = Placeholder("girl")
-image mspython = Placeholder("girl")
-image luna = Placeholder("girl")
-image astra = Placeholder("girl")
-image mira = Placeholder("girl")
 
 image bugOgre = Placeholder("boy")
 image bugHydra = Placeholder("girl")
@@ -278,7 +268,7 @@ label start:
     call episode3 from _call_episode3
     call episode4 from _call_episode4
     call episode5
-    # call episode6
+    call episode6
     # call episode7
     # call episode8
     
