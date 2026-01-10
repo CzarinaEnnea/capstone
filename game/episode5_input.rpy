@@ -136,6 +136,69 @@ label ep5_scn3_txt3:
                 show doctorbyte sad
                 dr "Hint: Check your {b}indentation{/b} and ensure the loop repeats exactly {b}five times{/b}."
                 luna "Five times. Not four. Not forever. Just five."
+                play sound "error_sound1.ogg"
+                "{color=#ff4444}{b}Incorrect.{/b}{/color}"
+                "Try again! You have [3 - WC_local] attempt(s) left."
+            else:
+                play sound "error_sound1.ogg"
+                "{color=#ff4444}{b}Incorrect.{/b}{/color}"
+                "Try again! You have [3 - WC_local] attempt(s) left."
+
+    return
+
+label ep5_scn5_txt2:
+    $ WC_local = 0
+
+    while True:
+        $ answer = renpy.input('Type the missing line:').strip()
+
+        if answer == "i += 1":
+            play sound "right_answer.ogg"
+            hide ep5-scn5-txt2
+            show ep5-scn5-txt3 at top_left_space 
+            with dissolve
+            "{color=#32CD32}{b}CORRECT!{/b}{/color}"
+            play sound "glitch_sound.ogg"
+            "The portal collapses completely."
+            cyra "There. Apocalypse cancelled."
+            mspy "Well done. You corrected the control flow."
+            play sound "right_answer.ogg"
+            "{=gold}Infinite Loop Threat Resolved{/gold}"
+            "{=gold}Syntax Confidence +1{/gold}"
+            $ change_confidence(+1)
+            hide ep5-scn5-txt3 with dissolve
+            return
+
+        else:
+            $ WC_local += 1
+            if WC_local >= 3:
+                play sound "error_wrong.ogg"
+                "{color=#ff4444}{b}You have reached the maximum attempts.{/b}{/color}"
+                play sound "glitch_sound.ogg"
+                "The portal stabilizes into a harmless but annoying loop."
+                mspy "This is what happens when loops are left unchecked."
+                dr "No penalty today—but remember this moment."
+                luna "It’s looping forever… I hate it…"
+                play sound "hologram.ogg"
+                hide ep5-scn5-txt2 with dissolve
+                "Ms. Py Thon snaps her fingers. The portal closes."
+
+            
+                play sound "error_sound1.ogg"
+                "{=red}Instructor Intervention Required{/red}"
+                "{=red}Syntax Confidence –2{/red}"
+                $ change_confidence(-2)
+                "{b}Correct Answer: {p}{color=#32CD32}i += 1"
+                return
+
+            if WC_local == 1:
+                mspy "What value changes each loop?"
+            if WC_local == 2:
+                mira "The loop needs a way to move forward…"
+                kai "If {color=#32CD32}i{/color} never changes, you’re stuck forever."
+                play sound "error_sound1.ogg"
+                "{color=#ff4444}{b}Incorrect.{/b}{/color}"
+                "Try again! You have [3 - WC_local] attempt(s) left."
             else:
                 play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"

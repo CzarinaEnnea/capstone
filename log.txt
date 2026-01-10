@@ -1,0 +1,2659 @@
+2026-01-10 12:45:08 UTC
+Windows-11-10.0.22621-SP0
+Ren'Py 8.4.1.25072401
+
+Early init took 116 ms
+Loading error handling took 165 ms
+Loading script took 3764 ms
+Loading save slot metadata took 2563 ms
+Loading persistent took 0 ms
+Running init code took 303 ms
+Loading analysis data took 128 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 1657 ms
+Dump and make backups took 107 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 134 ms
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 5 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 167 ms
+Analyze screens took 3 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 104 ms
+Running _start took 2 ms
+Interface start took 1556 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12 ms
+Loading error handling took 199 ms
+Loading script took 2927 ms
+Loading save slot metadata took 940 ms
+Loading persistent took 0 ms
+Running init code took 218 ms
+Loading analysis data took 73 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 656 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 552 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 146 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 0 ms
+Cleaning stores took 1 ms
+Load screen analysis took 16 ms
+Analyze screens took 78 ms
+Save screen analysis took 39 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 971 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13 ms
+Loading error handling took 20 ms
+Loading script took 420 ms
+Loading save slot metadata took 51 ms
+Loading persistent took 0 ms
+Running init code took 72 ms
+Loading analysis data took 22 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 36 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 145 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 134 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 55 ms
+Save screen analysis took 33 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1084 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 14 ms
+Loading error handling took 20 ms
+Loading script took 510 ms
+Loading save slot metadata took 59 ms
+Loading persistent took 0 ms
+Running init code took 76 ms
+Loading analysis data took 23 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 37 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 111 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 150 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 59 ms
+Save screen analysis took 41 ms
+Save pyanalysis took 1 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1068 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 11 ms
+Loading error handling took 19 ms
+Loading script took 421 ms
+Loading save slot metadata took 56 ms
+Loading persistent took 1 ms
+Running init code took 70 ms
+Loading analysis data took 24 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 47 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 109 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 156 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 59 ms
+Save screen analysis took 56 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1135 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 10 ms
+Loading error handling took 19 ms
+Loading script took 382 ms
+Loading save slot metadata took 61 ms
+Loading persistent took 1 ms
+Running init code took 77 ms
+Loading analysis data took 24 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 37 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 105 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 151 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 55 ms
+Save screen analysis took 38 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 3 ms
+Interface start took 1122 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13 ms
+Loading error handling took 21 ms
+Loading script took 430 ms
+Loading save slot metadata took 53 ms
+Loading persistent took 1 ms
+Running init code took 68 ms
+Loading analysis data took 29 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 37 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 119 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 140 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 63 ms
+Save screen analysis took 40 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 1031 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 40 ms
+Loading error handling took 69 ms
+Loading script took 593 ms
+Loading save slot metadata took 69 ms
+Loading persistent took 0 ms
+Running init code took 85 ms
+Loading analysis data took 30 ms
+Analyze and compile ATL took 7 ms
+Reloading save slot metadata took 45 ms
+Dump and make backups took 90 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 162 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 148 ms
+Analyze screens took 3 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 1289 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 11 ms
+Loading error handling took 20 ms
+Loading script took 497 ms
+Loading save slot metadata took 58 ms
+Loading persistent took 0 ms
+Running init code took 68 ms
+Loading analysis data took 23 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 34 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 110 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 144 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 70 ms
+Save screen analysis took 40 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1089 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12 ms
+Loading error handling took 20 ms
+Loading script took 755 ms
+Loading save slot metadata took 54 ms
+Loading persistent took 0 ms
+Running init code took 74 ms
+Loading analysis data took 23 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 35 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 109 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 225 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 127 ms
+Save screen analysis took 59 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 1 ms
+Interface start took 1305 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Cleaning stores took 2 ms
+Load screen analysis took 140 ms
+Analyze screens took 0 ms
+Running _start took 5 ms
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 17 ms
+Loading error handling took 27 ms
+Loading script took 748 ms
+Loading save slot metadata took 77 ms
+Loading persistent took 1 ms
+Running init code took 90 ms
+Loading analysis data took 46 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 55 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 176 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 248 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 145 ms
+Save screen analysis took 70 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1606 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 18 ms
+Loading error handling took 46 ms
+Loading script took 802 ms
+Loading save slot metadata took 151 ms
+Loading persistent took 1 ms
+Running init code took 130 ms
+Loading analysis data took 39 ms
+Analyze and compile ATL took 14 ms
+Reloading save slot metadata took 44 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 182 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 210 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 94 ms
+Save screen analysis took 55 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 2202 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 28 ms
+Loading error handling took 64 ms
+Loading script took 1569 ms
+Loading save slot metadata took 224 ms
+Loading persistent took 1 ms
+Running init code took 229 ms
+Loading analysis data took 58 ms
+Analyze and compile ATL took 11 ms
+Reloading save slot metadata took 74 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 219 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 247 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 95 ms
+Save screen analysis took 162 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 9 ms
+Interface start took 2835 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 18 ms
+Loading error handling took 24 ms
+Loading script took 1399 ms
+Loading save slot metadata took 58 ms
+Loading persistent took 1 ms
+Running init code took 96 ms
+Loading analysis data took 27 ms
+Analyze and compile ATL took 15 ms
+Reloading save slot metadata took 48 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 180 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 168 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 114 ms
+Save screen analysis took 61 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1207 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 25 ms
+Loading error handling took 48 ms
+Loading script took 746 ms
+Loading save slot metadata took 84 ms
+Loading persistent took 0 ms
+Running init code took 109 ms
+Loading analysis data took 36 ms
+Analyze and compile ATL took 7 ms
+Reloading save slot metadata took 47 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 163 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 269 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 103 ms
+Save screen analysis took 57 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 1087 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 34 ms
+Loading error handling took 50 ms
+Loading script took 539 ms
+Loading save slot metadata took 74 ms
+Loading persistent took 1 ms
+Running init code took 110 ms
+Loading analysis data took 34 ms
+Analyze and compile ATL took 11 ms
+Reloading save slot metadata took 52 ms
+Dump and make backups took 326 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 293 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 296 ms
+Analyze screens took 8 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 1643 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13 ms
+Loading error handling took 19 ms
+Loading script took 673 ms
+Loading save slot metadata took 80 ms
+Loading persistent took 1 ms
+Running init code took 95 ms
+Loading analysis data took 26 ms
+Analyze and compile ATL took 8 ms
+Reloading save slot metadata took 48 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 207 ms
+Cleaning cache took 1 ms
+Making clean stores took 1 ms
+Initial gc took 241 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 124 ms
+Save screen analysis took 88 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 3 ms
+Interface start took 1559 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 10 ms
+Loading error handling took 38 ms
+Loading script took 854 ms
+Loading save slot metadata took 84 ms
+Loading persistent took 2 ms
+Running init code took 98 ms
+Loading analysis data took 24 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 39 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 149 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 207 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 95 ms
+Save screen analysis took 57 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1520 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 18 ms
+Loading error handling took 42 ms
+Loading script took 671 ms
+Loading save slot metadata took 61 ms
+Loading persistent took 0 ms
+Running init code took 127 ms
+Loading analysis data took 47 ms
+Analyze and compile ATL took 8 ms
+Reloading save slot metadata took 49 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 169 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 238 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 96 ms
+Save screen analysis took 65 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 14 ms
+Interface start took 1665 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 37 ms
+Loading error handling took 126 ms
+Loading script took 1223 ms
+Loading save slot metadata took 124 ms
+Loading persistent took 1 ms
+Running init code took 228 ms
+Loading analysis data took 76 ms
+Analyze and compile ATL took 14 ms
+Reloading save slot metadata took 75 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 347 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 244 ms
+DPI scale factor: 1.000000
+Creating interface object took 2 ms
+Init translation took 2 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 138 ms
+Save screen analysis took 108 ms
+Save pyanalysis took 1 ms
+Save bytecode took 22 ms
+Running _start took 3 ms
+Interface start took 1420 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 15 ms
+Loading error handling took 24 ms
+Loading script took 1013 ms
+Loading save slot metadata took 64 ms
+Loading persistent took 0 ms
+Running init code took 106 ms
+Loading analysis data took 26 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 53 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 111 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 179 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 94 ms
+Save screen analysis took 52 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1128 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 16 ms
+Loading error handling took 33 ms
+Loading script took 614 ms
+Loading save slot metadata took 61 ms
+Loading persistent took 1 ms
+Running init code took 101 ms
+Loading analysis data took 26 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 47 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 119 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 177 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 100 ms
+Save screen analysis took 62 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1178 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 25 ms
+Loading error handling took 44 ms
+Loading script took 907 ms
+Loading save slot metadata took 70 ms
+Loading persistent took 1 ms
+Running init code took 88 ms
+Loading analysis data took 43 ms
+Analyze and compile ATL took 11 ms
+Reloading save slot metadata took 50 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 159 ms
+Cleaning cache took 0 ms
+Making clean stores took 2 ms
+Initial gc took 193 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 82 ms
+Save screen analysis took 42 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 1159 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 34 ms
+Loading error handling took 63 ms
+Loading script took 1024 ms
+Loading save slot metadata took 67 ms
+Loading persistent took 0 ms
+Running init code took 97 ms
+Loading analysis data took 28 ms
+Analyze and compile ATL took 11 ms
+Reloading save slot metadata took 44 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 166 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 171 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 117 ms
+Save screen analysis took 57 ms
+Save pyanalysis took 1 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1111 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12 ms
+Loading error handling took 37 ms
+Loading script took 878 ms
+Loading save slot metadata took 76 ms
+Loading persistent took 1 ms
+Running init code took 90 ms
+Loading analysis data took 28 ms
+Analyze and compile ATL took 14 ms
+Reloading save slot metadata took 57 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 106 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 219 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 95 ms
+Save screen analysis took 57 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 1238 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1239, 697) drawable=(1239, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 24 ms
+Loading error handling took 44 ms
+Loading script took 599 ms
+Loading save slot metadata took 64 ms
+Loading persistent took 0 ms
+Running init code took 87 ms
+Loading analysis data took 27 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 45 ms
+Dump and make backups took 107 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 167 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 184 ms
+Analyze screens took 6 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 3 ms
+Interface start took 1109 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 22 ms
+Loading error handling took 23 ms
+Loading script took 708 ms
+Loading save slot metadata took 66 ms
+Loading persistent took 1 ms
+Running init code took 104 ms
+Loading analysis data took 25 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 51 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 151 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 187 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 97 ms
+Save screen analysis took 59 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 1163 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13 ms
+Loading error handling took 34 ms
+Loading script took 778 ms
+Loading save slot metadata took 58 ms
+Loading persistent took 1 ms
+Running init code took 87 ms
+Loading analysis data took 26 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 55 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 169 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 182 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 108 ms
+Save screen analysis took 61 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 1151 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 17 ms
+Loading error handling took 34 ms
+Loading script took 685 ms
+Loading save slot metadata took 73 ms
+Loading persistent took 1 ms
+Running init code took 122 ms
+Loading analysis data took 32 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 47 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 135 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 189 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 88 ms
+Save screen analysis took 55 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1184 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 30 ms
+Loading error handling took 81 ms
+Loading script took 1091 ms
+Loading save slot metadata took 92 ms
+Loading persistent took 0 ms
+Running init code took 82 ms
+Loading analysis data took 36 ms
+Analyze and compile ATL took 11 ms
+Reloading save slot metadata took 44 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 242 ms
+Cleaning cache took 0 ms
+Making clean stores took 3 ms
+Initial gc took 332 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 3 ms
+Analyze screens took 118 ms
+Save screen analysis took 77 ms
+Save pyanalysis took 1 ms
+Save bytecode took 1 ms
+Running _start took 8 ms
+Interface start took 1760 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 27 ms
+Loading error handling took 56 ms
+Loading script took 1151 ms
+Loading save slot metadata took 97 ms
+Loading persistent took 0 ms
+Running init code took 174 ms
+Loading analysis data took 64 ms
+Analyze and compile ATL took 16 ms
+Reloading save slot metadata took 66 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 305 ms
+Cleaning cache took 0 ms
+Making clean stores took 4 ms
+Initial gc took 305 ms
+DPI scale factor: 1.000000
+Creating interface object took 8 ms
+Init translation took 3 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 147 ms
+Save screen analysis took 64 ms
+Save pyanalysis took 1 ms
+Save bytecode took 3 ms
+Running _start took 3 ms
+Interface start took 1416 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 15 ms
+Loading error handling took 32 ms
+Loading script took 714 ms
+Loading save slot metadata took 71 ms
+Loading persistent took 1 ms
+Running init code took 108 ms
+Loading analysis data took 34 ms
+Analyze and compile ATL took 8 ms
+Reloading save slot metadata took 49 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 150 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 241 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 79 ms
+Save screen analysis took 55 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 1446 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13 ms
+Loading error handling took 27 ms
+Loading script took 672 ms
+Loading save slot metadata took 71 ms
+Loading persistent took 0 ms
+Running init code took 84 ms
+Loading analysis data took 60 ms
+Analyze and compile ATL took 16 ms
+Reloading save slot metadata took 57 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 126 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 237 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 89 ms
+Save screen analysis took 61 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1612 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 25 ms
+Loading error handling took 56 ms
+Loading script took 809 ms
+Loading save slot metadata took 72 ms
+Loading persistent took 2 ms
+Running init code took 82 ms
+Loading analysis data took 32 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 46 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 157 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 270 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 6 ms
+Analyze screens took 87 ms
+Save screen analysis took 67 ms
+Save pyanalysis took 1 ms
+Save bytecode took 0 ms
+Running _start took 1 ms
+Interface start took 1329 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 28 ms
+Loading error handling took 48 ms
+Loading script took 965 ms
+Loading save slot metadata took 73 ms
+Loading persistent took 1 ms
+Running init code took 105 ms
+Loading analysis data took 35 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 45 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 155 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 251 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 113 ms
+Save screen analysis took 65 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1686 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 18 ms
+Loading error handling took 39 ms
+Loading script took 1005 ms
+Loading save slot metadata took 60 ms
+Loading persistent took 1 ms
+Running init code took 98 ms
+Loading analysis data took 39 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 63 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 185 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 260 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 148 ms
+Save screen analysis took 75 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 5 ms
+Interface start took 1534 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 20 ms
+Loading error handling took 28 ms
+Loading script took 1186 ms
+Loading save slot metadata took 95 ms
+Loading persistent took 1 ms
+Running init code took 90 ms
+Loading analysis data took 43 ms
+Analyze and compile ATL took 19 ms
+Reloading save slot metadata took 47 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 191 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 323 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 2 ms
+Analyze screens took 115 ms
+Save screen analysis took 76 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 4 ms
+Interface start took 1569 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 24 ms
+Loading error handling took 44 ms
+Loading script took 1075 ms
+Loading save slot metadata took 111 ms
+Loading persistent took 0 ms
+Running init code took 91 ms
+Loading analysis data took 36 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 50 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 172 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 261 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 177 ms
+Save screen analysis took 69 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 2202 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12 ms
+Loading error handling took 31 ms
+Loading script took 667 ms
+Loading save slot metadata took 90 ms
+Loading persistent took 0 ms
+Running init code took 132 ms
+Loading analysis data took 38 ms
+Analyze and compile ATL took 11 ms
+Reloading save slot metadata took 52 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 204 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 182 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 108 ms
+Save screen analysis took 62 ms
+Save pyanalysis took 1 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 1157 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 11 ms
+Loading error handling took 22 ms
+Loading script took 986 ms
+Loading save slot metadata took 76 ms
+Loading persistent took 0 ms
+Running init code took 109 ms
+Loading analysis data took 39 ms
+Analyze and compile ATL took 9 ms
+Reloading save slot metadata took 45 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 274 ms
+Cleaning cache took 1 ms
+Making clean stores took 2 ms
+Initial gc took 329 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 184 ms
+Save screen analysis took 72 ms
+Save pyanalysis took 0 ms
+Save bytecode took 11 ms
+Running _start took 1 ms
+Interface start took 1342 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 15 ms
+Loading error handling took 33 ms
+Loading script took 597 ms
+Loading save slot metadata took 83 ms
+Loading persistent took 0 ms
+Running init code took 142 ms
+Loading analysis data took 33 ms
+Analyze and compile ATL took 8 ms
+Reloading save slot metadata took 52 ms
+Dump and make backups took 168 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 188 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 0 ms
+Cleaning stores took 1 ms
+Load screen analysis took 188 ms
+Analyze screens took 4 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 3 ms
+Interface start took 1238 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 24 ms
+Loading error handling took 31 ms
+Loading script took 913 ms
+Loading save slot metadata took 94 ms
+Loading persistent took 0 ms
+Running init code took 122 ms
+Loading analysis data took 38 ms
+Analyze and compile ATL took 7 ms
+Reloading save slot metadata took 48 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 128 ms
+Cleaning cache took 0 ms
+Making clean stores took 2 ms
+Initial gc took 280 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 152 ms
+Save screen analysis took 72 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 2077 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 25 ms
+Loading error handling took 38 ms
+Loading script took 1528 ms
+Loading save slot metadata took 193 ms
+Loading persistent took 1 ms
+Running init code took 235 ms
+Loading analysis data took 38 ms
+Analyze and compile ATL took 11 ms
+Reloading save slot metadata took 68 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 490 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 405 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 207 ms
+Save screen analysis took 105 ms
+Save pyanalysis took 0 ms
+Save bytecode took 5 ms
+Running _start took 6 ms
+Interface start took 1797 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 13 ms
+Loading error handling took 22 ms
+Loading script took 992 ms
+Loading save slot metadata took 65 ms
+Loading persistent took 0 ms
+Running init code took 124 ms
+Loading analysis data took 37 ms
+Analyze and compile ATL took 15 ms
+Reloading save slot metadata took 50 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 150 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 202 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 90 ms
+Save screen analysis took 54 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1348 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 21 ms
+Loading error handling took 39 ms
+Loading script took 446 ms
+Loading save slot metadata took 86 ms
+Loading persistent took 1 ms
+Running init code took 118 ms
+Loading analysis data took 32 ms
+Analyze and compile ATL took 8 ms
+Reloading save slot metadata took 44 ms
+Dump and make backups took 115 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 188 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 170 ms
+Analyze screens took 6 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 3 ms
+Interface start took 1147 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 27 ms
+Loading error handling took 48 ms
+Loading script took 808 ms
+Loading save slot metadata took 69 ms
+Loading persistent took 1 ms
+Running init code took 120 ms
+Loading analysis data took 47 ms
+Analyze and compile ATL took 13 ms
+Reloading save slot metadata took 56 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 130 ms
+Cleaning cache took 0 ms
+Making clean stores took 2 ms
+Initial gc took 203 ms
+DPI scale factor: 1.000000
+Creating interface object took 2 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 2 ms
+Analyze screens took 96 ms
+Save screen analysis took 67 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1300 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 16 ms
+Loading error handling took 33 ms
+Loading script took 696 ms
+Loading save slot metadata took 93 ms
+Loading persistent took 1 ms
+Running init code took 108 ms
+Loading analysis data took 48 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 42 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 114 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 358 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 161 ms
+Save screen analysis took 70 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 4 ms
+Interface start took 1416 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 200 ms
+Loading error handling took 86 ms
+Loading script took 1357 ms
+Loading save slot metadata took 107 ms
+Loading persistent took 0 ms
+Running init code took 101 ms
+Loading analysis data took 44 ms
+Analyze and compile ATL took 13 ms
+Reloading save slot metadata took 58 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 148 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 278 ms
+DPI scale factor: 1.000000
+Creating interface object took 2 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 119 ms
+Save screen analysis took 62 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 3 ms
+Interface start took 1381 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 28 ms
+Loading error handling took 53 ms
+Loading script took 681 ms
+Loading save slot metadata took 81 ms
+Loading persistent took 0 ms
+Running init code took 95 ms
+Loading analysis data took 43 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 50 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 132 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 252 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 128 ms
+Save screen analysis took 55 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1326 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 32 ms
+Loading error handling took 61 ms
+Loading script took 2218 ms
+Loading save slot metadata took 157 ms
+Loading persistent took 2 ms
+Running init code took 183 ms
+Loading analysis data took 32 ms
+Analyze and compile ATL took 14 ms
+Reloading save slot metadata took 87 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 232 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 388 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 124 ms
+Save screen analysis took 68 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 1564 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 23 ms
+Loading error handling took 46 ms
+Loading script took 1124 ms
+Loading save slot metadata took 81 ms
+Loading persistent took 1 ms
+Running init code took 121 ms
+Loading analysis data took 37 ms
+Analyze and compile ATL took 9 ms
+Reloading save slot metadata took 62 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 214 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 272 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 2 ms
+Analyze screens took 105 ms
+Save screen analysis took 53 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 3 ms
+Interface start took 1880 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 17 ms
+Loading error handling took 31 ms
+Loading script took 682 ms
+Loading save slot metadata took 68 ms
+Loading persistent took 0 ms
+Running init code took 87 ms
+Loading analysis data took 35 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 59 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 155 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 338 ms
+DPI scale factor: 1.000000
+Creating interface object took 3 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 140 ms
+Save screen analysis took 83 ms
+Save pyanalysis took 0 ms
+Save bytecode took 3 ms
+Running _start took 9 ms
+Interface start took 2049 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 96 ms
+Loading error handling took 136 ms
+Loading script took 896 ms
+Loading save slot metadata took 116 ms
+Loading persistent took 2 ms
+Running init code took 96 ms
+Loading analysis data took 29 ms
+Analyze and compile ATL took 11 ms
+Reloading save slot metadata took 45 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 205 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 448 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 230 ms
+Save screen analysis took 84 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1924 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 23 ms
+Loading error handling took 48 ms
+Loading script took 694 ms
+Loading save slot metadata took 68 ms
+Loading persistent took 0 ms
+Running init code took 84 ms
+Loading analysis data took 31 ms
+Analyze and compile ATL took 12 ms
+Reloading save slot metadata took 49 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 148 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 297 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 121 ms
+Save screen analysis took 56 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 1833 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 47 ms
+Loading error handling took 131 ms
+Loading script took 969 ms
+Loading save slot metadata took 78 ms
+Loading persistent took 0 ms
+Running init code took 88 ms
+Loading analysis data took 38 ms
+Analyze and compile ATL took 10 ms
+Reloading save slot metadata took 57 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 245 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 727 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 224 ms
+Save screen analysis took 98 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 5 ms
+Interface start took 2087 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 16 ms
+Loading error handling took 23 ms
+Loading script took 776 ms
+Loading save slot metadata took 75 ms
+Loading persistent took 0 ms
+Running init code took 97 ms
+Loading analysis data took 47 ms
+Analyze and compile ATL took 12 ms
+Reloading save slot metadata took 47 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 135 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 260 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 2 ms
+Analyze screens took 97 ms
+Save screen analysis took 61 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1645 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 23 ms
+Loading error handling took 45 ms
+Loading script took 1053 ms
+Loading save slot metadata took 88 ms
+Loading persistent took 1 ms
+Running init code took 290 ms
+Loading analysis data took 118 ms
+Analyze and compile ATL took 100 ms
+Reloading save slot metadata took 181 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 238 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 311 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 0 ms
+Cleaning stores took 2 ms
+Load screen analysis took 1 ms
+Analyze screens took 128 ms
+Save screen analysis took 66 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 2568 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 19 ms
+Loading error handling took 34 ms
+Loading script took 872 ms
+Loading save slot metadata took 93 ms
+Loading persistent took 1 ms
+Running init code took 154 ms
+Loading analysis data took 47 ms
+Analyze and compile ATL took 17 ms
+Reloading save slot metadata took 56 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 182 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 194 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 2 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 91 ms
+Save screen analysis took 61 ms
+Save pyanalysis took 1 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 1413 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 25 ms
+Loading error handling took 38 ms
+Loading script took 626 ms
+Loading save slot metadata took 102 ms
+Loading persistent took 1 ms
+Running init code took 158 ms
+Loading analysis data took 43 ms
+Analyze and compile ATL took 16 ms
+Reloading save slot metadata took 65 ms
+Dump and make backups took 215 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 187 ms
+DPI scale factor: 1.000000
+Creating interface object took 73 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 227 ms
+Analyze screens took 5 ms
+Save screen analysis took 0 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 1854 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 18 ms
+Loading error handling took 41 ms
+Loading script took 762 ms
+Loading save slot metadata took 73 ms
+Loading persistent took 1 ms
+Running init code took 110 ms
+Loading analysis data took 24 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 52 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 265 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 230 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 6 ms
+Analyze screens took 112 ms
+Save screen analysis took 56 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 1 ms
+Interface start took 2074 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 10 ms
+Loading error handling took 20 ms
+Loading script took 699 ms
+Loading save slot metadata took 174 ms
+Loading persistent took 0 ms
+Running init code took 115 ms
+Loading analysis data took 41 ms
+Analyze and compile ATL took 16 ms
+Reloading save slot metadata took 58 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 175 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 261 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 89 ms
+Save screen analysis took 48 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1597 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 19 ms
+Loading error handling took 29 ms
+Loading script took 1140 ms
+Loading save slot metadata took 155 ms
+Loading persistent took 1 ms
+Running init code took 223 ms
+Loading analysis data took 73 ms
+Analyze and compile ATL took 13 ms
+Reloading save slot metadata took 70 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 289 ms
+Cleaning cache took 1 ms
+Making clean stores took 1 ms
+Initial gc took 287 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 267 ms
+Save screen analysis took 111 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 3 ms
+Interface start took 2022 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 24 ms
+Loading error handling took 41 ms
+Loading script took 1189 ms
+Loading save slot metadata took 113 ms
+Loading persistent took 1 ms
+Running init code took 131 ms
+Loading analysis data took 45 ms
+Analyze and compile ATL took 14 ms
+Reloading save slot metadata took 51 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 117 ms
+Cleaning cache took 1 ms
+Making clean stores took 0 ms
+Initial gc took 194 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 89 ms
+Save screen analysis took 47 ms
+Save pyanalysis took 0 ms
+Save bytecode took 2 ms
+Running _start took 2 ms
+Interface start took 1260 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 28 ms
+Loading error handling took 56 ms
+Loading script took 1072 ms
+Loading save slot metadata took 150 ms
+Loading persistent took 1 ms
+Running init code took 236 ms
+Loading analysis data took 57 ms
+Analyze and compile ATL took 50 ms
+Reloading save slot metadata took 83 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 232 ms
+Cleaning cache took 0 ms
+Making clean stores took 0 ms
+Initial gc took 326 ms
+DPI scale factor: 1.000000
+Creating interface object took 1 ms
+Init translation took 2 ms
+Cleaning stores took 1 ms
+Load screen analysis took 3 ms
+Analyze screens took 159 ms
+Save screen analysis took 77 ms
+Save pyanalysis took 0 ms
+Save bytecode took 40 ms
+Running _start took 3 ms
+Interface start took 1850 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12 ms
+Loading error handling took 31 ms
+Loading script took 827 ms
+Loading save slot metadata took 63 ms
+Loading persistent took 0 ms
+Running init code took 84 ms
+Loading analysis data took 26 ms
+Analyze and compile ATL took 7 ms
+Reloading save slot metadata took 45 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 133 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 190 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 1 ms
+Analyze screens took 116 ms
+Save screen analysis took 65 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 3 ms
+Interface start took 1460 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 18 ms
+Loading error handling took 41 ms
+Loading script took 632 ms
+Loading save slot metadata took 65 ms
+Loading persistent took 0 ms
+Running init code took 106 ms
+Loading analysis data took 32 ms
+Analyze and compile ATL took 13 ms
+Reloading save slot metadata took 63 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 105 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 200 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 0 ms
+Load screen analysis took 1 ms
+Analyze screens took 90 ms
+Save screen analysis took 54 ms
+Save pyanalysis took 0 ms
+Save bytecode took 1 ms
+Running _start took 2 ms
+Interface start took 1293 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 24 ms
+Loading error handling took 25 ms
+Loading script took 658 ms
+Loading save slot metadata took 74 ms
+Loading persistent took 0 ms
+Running init code took 111 ms
+Loading analysis data took 31 ms
+Analyze and compile ATL took 6 ms
+Reloading save slot metadata took 55 ms
+Backing up script files to 'C:\\Users\\lili\\AppData\\Roaming/RenPy/backups\\Capstone':
+Dump and make backups took 131 ms
+Cleaning cache took 0 ms
+Making clean stores took 1 ms
+Initial gc took 199 ms
+DPI scale factor: 1.000000
+Creating interface object took 0 ms
+Init translation took 1 ms
+Cleaning stores took 1 ms
+Load screen analysis took 0 ms
+Analyze screens took 101 ms
+Save screen analysis took 47 ms
+Save pyanalysis took 0 ms
+Save bytecode took 0 ms
+Running _start took 2 ms
+Interface start took 1388 ms
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) HD Graphics 520'
+Version: '4.6.0 - Build 31.0.101.2111'
+Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1366, 'current_h': 768, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096
+Cleaning stores took 0 ms
+Load screen analysis took 136 ms
+Analyze screens took 0 ms
+Running _start took 5 ms
+Screen sizes: virtual=(1920, 1080) physical=(1366, 697) drawable=(1366, 697)
+Maximum texture size: 4096x4096

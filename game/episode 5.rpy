@@ -236,6 +236,97 @@ label episode5:
     mspy "A {color=#81f08aff}while loop{/color} runs as long as its condition remains {b}true{/b}."
     "{i}She snaps her fingers. A glowing table floats into the air.{/i}"
 
+    show screen whileLoopTable with dissolve
+
+    mira "So it checks… again and again… {w}until the condition becomes false?"
+    mspy "Exactly."
+    mspy "But forget the {b}update—{/b}"
+
+    hide screen whileLoopTable
+    show screen whileLoopTableB 
+    with dissolve
+    "The lights flicker. A swirling cartoon portal labeled INFINITE LOOP opens."
+
+    mspy "—and the loop never ends."
+    luna "THE LOOP IS EATING THE NUMBERS—!"
+    kai "Like Astra’s ego."
+    astra "Rude."
+    astra "Accurate. {w}But rude."
+    mspy "Enough commentary."
+    hide screen whileLoopTableB with dissolve
+
+    "She points dramatically at the board."
+    show ep5-scn5-txt1 at top_left_space with dissolve
+    mspy "Now—test time."
+    mspy "How many times will the word ‘Looping’ appear?"
+
+    menu:
+        "One time":
+            play sound "glitch_sound.ogg"
+            "The portal grows. The word “Looping” repeats endlessly on the board."
+            mspy "Incorrect. Watch carefully."
+            hide ep5-scn5-txt1
+            show ep5-scn5-txt1-1 at top_left_space 
+            with dissolve
+            "She highlights the condition and update step."
+            mspy "The {b}condition{/b} is checked {b}before{/b} every loop."
+            mspy "The {b}update{/b} controls {b}when it stops{/b}."
+            kai "You answered before the loop finished."
+
+            play sound "error_sound1.ogg"
+            "{=red}Logic Fatigue — Confidence –1{/red}"
+            "{=red}Next quiz requires typing, not choices.{/red}"
+            $ change_confidence(-1)
+            "The portal resets. Class continues."
+
+        "Two times":
+            play sound "glitch_sound.ogg"
+            "The portal grows. The word “Looping” repeats endlessly on the board."
+            mspy "Incorrect. Watch carefully."
+            hide ep5-scn5-txt1
+            show ep5-scn5-txt1-1 at top_left_space 
+            with dissolve
+            "She highlights the condition and update step."
+            mspy "The {b}condition{/b} is checked {b}before{/b} every loop."
+            mspy "The {b}update{/b} controls {b}when it stops{/b}."
+            kai "You answered before the loop finished."
+
+            play sound "error_sound1.ogg"
+            "{=red}Logic Fatigue — Confidence –1{/red}"
+            "{=red}Next quiz requires typing, not choices.{/red}"
+            $ change_confidence(-1)
+            "The portal resets. Class continues."
+
+        "Three times":
+            play sound "hologram.ogg"
+            "The portal shrinks and vanishes."
+            mspy "Correct. The loop repeats three times before the condition becomes false."
+            luna "THREE LOOPINGS! PERFECT LOOP COUNT!"
+            cyra "You paused and thought. Good habit."
+
+            play sound "right_answer.ogg"
+            "{=gold}Syntax Confidence +1{/gold}"
+            $ change_confidence(+1)
+
+    hide ep5-scn5-txt1
+    hide ep5-scn5-txt1-1
+    with dissolve
+
+    play sound "glitch_sound.ogg"
+    $ red_effect()
+    show ep5-scn5-txt2 at top_left_space with dissolve
+    "Red warning text flashes."
+    mspy "This loop is broken."
+    mspy "Fix it before it becomes infinite."
+
+    "HINT!! : Result must show numbers 1 to 6"
+
+    call ep5_scn5_txt2
+
+    "Chibi Mode fades. Classroom returns to normal."
+    mspy "Loops are tools."
+    mspy "Control defines mastery."
+
 
 # SCENCE 6
     scene classroom with dissolve

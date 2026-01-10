@@ -201,6 +201,59 @@ screen loopTable():
                 text "{color=#81f08aff}{b}for y in range(0, 10, 2): {p}{space=138}print(y){/b}{/color}"
                 text "{b}Counts by 2{/b}"
 
+screen whileLoopTable():
+    frame:
+        background "#222222aa"
+        align (0.5, 0.2)
+        padding (20, 20)
+
+        vbox:
+            spacing 50
+            text "{b}While Loop Breakdown{/b}" size 50 xalign 0.5 color "#00ffcc"
+
+            grid 2 5 spacing 40:
+                style_prefix "table"
+
+                text "{color=#00ffcc}{size=40}{b}Element{/b}{/size}{/color}"
+                text "{color=#00ffcc}{size=40}{b}Purpose{/b}{/size}{/color}"
+
+                text "{color=#81f08aff}{b}i = 1{/b}{/color}"
+                text "{b}Starting value{/b}"
+
+                text "{color=#81f08aff}{b}while i <= 3:{/b}{/color}"
+                text "{b}Condition checked every loop{/b}"
+
+                text "{color=#81f08aff}{b}print(i){/b}{/color}"
+                text "{b}Action repeated{/b}"
+
+                text "{color=#81f08aff}{b}i += 1{/b}{/color}"
+                text "{b}Update — prevents infinite loop{/b}"
+
+screen whileLoopTableB():
+    frame:
+        background "#222222aa"
+        align (0.5, 0.2)
+        padding (20, 20)
+
+        vbox:
+            spacing 50
+            text "{b}While Loop Breakdown{/b}" size 50 xalign 0.5 color "#00ffcc"
+
+            grid 2 4 spacing 40:
+                style_prefix "table"
+
+                text "{color=#00ffcc}{size=40}{b}Element{/b}{/size}{/color}"
+                text "{color=#00ffcc}{size=40}{b}Purpose{/b}{/size}{/color}"
+
+                text "{color=#81f08aff}{b}i = 1{/b}{/color}"
+                text "{b}Starting value{/b}"
+
+                text "{color=#81f08aff}{b}while i <= 3:{/b}{/color}"
+                text "{b}Condition checked every loop{/b}"
+
+                text "{color=#81f08aff}{b}print(i){/b}{/color}"
+                text "{b}Action repeated{/b}"
+
 # Functions to change Flags
 init python:
     def change_confidence(amount):
