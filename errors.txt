@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 5.rpy", line 148: end of line expected.
-    show doctorbyte neutral with dissolve at left
-                                          ^
+File "game/episode 7.rpy", line 38: expected statement.
+    "A soft sound echoes through the corridor." nvl
+                                                   ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Dec 28 00:49:29 2025
+Wed Jan 14 01:17:18 2026

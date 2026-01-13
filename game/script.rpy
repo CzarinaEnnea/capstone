@@ -21,6 +21,7 @@ define astra = Character("Astra", color="#e2f061")
 define kai = Character("Kai", color="#db345d")
 define mira = Character("Mira", color="#f8a3c7")
 define n = Character(None, kind=nvl)
+define mcNVL = Character("[name]", color="#f061c5", kind=nvl)
 
 define us = Character(
     None,
@@ -269,7 +270,7 @@ label start:
     call episode4 from _call_episode4
     call episode5
     call episode6
-    # call episode7
+    call episode7
     # call episode8
     
     return

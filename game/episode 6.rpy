@@ -134,14 +134,113 @@ label episode6:
 
 # SCENE 4
     "Mira gestures."
+    play sound "glitch_sound.ogg"
+    $ red_effect()
     "Hundreds of simulations unfold mid-air."
     "Academy destroyed."
+    show mira serious
     "Students erased."
     "Bugs overrunning the system."
     "Again. {p}And again. {p}And again."
 
     show mira angry-nosign
     mira "I ran every condition."
-    # CODE
+    "{color=#32CD32}{b}{cps=20}for future in all_possible_futures: {p}{space=110}if future.survives(): {p}{space=160}{cps=0}break{/b}{/color}"
+    play sound "glitch_sound.ogg"
     mira "There was only one path where everyone lived."
+
+    mc "And what was the cost?"
+    show mira sad2
+    "Mira looks away."
+    show mira neutral
+    mira "Me."
+
+    show cyra angry at right with dissolve
+    with hpunch
+    cyra "You don’t get to decide that!"
+
+    show mira happy
+    mira "I already did."
+
+# SCENE 5
+    show doctorbyte sad2 at left with dissolve
+    "Dr. Byte steps forward slowly."
+
+    show doctorbyte sad
+    dr "Mira… {w}stop."
+    show mira neutral2 with dissolve
+    "She finally looks at him — not angry, not cold."
+    "Just tired."
+
+    show mira neutral
+    mira "You taught me optimization."
+    mira "You taught me sacrifice."
+    show mira sad
+    mira "You never taught me how to live with uncertainty."
+    show doctorbyte sad2 with dissolve
+    show cyra sad with dissolve
+    play sound "glitch_sound.ogg"
+    "The system reacts to her emotions."
+
+    hide doctorbyte
+    hide mira
+    hide cyra
+    with dissolve
+    "{color=#32CD32}{b}while world.exists(): {p}{space=110}Mira.controls(){/b}{/color}"
+
+    show mspython sad at right with dissolve
+    mspy "She’s locking the world into a single outcome."
+    show kai sad at left with dissolve
+    kai "She’s turning choice into a constant."
+
+# SCENE 6
+    hide mspython 
+    hide kai
+    with dissolve
+
+    "Mira steps back into the core light."
+    play sound "hologram.ogg"
+    "Her support drones reconfigure — combat-ready."
+
+    show mira neutral with dissolve
+    mira "If I become the villain…"
+    pause 1.0
+    show mira happy with dissolve
+    mira "…then you can be the heroes."
+    show mira happy2
+
+    "She activates the protocol."
+    play sound "hologram.ogg"
+    "{color=#32CD32}{b}INITIATE: ABSOLUTE LOOP{/b}{/color}"
+
+    show luna sad at right with dissolve
+    luna "Mira… {w}{cps=20}please…"
+
+    show mira sad
+    mira "I’m sorry."
+    show mira happy
+    mira "This is the only solution that compiles."
+
+    "{b}The system locks.{/b}"
+    play sound "glitch_sound.ogg"
+    $ red_effect()
+    with vpunch
+    "{color=#ff4444}{b}{size=+20}POINT OF NO RETURN REACHED{/size}{/b}{/color}"
+
+    play sound "glitch_sound.ogg"
+    nvl clear
+    mcNVL "..." with dissolve
+    mcNVL "She wasn’t trying to destroy the world." with dissolve
+    mcNVL "She was trying to {b}freeze{/b} it." with dissolve
+
+    scene black with fade
+    pause 2.0
+    show text "{=title}When logic removes choice, someone must become the enemy.{/title}" at truecenter with dissolve
+    pause 3.5
+    hide text with dissolve
+
+    scene black with fade
+    show text "{=title}To be continued...{/title}" at truecenter with dissolve
+    pause 2
+    hide text with dissolve
     return

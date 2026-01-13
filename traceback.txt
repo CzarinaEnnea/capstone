@@ -1,40 +1,43 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 271, in script call
-    call episode6
-  File "game/episode 6.rpy", line 30, in script
-    show kai angry at slighleft with dissolve
-  File "game/episode 6.rpy", line 30, in <module>
-    show kai angry at slighleft with dissolve
-                       ^^^^^^^^^             
-NameError: name 'slighleft' is not defined. Did you mean: 'slightleft'?
+  File "game/script.rpy", line 273, in script call
+    call episode7
+  File "game/episode 7.rpy", line 36, in script
+    mcNVL "Except us." with fadeout
+  File "game/episode 7.rpy", line 36, in <module>
+    mcNVL "Except us." with fadeout
+                            ^^^^^^^
+NameError: name 'fadeout' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 271, in script call
-    call episode6
-  File "game/episode 6.rpy", line 30, in script
-    show kai angry at slighleft with dissolve
-  File "renpy/ast.py", line 1357, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/ast.py", line 726, in show_imspec
-    at_list = [renpy.python.py_eval(i) for i in at_list]
-               ~~~~~~~~~~~~~~~~~~~~^^^                  
+  File "game/script.rpy", line 273, in script call
+    call episode7
+  File "game/episode 7.rpy", line 36, in script
+    mcNVL "Except us." with fadeout
+  File "renpy/ast.py", line 2915, in execute
+    Say.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "renpy/ast.py", line 990, in execute
+    say_menu_with(self.with_, renpy.game.interface.set_transition)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 592, in say_menu_with
+    what = renpy.python.py_eval(expression)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
   File "renpy/python.py", line 1292, in py_eval
     return py_eval_bytecode(code, globals, locals)
            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
   File "renpy/python.py", line 1285, in py_eval_bytecode
     return eval(bytecode, globals, locals)
            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/episode 6.rpy", line 30, in <module>
-    show kai angry at slighleft with dissolve
-                       ^^^^^^^^^             
-NameError: name 'slighleft' is not defined. Did you mean: 'slightleft'?
+  File "game/episode 7.rpy", line 36, in <module>
+    mcNVL "Except us." with fadeout
+                            ^^^^^^^
+NameError: name 'fadeout' is not defined
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Sun Jan 11 03:49:59 2026
+Wed Jan 14 01:17:09 2026
