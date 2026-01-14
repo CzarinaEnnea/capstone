@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 7.rpy", line 38: expected statement.
-    "A soft sound echoes through the corridor." nvl
-                                                   ^
+File "game/episode 7.rpy", line 112: expected statement.
+    The suspended reality collapses.
+                                   ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Wed Jan 14 01:17:18 2026
+Wed Jan 14 19:35:53 2026
