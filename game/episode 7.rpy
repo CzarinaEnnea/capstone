@@ -142,6 +142,38 @@ label episode7:
     "Grid lines light up."
     "Status panels appear."
     "{color=#32CD32}{b}TURN-BASED LOGIC ENGAGED{/b}{/color}"
-    luna "WAIT—{w}this looks like a game!!"
+    luna "{b}WAIT—{w}this looks like a game!!{/b}"
     kai "…Of course it does."
+    cyra "She’s not fighting us directly."
+    mc "She’s testing us."
+
+    "Mira raises her hand calmly."
+    mira "I don’t want to destroy you."
+    mira "I want to {b}correct{/b} you."
+    "She snaps her fingers."
+
+# SCENE 5
+    # BUG 1 — LOOPLING
+    $ red_effect()
+    "A small circular bug endlessly spinning appears."
+    mira "Meet Loopling."
+    mira "It exists only to repeat."
+    "Everyone tries to access their terminal to fight Mira but only [name] has the authorization to code."
+    cyra "What is this why can't I open my terminal?"
+    "Kai, Luna, Astra" "What the…. Me too!!"
+    mc "Uh ohh…."
+
+    kai "Dont tell me your the only one with access!!"
+    luna "Oh well…{w}we're doomed!"
+    astra "What is this MIRA!"
+    mira "HAHA….{w}To make it more interesting, {w}only [name] has access to fight."
+    cyra "You can do it [name], remember our lessons!"
+    mspy "Dont worry [name], I'll try and hack her system so everyone can help."
+    mspy "But that’s all I can do, I can't fully stop her."
+    mspy "Students' you need to defeat her yourself."
+
+    "{color=#32CD32}{b}Authorization Upgraded!{/b}{/color}"
+    "Everyone" "{b}Let’s do this!{/b}"
+
+
     return
