@@ -271,6 +271,6 @@ label start:
     call episode5
     call episode6
     call episode7
-    # call episode8
+    call episode8
     
     return

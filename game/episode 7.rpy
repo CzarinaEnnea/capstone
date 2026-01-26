@@ -170,10 +170,65 @@ label episode7:
     cyra "You can do it [name], remember our lessons!"
     mspy "Dont worry [name], I'll try and hack her system so everyone can help."
     mspy "But that’s all I can do, I can't fully stop her."
-    mspy "Students' you need to defeat her yourself."
+    mspy "Students you need to defeat her yourself."
 
     "{color=#32CD32}{b}Authorization Upgraded!{/b}{/color}"
     "Everyone" "{b}Let’s do this!{/b}"
 
+    call bug_summon_phase1
+
+# SCENE 6
+    "A crystalline bug splitting into fragments appeared"
+    mira "This one holds data that was never acknowledged."
+    kai "…That sounds personal."
+    cyra "Let’s preserve the data [name]."
+
+    call bug_summon_phase2
+
+
+# SCENE 7
+
+
+# SCENE 8
+    "Mira stands alone now."
+    show mira sad2 at center with dissolve
+    "No bugs left."
+    show mira sad
+    mira "…You didn’t fight me."
+    show mira sad2
+    mc "We fought the mistakes."
+    show mira sad
+    mira "…Why?"
+    show mira sad2
+    mc "Because you’re not one."
+    "Silence."
+
+# RESULT HANDLING (LOCKED FOR EPISODE 8)
+    "{color=#ff3e3e}{b}LOGIC CONFLICT UNRESOLVED{/b}{/color}"
+    show doctorbyte sad at left with dissolve
+    dr "This battle ends without a winner."
+    show doctorbyte sad2
+    show mspython neutral at right with dissolve
+    mspy "And without destruction."
+    show mspython neutral2
+    show mira neutral2 at center with dissolve
+    "Mira looks at [name]."
+    show mira neutral
+    mira "Then next time…"
+    mira "we decide what correction really means."
+    "The arena fades."
+
+    scene black
+    with fade
+
+# Cliffhanger
+    scene black
+    with fade
+
+    mc "We didn’t defeat her."
+    mc "We reached her."
+    mc "But understanding…"
+    mc "Isn’t resolution."
+    "{color=#32CD32}{b}ENDING ROUTE PENDING{/b}{/color}"
 
     return
