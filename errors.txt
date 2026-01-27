@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 8.rpy", line 102: expected statement.
-    With dissolve
-                 ^
+File "game/route.rpy", line 7: end of line expected.
+    show cyra sad-notab at the center with dissolve
+                               ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Mon Jan 26 21:24:20 2026
+Tue Jan 27 21:22:29 2026

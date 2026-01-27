@@ -171,4 +171,18 @@ label episode8:
     mc "I didn’t master Python."
     mc "I mastered restraint."
 
+    scene black
+    with fade
+    pause 2.0
+
+# SCENE 6 - ROUTES change value
+    jump cyra_route
+    if cyraAffection >= 6:
+        jump cyra_route
+
+    elif kaiAffection >= 6:
+        jump kai_route
+
+    else:
+        jump solo_route
     return

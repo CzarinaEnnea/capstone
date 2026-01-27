@@ -2,7 +2,6 @@
 
 label episode0:
     stop music
-    
     "Choose your gender" 
 
     menu:

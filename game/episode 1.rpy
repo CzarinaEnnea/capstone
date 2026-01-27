@@ -136,7 +136,7 @@ label episode1:
             play sound "right_answer.ogg"
             "{=gold}Syntax Confidence +2{/gold}"
             $ change_confidence(+2)
-
+            
         "It explodes the computer":
             mc "It explodes the computer?"
             show mspython surprised2
