@@ -6,13 +6,18 @@ screen battle_ui():
 
     tag battle
 
-    add "battle_bg"
+    # add "battle_bg"
 
     # PLAYER
-    add "knight" xpos 300 ypos 420
+    # add "knight" xpos 300 ypos 420
 
     # BUG
-    add "bug" xpos 900 ypos 420
+    add "void-pixel":
+        # xpos 0.7 ypos 420
+        xpos 0.6 ypos 0.15
+        xzoom -1.0
+        zoom 2.0
+
 
     # PLAYER HP
     frame:
@@ -41,28 +46,38 @@ screen battle_ui():
 
     # QUESTION PANEL
     frame:
-        xpos 40
-        ypos 300
+        # xpos 40
+        xpos 0.04
+        # ypos 300
+        ypos 0.2
         xsize 350
-        ysize 200
+        ysize 400
 
-        text "BROKEN CODE / QUESTION"
+        text "BROKEN CODE / QUESTION" xalign 0.5 yalign 0.5
 
     # CONSOLE
     frame:
         xpos 0
         ypos 650
-        xsize 1280
+        xsize 1920
         ysize 120
 
         text console_text xalign 0.5 yalign 0.5
 
 label battle:
+    stop music
+    
+    scene training-chamber
+    with dissolve
+    "Grid lines light up."
 
-    show screen battle_ui
-    $ console_text = "Grid lines light up."
-    $ console_text = "Status panels appear."
+    play sound glitch_sound
+    show screen battle_ui with pixellate
+    # $ console_text = "Grid lines light up."
+    # $ console_text = "Status panels appear."
     $ console_text = "{color=#32CD32}{b}TURN-BASED LOGIC ENGAGED{/b}{/color}"
     # $ console_text = luna "{b}WAIT—{w}this looks like a game!!{/b}"
+
+    "Status panels appear."
 
     return

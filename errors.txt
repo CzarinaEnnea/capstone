@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/rpgUI_test.rpy", line 66: invalid syntax
-    console_text = luna "{b}WAIT—{w}this looks like a game!!{/b}"
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "game/rpgUI_test.rpy", line 15: 'with' is not a keyword argument or valid child of the add statement.
+    add "void-pixel" with dissolve:
+                         ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Feb  8 22:39:39 2026
+Sun Feb  8 23:06:28 2026
