@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/route.rpy", line 7: end of line expected.
-    show cyra sad-notab at the center with dissolve
-                               ^
+File "game/rpgUI_test.rpy", line 66: invalid syntax
+    console_text = luna "{b}WAIT—{w}this looks like a game!!{/b}"
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Tue Jan 27 21:22:29 2026
+Sun Feb  8 22:39:39 2026

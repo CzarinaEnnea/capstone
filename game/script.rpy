@@ -263,6 +263,7 @@ init python:
 
 # Start Game
 label start:
+    call battle
     call episode0 from _call_episode0
     call episode1 from _call_episode1
     call episode2 from _call_episode2
