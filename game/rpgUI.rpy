@@ -56,9 +56,11 @@ screen battle_ui():
         ysize 400
 
         text question_text:
-            # xalign 0.5 
+            xalign 0.1
             yalign 0.5
             size 24
+            bold True
+            color "#32CD32"
 
     # CONSOLE / TEXTBOX
     frame:
@@ -66,8 +68,13 @@ screen battle_ui():
         ypos 650
         xsize 1920
         ysize 120
-
-        text console_text xalign 0.5 yalign 0.5 size 32
+        
+        text console_text:
+            xalign 0.5 
+            yalign 0.5 
+            size 32
+            bold True
+            color "#32CD32"
 
 label battle:
     stop music
@@ -82,8 +89,8 @@ label battle:
     $ round_info = "BUG 1 — LOOPLING"
     $ bug_name = "LOOPLING"
     $ player_name = name.upper()
-    $ question_text = "{color=#32CD32}{b}while loop_active: __________{/b}{/color}"
-    $ console_text = "{color=#32CD32}{b}TURN-BASED LOGIC ENGAGED{/b}{/color}"
+    $ question_text = "while loop_active: {p}{space=40}_________"
+    $ console_text = "TURN-BASED LOGIC ENGAGED"
     pause
 
     ""
@@ -98,5 +105,5 @@ label battle:
         xzoom -1.0
         zoom 2.0
     mc "That hurts..."
-    # hide screen battle_ui with pixellate
+    hide screen battle_ui with dissolve
     return
