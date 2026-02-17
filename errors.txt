@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/rpgUI.rpy", line 71: 'bold' is not a keyword argument or valid child of the frame statement.
-    bold True
+File "game/rpgUI.rpy", line 78: keyword argument 'size' appears more than once in a text statement.
+    size 33
         ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Wed Feb 18 00:50:35 2026
+Wed Feb 18 01:13:57 2026

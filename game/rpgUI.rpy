@@ -94,11 +94,23 @@ label battle:
     pause
 
     ""
-    luna "{b}WAIT—{w}this looks like a game!!{/b}"
+    show void-pixel with dissolve:
+        xpos 0.6 ypos 0.15
+        xzoom -1.0
+        zoom 2.0
+    luna surprised3 "{b}WAIT—{w}this looks like a game!!{/b}"
+    kai "…Of course it does."
+    cyra "She’s not fighting us directly."
+    mc "She’s testing us."
+
+    "Mira raises her hand calmly."
+    mira "I don’t want to destroy you."
+    mira "I want to {b}correct{/b} you."
+    "She snaps her fingers."
     ""
     with vpunch
     mc "Ouch!"
-    $ console_text = "You took damage!"
+    $ console_text = "YOU TOOK DAMAGE!"
     $ player_hp = 50
     show void-pixel with dissolve:
         xpos 0.6 ypos 0.15
