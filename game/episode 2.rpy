@@ -448,7 +448,7 @@ label episode2:
     $ red_effect()
     show screen info_box("Bug #1 – The String Leech") with dissolve
     play sound "glitch_sound.ogg"
-    show bug at top_left_space with dissolve #change location later
+    show stringleech at left with dissolve
 
     "A pulsating worm of text hovers midair, echoing 'ErrorErrorError...'"
 
@@ -469,13 +469,13 @@ label episode2:
     #1Bug String Leech code input----------------------------------------------------------------  
     call string_leech from _call_string_leech
     hide screen info_box with dissolve
-    hide bug with dissolve
+    hide stringleech with dissolve
 
     #bug 2---------------
     $ red_effect()
     show screen info_box("Bug #2 – The Numeric Ogre") with dissolve
     play sound "glitch_sound.ogg"
-    show bugOgre at top_left_space with dissolve
+    show bugOgre at left with dissolve
 
     show kai surprised2
     show cyra neutral2

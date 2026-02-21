@@ -98,14 +98,16 @@ label battle:
         xpos 0.6 ypos 0.15
         xzoom -1.0
         zoom 2.0
-    luna surprised3 "{b}WAIT—{w}this looks like a game!!{/b}"
-    kai "…Of course it does."
-    cyra "She’s not fighting us directly."
+    luna2 surprised3 "{b}WAIT—{w}this looks like a game!!{/b}"
+    kai2 angry2 "…Of course it does."
+    cyra2 surprised "She’s not fighting us directly."
     mc "She’s testing us."
+    astra2 sad "Mira.."
+    mspy2 neutral "Focus everyone."
 
     "Mira raises her hand calmly."
-    mira "I don’t want to destroy you."
-    mira "I want to {b}correct{/b} you."
+    mira2 happy "I don’t want to destroy you."
+    mira2 happy "I want to {b}correct{/b} you."
     "She snaps her fingers."
     ""
     with vpunch

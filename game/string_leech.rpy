@@ -10,7 +10,7 @@ label string_leech:
             "The Bug vanishes into thin air."
             hide screen info_box with dissolve
             play sound "hologram.ogg"
-            hide bug with dissolve
+            hide stringleech with dissolve
             "Bug Defeated! \nNice job! That is the right code."
             show cyra happy
             cyra "Multiplied by zero will always be ZERO. Well done [name]!!!"

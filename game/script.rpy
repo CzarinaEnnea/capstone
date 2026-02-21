@@ -3,10 +3,10 @@
 # PLACEHOLDERS: Delete when art assets are finished
 image groupPhoto = Placeholder("bg")
 
-image bugOgre = Placeholder("boy")
-image bugHydra = Placeholder("girl")
-image bugPhantom = Placeholder("boy")
-image bugVoid = Placeholder("girl")
+# image bugOgre = Placeholder("boy")
+# image bugHydra = Placeholder("girl")
+# image bugPhantom = Placeholder("boy")
+# image bugVoid = Placeholder("girl")
 
 # Characters
 define cyra = Character("Cyra", color="#a14ae9")
@@ -16,12 +16,20 @@ define drIntercom = Character("Dr. Byte (Through Intercom)", color="#61f0dd")
 define drHologram = Character("Dr. Byte (Hologram)", color="#61f0dd")
 define mspy = Character("Ms. Py Thon", color="#8ef061")
 define mspyIntercom = Character("Ms. Py Thon’s Voice Over Intercom", color="#8ef061")
-define luna = Character("Luna", color="#618ef0", image="luna")
+define luna = Character("Luna", color="#618ef0")
 define astra = Character("Astra", color="#e2f061")
 define kai = Character("Kai", color="#db345d")
 define mira = Character("Mira", color="#f8a3c7")
 define n = Character(None, kind=nvl)
 define mcNVL = Character("[name]", color="#f061c5", kind=nvl)
+
+# Characters Side Images
+define cyra2 = Character("Cyra", color="#a14ae9", image="cyra")
+define mspy2 = Character("Ms. Py Thon", color="#8ef061", image="mspython")
+define luna2 = Character("Luna", color="#618ef0", image="luna")
+define astra2 = Character("Astra", color="#e2f061", image="astra")
+define kai2 = Character("Kai", color="#db345d", image="kai")
+define mira2 = Character("Mira", color="#f8a3c7", image="mira")
 
 define us = Character(
     None,

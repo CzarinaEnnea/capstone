@@ -9,12 +9,14 @@ label list_hydra:
             show cyra happy
             play sound "right_answer.ogg"
             "Correct! \n{color=#32CD32}{b}Output: [[\'Hydra']{/b}{/color}"
-            show bugHydra jail #make a sprite with the bug inside a Jail
+            # show bugHydra jail #make a sprite with the bug inside a Jail
             show kai happy2
             show cyra happy2
             "The Hydra got sent to jail and will probably never come back...."
             pause 1
             "Unless proven innocent..0_0"
+            play sound "hologram.ogg"
+            hide bugHydra with dissolve
             show cyra happy
             show kai happy
             kai "Hydra captured! Python win again!"
@@ -23,8 +25,6 @@ label list_hydra:
             show cyra neutral2
 
             hide screen info_box with dissolve
-            play sound "hologram.ogg"
-            hide bugHydra with dissolve
             return
         else:
             $ WC_local += 1
@@ -45,7 +45,7 @@ label list_hydra:
                 pause 1
                 kai "Ughh.. Let me do this"
                 kai "{color=#ff4444}{b}heads.append('Hydra'){/b}{/color}"
-                "Output: \n{color=#32CD32}{b}\['Hydra\']"
+                "Output: \n{color=#32CD32}{b}\['Hydra\']{/b}{/color}"
 
                 hide screen info_box with dissolve
                 play sound "hologram.ogg"
