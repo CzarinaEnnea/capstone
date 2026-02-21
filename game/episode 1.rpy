@@ -589,7 +589,7 @@ label episode1:
     pause 1.0
 
     play music "main-menu.ogg" #Try but might delete
-
+    nvl clear
     n "They pose. Flash of neon light. Laughter."
     with dissolve
 
@@ -600,7 +600,7 @@ label episode1:
     stop music fadeout 0.5
 
 # SCENE 4
-
+    nvl clear
     scene classroom
     with dissolve
 

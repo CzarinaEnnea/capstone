@@ -130,6 +130,15 @@ init python:
     # style.title.bold = True
 
 # Screens
+screen final_box(text):
+    frame:
+        background "#222222aa"
+        xpadding 25
+        ypadding 15
+        xalign 0.5
+        yalign 0.5
+        text text size 40 color "#00ffcc"
+
 screen info_box(text):
     frame:
         background "#222222aa"

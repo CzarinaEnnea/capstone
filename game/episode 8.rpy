@@ -136,6 +136,16 @@ label episode8:
     with fade
     pause 2.0
 
+# MIRA'S FATE
+    if mira_fate >= 2:
+        call good_end
+
+    elif mira_fate == 1:
+        call neutral_end
+
+    else:
+        call bad_end
+
 # SCENE 4
     scene classroom # Grand Lecture Hall
     with dissolve
@@ -158,7 +168,7 @@ label episode8:
 # SCENE 5
     show doctorbyte happy2
     show mspython happy2
-    "Dr. Byte hands the MC a glowing badge."
+    "Dr. Byte hands the [name] a glowing badge."
     show doctorbyte neutral
     dr "You understood what even I missed."
     show mspython happy
@@ -177,168 +187,178 @@ label episode8:
 
 # SCENE 6 - ROUTES change value
     if cyraAffection >= 6:
-        jump cyra_route
+        call cyra_route
 
     elif kaiAffection >= 6:
-        jump kai_route
+        call kai_route
 
     else:
-        jump solo_route
-    return
+        call solo_route
 
+    scene black with dissolve
+    pause 2
 # SCENE 7 — “THE LAST LINE” double check later
 
-# label scene7_last_line:
+label scene7_last_line:
+    scene garden
+    with dissolve
 
-#     scene garden
-#     with dissolve
+    play music "chill_bg.ogg" volume 0.5 fadein 1.0
 
-#     play music (bgm) fadein 2.0
+    "Data fireflies drift through the Digital Garden."
+    "Everyone gathers."
 
-#     "Data fireflies drift through the Digital Garden."
-#     "Everyone gathers."
+    show luna neutral at center with dissolve
+    luna "So… {w}graduation party??"
+    show kai neutral at left with dissolve
+    kai "Absolutely not."
+    show cyra neutral-notab at right with dissolve
+    cyra "Too late."
 
-#     show luna happy at left
-#     show kai neutral at center
-#     show cyra smirk at right
+    show luna happy
+    show kai happy
+    show cyra happy-notab
+    "They laugh."
+    
+    nvl clear
+    mcNVL "The Academy will break again someday." with dissolve
+    mcNVL "All systems do."
+    mcNVL "But now—"
+    mcNVL "There are people who know how to fix it."
+    mcNVL "Not with control."
+    mcNVL "But with care."
 
-#     luna "So… graduation party??"
+    stop music fadeout 0.5
 
-#     kai "Absolutely not."
+    scene black with dissolve
+    pause 1.0
 
-#     cyra "Too late."
+    # scene (bg - rooftop NIGHT)
+    scene garden
+    with dissolve
 
-#     "They laugh."
+    "The Academy is quiet."
+    "Not frozen."
+    "Not broken."
+    "Just… resting."
 
-#     hide luna
-#     hide kai
-#     hide cyra
+    "The massive glass window overlooks the digital cityscape."
+    "Streams of data drift like constellations."
 
-#     mc "The Academy will break again someday."
-#     mc "All systems do."
-#     mc "But now—"
-#     mc "There are people who know how to fix it."
-#     mc "Not with control."
-#     mc "But with care."
+    "[name] stands alone for a moment."
 
+    # ROUTE CHECK - cno ending ni MC    
+    if cyraAffection >= 6:
+        show cyra blush2-notab at center with dissolve
+        "Soft footsteps approach."
 
-#     scene (bg - rooftop NIGHT)
-#     with fade
+    elif kaiAffection >= 6:
+        show kai blush2 at center with dissolve
+        "Soft footsteps approach."
 
-#     "The Academy is quiet."
-#     "Not frozen."
-#     "Not broken."
-#     "Just… resting."
+    else:
+        "No one joins you."
+        "For once, the silence feels complete."
 
-#     "The massive glass window overlooks the digital cityscape."
-#     "Streams of data drift like constellations."
+    scene black with dissolve
+    pause 2.0
 
-#     show mc neutral at center
+##################################################
 
-#     "MC stands alone for a moment."
+    scene garden with dissolve
+    show mspython happy at right with dissolve
+    play music "chill_bg.ogg" volume 0.5 fadein 1.0
+    mspy "Most students think mastery is about knowing every rule."
 
-#     # ROUTE CHECK - cno ending ni MC
-#     if cyra_route:
-#         show cyra gentle at right
-#         "Soft footsteps approach."
-#     elif kai_route:
-#         show kai calm at right
-#         "Soft footsteps approach."
-#     else:
-#         "No one joins you."
-#         "For once, the silence feels complete."
+    show mspython happy2
+    "She looks out at the stars."
 
-# ##################################################
+    show mspython happy
+    mspy "But wisdom is knowing when rules must bend."
 
-#     show mspython serene at left
-
-#     mspython "Most students think mastery is about knowing every rule."
-
-#     "She looks out at the stars."
-
-#     mspython "But wisdom is knowing when rules must bend."
-
-#     show drbyte calm at right
-
-#     drbyte "This Academy was built to produce perfect systems."
-
-#     "A pause."
-
-#     drbyte "Tonight, it finally produced something better."
-
-#     drbyte "Someone who understands consequence."
-
-
-#     # SYSTEM MESSAGE
-
-#     window hide
-#     centered "ALL CORE SYSTEMS STABLE\nERROR RATE: ACCEPTABLE\nHUMAN FACTOR: PRESENT"
-#     pause 2
-#     window show
+    show doctorbyte neutral at left with dissolve
+    dr "This Academy was built to produce perfect systems."
+    show doctorbyte neutral2
+    "A pause."
+    show doctorbyte happy
+    dr "Tonight, it finally produced something better."
+    dr "Someone who understands consequence."
 
 
-#     # EPILOGUE DIALOGUE
+    # SYSTEM MESSAGE
 
-#     show luna energetic at left
+    window hide
+    show screen final_box("{b}{color=#32CD32}ALL CORE SYSTEMS STABLE\nERROR RATE: ACCEPTABLE\nHUMAN FACTOR: PRESENT{/color}{/b}") with dissolve
+    # centered "{b}{color=#32CD32}ALL CORE SYSTEMS STABLE\nERROR RATE: ACCEPTABLE\nHUMAN FACTOR: PRESENT{/color}{/b}"
+    pause 5
+    hide screen final_box with dissolve
+    window show
 
-#     luna "HEY—why is everyone being emotional without me?!"
+    # EPILOGUE DIALOGUE
 
-# ## ROUTE AGAIN
+    show luna surprised3 with dissolve:
+        xpos -1.0
+    show luna surprised3 at center with move
+    show doctorbyte happy2 with dissolve
+    show mspython happy2 with dissolve
 
-#     show kai neutral at center
-#     kai "Because you're loud."
+    luna "HEY—why is everyone being emotional without me?!"
 
-#     show cyra smirk at right
-#     cyra "And late."
+## ROUTE AGAIN
 
-#     luna "...Worth it."
+    show kai neutral at slightleft with dissolve
+    kai "Because you're loud."
 
-#     "They laugh."
+    show cyra neutral-notab at slightright with dissolve
+    cyra "And late."
 
-#     if mira_alive: (depends sa ending na pinick ni mc)
-#         "Even Mira watches from a distance."
-#         "Not plotting."
-#         "Just learning."
+    show luna bleh
+    luna "...Worth it."
 
- 
-#     # MC FINAL MONOLOGUE
+    show kai happy
+    show cyra happy-notab
+    show doctorbyte happy
+    show mspython happy
+    "They laugh."
 
-#     scene bg (change bg and fade can be looking up in the NIght Sky)
-#     with fade
+    if mira_fate >= 1:
+        "Even Mira watches from a distance."
+        "Not plotting."
+        "Just learning."
 
-#     hide luna
-#     hide kai
-#     hide cyra
-#     hide ms_python
-#     hide dr_byte
+    stop music fadeout 0.5
+    scene black with dissolve
+    pause 2.0
 
-#     mc "I came here to learn a language."
-#     mc "I learned logic."
-#     mc "I learned syntax."
-#     mc "I learned structure."
-#     mc "But the most important lesson?"
+    # MC FINAL MONOLOGUE
 
-#     mc "Not everything broken needs deletion."
-#     mc "Not every error needs force."
-#     mc "Some things just need to be understood."
+    scene garden
+    with dissolve
+    play music "main-menu.ogg" 
 
+    mc "I came here to learn a language."
+    mc "I learned logic."
+    mc "I learned syntax."
+    mc "I learned structure."
+    mc "But the most important lesson?"
 
-#     # LAST IMAGE (here we can put couple pic)
+    mc "Not everything broken needs deletion."
+    mc "Not every error needs force."
+    mc "Some things just need to be understood."
 
+    # LAST IMAGE (here we can put couple pic)
 
-#     scene bg digital_garden_night
-#     with fade
+    # scene garden #night
+    # with dissolve
 
-#     "Neon flowers sway gently."
-#     "Fireflies of data drift upward."
-#     "Life continues."
+    "Neon flowers sway gently."
+    "Fireflies of data drift upward."
+    "Life continues."
 
-
-#     # END SCREEN — TYPING STYLE
-
-
-#     window hide
-#     centered "{cps=20}SYSTEM: Thank you for playing{/cps}"
-#     pause 3
-
-#     return
+    # END SCREEN — TYPING STYLE
+    scene black with dissolve
+    pause 2
+    centered "{cps=20}{=title}SYSTEM: Thank you for playing!{/title}" with dissolve
+    hide text with dissolve
+    stop music fadeout 0.5
+    return

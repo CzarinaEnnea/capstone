@@ -28,7 +28,7 @@ label episode4:
     mc "At least I don’t short-circuit when someone mentions teamwork."
 
     show luna surprised3 at center with dissolve
-    luna "Ooooh! Emotional operator triggered! {w}{b}MC > Kai == Burned!{/b}"
+    luna "Ooooh! Emotional operator triggered! {w}{b}[name] > Kai == Burned!{/b}"
     show mira happy at slightright with dissolve
     mira "Technically, that’s not valid syntax, Luna."
     show mira happy2

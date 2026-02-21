@@ -485,7 +485,7 @@ label episode3:
 
     if cyraAffection >= 3:
         show cyra blush-notab
-        "Cyra looks at MC with a soft smile, brushing a strand of hair behind her ear."
+        "Cyra looks at [name] with a soft smile, brushing a strand of hair behind her ear."
     
     show cyra happy-notab
     cyra "Guess that means even bugs can teach us something, huh?"
@@ -525,7 +525,7 @@ label episode3:
     play sound "glitch_sound.ogg"
     "A pair of glowing digital eyes blink once, then vanish into static..."
 
-
+    nvl clear
     n "{b}{size=+10}LESSON SUMMARY{/size}{/b}"
     n "{=code}+ - * / %% // **{/code} {space=40}Arithmetic Operators"
     n "{=code}> < >= <= == !={/code} {space=40}Comparison Operators"
@@ -536,7 +536,9 @@ label episode3:
 
     scene black
     with dissolve
+    nvl clear
     return
+
 
 label ep3Scn1QuestionWrong:
     play sound error_sound1

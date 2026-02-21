@@ -1,3 +1,5 @@
+default mira_fate = 0
+
 label bug_summon_phase1:
     if female == True:
         show female2-pixel with dissolve:
@@ -24,6 +26,8 @@ label bug_summon_phase1:
         $ answer = renpy.input('Type the missing code:').strip()
 
         if answer == "loop_active = False":
+            $ mira_fate += 1
+
             play sound "right_answer.ogg"
             "{color=#32CD32}{b}CORRECT!{/b}{/color}"
             play sound punch_sound2
@@ -101,6 +105,8 @@ label bug_summon_phase2:
         $ answer = renpy.input('Type the missing code: Store safely using a condition').strip()
 
         if answer == "preserve(data)":
+            $ mira_fate += 1
+
             play sound "right_answer.ogg"
             "{color=#32CD32}{b}CORRECT!{/b}{/color}"
             play sound punch_sound2
@@ -183,6 +189,8 @@ label bug_summon_phase3:
         $ answer = renpy.input('Type the missing syntax:').strip()
 
         if answer == "else:":
+            $ mira_fate += 1
+
             play sound "right_answer.ogg"
             "{color=#32CD32}{b}CORRECT!{/b}{/color}"
             play sound punch_sound2
@@ -247,4 +255,97 @@ label bug_summon_phase3:
                 $ player_hp = 60
                 with dissolve
                 "Try again! You have [3 - WC_local] attempt(s) left."
+    return
+
+# MIRA'S FATE
+label good_end:
+    scene classroom
+    show mspython neutral2 at right
+    with dissolve
+
+    "Ms. Py Thon steps forward, calm and resolute."
+    show mspython neutral
+    mspy "Mira, you will stay."
+    show mspython neutral2
+    show mira sad2 at center with dissolve
+    "Mira stiffens."
+    show mspython neutral
+    mspy "But not as an Architect."
+    show mspython neutral2
+    "A pause."
+    "Then—{w}warmth."
+
+    show mspython happy with dissolve
+    mspy "As a student."
+    show mspython happy2
+
+    show mira surprised2
+    "Mira’s eyes widen."
+    show mira surprised
+    mira "{cps=30}…You’re letting me {w}rewrite myself?"
+    mc "Everyone deserves refactoring."
+
+    show mira happy2 with dissolve
+    "Mira bows her head—not in shame."
+    show mira happy with dissolve
+    "In relief."
+
+    show doctorbyte sad at left with dissolve
+    dr "I’ll be here. {w}This time."
+
+    scene black
+    with fade
+    pause 2.0
+    return
+
+label neutral_end:
+    scene prison
+    with dissolve
+
+    show mira neutral2 at center with dissolve
+    "Mira stands behind a transparent barrier in a restricted lab."
+    "Not imprisoned."
+    "Contained."
+
+    show mira neutral
+    mira "I’ll observe."
+    mira "I’ll learn… {w}quietly."
+    show mira neutral2
+
+    "She meets [name]’s eyes."
+    show mira happy with dissolve
+    mira "Thank you for not deleting me."
+    hide mira with dissolve
+    "The door closes."
+    "But the lights stay on."
+
+    scene black
+    with fade
+    pause 2.0
+
+    return
+
+label bad_end:
+    scene prison
+    with dissolve
+    show mira neutral2 at center with dissolve
+    
+    "Mira’s access keys deactivate."
+    "No struggle."
+    "No anger."
+
+    show mira neutral
+    mira "So this is what clean code feels like."
+    "The screen fades quickly."
+    hide mira with dissolve
+    pause 1.5
+
+    nvl clear
+    mcNVL "The system survived." with dissolve
+    mcNVL "Something human didn’t."
+
+    scene black
+    with dissolve
+    pause 2
+    nvl clear
     return

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ep7_bug_summon.rpy", line 51: expected 'image_name_component' not found.
-    show "stringleech-pixel" as clone1
-         ^
+File "game/episode 8.rpy", line 239: expected 'image_name_component' not found.
+    scene (bg - rooftop NIGHT)
+          ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Feb 22 01:21:39 2026
+Sun Feb 22 04:40:53 2026
