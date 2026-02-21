@@ -14,7 +14,7 @@ label numeric_org:
 
             hide screen info_box with dissolve
             play sound "hologram.ogg"
-            hide bugOgre with dissolve
+            hide bugogre with dissolve
 
             "Schreeechhh"
             show cyra happy
@@ -56,7 +56,7 @@ label numeric_org:
 
                 hide screen info_box with dissolve
                 play sound "hologram.ogg"
-                hide bugOgre with dissolve
+                hide bugogre with dissolve
                 hide red with dissolve
 
                 show kai happy2

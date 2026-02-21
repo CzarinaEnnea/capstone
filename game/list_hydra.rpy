@@ -16,15 +16,14 @@ label list_hydra:
             pause 1
             "Unless proven innocent..0_0"
             play sound "hologram.ogg"
-            hide bugHydra with dissolve
+            hide bughydra with dissolve
+            hide screen info_box with dissolve
             show cyra happy
             show kai happy
             kai "Hydra captured! Python win again!"
             show cyra neutral
             cyra "Nicely done. You’ve mastered list manipulation."
             show cyra neutral2
-
-            hide screen info_box with dissolve
             return
         else:
             $ WC_local += 1
@@ -45,11 +44,11 @@ label list_hydra:
                 pause 1
                 kai "Ughh.. Let me do this"
                 kai "{color=#ff4444}{b}heads.append('Hydra'){/b}{/color}"
-                "Output: \n{color=#32CD32}{b}\['Hydra\']{/b}{/color}"
+                "Output: \n{color=#32CD32}{b}['Hydra']{/b}{/color}"
 
                 hide screen info_box with dissolve
                 play sound "hologram.ogg"
-                hide bugHydra with dissolve
+                hide bughydra with dissolve
                 hide red with dissolve
                 
                 show kai neutral2

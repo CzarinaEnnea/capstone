@@ -8,7 +8,7 @@ label bug_phanthom:
             show cyra happy
             show kai happy2
             play sound "right_answer.ogg"
-            "Correct! \n{color=#32CD32}{b}Output: \nWe are stronger!{/b}{/color}"
+            "Correct!\n{color=#32CD32}{b}Output: \nWe are stronger!{/b}{/color}"
             show kai happy
             show cyra happy2
             with vpunch
@@ -17,7 +17,7 @@ label bug_phanthom:
 
             hide screen info_box with dissolve
             play sound "hologram.ogg"
-            hide bugPhantom with dissolve
+            hide bugphantom with dissolve
 
             show cyra happy
             cyra "It's true we are Stronger than that Bug."
@@ -50,7 +50,7 @@ label bug_phanthom:
                 cyra "[name] for once I agree with Kai."
                 
                 hide screen info_box with dissolve
-                hide bugPhantom with dissolve
+                hide bugphantom with dissolve
                 return  # or jump somewhere else if you want
             else:
                 play sound "error_sound1.ogg"

@@ -475,7 +475,7 @@ label episode2:
     $ red_effect()
     show screen info_box("Bug #2 – The Numeric Ogre") with dissolve
     play sound "glitch_sound.ogg"
-    show bugOgre at left with dissolve
+    show bugogre at left with dissolve
 
     show kai surprised2
     show cyra neutral2
@@ -500,14 +500,14 @@ label episode2:
     #--------------Numberic Org ----------------------
     call numeric_org from _call_numeric_org
     hide screen info_box
-    hide bugOgre
+    hide bugogre
     with dissolve
 
     #bug 3---------------
     $ red_effect()
     show screen info_box("Bug #3 – The List Hydra") with dissolve
     play sound "glitch_sound.ogg"
-    show bugHydra at top_left_space with dissolve
+    show bughydra at left with dissolve
 
     "Three heads emerge, hissing binary streams."
 
@@ -518,7 +518,7 @@ label episode2:
     cyra "So… we’re making a 'Hydra shopping list'? Nice."
     show cyra neutral2
 
-    hide bugHydra
+    hide bughydra
     hide screen info_box
     with dissolve
 
@@ -531,7 +531,7 @@ label episode2:
     $ red_effect()
     show screen info_box("Bug #3 – The List Hydra") with dissolve
     play sound "glitch_sound.ogg"
-    show bugHydra at top_left_space with dissolve
+    show bughydra at left with dissolve
 
     #List Hydra call here-----------------------------------------------------------------------------------------------------
     "How do you trap the Hydra?"
@@ -539,13 +539,13 @@ label episode2:
 
     call list_hydra from _call_list_hydra
     hide screen info_box with dissolve
-    hide bugHydra with dissolve
+    hide bughydra with dissolve
     
     #bug 4------------
     $ red_effect()
     show screen info_box("Bug #4 – The Boolean Phantom") with dissolve
     play sound "glitch_sound.ogg"
-    show bugPhantom at top_left_space with dissolve
+    show bugphantom at left with dissolve
 
     show kai surprised
     show cyra surprised
@@ -564,7 +564,7 @@ label episode2:
     #Bug Phantom call here--------------------------------------
     "What code do you use to reveal the truth?"
     call bug_phanthom from _call_bug_phanthom
-    hide bugPhantom with dissolve
+    hide bugphantom with dissolve
     hide screen info_box with dissolve
 
 
@@ -574,12 +574,16 @@ label episode2:
     $ red_effect()
     show screen info_box("Bug #5 Final Boss: The Void Entity") with dissolve
     play sound "glitch_sound.ogg"
-    show bugVoid at top_left_space with dissolve
+    show void at left with dissolve
 
+    show kai surprised at slightright with move
+    show cyra surprised
+    with hpunch
     "The entire room shakes. A massive shadow rises — pure black code swirling like smoke."
 
     mspy "This one... is made of NoneType — the absence of data. Only creation — something from nothing — can undo it."
     show cyra neutral
+    show kai neutral2 with dissolve
     cyra "That’s… deep. We code meaning into nothingness?"
     show cyra neutral2
     mc "Let’s give it something real."
@@ -587,7 +591,7 @@ label episode2:
     "What do you assign to restore balance?"
     #Bug Void call here---------------------------------------
     call void_bug from _call_void_bug
-    hide bugVoid with dissolve
+    hide void with dissolve
     hide screen info_box with dissolve
 
     # End of battle simulation------------------------------

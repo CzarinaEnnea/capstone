@@ -10,7 +10,7 @@ label void_bug:
             "Correct! \n{color=#32CD32}{b}Output: None{/b}{/color}"
             hide screen info_box with dissolve
             play sound "hologram.ogg"
-            hide bugVoid with dissolve
+            hide void with dissolve
 
             show cyra happy
             cyra "Yay we did it!!"
