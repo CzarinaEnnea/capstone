@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/rpgUI.rpy", line 78: keyword argument 'size' appears more than once in a text statement.
-    size 33
-        ^
+File "game/episode 7.rpy", line 200: invalid syntax
+    console_text = "AUTHORIZATION UPGRADED!" with dissolve
+                                                   ^^^^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Wed Feb 18 01:13:57 2026
+Sat Feb 21 21:43:58 2026

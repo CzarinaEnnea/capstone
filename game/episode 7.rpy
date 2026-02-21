@@ -135,44 +135,70 @@ label episode7:
     $ red_effect()
 
 # SCENE 4
-    with pixellate
-    scene classroom # PIXEL GAME BG
-    with dissolve
+    stop music
 
+    with pixellate
+    scene training-chamber
+    with dissolve
     "Grid lines light up."
     "Status panels appear."
-    "{color=#32CD32}{b}TURN-BASED LOGIC ENGAGED{/b}{/color}"
-    luna "{b}WAIT—{w}this looks like a game!!{/b}"
-    kai "…Of course it does."
-    cyra "She’s not fighting us directly."
+
+    play sound glitch_sound
+    show screen battle_ui with pixellate
+    $ player_name = name.upper()
+    $ console_text = "TURN-BASED LOGIC ENGAGED"
+    pause
+
+    ""
+    luna2 surprised3 "{b}WAIT—{w}this looks like a game!!{/b}"
+    kai2 angry2 "…Of course it does."
+    cyra2 surprised "She’s not fighting us directly."
     mc "She’s testing us."
+    astra2 sad "Mira.."
+    mspy2 neutral "Focus everyone."
 
     "Mira raises her hand calmly."
-    mira "I don’t want to destroy you."
-    mira "I want to {b}correct{/b} you."
+    mira2 neutral "I don’t want to destroy you."
+    mira2 happy "I want to {b}correct{/b} you."
     "She snaps her fingers."
 
 # SCENE 5
     # BUG 1 — LOOPLING
+    play sound glitch_sound
     $ red_effect()
-    "A small circular bug endlessly spinning appears."
-    mira "Meet Loopling."
-    mira "It exists only to repeat."
+
+    $ round_info = "BUG 1 — LOOPLING"
+    $ bug_name = "LOOPLING"
+
+    # REPLACE BUGS
+    show stringleech-pixel:
+        subpixel True pos (0.78, 0.95) zoom 3.28
+    
+    show stringleech-pixel with dissolve:
+        subpixel True pos (0.53, 0.08)
+
+    $ console_text = "A circular bug endlessly spinning appears."
+    ""
+    mira2 neutral "Meet Loopling."
+    mira2 neutral "It exists only to repeat."
     "Everyone tries to access their terminal to fight Mira but only [name] has the authorization to code."
-    cyra "What is this why can't I open my terminal?"
+    cyra2 angry "What is this why can't I open my terminal?"
     "Kai, Luna, Astra" "What the…. Me too!!"
     mc "Uh ohh…."
 
-    kai "Dont tell me your the only one with access!!"
-    luna "Oh well…{w}we're doomed!"
-    astra "What is this MIRA!"
-    mira "HAHA….{w}To make it more interesting, {w}only [name] has access to fight."
-    cyra "You can do it [name], remember our lessons!"
-    mspy "Dont worry [name], I'll try and hack her system so everyone can help."
-    mspy "But that’s all I can do, I can't fully stop her."
-    mspy "Students you need to defeat her yourself."
+    kai2 angry2 "Dont tell me your the only one with access!!"
+    luna2 surprised "Oh well…"
+    luna2 neutral "We're doomed!"
+    astra2 angry "What is this MIRA!"
+    mira2 happy "HAHA….{w}To make it more interesting, {w}only [name] has access to fight."
+    cyra2 happy "You can do it [name], remember our lessons!"
+    mspy2 angry-nosign "Dont worry [name], I'll try and hack her system so everyone can help."
+    mspy2 sad "But that’s all I can do, I can't fully stop her."
+    mspy2 neutral "Students you need to defeat her yourself."
 
-    "{color=#32CD32}{b}Authorization Upgraded!{/b}{/color}"
+    play sound hologram
+    $ console_text = "AUTHORIZATION UPGRADED!"
+    ""
     "Everyone" "{b}Let’s do this!{/b}"
 
     call bug_summon_phase1

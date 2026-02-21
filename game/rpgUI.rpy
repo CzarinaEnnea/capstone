@@ -1,10 +1,10 @@
 default player_hp = 100
 default bug_hp = 100
-default console_text = "text"
-default question_text = "BROKEN CODE / QUESTION"
+default console_text = ""
+default question_text = "PANEL"
 default round_info = "ROUND 1"
-default bug_name = " "
-default player_name = " "
+default bug_name = ""
+default player_name = ""
 
 screen battle_ui():
 
@@ -78,7 +78,8 @@ screen battle_ui():
 
 label battle:
     stop music
-    
+
+    with pixellate
     scene training-chamber
     with dissolve
     "Grid lines light up."
@@ -94,10 +95,22 @@ label battle:
     pause
 
     ""
-    show void-pixel with dissolve:
-        xpos 0.6 ypos 0.15
-        xzoom -1.0
-        zoom 2.0
+    # show void-pixel with dissolve:
+    #     xpos 0.6 ypos 0.15
+    #     xzoom -1.0
+    #     zoom 2.0
+    
+    
+    show stringleech-pixel:
+        subpixel True pos (0.78, 0.95) zoom 3.28
+    
+    show stringleech-pixel with dissolve:
+        subpixel True pos (0.53, 0.08)
+
+
+
+
+
     luna2 surprised3 "{b}WAIT—{w}this looks like a game!!{/b}"
     kai2 angry2 "…Of course it does."
     cyra2 surprised "She’s not fighting us directly."
@@ -106,7 +119,7 @@ label battle:
     mspy2 neutral "Focus everyone."
 
     "Mira raises her hand calmly."
-    mira2 happy "I don’t want to destroy you."
+    mira2 neutral "I don’t want to destroy you."
     mira2 happy "I want to {b}correct{/b} you."
     "She snaps her fingers."
     ""

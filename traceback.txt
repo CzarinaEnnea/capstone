@@ -1,39 +1,41 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/rpgUI.rpy", line 9, in execute_default
-    default player_name = [name] #"PLAYER HP"
-  File "game/rpgUI.rpy", line 9, in <module>
-    default player_name = [name] #"PLAYER HP"
-NameError: name 'name' is not defined
+  File "game/script.rpy", line 283, in script call
+    call episode7
+  File "game/episode 7.rpy", line 184, in script
+    cyra angry "What is this why can't I open my terminal?"
+Exception: Say has image attributes ('angry',), but there's no image tag associated with the speaking character.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "renpy/common/00start.rpy", line 195, in script
-    python:
-  File "renpy/ast.py", line 1187, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1260, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/common/00start.rpy", line 196, in <module>
-    renpy.execute_default_statement(True)
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
-  File "renpy/exports/statementexports.py", line 375, in execute_default_statement
-    i.execute_default(start)
-    ~~~~~~~~~~~~~~~~~^^^^^^^
-  File "game/rpgUI.rpy", line 9, in execute_default
-    default player_name = [name] #"PLAYER HP"
-  File "renpy/python.py", line 1285, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/rpgUI.rpy", line 9, in <module>
-    default player_name = [name] #"PLAYER HP"
-NameError: name 'name' is not defined
+  File "game/script.rpy", line 283, in script call
+    call episode7
+  File "game/episode 7.rpy", line 184, in script
+    cyra angry "What is this why can't I open my terminal?"
+  File "renpy/ast.py", line 2915, in execute
+    Say.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "renpy/ast.py", line 991, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/exports/sayexports.py", line 129, in say
+    who(what, *args, **kwargs)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/character.py", line 1481, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "renpy/character.py", line 1299, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^ 
+  File "renpy/character.py", line 1227, in resolve_say_attributes
+    raise Exception(
+    ...<2 lines>...
+    )
+Exception: Say has image attributes ('angry',), but there's no image tag associated with the speaking character.
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Tue Feb 17 23:54:19 2026
+Sat Feb 21 21:37:06 2026
