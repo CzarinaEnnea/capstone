@@ -448,7 +448,8 @@ label episode2:
     $ red_effect()
     show screen info_box("Bug #1 – The String Leech") with dissolve
     play sound "glitch_sound.ogg"
-    show stringleech at left with dissolve
+    show stringleech with dissolve:
+        subpixel True xpos -0.05 
 
     "A pulsating worm of text hovers midair, echoing 'ErrorErrorError...'"
 
@@ -507,7 +508,8 @@ label episode2:
     $ red_effect()
     show screen info_box("Bug #3 – The List Hydra") with dissolve
     play sound "glitch_sound.ogg"
-    show bughydra at left with dissolve
+    show bughydra with dissolve:
+        subpixel True xpos -0.12 
 
     "Three heads emerge, hissing binary streams."
 
@@ -531,7 +533,8 @@ label episode2:
     $ red_effect()
     show screen info_box("Bug #3 – The List Hydra") with dissolve
     play sound "glitch_sound.ogg"
-    show bughydra at left with dissolve
+    show bughydra with dissolve:
+        subpixel True xpos -0.12 
 
     #List Hydra call here-----------------------------------------------------------------------------------------------------
     "How do you trap the Hydra?"
