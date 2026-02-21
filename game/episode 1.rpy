@@ -277,8 +277,7 @@ label episode1:
 
     "After Class"
 
-    # play music "chill_bg.ogg" fadein 1.0
-    play music "main-menu.ogg"  #Try but might delete
+    play music "main-menu.ogg" 
     mc "I felt drained already. Well atleast I can finally eat!"
 
 

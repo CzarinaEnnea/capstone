@@ -176,7 +176,6 @@ label episode8:
     pause 2.0
 
 # SCENE 6 - ROUTES change value
-    jump cyra_route
     if cyraAffection >= 6:
         jump cyra_route
 
@@ -192,7 +191,7 @@ label episode8:
 # label scene7_last_line:
 
 #     scene garden
-#     with fade
+#     with dissolve
 
 #     play music (bgm) fadein 2.0
 
