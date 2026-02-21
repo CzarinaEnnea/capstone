@@ -161,6 +161,7 @@ label ep5_scn5_txt2:
             play sound "glitch_sound.ogg"
             "The portal collapses completely."
             cyra "There. Apocalypse cancelled."
+            show mspython happy
             mspy "Well done. You corrected the control flow."
             play sound "right_answer.ogg"
             "{=gold}Infinite Loop Threat Resolved{/gold}"
@@ -176,7 +177,9 @@ label ep5_scn5_txt2:
                 "{color=#ff4444}{b}You have reached the maximum attempts.{/b}{/color}"
                 play sound "glitch_sound.ogg"
                 "The portal stabilizes into a harmless but annoying loop."
+                show mspython sad
                 mspy "This is what happens when loops are left unchecked."
+                show mspython sad2
                 dr "No penalty today—but remember this moment."
                 luna "It’s looping forever… I hate it…"
                 play sound "hologram.ogg"
@@ -189,11 +192,14 @@ label ep5_scn5_txt2:
                 "{=red}Syntax Confidence –2{/red}"
                 $ change_confidence(-2)
                 "{b}Correct Answer: {p}{color=#32CD32}i += 1"
+                show mspython sad
                 return
 
             if WC_local == 1:
+                show mspython neutral
                 mspy "What value changes each loop?"
             if WC_local == 2:
+                show mspython neutral
                 mira "The loop needs a way to move forward…"
                 kai "If {color=#32CD32}i{/color} never changes, you’re stuck forever."
                 play sound "error_sound1.ogg"

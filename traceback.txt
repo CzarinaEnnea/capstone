@@ -1,19 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 283, in script call
+  File "game/script.rpy", line 279, in script call
     call episode7
-  File "game/episode 7.rpy", line 184, in script
-    cyra angry "What is this why can't I open my terminal?"
-Exception: Say has image attributes ('angry',), but there's no image tag associated with the speaking character.
+  File "game/episode 7.rpy", line 283, in script call
+    call bug_summon_phase3
+  File "game/ep7_bug_summon.rpy", line 215, in script
+    mspy angry2-nosign "Careful—"
+Exception: Say has image attributes ('angry2-nosign',), but there's no image tag associated with the speaking character.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 283, in script call
+  File "game/script.rpy", line 279, in script call
     call episode7
-  File "game/episode 7.rpy", line 184, in script
-    cyra angry "What is this why can't I open my terminal?"
+  File "game/episode 7.rpy", line 283, in script call
+    call bug_summon_phase3
+  File "game/ep7_bug_summon.rpy", line 215, in script
+    mspy angry2-nosign "Careful—"
   File "renpy/ast.py", line 2915, in execute
     Say.execute(self)
     ~~~~~~~~~~~^^^^^^
@@ -33,9 +37,9 @@ Traceback (most recent call last):
     raise Exception(
     ...<2 lines>...
     )
-Exception: Say has image attributes ('angry',), but there's no image tag associated with the speaking character.
+Exception: Say has image attributes ('angry2-nosign',), but there's no image tag associated with the speaking character.
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Sat Feb 21 21:37:06 2026
+Sun Feb 22 02:53:32 2026

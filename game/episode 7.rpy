@@ -149,6 +149,13 @@ label episode7:
     $ console_text = "TURN-BASED LOGIC ENGAGED"
     pause
 
+    if female == True:
+        show female1-pixel with dissolve:
+            subpixel True pos (0.25, 0.25) zoom 1.81
+    else:
+        show male1-pixel with dissolve:
+            subpixel True pos (0.25, 0.25) zoom 1.81
+
     ""
     luna2 surprised3 "{b}WAIT—{w}this looks like a game!!{/b}"
     kai2 angry2 "…Of course it does."
@@ -175,9 +182,9 @@ label episode7:
         subpixel True pos (0.78, 0.95) zoom 3.28
     
     show stringleech-pixel with dissolve:
-        subpixel True pos (0.53, 0.08)
+        subpixel True pos (0.53, 0.10)
 
-    $ console_text = "A circular bug endlessly spinning appears."
+    $ console_text = "An elongated bug endlessly spinning appears."
     ""
     mira2 neutral "Meet Loopling."
     mira2 neutral "It exists only to repeat."
@@ -186,7 +193,7 @@ label episode7:
     "Kai, Luna, Astra" "What the…. Me too!!"
     mc "Uh ohh…."
 
-    kai2 angry2 "Dont tell me your the only one with access!!"
+    kai2 angry2 "Dont tell me you're the only one with access!!"
     luna2 surprised "Oh well…"
     luna2 neutral "We're doomed!"
     astra2 angry "What is this MIRA!"
@@ -204,18 +211,81 @@ label episode7:
     call bug_summon_phase1
 
 # SCENE 6
-    "A crystalline bug splitting into fragments appeared"
-    mira "This one holds data that was never acknowledged."
-    kai "…That sounds personal."
-    cyra "Let’s preserve the data [name]."
+    hide screen battle_ui
+    with pixellate
+    scene training-chamber
+    with dissolve
+    play sound glitch_sound
+    show screen battle_ui with pixellate
+    $ round_info = "BUG 2 — MEMORY BUG"
+    $ bug_name = "MEMORY BUG"
+    $ player_name = name.upper()
+    $ question_text = ""
+    $ console_text = "A ghastly bug splitting into fragments appeared"
+    $ player_hp = 100
+    $ bug_hp = 100
 
+    if female == True:
+        show female1-pixel with dissolve:
+            subpixel True pos (0.25, 0.25) zoom 1.81
+    else:
+        show male1-pixel with dissolve:
+            subpixel True pos (0.25, 0.25) zoom 1.81
+
+    # REPLACE BUGS    
+    show bugphantom-pixel with dissolve:
+        subpixel True pos (0.63, 0.23) zoom 1.43 
+
+    pause
+
+    ""
+    mira2 sad "This one holds data that was never acknowledged."
+    kai2 sad "…That sounds personal."
+    cyra2 neutral "Let’s preserve the data [name]."
+    
     call bug_summon_phase2
 
 
 # SCENE 7
+    hide screen battle_ui
+    with pixellate
+    scene training-chamber
+    with dissolve
+    play sound glitch_sound
+    show screen battle_ui with pixellate
+    $ round_info = "BUG 2 — CONDITION VOID"
+    $ bug_name = "CONDITION VOID"
+    $ player_name = name.upper()
+    $ question_text = ""
+    $ console_text = "A towering bug that attacks when conditions fail appeared"
+    $ player_hp = 100
+    $ bug_hp = 100
 
+    if female == True:
+        show female1-pixel with dissolve:
+            subpixel True pos (0.25, 0.25) zoom 1.81
+    else:
+        show male1-pixel with dissolve:
+            subpixel True pos (0.25, 0.25) zoom 1.81
+
+    # REPLACE BUGS
+    show void-pixel with dissolve:
+        xpos 0.6 ypos 0.15
+        xzoom -1.0
+        zoom 2.0 
+
+    pause
+
+    ""
+    "{b}Enemy Logic:\n{color=#32CD32}if trust == False:{p}{space=40}attack(){/color}{/b}"
+    mira2 sad "This is what happens when trust is never met."
+    
+    call bug_summon_phase3
 
 # SCENE 8
+    scene training-chamber
+    with dissolve
+
     "Mira stands alone now."
     show mira sad2 at center with dissolve
     "No bugs left."

@@ -186,3 +186,160 @@ label episode8:
     else:
         jump solo_route
     return
+
+# SCENE 7 — “THE LAST LINE” double check later
+
+# label scene7_last_line:
+
+#     scene garden
+#     with fade
+
+#     play music (bgm) fadein 2.0
+
+#     "Data fireflies drift through the Digital Garden."
+#     "Everyone gathers."
+
+#     show luna happy at left
+#     show kai neutral at center
+#     show cyra smirk at right
+
+#     luna "So… graduation party??"
+
+#     kai "Absolutely not."
+
+#     cyra "Too late."
+
+#     "They laugh."
+
+#     hide luna
+#     hide kai
+#     hide cyra
+
+#     mc "The Academy will break again someday."
+#     mc "All systems do."
+#     mc "But now—"
+#     mc "There are people who know how to fix it."
+#     mc "Not with control."
+#     mc "But with care."
+
+
+#     scene (bg - rooftop NIGHT)
+#     with fade
+
+#     "The Academy is quiet."
+#     "Not frozen."
+#     "Not broken."
+#     "Just… resting."
+
+#     "The massive glass window overlooks the digital cityscape."
+#     "Streams of data drift like constellations."
+
+#     show mc neutral at center
+
+#     "MC stands alone for a moment."
+
+#     # ROUTE CHECK - cno ending ni MC
+#     if cyra_route:
+#         show cyra gentle at right
+#         "Soft footsteps approach."
+#     elif kai_route:
+#         show kai calm at right
+#         "Soft footsteps approach."
+#     else:
+#         "No one joins you."
+#         "For once, the silence feels complete."
+
+# ##################################################
+
+#     show mspython serene at left
+
+#     mspython "Most students think mastery is about knowing every rule."
+
+#     "She looks out at the stars."
+
+#     mspython "But wisdom is knowing when rules must bend."
+
+#     show drbyte calm at right
+
+#     drbyte "This Academy was built to produce perfect systems."
+
+#     "A pause."
+
+#     drbyte "Tonight, it finally produced something better."
+
+#     drbyte "Someone who understands consequence."
+
+
+#     # SYSTEM MESSAGE
+
+#     window hide
+#     centered "ALL CORE SYSTEMS STABLE\nERROR RATE: ACCEPTABLE\nHUMAN FACTOR: PRESENT"
+#     pause 2
+#     window show
+
+
+#     # EPILOGUE DIALOGUE
+
+#     show luna energetic at left
+
+#     luna "HEY—why is everyone being emotional without me?!"
+
+# ## ROUTE AGAIN
+
+#     show kai neutral at center
+#     kai "Because you're loud."
+
+#     show cyra smirk at right
+#     cyra "And late."
+
+#     luna "...Worth it."
+
+#     "They laugh."
+
+#     if mira_alive: (depends sa ending na pinick ni mc)
+#         "Even Mira watches from a distance."
+#         "Not plotting."
+#         "Just learning."
+
+ 
+#     # MC FINAL MONOLOGUE
+
+#     scene bg (change bg and fade can be looking up in the NIght Sky)
+#     with fade
+
+#     hide luna
+#     hide kai
+#     hide cyra
+#     hide ms_python
+#     hide dr_byte
+
+#     mc "I came here to learn a language."
+#     mc "I learned logic."
+#     mc "I learned syntax."
+#     mc "I learned structure."
+#     mc "But the most important lesson?"
+
+#     mc "Not everything broken needs deletion."
+#     mc "Not every error needs force."
+#     mc "Some things just need to be understood."
+
+
+#     # LAST IMAGE (here we can put couple pic)
+
+
+#     scene bg digital_garden_night
+#     with fade
+
+#     "Neon flowers sway gently."
+#     "Fireflies of data drift upward."
+#     "Life continues."
+
+
+#     # END SCREEN — TYPING STYLE
+
+
+#     window hide
+#     centered "{cps=20}SYSTEM: Thank you for playing{/cps}"
+#     pause 3
+
+#     return

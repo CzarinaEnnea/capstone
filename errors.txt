@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/episode 7.rpy", line 200: invalid syntax
-    console_text = "AUTHORIZATION UPGRADED!" with dissolve
-                                                   ^^^^
+File "game/ep7_bug_summon.rpy", line 51: expected 'image_name_component' not found.
+    show "stringleech-pixel" as clone1
+         ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sat Feb 21 21:43:58 2026
+Sun Feb 22 01:21:39 2026

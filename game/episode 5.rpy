@@ -226,16 +226,18 @@ label episode5:
     with fade
     pause 1.5
 
-# SCENCE 5 (TO BE CONTINUED)
+# SCENE 5
     play sound "door_opening_school_doorway.ogg"
     scene classroom with dissolve
 
     "Ms. Py Thon adjusts her glasses dramatically, Detective-Conan style. A magnifying-glass icon flashes."
 
+    show mspython neutral at center with dissolve
     mspy "Class, focus."
     mspy "A {color=#81f08aff}while loop{/color} runs as long as its condition remains {b}true{/b}."
     "{i}She snaps her fingers. A glowing table floats into the air.{/i}"
 
+    hide mspython with dissolve
     show screen whileLoopTable with dissolve
 
     mira "So it checks… again and again… {w}until the condition becomes false?"
@@ -255,22 +257,29 @@ label episode5:
     mspy "Enough commentary."
     hide screen whileLoopTableB with dissolve
 
+    show mspython neutral2 at slightright with dissolve
     "She points dramatically at the board."
     show ep5-scn5-txt1 at top_left_space with dissolve
+    show mspython happy
     mspy "Now—test time."
     mspy "How many times will the word ‘Looping’ appear?"
+    show mspython happy2
 
     menu:
         "One time":
             play sound "glitch_sound.ogg"
             "The portal grows. The word “Looping” repeats endlessly on the board."
+            show mspython neutral with dissolve
             mspy "Incorrect. Watch carefully."
+            show mspython neutral2
             hide ep5-scn5-txt1
             show ep5-scn5-txt1-1 at top_left_space 
             with dissolve
             "She highlights the condition and update step."
+            show mspython neutral
             mspy "The {b}condition{/b} is checked {b}before{/b} every loop."
             mspy "The {b}update{/b} controls {b}when it stops{/b}."
+            show mspython neutral2
             kai "You answered before the loop finished."
 
             play sound "error_sound1.ogg"
@@ -282,13 +291,17 @@ label episode5:
         "Two times":
             play sound "glitch_sound.ogg"
             "The portal grows. The word “Looping” repeats endlessly on the board."
+            show mspython neutral with dissolve
             mspy "Incorrect. Watch carefully."
+            show mspython neutral2
             hide ep5-scn5-txt1
             show ep5-scn5-txt1-1 at top_left_space 
             with dissolve
             "She highlights the condition and update step."
+            show mspython neutral
             mspy "The {b}condition{/b} is checked {b}before{/b} every loop."
             mspy "The {b}update{/b} controls {b}when it stops{/b}."
+            show mspython neutral2
             kai "You answered before the loop finished."
 
             play sound "error_sound1.ogg"
@@ -300,7 +313,9 @@ label episode5:
         "Three times":
             play sound "hologram.ogg"
             "The portal shrinks and vanishes."
+            show mspython happy
             mspy "Correct. The loop repeats three times before the condition becomes false."
+            show mspython happy2
             luna "THREE LOOPINGS! PERFECT LOOP COUNT!"
             cyra "You paused and thought. Good habit."
 
@@ -316,14 +331,15 @@ label episode5:
     $ red_effect()
     show ep5-scn5-txt2 at top_left_space with dissolve
     "Red warning text flashes."
+    show mspython neutral with dissolve
     mspy "This loop is broken."
     mspy "Fix it before it becomes infinite."
+    show mspython neutral
 
     "HINT!! : Result must show numbers 1 to 6"
 
     call ep5_scn5_txt2
 
-    "Chibi Mode fades. Classroom returns to normal."
     mspy "Loops are tools."
     mspy "Control defines mastery."
 

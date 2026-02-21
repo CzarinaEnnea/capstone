@@ -583,16 +583,20 @@ label episode1:
     cyra "You did great really great."
     show luna happy at center with dissolve
     luna "Group selfie before the next apocalypse! Say {w}{size=+10}{color=#81f08aff}print(\"Cheese!\"){/color}{/size}!"
+    show cyra happy2
+    show astra happy2
+    show mira happy2
+    with dissolve
+    pause 1.0
 
     play music "main-menu.ogg" #Try but might delete
 
-    scene groupPhoto
+    n "They pose. Flash of neon light. Laughter."
     with dissolve
-    "(They pose. Flash of neon light. Laughter.)"
 
-    "And just like that, I wasn’t alone anymore."
-    "A team of geniuses, chaos gremlins, and possible love interests."
-    "At Code Academy Nexus… even friendship is coded in Python."
+    n "And just like that, I wasn’t alone anymore."
+    n "A team of geniuses, chaos gremlins, and possible love interests."
+    n "At Code Academy Nexus… even friendship is coded in Python."
 
     stop music fadeout 0.5
 
@@ -600,6 +604,8 @@ label episode1:
 
     scene classroom
     with dissolve
+
+    nvl clear
 
     "Morning light streams through the digital windows of Code Nexus Academy."
     "After a long night of debugging simulations, the class gathers once again in {b}Ms. Py Thon’s Command Lab{/b}. Ready to dive deeper into the logic that powers their world."

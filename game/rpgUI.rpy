@@ -2,7 +2,7 @@ default player_hp = 100
 default bug_hp = 100
 default console_text = ""
 default question_text = "PANEL"
-default round_info = "ROUND 1"
+default round_info = ""
 default bug_name = ""
 default player_name = ""
 

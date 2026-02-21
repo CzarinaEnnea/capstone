@@ -4,9 +4,6 @@
 image groupPhoto = Placeholder("bg")
 
 # image bugOgre = Placeholder("boy")
-# image bugHydra = Placeholder("girl")
-# image bugPhantom = Placeholder("boy")
-# image bugVoid = Placeholder("girl")
 
 # Characters
 define cyra = Character("Cyra", color="#a14ae9")
@@ -273,7 +270,6 @@ init python:
 label start:
     
     call episode0 from _call_episode0
-    call battle
     call episode1 from _call_episode1
     call episode2 from _call_episode2
     call episode3 from _call_episode3
