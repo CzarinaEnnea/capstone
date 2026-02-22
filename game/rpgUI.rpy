@@ -2,24 +2,13 @@ default player_hp = 100
 default bug_hp = 100
 default console_text = ""
 default question_text = "PANEL"
-default round_info = ""
+# default round_info = ""
 default bug_name = ""
 default player_name = ""
 
 screen battle_ui():
 
     tag battle
-
-    # add "battle_bg"
-
-    # PLAYER SPRITE
-    # add "knight" xpos 300 ypos 420
-
-    # BUG SPRITE
-    # add "void-pixel":
-    #     xpos 0.6 ypos 0.15
-    #     xzoom -1.0
-    #     zoom 2.0
 
     # PLAYER HP BOX
     frame:
@@ -46,7 +35,7 @@ screen battle_ui():
             bar value bug_hp range 100 xsize 280
 
     # ROUND INFO
-    text round_info xpos 0.43 ypos 40 size 40
+    # text round_info xpos 0.43 ypos 40 size 40
 
     # QUESTION PANEL
     frame:
@@ -87,7 +76,7 @@ label battle:
 
     play sound glitch_sound
     show screen battle_ui with pixellate
-    $ round_info = "BUG 1 — LOOPLING"
+    # $ round_info = "BUG 1 — LOOPLING"
     $ bug_name = "LOOPLING"
     $ player_name = name.upper()
     $ question_text = "while loop_active: {p}{space=40}_________"

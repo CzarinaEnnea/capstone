@@ -464,9 +464,9 @@ label episode1:
             show kai happy
             kai "Simple. Efficient. You’d make a good teammate."
 
-            play sound right_answer
-            $ change_kaiAffection(+1)
-            "{=gold}Kai’s Affection +1{/=gold}"
+            # play sound right_answer
+            # $ change_kaiAffection(+1)
+            # "{=gold}Kai’s Affection +1{/=gold}"
 
             show luna happy at center with dissolve
             luna "You’re on fire! But like... in a non-combustion way!"
@@ -1198,9 +1198,9 @@ label question1Right:
     show kai happy at left with dissolve
     kai "Consistent. I like that."
 
-    play sound right_answer
-    $ change_kaiAffection(+1)
-    "{=gold}Kai’s Affection +1{/=gold}"
+    # play sound right_answer
+    # $ change_kaiAffection(+1)
+    # "{=gold}Kai’s Affection +1{/=gold}"
 
     show cyra happy at slightright with dissolve
     cyra "You did it! The Bug didn’t even hiss at you!"

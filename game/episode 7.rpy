@@ -68,7 +68,6 @@ label episode7:
         subpixel True alpha 1.0 additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.41)*BrightnessMatrix(0.0)*HueMatrix(513.0) 
 
 
-
     "The floor becomes scrolling Python syntax."
     "Variables orbit Mira like constellations—stable, elegant."
 
@@ -181,7 +180,7 @@ label episode7:
     play sound glitch_sound
     $ red_effect()
 
-    $ round_info = "BUG 1 — LOOPLING"
+    # $ round_info = "BUG 1 — LOOPLING"
     $ bug_name = "LOOPLING"
 
     # REPLACE BUGS
@@ -224,7 +223,7 @@ label episode7:
     with dissolve
     play sound glitch_sound
     show screen battle_ui with pixellate
-    $ round_info = "BUG 2 — MEMORY BUG"
+    # $ round_info = "BUG 2 — MEMORY BUG"
     $ bug_name = "MEMORY BUG"
     $ player_name = name.upper()
     $ question_text = ""
@@ -260,7 +259,7 @@ label episode7:
     with dissolve
     play sound glitch_sound
     show screen battle_ui with pixellate
-    $ round_info = "BUG 2 — CONDITION VOID"
+    # $ round_info = "BUG 2 — CONDITION VOID"
     $ bug_name = "CONDITION VOID"
     $ player_name = name.upper()
     $ question_text = ""
@@ -276,10 +275,16 @@ label episode7:
             subpixel True pos (0.25, 0.25) zoom 1.81
 
     # REPLACE BUGS
+    # show void-pixel with dissolve:
+    #     xpos 0.6 ypos 0.15
+    #     xzoom -1.0
+    #     zoom 2.0 
+
+    
     show void-pixel with dissolve:
-        xpos 0.6 ypos 0.15
-        xzoom -1.0
-        zoom 2.0 
+        subpixel True pos (0.51, 0.06) zoom 2.53 xzoom -1.0
+
+
 
     pause
 

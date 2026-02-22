@@ -186,10 +186,10 @@ label episode8:
     pause 2.0
 
 # SCENE 6 - ROUTES change value
-    if cyraAffection >= 6:
+    if cyraAffection >= 4:
         call cyra_route
 
-    elif kaiAffection >= 6:
+    elif kaiAffection >= 4:
         call kai_route
 
     else:
@@ -248,11 +248,11 @@ label scene7_last_line:
     "[name] stands alone for a moment."
 
     # ROUTE CHECK - cno ending ni MC    
-    if cyraAffection >= 6:
+    if cyraAffection >= 4:
         show cyra blush2-notab at center with dissolve
         "Soft footsteps approach."
 
-    elif kaiAffection >= 6:
+    elif kaiAffection >= 4:
         show kai blush2 at center with dissolve
         "Soft footsteps approach."
 
