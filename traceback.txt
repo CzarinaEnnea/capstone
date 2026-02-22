@@ -1,50 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-NameError: name 'mspython' is not defined
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "game/script.rpy", line 280, in script call
-    call episode8
-  File "game/episode 8.rpy", line 270, in script
-    mspython "Most students think mastery is about knowing every rule."
-Exception: Sayer 'mspython' is not defined.
+  File "game/script.rpy", line 288, in script call
+    call episode7
+  File "game/ep7_bug_summon.rpy", line 332, in script
+    return
+Exception: Could not find return label ('game/episode 7.rpy', 1084514289, 4).
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "renpy/ast.py", line 625, in eval_who
-    return renpy.python.py_eval(who)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^
-  File "renpy/python.py", line 1292, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1285, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<none>", line 1, in <module>
-NameError: name 'mspython' is not defined
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "game/script.rpy", line 280, in script call
-    call episode8
-  File "game/episode 8.rpy", line 270, in script
-    mspython "Most students think mastery is about knowing every rule."
-  File "renpy/ast.py", line 2915, in execute
-    Say.execute(self)
-    ~~~~~~~~~~~^^^^^^
-  File "renpy/ast.py", line 956, in execute
-    who = eval_who(self.who, self.who_fast)
-          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/ast.py", line 627, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'mspython' is not defined.
+  File "game/script.rpy", line 288, in script call
+    call episode7
+  File "game/ep7_bug_summon.rpy", line 332, in script
+    return
+  File "renpy/ast.py", line 1703, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^ 
+  File "renpy/execution.py", line 797, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label ('game/episode 7.rpy', 1084514289, 4).
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Codebound 1.0
-Sun Feb 22 04:52:53 2026
+Mon Feb 23 01:38:23 2026

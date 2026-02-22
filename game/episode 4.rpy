@@ -189,7 +189,7 @@ label episode4:
             mspy "Let this be a reminder: Always test before you assume."
 
     stop music fadeout 0.5
-    
+
     scene black
     with fade
     pause 1.5
@@ -197,6 +197,7 @@ label episode4:
     scene classroom
     with dissolve
     show screen info_box("Mini-Lesson") with dissolve
+    play music "audio/neutralchill_One Thing.ogg" fadein 0.5 volume 0.8
 
     show mspython neutral at center with dissolve
     mspy "Conditional statements {=code}(if, elif, else){/code} let your code decide."
@@ -207,6 +208,7 @@ label episode4:
     cyra "See? Even Kai can code emotions now."
 
     hide screen info_box 
+    stop music fadeout 0.5
     scene black
     with fade
     pause 1.5
@@ -303,6 +305,8 @@ label episode4:
 
     "The students file into the glowing Holo-Classroom. Floating screens flicker alive with Python symbols."
     show mspython neutral at center with dissolve
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
+
     mspy "Good morning, coders. Today’s lesson will push your logic a step further."
     mspy "We’ll explore how Python {i}decides{/i} what to do — the art of conditional statements."
     show mspython neutral2
@@ -442,6 +446,7 @@ label episode4:
     show mspython neutral
     mspy "Prepare yourselves. What happens next… depends on your conditions."
 
+    stop music fadeout 0.5
     scene black
     with dissolve
     pause 1.5
@@ -450,6 +455,7 @@ label episode4:
     scene mspythonlab
     with dissolve
     
+    play music "audio/revelation_z3r0-8bitSyndrome.ogg" fadein 0.5 volume 0.4
     "The students gather in Ms. Py Thon’s lab. The walls flicker with moving code lines — like veins of light."
     show mspython neutral zorder 4 at center with dissolve
     mspy "Something’s interfering with the Academy’s mainframe. I want you to test the defense code."
@@ -590,9 +596,9 @@ label episode4:
     scene black with fade
     show text "{=title}To be continued...{/title}" at truecenter with dissolve
     pause 2
+    stop music fadeout 1.0
     hide text with dissolve
-
-
+    
     return
 
 

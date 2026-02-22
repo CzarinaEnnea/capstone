@@ -12,7 +12,7 @@ label episode6:
 
     play sound emergency_alarm
     $ red_effect()
-
+    play music "audio/battle-silent_struggle.ogg" fadein 1.0 volume 0.3
     "The Emergency holograms flicker."
 
     show red at truecenter with dissolve
@@ -50,6 +50,7 @@ label episode6:
     mc "Root access meant only one thing."
     mc "Whoever did this knew the system better than we did..."
 
+    stop music fadeout 0.5
     scene black
     with fade
     pause 1.5
@@ -60,6 +61,7 @@ label episode6:
 
     "Mira sits alone, surrounded by floating repair drones."
     show mira sad2 at center with dissolve
+    play music "audio/sad_Sadness and Solo-8 Bit Lofi Hip Hop.ogg" fadein 0.5 volume 0.8
     "She looks exhausted."
 
     mc "Mira… you missed class."
@@ -100,6 +102,7 @@ label episode6:
     show cyra surprised2-notab
     mc "...."
 
+    stop music fadeout 0.5
     scene black
     with fade
     pause 2.5
@@ -108,6 +111,8 @@ label episode6:
     scene mspythonlab # Restricted Zone
     with dissolve
 
+    play music "audio/battle-silent_struggle.ogg" fadein 0.5 volume 0.3
+    
     "A sealed gate labeled:"
     "{b}{size=+10}AUTHORIZED PERSONNEL ONLY — DR. BYTE{/size}{/b}"
 
@@ -127,9 +132,14 @@ label episode6:
 
     cyra "…Mira?"
     kai "What are you doing here?"
+
+    stop music fadeout 0.5
+
     "Mira turns."
     show mira happy
     mira "I was hoping you wouldn’t come."
+
+    play music "audio/revelation_z3r0-8bitSyndrome.ogg" fadein 0.5 volume 0.4
     "Silence crashes."
 
 # SCENE 4
@@ -204,6 +214,17 @@ label episode6:
 
     "Mira steps back into the core light."
     play sound "hologram.ogg"
+
+    # DRONES
+    show bug1 with dissolve:
+        subpixel True ypos 0.02 
+    
+    show bug2 with dissolve:
+        subpixel True pos (0.17, 0.37) 
+
+    show bug3 with dissolve:
+        subpixel True pos (0.49, 0.08) 
+
     "Her support drones reconfigure — combat-ready."
 
     show mira neutral with dissolve
@@ -256,4 +277,5 @@ label episode6:
     show text "{=title}To be continued...{/title}" at truecenter with dissolve
     pause 2
     hide text with dissolve
+    stop music fadeout 0.5
     return

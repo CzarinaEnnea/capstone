@@ -1,8 +1,5 @@
 label episode8:
 # SCENE 1
-    scene black
-    with dissolve
-    pause 2.0
     show text "{=title}Episode 8 - WHEN THE CODE STOPS - AND LIFE BEGINS{/title}" at truecenter with dissolve
     pause 2
     hide text with fade
@@ -16,7 +13,9 @@ label episode8:
     "Bug sprites don’t explode; they {b}decompile{/b}, returning to raw light."
     "The arena breathes{w}—panels unlocking, grids fading, walls re-forming as if the Academy itself is exhaling."
 
+    show classroom with dissolve
     "At the center stands Mira."
+    play music "audio/sad_Sadness and Solo-8 Bit Lofi Hip Hop.ogg" fadein 1.0 volume 0.8
     show mira neutral2 at center with dissolve
     "Not restrained."
     "Not triumphant."
@@ -132,6 +131,7 @@ label episode8:
     mc "This wasn’t code anymore."
     mc "No syntax could resolve this."
 
+    stop music fadeout 0.5
     scene black
     with fade
     pause 2.0
@@ -149,6 +149,8 @@ label episode8:
 # SCENE 4
     scene classroom # Grand Lecture Hall
     with dissolve
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
+
     "No countdown. No stress. Just presence."
     show mspython happy at right with dissolve
     mspy "This is not an exam."
@@ -180,6 +182,8 @@ label episode8:
     pause 1.0
     mc "I didn’t master Python."
     mc "I mastered restraint."
+
+    stop music fadeout 0.5
 
     scene black
     with fade
@@ -237,12 +241,14 @@ label scene7_last_line:
     scene garden
     with dissolve
 
+    play music "audio/sad_Sadness and Solo-8 Bit Lofi Hip Hop.ogg" fadein 0.5 volume 0.8
     "The Academy is quiet."
     "Not frozen."
     "Not broken."
     "Just… resting."
 
-    "The massive glass window overlooks the digital cityscape."
+    # "The massive glass window overlooks the digital cityscape."
+    "Lingered in a peaceful garden, embraced by the open skies and scent of flowers."
     "Streams of data drift like constellations."
 
     "[name] stands alone for a moment."
@@ -260,6 +266,7 @@ label scene7_last_line:
         "No one joins you."
         "For once, the silence feels complete."
 
+    stop music fadeout 1.0
     scene black with dissolve
     pause 2.0
 
@@ -299,10 +306,11 @@ label scene7_last_line:
     show luna surprised3 with dissolve:
         xpos -1.0
     show luna surprised3 at center with move
-    show doctorbyte happy2 with dissolve
-    show mspython happy2 with dissolve
-
     luna "HEY—why is everyone being emotional without me?!"
+    show doctorbyte happy2
+    show mspython happy2 
+    with dissolve
+
 
 ## ROUTE AGAIN
 

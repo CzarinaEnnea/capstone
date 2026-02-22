@@ -88,6 +88,7 @@ label episode5:
 
     pause 1.5
     show mspython neutral at center with dissolve
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
     mspy "A for loop is used when you know how many times you want to repeat something." 
     mspy "It is controlled, predictable, and elegant."
 
@@ -141,6 +142,7 @@ label episode5:
     show mspython neutral2
     call ep5_scn2_txt1
 
+    stop music fadeout 0.5
     scene black
     with fade
     pause 1.5
@@ -154,6 +156,8 @@ label episode5:
     dr "Loops shape reality here."
     dr "Control the loop — control the outcome."
     show doctorbyte neutral2
+
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
 
     # QUIZ 1
     show ep5-scn3-txt1 at top_left_space with dissolve
@@ -175,6 +179,7 @@ label episode5:
     call ep5_scn3_txt3
     hide ep5-scn3-txt3 with dissolve
 
+    stop music fadeout 0.5
     scene black
     with fade
     pause 2.0
@@ -231,6 +236,7 @@ label episode5:
     scene classroom with dissolve
 
     "Ms. Py Thon adjusts her glasses dramatically, Detective-Conan style. A magnifying-glass icon flashes."
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
 
     show mspython neutral at center with dissolve
     mspy "Class, focus."
@@ -378,9 +384,12 @@ label episode5:
     mc "Mistakes repeat."
     mc "But understanding breaks the loop."
 
+    
+
     scene black with fade
     show text "{=title}To be continued...{/title}" at truecenter with dissolve
     pause 2
+    stop music fadeout 0.5
     hide text with dissolve
     
     return

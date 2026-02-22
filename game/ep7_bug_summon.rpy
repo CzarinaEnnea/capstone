@@ -206,6 +206,7 @@ label bug_summon_phase3:
 
             mira2 surprised-nosign "…You allowed another outcome."
             hide screen battle_ui
+            stop music fadeout 0.5
             scene black
             with dissolve
             pause 3
@@ -231,6 +232,7 @@ label bug_summon_phase3:
                 with dissolve
                 ""
                 hide screen battle_ui
+                stop music fadeout 0.5
                 scene black
                 with dissolve
                 pause 3
@@ -262,6 +264,7 @@ label good_end:
     scene classroom
     show mspython neutral2 at right
     with dissolve
+    play music "audio/sad_Sadness and Solo-8 Bit Lofi Hip Hop.ogg" fadein 0.5 volume 0.8
 
     "Ms. Py Thon steps forward, calm and resolute."
     show mspython neutral
@@ -295,12 +298,14 @@ label good_end:
 
     scene black
     with fade
+    stop music fadeout 1.5
     pause 2.0
     return
 
 label neutral_end:
     scene prison
     with dissolve
+    play music "audio/sad_Sadness and Solo-8 Bit Lofi Hip Hop.ogg" fadein 0.5 volume 0.8
 
     show mira neutral2 at center with dissolve
     "Mira stands behind a transparent barrier in a restricted lab."
@@ -321,6 +326,7 @@ label neutral_end:
 
     scene black
     with fade
+    stop music fadeout 1.5
     pause 2.0
 
     return
@@ -328,6 +334,8 @@ label neutral_end:
 label bad_end:
     scene prison
     with dissolve
+    play music "audio/sad_Sadness and Solo-8 Bit Lofi Hip Hop.ogg" fadein 0.5 volume 0.8
+
     show mira neutral2 at center with dissolve
     
     "Mira’s access keys deactivate."
@@ -342,10 +350,11 @@ label bad_end:
 
     nvl clear
     mcNVL "The system survived." with dissolve
-    mcNVL "Something human didn’t."
+    mcNVL "Something human didn’t." with dissolve
 
     scene black
     with dissolve
+    stop music fadeout 1.5
     pause 2
     nvl clear
     return

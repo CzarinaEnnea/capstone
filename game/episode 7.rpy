@@ -21,6 +21,7 @@ label episode7:
     show luna sad2 at slightright with dissolve
     "Luna slowly waves a hand in front of a frozen student."
     show luna sad
+    play music "audio/revelation_z3r0-8bitSyndrome.ogg" fadein 0.5 volume 0.4
     luna "…Okay. This is officially not funny."
     show kai angry2 at left with dissolve
     kai "No jitter. No rollback. This isn’t a glitch."
@@ -121,6 +122,7 @@ label episode7:
     "{color=#ff4444}{b}TRAINING MODE OVERRIDE — LOGIC CONFLICT DETECTED{/b}{/color}"
     "The suspended reality collapses."
 
+
     play sound "glitch_sound.ogg"
     scene black with dissolve
     $ red_effect()
@@ -136,13 +138,13 @@ label episode7:
     "Error Constructs materialize—born from corrupted logic."
     mira "This lesson has only one outcome."
 
+    stop music fadeout 0.5
+
     play sound "glitch_sound.ogg"
     scene black with dissolve
     $ red_effect()
 
 # SCENE 4
-    stop music
-
     with pixellate
     scene training-chamber
     with dissolve
@@ -151,6 +153,7 @@ label episode7:
 
     play sound glitch_sound
     show screen battle_ui with pixellate
+    play music "audio/pixel_Eric Skiff-Underclocked.ogg" fadein 0.5 volume 0.3
     $ player_name = name.upper()
     $ console_text = "TURN-BASED LOGIC ENGAGED"
     pause
@@ -253,6 +256,9 @@ label episode7:
 
 
 # SCENE 7
+
+    stop music fadeout 0.5
+
     hide screen battle_ui
     with pixellate
     scene training-chamber
@@ -260,7 +266,7 @@ label episode7:
     play sound glitch_sound
     show screen battle_ui with pixellate
     # $ round_info = "BUG 2 — CONDITION VOID"
-    $ bug_name = "CONDITION VOID"
+    $ bug_name = "CONDI VOID"
     $ player_name = name.upper()
     $ question_text = ""
     $ console_text = "A towering bug that attacks when conditions fail appeared"
@@ -280,7 +286,7 @@ label episode7:
     #     xzoom -1.0
     #     zoom 2.0 
 
-    
+    play music "audio/pixelboss_RedStone128-The Final Battle.ogg" fadein 0.5 volume 0.3
     show void-pixel with dissolve:
         subpixel True pos (0.51, 0.06) zoom 2.53 xzoom -1.0
 
@@ -293,6 +299,7 @@ label episode7:
     mira2 sad "This is what happens when trust is never met."
     
     call bug_summon_phase3
+
 
 # SCENE 8
     scene training-chamber
@@ -334,10 +341,15 @@ label episode7:
     scene black
     with fade
 
+    play music "audio/sad_Sadness and Solo-8 Bit Lofi Hip Hop.ogg" fadein 0.5 volume 0.8
+
     mc "We didn’t defeat her."
     mc "We reached her."
     mc "But understanding…"
     mc "Isn’t resolution."
     "{color=#32CD32}{b}ENDING ROUTE PENDING{/b}{/color}"
 
+    stop music fadeout 0.5
+    scene black with dissolve
+    pause 3.0
     return

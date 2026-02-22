@@ -31,7 +31,7 @@ screen battle_ui():
 
         vbox:
             spacing 10
-            text bug_name xalign 0.1
+            text bug_name xalign 0.2
             bar value bug_hp range 100 xsize 280
 
     # ROUND INFO
