@@ -237,7 +237,7 @@ label episode3:
     with dissolve
 
     hide red
-    show bug at top_right_space
+    show bug2 at top_right_space
     play sound "glitch_sound.ogg"
     $ red_effect()
 
@@ -294,7 +294,7 @@ label episode3:
         "Ready!":
             play sound "error_wrong.ogg"
             $ red_effect()
-            hide bug with dissolve
+            hide bug2 with dissolve
             hide ep3-scn4-txt2 with dissolve
             show luna surprised at slightright with dissolve
             luna "Uh-oh! You fainted! I’ll respawn you!"
@@ -334,7 +334,7 @@ label episode3:
             mc "{=code}hp > 0{/code} is True, but {=code}energy > 0{/code} is False — since both need to be True{w}, it’s Low Resources!"
             with hpunch
             play sound "punch_sound1.ogg"
-            hide bug with dissolve
+            hide bug2 with dissolve
             hide ep3-scn4-txt2 with dissolve
             show mspython happy at center with dissolve
             mspy "Excellent deduction! Logical precision, that’s the coder’s blade."

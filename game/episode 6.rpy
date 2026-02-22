@@ -135,10 +135,14 @@ label episode6:
 # SCENE 4
     "Mira gestures."
     play sound "glitch_sound.ogg"
-    $ red_effect()
+    $ red_effect() 
+
+    scene mspythonlab with dissolve:
+        subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.17)*HueMatrix(0.0) 
+
     "Hundreds of simulations unfold mid-air."
     "Academy destroyed."
-    show mira serious
+    show mira serious at center with dissolve
     "Students erased."
     "Bugs overrunning the system."
     "Again. {p}And again. {p}And again."
@@ -228,18 +232,27 @@ label episode6:
     "{color=#ff4444}{b}{size=+20}POINT OF NO RETURN REACHED{/size}{/b}{/color}"
 
     play sound "glitch_sound.ogg"
-    nvl clear
-    mcNVL "..." with dissolve
-    mcNVL "She wasn’t trying to destroy the world." with dissolve
-    mcNVL "She was trying to {b}freeze{/b} it." with dissolve
+    # nvl clear
+    # mcNVL "..." with dissolve
+    # mcNVL "She wasn’t trying to destroy the world." with dissolve
+    # mcNVL "She was trying to {b}freeze{/b} it." with dissolve
 
     scene black with fade
     pause 2.0
+    show text "{=title}She wasn’t trying to destroy the world.{/title}" at truecenter with dissolve
+    pause 2.0
+    hide text with dissolve
+
+    pause 1.0
+    show text "{=title}She was trying to FREEZE it.{/title}" at truecenter with dissolve
+    pause 3.0
+    hide text with dissolve
+
+    pause 1.0
     show text "{=title}When logic removes choice, someone must become the enemy.{/title}" at truecenter with dissolve
     pause 3.5
     hide text with dissolve
 
-    scene black with fade
     show text "{=title}To be continued...{/title}" at truecenter with dissolve
     pause 2
     hide text with dissolve

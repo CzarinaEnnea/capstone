@@ -4,7 +4,7 @@ label list_hydra:
     while True:
         $ answer = renpy.input('heads = [[] \n{color=#ff4444}{b}________{/b}{/color} \nprint(heads) \nOutput: [[\'Hydra\'] ').strip()
 
-        if answer == "heads.append('Hydra')":
+        if answer == "heads.append('Hydra')" or "heads.append(\"Hydra\")":
             show kai happy
             show cyra happy
             play sound "right_answer.ogg"

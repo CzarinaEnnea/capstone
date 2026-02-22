@@ -42,11 +42,13 @@ label episode7:
     "A soft sound echoes through the corridor." with dissolve
 
     #Add slow clapping sound
+    play sound clap
     "{b}Clap. {p}Clap. {p}Clap.{/b}"
     "The sound reverberates unnaturally, like it’s bouncing inside the code itself."
     mira "Good. You’re still responsive."
     "A distortion ripples forward."
     play sound "glitch_sound.ogg"
+    $ red_effect()
     show mira neutral2 at center with dissolve
     "Mira steps out—calm, composed, eyes glowing faintly with cascading code."
     "She looks at each of them—not threatening. Almost… {w}relieved."
@@ -59,8 +61,13 @@ label episode7:
     scene black with dissolve
     $ red_effect()
 
-    scene cafeteria #Suspended Reality Layer
-    with dissolve
+    # scene cafeteria #Suspended Reality Layer
+    # with dissolve
+
+    scene cafeteria with dissolve:
+        subpixel True alpha 1.0 additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.41)*BrightnessMatrix(0.0)*HueMatrix(513.0) 
+
+
 
     "The floor becomes scrolling Python syntax."
     "Variables orbit Mira like constellations—stable, elegant."
@@ -300,22 +307,23 @@ label episode7:
     "Silence."
 
 # RESULT HANDLING (LOCKED FOR EPISODE 8)
-    "{color=#ff3e3e}{b}LOGIC CONFLICT UNRESOLVED{/b}{/color}"
-    show doctorbyte sad at left with dissolve
-    dr "This battle ends without a winner."
-    show doctorbyte sad2
-    show mspython neutral at right with dissolve
-    mspy "And without destruction."
-    show mspython neutral2
-    show mira neutral2 at center with dissolve
-    "Mira looks at [name]."
-    show mira neutral
-    mira "Then next time…"
-    mira "we decide what correction really means."
-    "The arena fades."
+    if mira_fate == 0:
+        "{color=#ff3e3e}{b}LOGIC CONFLICT UNRESOLVED{/b}{/color}"
+        show doctorbyte sad at left with dissolve
+        dr "This battle ends without a winner."
+        show doctorbyte sad2
+        show mspython neutral at right with dissolve
+        mspy "And without destruction."
+        show mspython neutral2
+        show mira neutral2 at center with dissolve
+        "Mira looks at [name]."
+        show mira neutral
+        mira "Then next time…"
+        mira "we decide what correction really means."
+        "The arena fades."
 
-    scene black
-    with fade
+        scene black
+        with fade
 
 # Cliffhanger
     scene black

@@ -462,6 +462,7 @@ label episode2:
 
     show kai happy at center with dissolve:
         xzoom -1.0
+        xpos 0.58
     kai "You would weaponize sarcasm."
 
     "Type the missing syntax!!"
@@ -574,9 +575,9 @@ label episode2:
     # Final Boss----------
     show cyra neutral2
     show kai neutral2
+    play sound "glitch_sound.ogg"
     $ red_effect()
     show screen info_box("Bug #5 Final Boss: The Void Entity") with dissolve
-    play sound "glitch_sound.ogg"
     show void at left with dissolve
 
     show kai surprised at slightright with move

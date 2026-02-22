@@ -137,7 +137,7 @@ label episode4:
     hide doctorbyte
     with dissolve
 
-    show bug at top_right_space
+    show bug3 at top_right_space
     play sound "glitch_sound.ogg"
     $ red_effect()
 
@@ -165,7 +165,7 @@ label episode4:
         "Enemy Still Alive!":
             play sound "punch_sound1.ogg"
             with hpunch
-            hide bug
+            hide bug3
             hide ep4-scn3-txt1
             with dissolve
 

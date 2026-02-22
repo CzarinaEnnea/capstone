@@ -18,7 +18,7 @@ label episode1:
     scene skyline
     with dissolve
 
-    "A sleek hovertrain glides through a neon sky. The colossal Code Academy Nexus floats above the city — a fortress of glowing circuits and holographic towers."
+    "A sleek hovertrain glides through a glowing evening sky. Below, a modern city stretches across the horizon, and in the distance, the Code Academy Nexus can be seen in the distance."
 
     mc "They say if you can code it, you can create it."
     mc "At Code Academy Nexus, code is reality."
@@ -433,7 +433,7 @@ label episode1:
             call question1Right from _call_question1Right_1
         "print(Hello World!)":
             play sound glitch_sound
-            show bug at top
+            show bug1 at top
             $ red_effect()
 
             show kai neutral at left with dissolve
@@ -442,7 +442,7 @@ label episode1:
             cyra "Don’t panic! Try closing the quotes — fast!"
             play sound hologram
             with vpunch
-            hide bug with dissolve
+            hide bug1 with dissolve
             "([name] fixes it. Bug fizzles. Team cheers.)"
             show cyra neutral
             mspyIntercom "You can either use Double Quotation Marks {=code}“”{/code} or {=code}‘’{/code} Apostrophe to declare a string you want to print"
@@ -1010,7 +1010,7 @@ label episode1:
     with dissolve
 
     "The Bugs surge forward — glowing red code glitches fill the room."
-    show bug at top
+    show bug2 at top
     $ red_effect()
 
     show cyra neutral at right with dissolve
@@ -1035,7 +1035,7 @@ label episode1:
             play sound right_answer
             "{=gold}Team gains shield.{/gold}"
 
-            hide bug 
+            hide bug2
             with dissolve
 
         "Bug = 1":
@@ -1058,7 +1058,7 @@ label episode1:
             "{=code}if Bug > 0:{p}{space=40}print(‘Attack!’){/code}"
 
             hide screen info_box
-            hide bug
+            hide bug2
             hide kai
             hide cyra 
             with dissolve
@@ -1073,7 +1073,7 @@ label episode1:
             play sound punch_sound1
             show cyra happy
             show kai happy
-            hide bug with dissolve
+            hide bug2 with dissolve
 
             "{=gold}Bug defeated.{/gold}"
 
@@ -1096,14 +1096,14 @@ label episode1:
 
     scene arena
     with fade
-    show bug at top with dissolve
+    show bug3 at top with dissolve
     
     "Cut to Luna and Astra’s group"
     show astra neutral at slightleft with dissolve:
         xzoom -1.0
     "Bright flashes illuminate their side of the dome. Astra flicks her fingers like she’s playing a piano of light."
     astra "Variable set, loop engaged… {w}and {b}delete!{/b}"
-    hide bug with dissolve
+    hide bug3 with dissolve
     with vpunch
     play sound punch_sound1
     show astra happy
