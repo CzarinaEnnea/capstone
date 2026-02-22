@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/episode 8.rpy", line 239: expected 'image_name_component' not found.
-    scene (bg - rooftop NIGHT)
-          ^
+File "game/ep7_bug_summon.rpy", line 90: end of line expected.
+    hide female2-pixelred with dissolve:
+                                       ^
+
+File "game/ep7_bug_summon.rpy", line 93: end of line expected.
+    hide male2-pixelred with dissolve:
+                                     ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sun Feb 22 04:40:53 2026
+Mon Feb 23 04:00:19 2026

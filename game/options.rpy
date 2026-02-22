@@ -31,15 +31,44 @@ define config.version = "1.0"
 
 define gui.about = _p("""{b}Made by:{/b}
 
-> Leonalee Paraiso
+🖥️ Leonalee Paraiso - Scriptwriter, Developer
 
-> Catlin Ayessha C. Bonquin
+🖥️ Catlin Ayessha C. Bonquin - Artist, Developer
 
-> Kyla Yumul
+🖥️ Kyla Yumul - Developer, Composer
+
 
 {b}Credits:{/b}
 
-Skolaztika
+🎵 Main Menu Theme and Opening Theme by Kyla Yumul
+
+🎵 "{a=https://www.youtube.com/watch?v=JkMRbdCCIvk}Made For This{/a}" by LAKEY INSPIRED 
+
+🎵 "{a=https://soundcloud.com/lvlx808/silent-struggle-free-to-use-15}Silent Struggle [FREE TO USE]{/a}" By {a=soundcloud.com/lvlx808}LVLX808{/a}
+
+🎵 "{a=https://www.youtube.com/watch?v=hrgzWEgCCFg}Underclocked{/a}" By {a=http://ericskiff.com/music}Eric Skiff{/a}
+
+🎵 "{a=https://www.youtube.com/watch?v=28dbNKUz7QI}8bit Syndrome | 8bit Horror{/a}" by z3r0
+
+🎵 "{a=https://www.youtube.com/watch?v=eQ8w-9mPOds}Sadness and Solo{/a}" by TAD ON
+
+🎵 "{a=https://www.youtube.com/watch?v=tzhKxUxsIJs}One thing{/a}" by Chillpeach
+
+🎵 "{a=https://www.youtube.com/watch?v=_wmT9U1X7Cw}The Final Battle (8-bit Epic){/a}" by RedStone128/@Infrared Scale 
+
+🎵 "{a=https://www.youtube.com/watch?v=Kz9KzfkdxP0&list=PL170TfEhZz-_GstI3bsghBfuD-u8nlHHD&index=3}Slow Funny Music A{/a}" by {a=https://www.fesliyanstudios.com/}by David Renda{/a}
+
+💻 {a=https://skolaztika.itch.io/renpy-codex-screen}Screen Asset{/a} by Skolaztika
+
+🌃 {a=https://panditastudio.itch.io/assets-pack-vol1-vn-backgrounds-school}Classroom BG{/a} by Pandita Studio
+
+
+{b}Google Forms:{/b}
+
+📄 {a=https://docs.google.com/forms/d/e/1FAIpQLSdB5QRhRn45Rgy8Ew-G-i3taROhZmEB-xfVkWlg_GWLdNeTuw/viewform}Informed Consent{/a}
+
+📄 {a=https://docs.google.com/forms/d/e/1FAIpQLSdxnnvunsW03X4eM2gQERu-UTB7WrK2w33QfwSRzTM7SkZAhw/viewform}Evaluation Survey{/a}
+
 """)
 
 

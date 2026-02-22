@@ -50,8 +50,9 @@ label bug_summon_phase1:
             if WC_local >= 3:
                 play sound "error_wrong.ogg"
                 "{color=#ff4444}{b}You have reached the maximum attempts.{/b}{/color}"
-                $ player_hp = 10
                 play sound "glitch_sound.ogg"
+                call pixel_flash
+                $ player_hp = 10
                 with vpunch
                 $ console_text = "Loopling duplicates"
                 with dissolve
@@ -72,12 +73,16 @@ label bug_summon_phase1:
             if WC_local == 2:
                 cyra2 sad "Don’t overpower it, contain it."
                 play sound "error_sound1.ogg"
+                call pixel_flash
                 $ player_hp = 25
                 with dissolve
                 "Try again! You have [3 - WC_local] attempt(s) left."
             else:
                 play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"
+
+                call pixel_flash
+
                 $ console_text = "YOU TOOK DAMAGE!"
                 $ player_hp = 75
                 with dissolve
@@ -133,8 +138,9 @@ label bug_summon_phase2:
             if WC_local >= 3:
                 play sound "error_wrong.ogg"
                 "{color=#ff4444}{b}You have reached the maximum attempts.{/b}{/color}"
-                $ player_hp = 10
                 play sound "glitch_sound.ogg"
+                call pixel_flash
+                $ player_hp = 10
                 with vpunch
                 $ console_text = "Bug retaliates"
                 with dissolve
@@ -154,6 +160,7 @@ label bug_summon_phase2:
                 luna2 serious "Calm down Kai its not helping at all."
                 astra2 sad "Sigh! [name] Remember as Cyra said before {b}{i}“preserve()”{/i}{/b} what?"
                 play sound "error_sound1.ogg"
+                call pixel_flash
                 $ player_hp = 25
                 with dissolve
                 "Try again! You have [3 - WC_local] attempt(s) left."
@@ -163,6 +170,7 @@ label bug_summon_phase2:
                 play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"
                 $ console_text = "YOU TOOK DAMAGE!"
+                call pixel_flash
                 $ player_hp = 75
                 with dissolve
                 "Try again! You have [3 - WC_local] attempt(s) left."
@@ -217,8 +225,9 @@ label bug_summon_phase3:
             if WC_local >= 3:
                 play sound "error_wrong.ogg"
                 "{color=#ff4444}{b}You have reached the maximum attempts.{/b}{/color}"
-                $ player_hp = 5
                 play sound "glitch_sound.ogg"
+                call pixel_flash
+                $ player_hp = 5
                 with vpunch
                 kai2 angry2 "She’s reinforcing herself!"
                 mspy2 angry2-nosign "Careful—"
@@ -247,6 +256,7 @@ label bug_summon_phase3:
                 cyra2 sad "Relax everyone. [name] come on finish it already."
                 kai2 angry "Yea or ELSE I’ll be the one to finish you!"
                 play sound "error_sound1.ogg"
+                call pixel_flash
                 $ player_hp = 20
                 with dissolve
                 "Try again! You have [3 - WC_local] attempt(s) left."
@@ -254,10 +264,35 @@ label bug_summon_phase3:
                 play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"
                 $ console_text = "YOU TOOK DAMAGE!"
+                call pixel_flash
                 $ player_hp = 60
                 with dissolve
                 "Try again! You have [3 - WC_local] attempt(s) left."
     return
+
+
+label pixel_flash:
+
+    if female:
+        show female2-pixelred with dissolve:
+            subpixel True
+            pos (0.25, 0.25)
+            zoom 1.81
+    else:
+        show male2-pixelred with dissolve:
+            subpixel True
+            pos (0.25, 0.25)
+            zoom 1.81
+
+    pause 0.2
+
+    if female:
+        hide female2-pixelred with dissolve
+    else:
+        hide male2-pixelred with dissolve
+
+    return
+
 
 # MIRA'S FATE
 label good_end:
