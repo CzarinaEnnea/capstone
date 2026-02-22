@@ -54,7 +54,7 @@ label ep1_scn5_txt3:
                     hide ep1-scn5-txt3 with dissolve
 
         else:
-            play music error_sound1 noloop
+            play sound error_sound1
             "{color=#ff4444}{b}Wrong code!{/b}{/color}"
             "Try again. You have [3 - WC] attempt(s) left."
             jump ep1_scn5_txt3
@@ -62,7 +62,7 @@ label ep1_scn5_txt3:
     return
 
     label explain:
-    play music right_answer noloop
+    play sound right_answer
     "{color=#32CD32}{b}CORRECT!{/b}{/color}"
     show mspython happy
     mspy "Nice work! You got it right."

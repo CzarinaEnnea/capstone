@@ -68,7 +68,7 @@ label episode2:
     scene classroom
     with dissolve
 
-    #play music "data_theme.ogg" fadein 2.0
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
 
     "Holographic lights swirl across the classroom. Data symbols — numbers, words, equations — orbit around {color=#00ffff}Ms. Py Thon{/color} like glowing satellites."
     "Each flicker of light hums softly, resonating like a heartbeat made of pure code."
@@ -371,6 +371,7 @@ label episode2:
 
     mc "(smiles) {p}Guess that means more chaos… and more code."
 
+    stop music fadeout 0.5
     scene black with fade
 
 #SCENE 3
@@ -393,6 +394,8 @@ label episode2:
     show mspython neutral2
     mc "Wait, we're fighting... with code?"
     hide mspython with dissolve
+
+    play music "audio/battle-silent_struggle.ogg" fadein 0.5 volume 0.3
 
     show cyra neutral at right with dissolve
     cyra "Finally, a class that gets my blood pumping. Hope you can keep up, rookie."
@@ -479,7 +482,8 @@ label episode2:
     play sound "glitch_sound.ogg"
     show bugogre at left with dissolve
 
-    show kai surprised2
+    show kai surprised2 with move:
+        xpos 0.71
     show cyra neutral2
     "A massive creature stomps in, chanting: 'Divide by Zero! Divide by Zero!'"
     show kai neutral2
@@ -510,7 +514,9 @@ label episode2:
     show screen info_box("Bug #3 – The List Hydra") with dissolve
     play sound "glitch_sound.ogg"
     show bughydra with dissolve:
-        subpixel True xpos -0.12 
+        subpixel True xpos -0.12
+    show kai neutral2 with move:
+        xpos 0.58
 
     "Three heads emerge, hissing binary streams."
 
@@ -603,11 +609,13 @@ label episode2:
     #play music "ending_theme.ogg" fadein 2.0  #start ending music here
 
     scene black with fade
-
+    pause 2.0
     scene classroom with dissolve
+
     drIntercom "Simulation success. Excellent teamwork, Debuggers."
     show mspython happy at center
     with dissolve
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
     mspy "You’ve done well. Every operation, every decision — builds the foundation of your code."
 
     hide mspython with dissolve
@@ -635,6 +643,7 @@ label episode2:
 
     mspyIntercom "Team Debugger — class dismissed. Tomorrow, we learn about Operators and If/Else."
 
+    stop music fadeout 0.5
     scene black
     with fade
     pause 1.0
@@ -643,7 +652,6 @@ label episode2:
     scene cafeteria #lounge
     with dissolve
 
-    # play music "lounge_theme.ogg" fadein 2.0
     play music "opening.ogg"
 
     "Soft neon glows fill the Debuggers' Lounge, the hum of holographic screens buzzing in the background."
@@ -851,7 +859,8 @@ label episode2:
     scene cafeteria
     with dissolve
 
-    
+    stop music fadeout 0.5
+
     show cafeteria with dissolve:
         subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.54)*HueMatrix(0.0)
 

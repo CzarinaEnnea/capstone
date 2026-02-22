@@ -10,6 +10,8 @@ label episode3:
     scene classroom
     with dissolve
 
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
+    
     show doctorbyte neutral at center with dissolve
     dr "Welcome, young coders. Today, your logic will be tested."
     show doctorbyte happy
@@ -195,6 +197,8 @@ label episode3:
     cyra "Let’s hope you pick better than last time, {i}rookie coder{/i}."
     show cyra neutral2-notab
     mc "Just watch me."
+
+    stop music fadeout 0.5
 
     scene black
     with dissolve

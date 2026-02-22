@@ -96,6 +96,8 @@ label episode1:
 
     "The students take their seats. Floating keyboards and holographic code scroll across the room."
 
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
+
     show mspython neutral
     with dissolve
 
@@ -182,12 +184,6 @@ label episode1:
     luna "Python: adaptive, readable, and statistically likely to dominate human education."
     show luna neutral2
 
-    # hide luna
-    # show astra neutral at right 
-    # with dissolve
-
-    # astra "Uh huh."
-
     show mspython neutral
     mspy "Quite right, Luna. Python’s beauty lies in its simplicity."
     mspy "It reads almost like English — and runs instantly."
@@ -259,6 +255,8 @@ label episode1:
 
     hide screen info_box
     with dissolve
+
+    stop music fadeout 2.0
 
     scene arena2 #or fade to black
     with dissolve
@@ -423,6 +421,7 @@ label episode1:
 
     #   QUESTION 1
     mspyIntercom "Your first spell — fix this broken code: {w}{i}{size=+10}{color=#81f08aff}print(\"Hello World!){/color}{/size}{/i}"
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
     
     menu:
         # extend ""
@@ -530,7 +529,10 @@ label episode1:
         "Needs semicolons":
             call question4Wrong from _call_question4Wrong_1
 
+    stop music fadeout 2.0
+
     show luna happy at center with dissolve
+    play music "main-menu.ogg"
     luna "Okay, okay, my turn!"
     show luna neutral
     luna "What’s the name of the function used to display text?"
@@ -588,7 +590,6 @@ label episode1:
     with dissolve
     pause 1.0
 
-    play music "main-menu.ogg" #Try but might delete
     nvl clear
     n "They pose. Flash of neon light. Laughter."
     with dissolve
@@ -607,13 +608,16 @@ label episode1:
     nvl clear
 
     "Morning light streams through the digital windows of Code Nexus Academy."
-    "After a long night of debugging simulations, the class gathers once again in {b}Ms. Py Thon’s Command Lab{/b}. Ready to dive deeper into the logic that powers their world."
+    "After a long night of debugging simulations, the class gathers once again in Ms. Py Thon’s classroom. Ready to dive deeper into the logic that powers their world."
 
     show mspython neutral2 zorder 4 at center
     with dissolve
 
     "(Clapping her hands — and three glowing orbs float into the air.)"
+
     show mspython neutral
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
+
     mspy "Good morning, little coders! Today, we explore the heart of every spell {w=1.5}— I mean, script {w}— in Python!"
     show mspython neutral2
 
@@ -726,10 +730,14 @@ label episode1:
     hide cyra
     with dissolve
 
+    stop music fadeout 0.5
+
     scene classroom
     with fade
 
     "{b}After Class – Free Interaction Scene{/b}"
+
+    play music "audio/neutralchill_One Thing.ogg" fadein 0.5 volume 0.8
     "The class ends, and the students scatter. You can choose who to talk to before leaving."
     "Who do you want to talk to?"
     menu:
@@ -750,6 +758,8 @@ label episode1:
     "Maybe this academy isn’t just about fighting bugs…"
     "Maybe it’s about the people who debug your heart."
 
+    stop music fadeout 0.5
+
 # SCENE 5
     scene arena2 #training chamber
     with dissolve
@@ -757,6 +767,9 @@ label episode1:
     "After yesterday’s lesson on syntax and indentation, today’s session promises something new — something powerful"
     show mspython neutral at center 
     with dissolve
+
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
+
     mspy "Class, welcome to the second pillar of programming — {w}{b}Variables!{/b}"
 
     show mspython neutral2
@@ -874,10 +887,14 @@ label episode1:
     show mspython neutral
     mspy "Only if your spells compile, dear."
 
+    stop music fadeout 0.5
+
     scene classroom
     with fade
 
     "{b}After Class – Team Interaction{/b}"
+
+    play music "main-menu.ogg"
 
     if scene5Wrong == True:
         show cyra neutral-notab at center with dissolve
@@ -973,6 +990,8 @@ label episode1:
     show kai happy at left with dissolve
     kai "Let’s see if [name] can survive it without breaking the compiler this time."
 
+    stop music fadeout 1.0
+
     hide kai
     hide luna
     hide cyra
@@ -980,7 +999,7 @@ label episode1:
 
     scene classroom
 
-    pause 1.0
+    pause 1.5
 
     show mspython neutral at center
     with dissolve
@@ -997,6 +1016,9 @@ label episode1:
     with dissolve
 
     play sound glitch_sound
+
+    play music "audio/battle-silent_struggle.ogg" fadein 0.5 volume 0.3
+
     "The class stands in a glowing dome. Holographic bugs crawl across the air — twisted lines of corrupted code."
     show doctorbyte neutral at left with dissolve
     dr "These are minor data Bugs. Harmless individually, but in numbers… they destroy systems."
@@ -1011,6 +1033,7 @@ label episode1:
 
     "The Bugs surge forward — glowing red code glitches fill the room."
     show bug2 at top
+    play sound glitch_sound
     $ red_effect()
 
     show cyra neutral at right with dissolve
@@ -1088,16 +1111,20 @@ label episode1:
         show doctorbyte sad at slightleft with dissolve
         dr "Well you did your best."
 
+    stop music fadeout 0.5
+
     show doctorbyte neutral at slightleft with dissolve
     dr "Lesson complete. You’ve survived your first encounter."
     show mspython neutral at right with dissolve
     mspy "But this is just the beginning."
     mspy "The real Bugs — the ones corrupting our network — are out there, waiting."
 
+    stop music fadeout 0.5
+
     scene arena
     with fade
     show bug3 at top with dissolve
-    
+    play music "audio/Slow_Funny_Music.ogg" fadein 0.5 volume 0.8
     "Cut to Luna and Astra’s group"
     show astra neutral at slightleft with dissolve:
         xzoom -1.0
@@ -1113,7 +1140,9 @@ label episode1:
     luna "{cps=20}Wheeeeeeee!"
     show luna happy2
     show astra happy2
-    luna "The bugs make sparkly confetti when they {size=+10}{b}die!{/b}{/size} {w}Can I keep one as a pet?"
+    luna "The bugs make sparkly confetti when they {size=+10}{b}die!{/b}{/size}"
+    show luna cookie2 with dissolve
+    luna "Can I keep one as a pet?"
     show mira neutral at right with dissolve
     mira "Please don’t. {w}That’s… {w}not sanitary."
     show mira sad
@@ -1125,6 +1154,8 @@ label episode1:
     astra "Probably."
     "Their group clears their entire wave in seconds."
 
+    stop music fadeout 0.5
+
     scene arena 
     with fade
 
@@ -1132,6 +1163,8 @@ label episode1:
     show mspython happy at right
     show doctorbyte happy at left 
     with dissolve
+
+    play music "audio/opening.ogg" fadein 0.5
 
     mspy "Well done, everyone. Even those who stumbled… {w}learned."
     mspy "Remember — a single missing space can change everything."
@@ -1183,6 +1216,8 @@ label episode1:
     "This academy isn’t just about learning code…"
     "It’s about surviving in a world where logic is power."
 
+    stop music fadeout 0.5
+    
     return
 
 
