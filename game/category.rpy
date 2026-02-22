@@ -28,21 +28,13 @@ screen category_nav():
             xoffset 350
 
             ##Here you list the categories
-            textbutton "Ep 1: Python's Basics & Variables" action ShowMenu("people_welcome")
-            ##people_welcome is the main screen/welcome screen of the "People" category, defined in people.rpy. I suggest you create seperate files
-            # for all categories so it's easier to edit.
+            textbutton "Foundations of Syntax & Variables" action ShowMenu("episode_1")
+            textbutton "Data Types" action ShowMenu("episode_2")
+            textbutton "Operators & Conditional Logic" action ShowMenu("episode_3")
+            textbutton "Loops, Functions & Arrays" action ShowMenu("episode_6")
 
-            ##The buttons below don't do anything. Set up your category as seen in people.rpy then
-            ## switch "NullAction" with the "ShowMenu("screen name")" command like above.
 
-            textbutton "Ep 2: Data Types" action NullAction()
-            textbutton "Episode 3" action NullAction()
-            textbutton "Episode 4" action NullAction()
-            # textbutton "Rumors" action NullAction()
-            # textbutton "Culture and Religion" action NullAction()
-            # textbutton "Miscellaneous" action NullAction()
-
-    textbutton "Return" action Return() yoffset 1000 xoffset 25
+    textbutton "Main Menu" action Return() yoffset 1000 xoffset 25
 
 ##-----------------------------------------------
 ##-------------CODEX WELCOME---------------------

@@ -210,6 +210,8 @@ label episode3:
     $ red_effect()
     show red
     with dissolve
+
+    play music "audio/battle-silent_struggle.ogg" fadein 0.5 volume 0.3
     
     show luna surprised at center with dissolve
     luna "Uh-oh! A Logic Bug invaded the system again! It’s bouncing through code like a broken loop!"
@@ -323,6 +325,7 @@ label episode3:
             hide luna
             with dissolve
             pause 1.0
+            stop music fadeout 0.5
 
             show mira happy at center
             with dissolve
@@ -359,6 +362,8 @@ label episode3:
             hide doctorbyte
             hide luna
             with dissolve
+
+            stop music fadeout 0.5
             pause 1.0
             
             show mira sad at center
@@ -375,6 +380,8 @@ label episode3:
 
     scene arena
     with dissolve
+
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
 
     show screen info_box("Reminder: Operators") with dissolve
     show mspython neutral at center with dissolve
@@ -393,6 +400,7 @@ label episode3:
 
     dr "Remember those words, students. You’ll need them for what’s coming next."
     hide screen info_box
+    stop music fadeout 0.5
 
 # SCENE 5
     scene black
@@ -400,9 +408,10 @@ label episode3:
 
     pause 1.0
 
-    scene arena
+    scene classroom
     with dissolve
 
+    play music "audio/opening.ogg"
     show mira happy at center with dissolve
     mira "You were amazing out there, [name]… {w}I mean, {w}logically speaking!"
 
@@ -427,6 +436,7 @@ label episode3:
     show astra sad2
     mc "Operators, logic, teamwork… {w}maybe this academy’s teaching me more than just code."
 
+    stop music fadeout 0.5
     scene black
     with dissolve
     pause 1.0

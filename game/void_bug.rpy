@@ -11,7 +11,7 @@ label void_bug:
             hide screen info_box with dissolve
             play sound "hologram.ogg"
             hide void with dissolve
-
+            
             show cyra happy
             cyra "Yay we did it!!"
             show kai happy2

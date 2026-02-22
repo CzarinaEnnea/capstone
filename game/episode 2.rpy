@@ -891,13 +891,15 @@ label episode2:
     hide cyra
     with dissolve
 
+    play music "audio/opening.ogg" fadein 0.5
+
     mc "Calculate destiny, huh?"
     mc "(smiles faintly) {p}Bring it on."
-
-    stop music fadeout 3.0
 
     scene black with fade
     show text "{=title}To be continued...{/title}" at truecenter with dissolve
     pause 2
+    stop music fadeout 2.0
     hide text with dissolve
+    
     return

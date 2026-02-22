@@ -66,6 +66,7 @@ label episode4:
     scene classroom
     with dissolve
 
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
     show mspython neutral at center with dissolve
     mspy "Welcome, students. Today, we dive deeper into the language of logic {w}— Python Operators and Conditional Statements."
     mspy "They are not mere syntax. They are... choices. Rules that shape results."
@@ -122,6 +123,8 @@ label episode4:
         "Needs Improvement":
             call ep4Scn2Q1Wrong from _call_ep4Scn2Q1Wrong_1
     
+    stop music fadeout 0.5
+
     scene black with fade
     pause 1.5
 
@@ -136,6 +139,8 @@ label episode4:
 
     hide doctorbyte
     with dissolve
+
+    play music "audio/class.ogg" fadein 0.5 volume 0.3
 
     show bug3 at top_right_space
     play sound "glitch_sound.ogg"
@@ -183,6 +188,8 @@ label episode4:
             luna "You made it stronger! Abort mission!"
             mspy "Let this be a reminder: Always test before you assume."
 
+    stop music fadeout 0.5
+    
     scene black
     with fade
     pause 1.5
