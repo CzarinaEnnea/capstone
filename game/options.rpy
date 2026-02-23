@@ -33,7 +33,7 @@ define gui.about = _p("""{b}Made by:{/b}
 
 🖥️ Leonalee Paraiso - Scriptwriter, Developer
 
-🖥️ Catlin Ayessha C. Bonquin - Artist, Developer
+🖥️ Catlin Ayessha C. Bonquin - Character Artist, Developer
 
 🖥️ Kyla Yumul - Developer, Composer
 

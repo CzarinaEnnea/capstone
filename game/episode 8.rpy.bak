@@ -138,13 +138,13 @@ label episode8:
 
 # MIRA'S FATE
     if mira_fate >= 2:
-        call good_end from _call_good_end
+        call good_end
 
     elif mira_fate == 1:
-        call neutral_end from _call_neutral_end
+        call neutral_end
 
     else:
-        call bad_end from _call_bad_end
+        call bad_end
 
 # SCENE 4
     scene classroom # Grand Lecture Hall
@@ -191,13 +191,13 @@ label episode8:
 
 # SCENE 6 - ROUTES change value
     if cyraAffection >= 4:
-        call cyra_route from _call_cyra_route
+        call cyra_route
 
     elif kaiAffection >= 4:
-        call kai_route from _call_kai_route
+        call kai_route
 
     else:
-        call solo_route from _call_solo_route
+        call solo_route
 
     scene black with dissolve
     pause 2

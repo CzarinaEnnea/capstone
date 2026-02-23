@@ -140,7 +140,7 @@ label episode5:
     show mspython neutral with dissolve
     mspy "Now type a loop that prints numbers 1 to 3."
     show mspython neutral2
-    call ep5_scn2_txt1 from _call_ep5_scn2_txt1
+    call ep5_scn2_txt1
 
     stop music fadeout 0.5
     scene black
@@ -161,14 +161,14 @@ label episode5:
 
     # QUIZ 1
     show ep5-scn3-txt1 at top_left_space with dissolve
-    call ep5_scn3_txt1 from _call_ep5_scn3_txt1
+    call ep5_scn3_txt1
     hide ep5-scn3-txt1 with dissolve
 
     # QUIZ 2
     show doctorbyte neutral2
     show ep5-scn3-txt2 at top_left_space 
     with dissolve
-    call ep5_scn3_txt2 from _call_ep5_scn3_txt2
+    call ep5_scn3_txt2
     hide ep5-scn3-txt2 with dissolve
 
     # QUIZ 3
@@ -176,7 +176,7 @@ label episode5:
     dr "Now Write a loop that prints ‘Debug’ five times."
     show doctorbyte neutral2
     show ep5-scn3-txt3 at top_left_space with dissolve
-    call ep5_scn3_txt3 from _call_ep5_scn3_txt3
+    call ep5_scn3_txt3
     hide ep5-scn3-txt3 with dissolve
 
     stop music fadeout 0.5
@@ -202,13 +202,13 @@ label episode5:
     "Who do you spend time with?"
     menu:
         "Talk to Cyra":
-            call Ep5Scn4Cyra from _call_Ep5Scn4Cyra
+            call Ep5Scn4Cyra
         "Talk to Kai":
-            call Ep5Scn4Kai from _call_Ep5Scn4Kai
+            call Ep5Scn4Kai
         "Talk to Luna":
-            call Ep5Scn4Luna from _call_Ep5Scn4Luna
+            call Ep5Scn4Luna
         "Talk to Mira":
-            call Ep5Scn4Mira from _call_Ep5Scn4Mira
+            call Ep5Scn4Mira
 
     scene black with dissolve
     pause 0.5
@@ -344,7 +344,7 @@ label episode5:
 
     "HINT!! : Result must show numbers 1 to 6"
 
-    call ep5_scn5_txt2 from _call_ep5_scn5_txt2
+    call ep5_scn5_txt2
 
     mspy "Loops are tools."
     mspy "Control defines mastery."

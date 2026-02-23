@@ -283,9 +283,9 @@ label start:
     call episode2 from _call_episode2
     call episode3 from _call_episode3
     call episode4 from _call_episode4
-    call episode5
-    call episode6
-    call episode7
-    call episode8
+    call episode5 from _call_episode5
+    call episode6 from _call_episode6
+    call episode7 from _call_episode7
+    call episode8 from _call_episode8
     
     return

@@ -90,7 +90,7 @@ screen ep1_1():
             text _p("")
 
             text _p("""
-            {color=#32CD32}{b}Code: print("Hello, Worlld"){/color}""")
+            {color=#32CD32}{b}Code: print("Hello, World"){/color}""")
             text _p("""
             {color=#32CD32}{b}Result: Hello, World{/color}
             """)

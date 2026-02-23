@@ -217,7 +217,7 @@ label episode7:
     ""
     "Everyone" "{b}Let’s do this!{/b}"
 
-    call bug_summon_phase1 from _call_bug_summon_phase1
+    call bug_summon_phase1
 
 # SCENE 6
     hide screen battle_ui
@@ -252,7 +252,7 @@ label episode7:
     kai2 sad "…That sounds personal."
     cyra2 neutral "Let’s preserve the data [name]."
     
-    call bug_summon_phase2 from _call_bug_summon_phase2
+    call bug_summon_phase2
 
 
 # SCENE 7
@@ -298,7 +298,7 @@ label episode7:
     "{b}Enemy Logic:\n{color=#32CD32}if trust == False:{p}{space=40}attack(){/color}{/b}"
     mira2 sad "This is what happens when trust is never met."
     
-    call bug_summon_phase3 from _call_bug_summon_phase3
+    call bug_summon_phase3
 
 
 # SCENE 8
