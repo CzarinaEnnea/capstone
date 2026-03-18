@@ -108,7 +108,7 @@ label episode6:
     pause 2.5
 
 # SCENE 3
-    scene mspythonlab # Restricted Zone
+    scene prison # Restricted Zone
     with dissolve
 
     play music "audio/battle-silent_struggle.ogg" fadein 0.5 volume 0.3
@@ -147,7 +147,7 @@ label episode6:
     play sound "glitch_sound.ogg"
     $ red_effect() 
 
-    scene mspythonlab with dissolve:
+    scene prison with dissolve:
         subpixel True matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.0)*BrightnessMatrix(-0.17)*HueMatrix(0.0) 
 
     "Hundreds of simulations unfold mid-air."

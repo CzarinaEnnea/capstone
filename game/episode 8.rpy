@@ -369,4 +369,8 @@ label scene7_last_line:
     centered "{cps=20}{=title}SYSTEM: Thank you for playing!{/title}" with dissolve
     hide text with dissolve
     stop music fadeout 0.5
+
+    show text "{=title}To be continued...{/title}" at truecenter with dissolve
+    pause 2
+    hide text with dissolve
     return
