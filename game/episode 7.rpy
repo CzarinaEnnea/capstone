@@ -62,9 +62,6 @@ label episode7:
     scene black with dissolve
     $ red_effect()
 
-    # scene cafeteria #Suspended Reality Layer
-    # with dissolve
-
     scene cafeteria with dissolve:
         subpixel True alpha 1.0 additive 0.0 matrixcolor InvertMatrix(0.0)*ContrastMatrix(1.0)*SaturationMatrix(1.41)*BrightnessMatrix(0.0)*HueMatrix(513.0) 
 

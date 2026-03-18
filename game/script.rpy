@@ -275,6 +275,24 @@ init python:
         global cyraAffection
         cyraAffection = max(0, cyraAffection + amount)
 
+# RPG Animation
+
+transform attack_jump:
+    ease 0.15 xoffset 558 yoffset -80   # jump forward + up
+    ease 0.1 yoffset 0                  # fall down
+    ease 0.15 xoffset 0                 # go back
+
+transform enemy_attack1:
+    ease 0.15 xoffset -351
+    pause 0.5
+    ease 0.15 xoffset 0
+
+transform enemy_attack:
+    ease 0.15 xoffset -522 yoffset -80
+    ease 0.1 yoffset 0
+    pause 0.5
+    ease 0.15 xoffset 0
+
 # Start Game
 label start:
     

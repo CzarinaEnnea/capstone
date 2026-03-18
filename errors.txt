@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/ep7_bug_summon.rpy", line 90: end of line expected.
-    hide female2-pixelred with dissolve:
-                                       ^
+File "game/ep7_bug_summon.rpy", line 37: show statement expects a non-empty block.
+    show female2-pixel at attack_jump:
+                                      ^
 
-File "game/ep7_bug_summon.rpy", line 93: end of line expected.
-    hide male2-pixelred with dissolve:
-                                     ^
+File "game/ep7_bug_summon.rpy", line 39: show statement expects a non-empty block.
+    show male2-pixel at attack_jump:
+                                    ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Mon Feb 23 04:00:19 2026
+Thu Mar 19 05:05:29 2026

@@ -4,9 +4,11 @@ label bug_summon_phase1:
     if female == True:
         show female2-pixel with dissolve:
             subpixel True pos (0.25, 0.25) zoom 1.81
+        hide female1-pixel
     else:
         show male2-pixel with dissolve:
             subpixel True pos (0.25, 0.25) zoom 1.81
+        hide male1-pixel
 
     $ console_text = "Enemy Effect: Regenerates every turn unless stopped correctly"
     with dissolve
@@ -30,11 +32,22 @@ label bug_summon_phase1:
 
             play sound "right_answer.ogg"
             "{color=#32CD32}{b}CORRECT!{/b}{/color}"
+
+            if female == True:
+                show female2-pixel at attack_jump
+            else:
+                show male2-pixel at attack_jump
+
             play sound punch_sound2
             with hpunch
+
+            show stringleech-pixel:
+                subpixel True additive 0.6 
+
             $ bug_hp = 30
             $ console_text = "The Loopling freezes, then dissolves"
             with dissolve
+
             ""
             play sound hologram
             hide stringleech-pixel with dissolve
@@ -51,6 +64,10 @@ label bug_summon_phase1:
                 play sound "error_wrong.ogg"
                 "{color=#ff4444}{b}You have reached the maximum attempts.{/b}{/color}"
                 play sound "glitch_sound.ogg"
+
+                play sound "punch_sound2.ogg"
+                show stringleech-pixel at enemy_attack
+
                 call pixel_flash from _call_pixel_flash
                 $ player_hp = 10
                 with vpunch
@@ -73,6 +90,9 @@ label bug_summon_phase1:
             if WC_local == 2:
                 cyra2 sad "Don’t overpower it, contain it."
                 play sound "error_sound1.ogg"
+                pause 0.5
+                show stringleech-pixel at enemy_attack
+                play sound "punch_sound2.ogg"
                 call pixel_flash from _call_pixel_flash_1
                 $ player_hp = 25
                 with dissolve
@@ -81,6 +101,8 @@ label bug_summon_phase1:
                 play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"
 
+                play sound "punch_sound2.ogg"
+                show stringleech-pixel at enemy_attack
                 call pixel_flash from _call_pixel_flash_2
 
                 $ console_text = "YOU TOOK DAMAGE!"
@@ -96,9 +118,11 @@ label bug_summon_phase2:
     if female == True:
         show female2-pixel with dissolve:
             subpixel True pos (0.25, 0.25) zoom 1.81
+        hide female1-pixel
     else:
         show male2-pixel with dissolve:
             subpixel True pos (0.25, 0.25) zoom 1.81
+        hide male1-pixel
 
     # input+question
     $ question_text = "if data_exists: {p}{space=40}______________"
@@ -114,14 +138,28 @@ label bug_summon_phase2:
 
             play sound "right_answer.ogg"
             "{color=#32CD32}{b}CORRECT!{/b}{/color}"
+
+            if female == True:
+                show female2-pixel at attack_jump
+            else:
+                show male2-pixel at attack_jump
+
             play sound punch_sound2
             with hpunch
+
+            show bugphantom-pixel:
+                subpixel True additive 0.6 
+
             $ bug_hp = 40
             $ console_text = "Bug calms"
             with dissolve
             ""
             $ console_text = "Fragments reassemble, then fade"
             with dissolve
+
+            show bugphantom-pixel with dissolve:
+                subpixel True additive 0.0 
+                
             ""
             play sound hologram
             hide bugphantom-pixel with dissolve
@@ -139,6 +177,10 @@ label bug_summon_phase2:
                 play sound "error_wrong.ogg"
                 "{color=#ff4444}{b}You have reached the maximum attempts.{/b}{/color}"
                 play sound "glitch_sound.ogg"
+
+                play sound "punch_sound2.ogg"
+                show bugphantom-pixel at enemy_attack
+
                 call pixel_flash from _call_pixel_flash_3
                 $ player_hp = 10
                 with vpunch
@@ -160,6 +202,10 @@ label bug_summon_phase2:
                 luna2 serious "Calm down Kai its not helping at all."
                 astra2 sad "Sigh! [name] Remember as Cyra said before {b}{i}“preserve()”{/i}{/b} what?"
                 play sound "error_sound1.ogg"
+
+                play sound "punch_sound2.ogg"
+                show bugphantom-pixel at enemy_attack
+
                 call pixel_flash from _call_pixel_flash_4
                 $ player_hp = 25
                 with dissolve
@@ -170,6 +216,10 @@ label bug_summon_phase2:
                 play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"
                 $ console_text = "YOU TOOK DAMAGE!"
+
+                play sound "punch_sound2.ogg"
+                show bugphantom-pixel at enemy_attack
+
                 call pixel_flash from _call_pixel_flash_5
                 $ player_hp = 75
                 with dissolve
@@ -183,9 +233,11 @@ label bug_summon_phase3:
     if female == True:
         show female2-pixel with dissolve:
             subpixel True pos (0.25, 0.25) zoom 1.81
+        hide female1-pixel
     else:
         show male2-pixel with dissolve:
             subpixel True pos (0.25, 0.25) zoom 1.81
+        hide male1-pixel
 
     # input+question
     $ question_text = "if trust == False: {p}{space=40}wait() {p}______ {p}{space=40}cooperate()"
@@ -201,11 +253,24 @@ label bug_summon_phase3:
 
             play sound "right_answer.ogg"
             "{color=#32CD32}{b}CORRECT!{/b}{/color}"
+
+            if female == True:
+                show female2-pixel at attack_jump
+            else:
+                show male2-pixel at attack_jump
+
             play sound punch_sound2
             with hpunch
+
+            show void-pixel:
+                subpixel True additive 0.6
+
             $ bug_hp = 80
             $ console_text = "Bug lowers its head and vanishes"
             with dissolve
+
+            show void-pixel with dissolve:
+                subpixel True additive 0.0
             ""
             play sound hologram
             hide void-pixel with dissolve
@@ -226,6 +291,10 @@ label bug_summon_phase3:
                 play sound "error_wrong.ogg"
                 "{color=#ff4444}{b}You have reached the maximum attempts.{/b}{/color}"
                 play sound "glitch_sound.ogg"
+
+                play sound "punch_sound2.ogg"
+                show void-pixel at enemy_attack1
+
                 call pixel_flash from _call_pixel_flash_6
                 $ player_hp = 5
                 with vpunch
@@ -256,6 +325,10 @@ label bug_summon_phase3:
                 cyra2 sad "Relax everyone. [name] come on finish it already."
                 kai2 angry "Yea or ELSE I’ll be the one to finish you!"
                 play sound "error_sound1.ogg"
+
+                play sound "punch_sound2.ogg"
+                show void-pixel at enemy_attack1
+
                 call pixel_flash from _call_pixel_flash_7
                 $ player_hp = 20
                 with dissolve
@@ -264,6 +337,10 @@ label bug_summon_phase3:
                 play sound "error_sound1.ogg"
                 "{color=#ff4444}{b}Incorrect.{/b}{/color}"
                 $ console_text = "YOU TOOK DAMAGE!"
+
+                play sound "punch_sound2.ogg"
+                show void-pixel at enemy_attack1
+
                 call pixel_flash from _call_pixel_flash_8
                 $ player_hp = 60
                 with dissolve
@@ -292,7 +369,6 @@ label pixel_flash:
         hide male2-pixelred with dissolve
 
     return
-
 
 # MIRA'S FATE
 label good_end:
